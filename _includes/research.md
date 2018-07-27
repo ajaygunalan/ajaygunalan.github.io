@@ -13,4 +13,5 @@ The goal is to prevent the back flow of blood and air embolism (air-blockage) ca
 
 **2. [Exploration of CAN & ChibiOS for Open-Source BLDC Dirve](projects/vesc.md)**
 
-This . [Read more](projects/vesc.md)
+Robotics Industry faces two main problems:, 1. High cost of robots due to expensive drive. 
+2. Lack of algorithms to outperform a human in day to day activites of Human[Read more](projects/vesc.md)
