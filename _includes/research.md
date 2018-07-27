@@ -1,7 +1,4 @@
-<h1 class="rsection"> Smart Intravenous Dripper</h1>
-<h1 class="rsection"> Open-Source BLDC drive and CAN</h1>
-
-## **Current Projects**
+## **Projects**
 <br>
 
 **1. [Smart Intravenous Dripper](projects/blindgrasp.md)**
