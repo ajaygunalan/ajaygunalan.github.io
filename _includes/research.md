@@ -12,7 +12,7 @@ The goal is to prevent the back flow of blood and air embolism (air-blockage) ca
 
 Robotics Industry faces two main problems: 
   1. High cost of robots due to expensive drive. <br>
-  2. Lack of algorithms in Robots to outperform a human in day-to-day activites of Human. <br>
+  2. Lack of algorithms in Robots to outperform a human in day-to-day activites. <br>
 In this project the aim is to explore open-source in-expensive BLDC drive[Read more](projects/vesc.md)
 
 ---
@@ -20,7 +20,6 @@ In this project the aim is to explore open-source in-expensive BLDC drive[Read m
 **3. [Study of Motor Design & Dynamics](projects/motor_dynamics.md.md)**
 
 A robot is essential a bunch of coupled Motors with varying load. I personally belive that without understanding the basic building block of robots which is the motor, it would be very hard to develop alogorthim which can outperform us. Thus here, we will try to undertand the funadmental limitations of motor dynamic[Read more](projects/motor_dynamics.md)
-
 
 ---
 
