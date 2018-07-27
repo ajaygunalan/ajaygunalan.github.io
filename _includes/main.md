@@ -2,8 +2,9 @@
 I completed my Bachelors's degree in Mechanical engineering(2013-2017). 
 </p>
 
-<p class="about-p">
-Right after my Bachelors, I joined <a href="https://www.asimovrobotics.com/" class="md-link"> ASIMOV Robotics Pvt. Ltd, Kochi </a> and was a part of the Software team, developing a <a href="https://www.youtube.com/watch?v=5vjY1c8N1rk/" class="md-link"> service robot </a> for <a href="https://www.hdfcbank.com/" class="md-link"> HDFC bank </a> and then I joined  <a href="http://www.rbccps.org/" class="md-link"> RBCCPS </a> in February 2018 to work on legged robots and manipulation.
-</p>
+
+Right after my Bachelors, I joined [ASIMOV Robotics Pvt. Ltd, Kochi](https://www.asimovrobotics.com/) and was a part of the Software team, developing a **[service robot]**(https://www.youtube.com/watch?v=5vjY1c8N1rk/) for [HDFC bank](https://www.hdfcbank.com/") and then I joined [RBCCPS](http://www.rbccps.org/) in February 2018 to work on legged robots and manipulation.
+
+
 
 My interest is **Bio-Inspired Software Development for Real Time Motion Planning, and Control, of Under-actuated Manipulators, & Humanoids by fusing Formal Control methods & Learning based technique.**
