@@ -3,5 +3,5 @@ I completed my bachelors's degree in Mechanical engineering. My interest is Real
 </p>
 
 <p class="about-p">
-I interned at  <a href="https://www.asimovrobotics.com/" class="md-link"> ASIMOV Robotics Pvt. Ltd, Kochi </a> developing a<a href="https://www.youtube.com/watch?v=5vjY1c8N1rk/"> service robot </a> for <a href="https://www.hdfcbank.com/> HDFC bank </a>
+I interned at  <a href="https://www.asimovrobotics.com/" class="md-link"> ASIMOV Robotics Pvt. Ltd, Kochi </a> developing a<a href="https://www.youtube.com/watch?v=5vjY1c8N1rk/"> service robot </a> for <a href="https://www.hdfcbank.com/"> HDFC bank </a>
 </p>
