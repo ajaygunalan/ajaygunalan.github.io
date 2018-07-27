@@ -1,5 +1,5 @@
 <p class="about-p">
-I recently completed a bachelors's degree in Mechanical Enginnering. I'm interested in manipulation, Locomotion and Grasping.
+I recently completed a bachelors's degree in Mechanical Enginnering. I'm interested in Manipulation, Locomotion and Grasping.
 </p>
 
 <p class="about-p">
