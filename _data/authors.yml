@@ -2,8 +2,8 @@ default:
   initial:      ajaygunalan
   name:         "Ajay G"                                
   cover:        /assets/machu_lacta_reduced.jpg        
-  picture:      /assets/wulfebw.jpg                         
-  bio:          Project Assistant at Robert Bosch Center for Cyber-Physical System
+  picture:      /assets/ajay.jpg                         
+  bio:          Project Assistant at <a href="http://www.rbccps.org/" class="md-link"> Robert Bosch Center for Cyber-Physical System  </a> 
   location:     Banglore
   website:      "https://ajaygunalan.github.io/about"
   email:        "ajayg@iisc.ac.in"
@@ -24,7 +24,7 @@ ajaygunalan:
   initial:      ajaygunalan
   name:         "Ajay G"            
   cover:        /assets/machu_lacta.jpg  
-  picture:      /assets/wulfebw.jpg  
+  picture:      /assets/ajay.jpg  
   bio:          Project Assistant at Robert Bosch Center for Cyber-Physical System
   location:     Banglore
   website:      "https://ajaygunalan.github.io/"
