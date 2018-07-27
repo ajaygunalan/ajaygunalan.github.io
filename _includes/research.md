@@ -8,14 +8,13 @@ The goal is to prevent the back flow of blood and air embolism (air-blockage) ca
 
 ---
 
-<br>
-
 **2. [Democratization of Robots by exploration of Open-Source BLDC Dirve](projects/vesc.md)**
 
 Robotics Industry faces two main problems: 
 1. High cost of robots due to expensive drive. <br>
 2. Lack of algorithms in Robots to outperform a human in day-to-day activites of Human[Read more](projects/vesc.md)
 <br>
+---
 
 **3. [Study of Motor Design & Dynamics](projects/vesc.md)**
 
