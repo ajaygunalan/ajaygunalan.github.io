@@ -1,13 +1,13 @@
-title:            Blake Wulfe
+title:            Ajay G
 subtitle:         
-description:      Blake Wulfe's Personal Website.
-keywords:         blake wulfe reinforcement learning machine natural language artificial intelligence
+description:      Ajay G's Personal Website.
+keywords:         Software development for Real Time Motion Planning and Control of Bio-inspired & Underactuated Robots
 language:         "en"
 baseurl:          "" 
-url:              "http://wulfebw.github.io/"
+url:              "http://ajaygunalan.github.io/"
 permalink:        /blog/:categories/:title
 cover:            /assets/machu_lacta.jpg
-disqus_shortname: "wulfebw"
+disqus_shortname: "ajaygunalan"
 
 # Build settings
 markdown: kramdown
