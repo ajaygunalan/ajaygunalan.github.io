@@ -1,12 +1,12 @@
 default:
   initial:      wulfebw
-  name:         "Blake Wulfe"                                
+  name:         "Ajay G"                                
   cover:        /assets/machu_lacta_reduced.jpg        
   picture:      /assets/wulfebw.jpg                         
-  bio:          Stanford Computer Science M.S. Graduate
-  location:     Palo Alto
-  website:      "http://wulfebw.github.io/about"
-  email:        "wulfebw@stanford.edu"
+  bio:          Project Assistant at Robert Bosch Center for Cyber-Physical System
+  location:     Banglore
+  website:      "https://ajaygunalan.github.io/about"
+  email:        "ajayg@iisc.ac.in"
   twitter:
   resume:       true
   linkedin:
@@ -22,10 +22,10 @@ default:
   behance:   
 wulfebw:
   initial:      wulfebw
-  name:         "Blake Wulfe"            
+  name:         "Ajay G"            
   cover:        /assets/machu_lacta.jpg  
   picture:      /assets/wulfebw.jpg  
-  bio:          Stanford Computer Science M.S. Graduate
-  location:     Palo Alto
-  website:      "http://wulfebw.github.io/"
-  github:       wulfebw
+  bio:          Project Assistant at Robert Bosch Center for Cyber-Physical System
+  location:     Banglore
+  website:      "https://ajaygunalan.github.io/"
+  github:       ajaygunalan
