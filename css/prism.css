@@ -1,0 +1,569 @@
+/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+aspnet+bash+batch+c+csharp+cpp+coffeescript+ruby+git+java+json+less+objectivec+php+powershell+python+scss&plugins=line-highlight+line-numbers */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+/* Added */
+.content{
+	
+	/*padding-right: 8em;
+	padding-left: 8em;
+	font-size: 85%;*/
+    /*padding-right: 20%;
+    padding-left: 20%;*/
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size: 100%;
+    font-family: sans-serif;
+    color: #444;
+    font-weight: 200
+}
+
+.md-link {
+	color: #428bca;
+}
+.md-link:hover {
+	color: #428bca;
+}
+
+#content-wrapper{
+  display:table;
+  width: 100%;
+}
+
+#content{
+  display:table-row;
+}
+
+#content>div{
+  display: table-cell;
+  width: 100%;
+  height: auto;
+}
+
+.content>p{
+    text-align: left;
+}
+
+p{
+    text-align: left;
+}
+
+.small-img {
+	width: 35%;
+    height: auto;
+}
+
+.med-img {
+	width: 60%;
+    height: auto;
+}
+
+.rimg {
+    /*max-width: 100%;*/
+    /*max-height: 100%;*/
+    text-align: center;
+    max-height: auto;
+}
+
+.blog-img {
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+.img-border {
+    margin: 10px;
+}
+
+.pubs {
+    text-align: left;
+}
+
+.rtitle {
+    text-align: left;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.rsection {
+    font-family: sans-serif;
+    color: #444;
+    font-weight: 200;
+}
+
+.rbtn {
+    float: left;
+    margin: 0px 5px 0px 0px;
+    border-radius: 0;
+}
+
+p {
+    margin-bottom: 5px
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.about-p {
+    margin:0px 0px 20px 0px;
+}
+
+.main-link { 
+    padding-right: 25px;
+}
+
+.fourzerofour {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+hr {
+    border-top: #bbbbbb 1px solid;
+    margin: 15px 0px 15px 0px;
+}
+
+.blog-footer {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+.footer-list {
+    font-size: 14px;
+    color: #828282;
+    list-style: none;
+    text-align: left;
+}
+
+.footer-hr {
+    border-top: #d6d4d4 1px solid;
+    margin: 20px 0px 20px 0px;
+}
+
+/* stolen */
+.posts { 
+    list-style-type: none; 
+    text-align: left;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+.posts li { margin-bottom: 30px; }
+
+.post-description {
+    font-size: 16px;
+}
+
+.posts .post-link {
+  font-size: 20px;
+  letter-spacing: -1px;
+  line-height: 1;
+  color: #2a7ae2;
+}
+
+.posts .post-link:hover {
+  color: #000000;
+}
+
+.in-post-date {
+    text-align: left;
+}
+
+.posts .post-date {
+  display: block;
+  font-size: 15px;
+  color: #818181;
+}
+
+.post-header { 
+    margin: 10px auto;
+    text-align: left;
+    max-width: 800px;
+}
+
+.post-title {
+    margin: 0px 0px 0px 0px;
+    font-family: sans-serif;
+}
+
+.post-header h1 {
+  font-size: 36px;
+  letter-spacing: -1.75px;
+  line-height: 1;
+  font-weight: 300;
+}
+
+.post-header .meta {
+  font-size: 15px;
+  color: #818181;
+  margin-top: 5px;
+}
+
+.meta {
+    text-align: left;
+}
+
+.github-icon-svg,
+.twitter-icon-svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 3px;
+}
+
+.username {
+    color: #2a7ae2;
+}
+.username:hover {
+    color: #000000;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  line-height: 1;
+  font-weight: 300;
+  margin: 40px 0 20px;
+}
+
+.post-content h2 {
+  font-size: 32px;
+  letter-spacing: -1.25px;
+}
+
+.post-content h3 {
+  font-size: 26px;
+  letter-spacing: -1px;
+}
+
+.post-content h4 {
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+
+.post-content blockquote {
+  border-left: 4px solid #e8e8e8;
+  padding-left: 20px;
+  font-size: 18px;
+  opacity: .6;
+  letter-spacing: -1px;
+  font-style: italic;
+  margin: 30px 0;
+}
+
+ .post-content{
+ 	text-align: left;
+ 	max-width: 800px;
+ 	margin:0 auto;
+ }
+
+ .post-content iframe {
+    margin: auto;
+ }
+
+ .post-content > h2 {
+    margin: 20px 0px 10px 0px;
+ }
+
+ .post-content > ul {
+    margin: 0px 0px 0px 0px;
+ }
+
+ .post-content > ul > li {
+ 	font-size: 18px;
+ }
+
+  .post-content > ul > li > ul {
+ 	font-size: 16px;
+ }
+
+  .post-content > ol > li {
+    font-size: 18px;
+ }
+
+  .post-content > ol > li > ul {
+    font-size: 16px;
+    max-width: 800px;
+ }
+
+ .post-content a {
+    color: #2a7ae2;
+ }
+
+  .post-content a:hover {
+    color: #000000;
+ }
+
+ .post {
+    margin: 0 auto;
+    font-family: sans-serif;
+ }
+
+.post pre,
+.post code {
+  border: 1px solid #d5d5e9;
+  background-color: #eef;
+  padding: 8px 12px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 15px;
+  overflow:auto;
+}
+
+.post code { padding: 1px 5px; }
+
+.post ul,
+.post ol { margin-left: 1.35em; }
+
+.post pre code {
+  border: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* End Added */
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+pre[data-line] {
+	position: relative;
+	padding: 1em 0 1em 3em;
+}
+
+.line-highlight {
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: inherit 0;
+	margin-top: 1em; /* Same as .prism’s padding-top */
+
+	background: hsla(24, 20%, 50%,.08);
+	background: -moz-linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+	background: -webkit-linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+	background: -o-linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+	background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+
+	pointer-events: none;
+
+	line-height: inherit;
+	white-space: pre;
+}
+
+	.line-highlight:before,
+	.line-highlight[data-end]:after {
+		content: attr(data-start);
+		position: absolute;
+		top: .4em;
+		left: .6em;
+		min-width: 1em;
+		padding: 0 .5em;
+		background-color: hsla(24, 20%, 50%,.4);
+		color: hsl(24, 20%, 95%);
+		font: bold 65%/1.5 sans-serif;
+		text-align: center;
+		vertical-align: .3em;
+		border-radius: 999px;
+		text-shadow: none;
+		box-shadow: 0 1px white;
+	}
+
+	.line-highlight[data-end]:after {
+		content: attr(data-end);
+		top: auto;
+		bottom: .4em;
+	}
+
+pre.line-numbers {
+	position: relative;
+	padding-left: 3.8em;
+	counter-reset: linenumber;
+}
+
+pre.line-numbers > code {
+	position: relative;
+}
+
+.line-numbers .line-numbers-rows {
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	font-size: 100%;
+	left: -3.8em;
+	width: 3em; /* works for line-numbers below 1000 lines */
+	letter-spacing: -1px;
+	border-right: 1px solid #999;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
+	.line-numbers-rows > span {
+		pointer-events: none;
+		display: block;
+		counter-increment: linenumber;
+	}
+
+		.line-numbers-rows > span:before {
+			content: counter(linenumber);
+			color: #999;
+			display: block;
+			padding-right: 0.8em;
+			text-align: right;
+		}

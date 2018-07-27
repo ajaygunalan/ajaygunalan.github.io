@@ -1,0 +1,13 @@
+---
+layout: default
+---                      
+                                                 
+<main class="content" role="main">  
+
+{% capture my-include %}{% include research.md %}{% endcapture %}
+{{ my-include | markdownify }}
+
+</main>
+
+{% include photoswipe.html %}
+{% include post_scripts.html %}

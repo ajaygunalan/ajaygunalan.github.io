@@ -1,0 +1,31 @@
+default:
+  initial:      wulfebw
+  name:         "Blake Wulfe"                                
+  cover:        /assets/machu_lacta_reduced.jpg        
+  picture:      /assets/wulfebw.jpg                         
+  bio:          Stanford Computer Science M.S. Graduate
+  location:     Palo Alto
+  website:      "http://wulfebw.github.io/about"
+  email:        "wulfebw@stanford.edu"
+  twitter:
+  resume:       true
+  linkedin:
+  xing:   
+  github:       wulfebw
+  stackoverflow: 
+  facebook:     
+  gplus:      
+  soundcloud:  
+  youtube:     
+  pinterest: 
+  dribble:   
+  behance:   
+wulfebw:
+  initial:      wulfebw
+  name:         "Blake Wulfe"            
+  cover:        /assets/machu_lacta.jpg  
+  picture:      /assets/wulfebw.jpg  
+  bio:          Stanford Computer Science M.S. Graduate
+  location:     Palo Alto
+  website:      "http://wulfebw.github.io/"
+  github:       wulfebw

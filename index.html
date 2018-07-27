@@ -1,0 +1,13 @@
+---
+layout: headless
+---                      
+                                                 
+<main class="content" role="main">  
+
+{% capture my-include %}{% include main.md %}{% endcapture %}
+{{ my-include | markdownify }}
+
+</main>
+
+{% include photoswipe.html %}
+{% include post_scripts.html %}

@@ -1,0 +1,27 @@
+title:            Blake Wulfe
+subtitle:         
+description:      Blake Wulfe's Personal Website.
+keywords:         blake wulfe reinforcement learning machine natural language artificial intelligence
+language:         "en"
+baseurl:          "" 
+url:              "http://wulfebw.github.io/"
+permalink:        /blog/:categories/:title
+cover:            /assets/machu_lacta.jpg
+disqus_shortname: "wulfebw"
+
+# Build settings
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    input: GFM
+    syntax_highlighter: rouge
+    syntax_highlighter_opts:
+        # Use existing pygments syntax highlighting css
+        css_class: 'highlight'
+include: ['_pages']
+exclude: [vendor]
+gems:
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
