@@ -1,5 +1,5 @@
 default:
-  initial:      Ajay G
+  initial:      ajaygunalan
   name:         "Ajay G"                                
   cover:        /assets/machu_lacta_reduced.jpg        
   picture:      /assets/wulfebw.jpg                         
@@ -11,7 +11,7 @@ default:
   resume:       true
   linkedin:
   xing:   
-  github:       wulfebw
+  github:       ajaygunalan
   stackoverflow: 
   facebook:     
   gplus:      
@@ -20,8 +20,8 @@ default:
   pinterest: 
   dribble:   
   behance:   
-Ajay G:
-  initial:      Ajay G
+ajaygunalan:
+  initial:      ajaygunalan
   name:         "Ajay G"            
   cover:        /assets/machu_lacta.jpg  
   picture:      /assets/wulfebw.jpg  
