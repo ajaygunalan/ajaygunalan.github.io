@@ -24,6 +24,6 @@ A robot is essential a bunch of coupled Motors with varying load. I personally b
 
 ---
 
-**4. [Fusion of Leraning & Control](projects/fusion_learning_control.md)**
+**4. [Fusion of Learning & Control](projects/fusion_learning_control.md)**
 
 Formal control methods such as Lyapunov functions provides us the tool to characterise the stabilty of non-linear system and gives us good understanding of dynamics. In recent years the use of RL on robots have inrcresaed and have shown good success,  but however , it doesn't help us to explain the dynamic of robots. This project aims to find good strategy to combine the best of booth the world. [Read more](projects/fusion_learning_control.md)
