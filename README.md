@@ -1,1 +1,1 @@
-[Personal Website](https://https://ajaygunalan.github.io/)
+[Personal Website](https://ajaygunalan.github.io/)
