@@ -1,8 +1,8 @@
-##Design
+## Design
 	This will talk about deisgn
 	
-##Dynamics
+## Dynamics
 	This will talk about deisgn
 	
-##Drive
+## Drive
 	This will talk about deisgn
