@@ -3,7 +3,8 @@ layout: default
 ---                      
                                                  
 <main class="content" role="main">  
-
+  
+{% include lib/mathjax.html %} 
 {% capture my-include %}{% include projects/sid.md %}{% endcapture %}
 {{ my-include | markdownify }}
 
