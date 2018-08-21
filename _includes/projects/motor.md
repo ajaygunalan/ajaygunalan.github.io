@@ -6,6 +6,8 @@
 \dot{z} & = -\beta z + xy
 \end{align}
 
+Fuck you!
+
 $$\forall x \in R$$
 
 $$\rho c \frac{\partial T}{\partial t} = \frac{\partial q}{\partial x}$$  
