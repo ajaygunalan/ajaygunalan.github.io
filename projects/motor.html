@@ -4,6 +4,7 @@ layout: default
                                                  
 <main class="content" role="main">  
 
+{% include lib/mathjax.html %} 
 {% capture my-include %}{% include projects/motor.md %}{% endcapture %}
 {{ my-include | markdownify }}
 
