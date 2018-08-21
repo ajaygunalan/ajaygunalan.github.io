@@ -6,11 +6,8 @@
 \dot{z} & = -\beta z + xy
 \end{align}
 
-\begin{equation*}
-\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-\end{equation*}
 
-$$ \rho c \frac{\partial T}{\partial t} = \frac{\partial q}{\partial x} $$  {#eq:yorlabel}
+$$\rho c \frac{\partial T}{\partial t} = \frac{\partial q}{\partial x}$$  
 
 
 $$x_{1,2} = {-b\pm\sqrt{b^2 - 4ac} \over 2a}.$$
