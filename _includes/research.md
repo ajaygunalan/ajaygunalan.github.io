@@ -1,9 +1,6 @@
 ## **Projects**
 <br>
 
-#This is page atleast does somethinh
-
-
 
 **1. [Smart Intravenous Dripper](../projects/sid.html)**
 
@@ -12,7 +9,7 @@ The goal is to prevent the back flow of blood and air embolism (air-blockage) ca
 
 ---
 
-**2. [Study of Motor: Design, Dynamics, Drive](../_includes/projects/motor/output/motor.html)**
+**2. [Study of Motor: Design, Dynamics, Drive](../_includes/motor.html)**
 
 A robot is essential a bunch of coupled Motors with varying load. I personally belive that without understanding the basic building block of robots which is the motor, it would be very hard to develop alogorthim which can outperform us. Thus here, we will try to undertand the funadmental limitations of motor dynamic[Read more](../projects/motor.html)
 
