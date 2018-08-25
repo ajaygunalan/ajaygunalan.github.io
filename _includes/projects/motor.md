@@ -1,25 +1,31 @@
 ## Hi
 
+
+$\alpha$
+
 \begin{align}
 \dot{x} & = \sigma(y-x) \\
 \dot{y} & = \rho x - y - xz \\
 \dot{z} & = -\beta z + xy
 \end{align}
 
-Fuck you!
+\begin{equation*}
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+\end{equation*}
 
-$$\forall x \in R$$
+$\rho c \frac{\partial T}{\partial t} = \frac{\partial q}{\partial x}$ 
 
-$$\rho c \frac{\partial T}{\partial t} = \frac{\partial q}{\partial x}$$  
+$\rho c \frac{\partial T}{\partial t} = \frac{\partial q}{\partial x}$
 
 
-$$x_{1,2} = {-b\pm\sqrt{b^2 - 4ac} \over 2a}.$$
+$x_{1,2} = {-b\pm\sqrt{b^2 - 4ac} \over 2a}$
 
 
 
 
 
 ---
+
 Title: Not Exactly a Millennium
 Subtitle: Reading Revelation 20 in its Context
 Summary: >
