@@ -4,6 +4,10 @@ OUTPUTDIR=$(BASEDIR)/output
 REFDIR=$(BASEDIR)/ref
 PRJ_NAME=sid
 CSL=ieee-with-url
+
+all:
+	make html pdf docx
+	
 html:
 	pandoc -s "$(INPUTDIR)/$(PRJ_NAME).md"  \
 	--to=html5 \

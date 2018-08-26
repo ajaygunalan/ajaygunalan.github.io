@@ -5,6 +5,8 @@ REFDIR=$(BASEDIR)/ref
 PRJ_NAME=motor
 CSL=ieee-with-url
 
+all:
+	make html pdf docx
 
 html:
 	pandoc -s "$(INPUTDIR)/$(PRJ_NAME).md"  \
