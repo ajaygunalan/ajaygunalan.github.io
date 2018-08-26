@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
@@ -5,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Ajay G" />
   <meta name="dcterms.date" content="2018-08-24" />
-  <title>Design, Dynamics, Drive</title>
+  <title>Design, Dynamics, Drive of BLDC Motor</title>
   <style type="text/css">
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
@@ -19,24 +20,39 @@
 </head>
 <body>
 <header>
-<h1 class="title">Design, Dynamics, Drive</h1>
+<h1 class="title">Design, Dynamics, Drive of BLDC Motor</h1>
 <p class="author">Ajay G</p>
 <p class="date">August 24, 2018</p>
 </header>
-<h1 id="design-of-bldc">Design of BLDC</h1>
-<p>Simon has done gr8 job. what he does is is acyaully amazong. <span class="citation" data-cites="kalouche_design_2016">[<a href="#ref-kalouche_design_2016">1</a>]</span></p>
-<h2 id="this-is-proper-documenation">This is proper documenation</h2>
-<p>His work was based on coltion.<span class="citation" data-cites="colton_design_2010">[<a href="#ref-colton_design_2010">2</a>]</span></p>
+<h2 id="why-bldc">Why BLDC ?</h2>
+<p>High energy efficiency High Power to Weight ratio Quick dynamic respone</p>
+<h2 id="design">Design</h2>
+<h3 id="basic-terminology">Basic Terminology</h3>
+<figure>
+<img src="src/images/motor_1.png" alt="Stator &amp; Rotor, Source:[1]" /><figcaption>Stator &amp; Rotor, Source:<span class="citation" data-cites="colton_design_2010">[<a href="#ref-colton_design_2010">1</a>]</span></figcaption>
+</figure>
+<figure>
+<img src="src/images/motor_2.png" alt="Tooth &amp; Slot, Source:[1]" /><figcaption>Tooth &amp; Slot, Source:<span class="citation" data-cites="colton_design_2010">[<a href="#ref-colton_design_2010">1</a>]</span></figcaption>
+</figure>
+<h3 id="air-gap">Air Gap</h3>
+<h3 id="slot">Slot</h3>
+<h3 id="winding-configuration">Winding Configuration</h3>
+<h3 id="winding-configuration-1">Winding Configuration</h3>
+<p>They have three phase windings and can be connected to each other in wye or delta configuration. Wye has higher torque (theoretically torque constant is greater by a factor <span class="math inline">\(\sqrt{3}\)</span> <span class="citation" data-cites="kalouche_design_2016">[<a href="#ref-kalouche_design_2016">2</a>, p. 25]</span>) because in the wye configuration, at any time one of phase is open and other two-phase are in series thus equal current flows through them whereas in delta it gets divided into two phases. Thus more current in each phase causes more torque, one will push and another phase will pull in the wye configuration.</p>
+<h2 id="dynamics">Dynamics</h2>
+<h2 id="drive">Drive</h2>
+<p>Simon has done the gr8 job. what he does is actually amazing. <span class="citation" data-cites="kalouche_design_2016">[<a href="#ref-kalouche_design_2016">2</a>]</span> This is proper documentation</p>
+<p>His work was based on condition.<span class="citation" data-cites="colton_design_2010">[<a href="#ref-colton_design_2010">1</a>]</span></p>
 <p><span class="math display">\[\frac{\partial \vec{u}}{\partial t} + (\vec{u} \cdot \nabla) \vec{u} = - \frac{1}{\rho} \nabla p + \nabla \sigma + \vec{f}\]</span></p>
 <p><span class="math display">\[\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \vec{u}) = 0\]</span></p>
-<p>Testing whther it works..!</p>
-<h1 id="refernces" class="unnumbered">Refernces</h1>
+<p>Testing whether it works..!</p>
+<h2 id="references" class="unnumbered">References</h2>
 <div id="refs" class="references">
-<div id="ref-kalouche_design_2016">
-<p>[1] S. Kalouche, “DESIGN FOR 3D AGILITY AND VIRTUAL COMPLIANCE USING PROPRIOCEPTIVE FORCE CONTROL IN DYNAMIC LEGGED ROBOTS,” PhD thesis, CARNEGIE MELLON UNIVERSITY, 2016. </p>
-</div>
 <div id="ref-colton_design_2010">
-<p>[2] S. W. (. W. Colton, “Design and prototyping methods for brushless motors and motor control,” Thesis, Massachusetts Institute of Technology, 2010 [Online]. Available: <a href="http://dspace.mit.edu/handle/1721.1/61599" class="uri">http://dspace.mit.edu/handle/1721.1/61599</a>. [Accessed: 23-Aug-2018]</p>
+<p>[1] S. W. (. W. Colton, “Design and prototyping methods for brushless motors and motor control,” Thesis, Massachusetts Institute of Technology, 2010 [Online]. Available: <a href="http://dspace.mit.edu/handle/1721.1/61599" class="uri">http://dspace.mit.edu/handle/1721.1/61599</a>. [Accessed: 23-Aug-2018]</p>
+</div>
+<div id="ref-kalouche_design_2016">
+<p>[2] S. Kalouche, “DESIGN FOR 3D AGILITY AND VIRTUAL COMPLIANCE USING PROPRIOCEPTIVE FORCE CONTROL IN DYNAMIC LEGGED ROBOTS,” PhD thesis, CARNEGIE MELLON UNIVERSITY, 2016. </p>
 </div>
 </div>
 </body>
