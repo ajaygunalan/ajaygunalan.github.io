@@ -12,10 +12,10 @@
 
 #### Basic Terminology ####
 
-![Stator & Rotor, Source:[@colton_design_2010]](src/images/motor_1.png){ width="75%"}
+![Stator & Rotor, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/motor/motor_1.png){ width="75%"}
 
 
-![Tooth & Slot, Source:[@colton_design_2010]](src/images/motor_2.png){ width="50%" }
+![Tooth & Slot, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/motor/motor_2.png){ width="50%" }
 
 #### Air Gap ####
 #### Slot ####
