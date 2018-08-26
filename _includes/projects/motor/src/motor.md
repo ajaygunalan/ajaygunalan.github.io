@@ -10,7 +10,7 @@
 
 ## Design ##
 
-### Basic Terminology ###
+#### Basic Terminology ####
 
 ![Stator & Rotor, Source:[@colton_design_2010]](src/images/motor_1.png){ width="75%"}
 
@@ -19,7 +19,7 @@
 
 #### Air Gap ####
 #### Slot ####
-### Winding Configuration ###
+#### Winding Configuration ####
   They have three phase windings and can be connected to each other in wye or delta configuration. Wye has higher torque (theoretically torque constant is greater by a factor $\sqrt{3}$ [@kalouche_design_2016, p. 25]) because in the wye configuration, at any time one of phase is open and other two-phase are in series thus equal current flows through them whereas in delta it gets divided into two phases. Thus more current in each phase causes more torque, one will push and another phase will pull in the wye configuration.
 
 ## Dynamics ##
