@@ -1,6 +1,6 @@
-% Design, Dynamics, Drive of BLDC Motor
-% Ajay G
-% August 24, 2018
+% Design, Dynamics, Drive of BLDC Motor %
+% Ajay G %
+% August 24, 2018 %
 
 ## Why BLDC ? ##
 
@@ -37,3 +37,11 @@ $$\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \vec{u}) = 0$$
 Testing whether it works..!
 
 ## References ##
+
+
+<style>
+h2
+{
+      text-align: left;
+}
+</style>
