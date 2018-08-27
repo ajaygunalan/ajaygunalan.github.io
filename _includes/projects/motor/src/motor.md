@@ -1,6 +1,6 @@
-% Design, Dynamics, Drive of BLDC Motor %
-% Ajay G %
-% August 24, 2018 %
+% Design, Dynamics, Drive of BLDC Motor 
+% Ajay G 
+% August 24, 2018 
 
 ## Why BLDC ? ##
 
