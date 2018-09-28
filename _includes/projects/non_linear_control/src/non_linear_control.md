@@ -1,6 +1,5 @@
-% Design, Dynamics, Drive
+% Non-Linear Control of Under-Actuated Robots
 % Ajay G
-% August 24, 2018
 
 # Design of BLDC #
 
@@ -17,3 +16,17 @@ $$\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \vec{u}) = 0$$
 Testing whther it works..!
 
 # Refernces #
+
+<style>
+h2
+{
+      text-align: left;
+}
+</style>
+
+<style>
+h4
+{
+      text-align: left;
+}
+</style>
