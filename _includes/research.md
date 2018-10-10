@@ -1,4 +1,4 @@
-## ** Projects **
+## **Projects**
 
 
 ### On-Going Projects
@@ -45,3 +45,17 @@ Using experience (memory) to reduce computational time is basic principle. The e
 Exploration of Non-Linear Control techniques like,  Funnel Libraries, Control Lyapunov Function, Control Barrier Function, Human-Inspired Control, etc.... 
 
 ---
+
+<style>
+h2
+{
+      text-align: left;
+}
+</style>
+
+<style>
+h3
+{
+      text-align: left;
+}
+</style>
