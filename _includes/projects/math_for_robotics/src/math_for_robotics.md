@@ -49,29 +49,13 @@ $$ \frac{\tau}{M} \propto r_{gap} $$
 $$ \frac{\tau}{J} \propto \frac{1}{r_{gap}} $$
 
 
-Motor Constant $K_{m}$ is the ability to produce Toqrue for a given heating power loss. It is winding invariant (as long as same conductimg wires used) but why? (Leanr about turns and wires thickness) (a)[https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Motor_constants.html]
+Motor Constant $ K_{m} $ is the ability to produce Toqrue for a given heating power loss. It is winding invariant (as long as same conductimg wires used) but why? (Leanr about turns and wires thickness) [https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Motor_constants.html]
 
-$$ K_m = \frac{\tau}{\sqrt{P_{loss}}} = \frac{I K_{T}}{\sqrt{I^2 R}} =  \frac{K_{T}}{\sqrt{R}} $$
-
-$$ K^{2}_{m} \propto r^{3}_{gap} $$ [Actuator design for high force proprioceptive control in fast legged locomotion]
+$$ K_m = \frac{\tau}{P_{ressistive\;loss}} $$
 
 
 **winding Invarainat?**
 [Leg Design for Energy Management in an Electromechanical Robot]
-
-Winding volume, $V = \pi \rho^{2}L$. 
-
-The resistance of the winding, $$ R \propto \frac{L}{A} \propto \frac{1}{\rho^4} $$
-
-$$ K_t \propto L \propto \frac{1}{\rho^2} $$
-
-$$ \tau = K_ti \implies \tau \propto \frac{i}{\rho^2} $$
-
-
-$$ P_{loss} = i^2R \propto \frac{i^2}{\rho^4} $$
-
-thus $$ K_m = \frac{T}{\sqrt{P_{loss}}} \propto \rho^{0} $$
-
 
 **[Compliance and Force Control for Computer Controlled Manipulators]**
 Force Control and Position Control are two ends of extreme. 
@@ -110,79 +94,74 @@ Back EMF is the only component that is generate by the permanent  magnet flux
 The value of inductance is less straightforward to calculate because the phases are not
 magnetically independent. That is, current in one phase can induce flux in another. Under
 sinusoidal drive currents, it is possible to use a lumped inductance, called the synchronous
-inductance, to accommodate for this. The value of the synchronous inductance $L_s$ is:
+inductance, to accommodate for this. The value of the synchronous inductance is:
 
 $$ L_s = \frac{3}{2} L_a $$
 
-$L_a$ is ?
-
-The winding inductance has many theoretical and practical effects on the motor. It stores energy in the form of a magnetic field any time there is current in the winding. When a winding is switched off, this energy must go somewhere. For this reason, controllers contain "flyback diodes" that allow this current to circulate even when all the switches are open. Under highfrequency pulse-width modulated (PWM) control, the winding inductance also filters out current ripple. However, as a low-pass filter on current it also creates phase lag which is the motivation for the use of field-oriented control
+The winding inductance has many theoretical and practical effects on the motor. It stores energy
+in the form of a magnetic field any time there is current in the winding. When a winding is
+switched off, this energy must go somewhere. For this reason, controllers contain "flyback
+diodes" that allow this current to circulate even when all the switches are open. Under high
+frequency pulse-width modulated (PWM) control, the winding inductance also filters out current
+ripple. However, as a low-pass filter on current it also creates phase lag. This lag is explored in
+detail in Section 2.3.3 as motivation for the use of field-oriented control
 
 The winding inductance is a function of motor geometry and the number of turns in the winding.
 
-#### Saliency ####
+In non-salient motors, also called round rotor,the inductance is not a function of electrical
+angle. This is the case for motors with complete radial symmetry of the rotor's steel backing at
+any angle. (The magnets themselves don't matter, since they have nearly the same permeability
+as air.) Motors with magnets mounted to the surface of the rotor steel, called surface permanent
+manget (SPM), fall into this category. 
 
-A EM is Saliency if the Inductance varies with rotor position. [Design of Brushless Permanent-Magnet Machines, p. 68]
+
+Salient motors have an inductance that varies periodically
+with electrical angle. This is the case if the rotor's steel backing is different at the poles than in
+between them. Motors with magnets embedded in the steel backing, called interior permanent
+magnet (IPM), fall into this category. This report will focus exclusively on non-salient, SPM
+motors. Torque production for salient motors requires a slightly more complicated analysis.
+
+Saliency
 
 Salient poles exhibit mainly attractive tangential gap forces -Why ?
 Non-salient poles exhibit both attractive & repulsive gap forces -Why ? (lec1)
 
-**what are field windings and armature winding ?**
+what are field windings and armature winding ?
 
 
 No. of Stator slot  = 3 * No. of Poles
 
 No. of Stator slot/pole = 
 
-**Skin effect causes current eveneness**
+Skin effect causes current eveneness
 
-**Proximity effect** 
+Proximity effect 
 
-**what is reluctance torque?**
+what is reluctance torque?
 
-Electrical Loading [Design of Brushless Permanent-Magnet Machines, p. 68]
-Magnetic Loading [Design of Brushless Permanent-Magnet Machines, p. 68]
-
-
-#### Air Gap ####
-
-
-#### Slot ####
-
-
-#### Winding Configuration ####
-
-
-  They have three phase windings and can be connected to each other in wye or delta configuration. Wye has higher torque (theoretically torque constant is greater by a factor $\sqrt{3}$ [@kalouche_design_2016, p. 25]) because in the wye configuration, at any time one of phase is open and other two-phase are in series thus equal current flows through them whereas in delta it gets divided into two phases. Thus more current in each phase causes more torque, one will push and another phase will pull in the wye configuration.
+why ipm has higher efficiency than spm?s
 
 
 
-## Dynamics ##
+Inefficiencies  in  electric  motors  can  be  grouped  into  two general categories: losses related to the speed of the motor, and losses related to creation of torque in the motor. 
 
-#### Losses ####
-
-Inefficiencies can  be  grouped  into  two general categories:
-
-1.	Torque/Copper/$I^2$ Losses
-2.	Speed/Iron/$E^2$ Losses
-
-
-**Torque/Copper/$I^2$ Losses: Winding Resistance, Power Ratings**
+$I^2$ Losses/Copper Losses/Torque-Dependent Losses: Winding Resistance, Power Ratings
 
 They are due to resistance heating of the windings, and are proportional to the square of the output torque. 
 
 
-**Speed/Iron/$E^2$ Losses: Delta Windings, Eddy Current, and Mechanical Losses**
+$E^2$ Losses/Iron Losses/Speed-Dependent Losses: Delta Windings, Eddy Current, and Mechanical Losses
 
-Iron Core Losses = Eddy Curremt Losses +  Hystersis Losses
+Core Losses = Eddy Curremt Losses +  Hystersis Losses
+
+
+
+Speed-related losses are often called iron losses, because they are dominated by hysteresis and eddy current losses in the iron core  of  the  motor.  
 
 Hysteresis in  the  magnetic  domains  in the  core  appears  as  a  constant  friction  torque,  while  the eddy  current  torque  is  proportional  to  speed.  
- 
 
-## Selection Criteria ##
-[Actuator design for a high performance legged biped robot]
 
-A smaller motor will have lower iron losses at a given speed (less iron to create  drag),  and  a  larger  motor  will  have  lower  copper losses for a given torque.
+In general, for a given motor design, a smaller motor will have lower iron losses at a given speed (less iron to create  drag),  and  a  larger  motor  will  have  lower  copper losses for a given torque. 
 
 One interesting approach to motor sizing for a robot is to choose a small motor sized for walking, and then to overload it heavily during more strenuous activities.
 
@@ -192,13 +171,27 @@ The  thermal mass of the motor windings is high enough that it might not burn up
 
 This  is  particularly  true  for  permanent  magnet brushless motors, in which the stator coils are stationary and in contact  with the case, well-positioned for heat sinks or water cooling  jackets.  (For  brushed  motors  the  magnets  are  on the outside and the  windings are in the rotor, leaving few options for cooling.
 
- 
+ take (from Actuator design for a high performance legged biped robot)
+#### Air Gap ####
+#### Slot ####
+#### Winding Configuration ####
+  They have three phase windings and can be connected to each other in wye or delta configuration. Wye has higher torque (theoretically torque constant is greater by a factor $\sqrt{3}$ [@kalouche_design_2016, p. 25]) because in the wye configuration, at any time one of phase is open and other two-phase are in series thus equal current flows through them whereas in delta it gets divided into two phases. Thus more current in each phase causes more torque, one will push and another phase will pull in the wye configuration.
 
 
 
+## Dynamics ##
 ## Drive ##
 
+Simon has done the gr8 job. what he does is actually amazing. [@kalouche_design_2016]
+This is proper documentation
 
+His work was based on condition.[@colton_design_2010]
+
+$$\frac{\partial \vec{u}}{\partial t} + (\vec{u} \cdot \nabla) \vec{u} = - \frac{1}{\rho} \nabla p + \nabla \sigma + \vec{f}$$
+
+$$\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \vec{u}) = 0$$
+
+Testing whether it works..!
 
 ## References ##
 
