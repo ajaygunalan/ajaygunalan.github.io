@@ -22,7 +22,7 @@ The goal is to prevent the back flow of blood and air embolism (air-blockage) ca
 
 ---
 
-### **On-Hold Projects**(Due to dependcy on Math)
+### **On-Hold Projects** (Due to dependcy on Math)
 
 **1. [Machine Learning Control](../projects/machine_learning_control.html)**
 
