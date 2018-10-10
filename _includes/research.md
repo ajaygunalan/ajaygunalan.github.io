@@ -11,7 +11,7 @@ A robot is essential a bunch of coupled Motors with varying load. I personally b
 
 **2. [Mathematics for Robotics](../projects/math_for_robotics.html)**
 
-Working with Robots for the last one year, I gained considerable knowledge in Software Development, Basic Electronics and gained high-level intuition of various research topics but when I try to read research paper (of on-hold Project), I often get stuck due to lack of knowledge on some advanced Mathematical concepts and I didn't find any resource which focuses on Advanced Math for Robotic, so the goal is to create a intuitive understanding on various Mathematical Concepts needed for Robotics such that it is easier for Engineer to delve into Robotics Research. 
+Working with Robots for the last one year, I gained considerable knowledge in Software Development, Basic Electronics and gained high-level intuition of various research topics but when I try to read research paper (of on-hold Project), I often get stuck due to lack of knowledge on some advanced Mathematical concepts and I didn't find any resource which focuses on Advanced Math for Robotic, so I decided to create resource for an intuitive understanding on various Mathematical Concepts needed for Robotics such that it is easier for an Engineer to delve into Robotics Research. 
 
 ---
 
