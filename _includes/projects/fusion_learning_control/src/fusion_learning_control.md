@@ -1,19 +1,19 @@
-% Design, Dynamics, Drive
+% Fusion of Control and Learning
 % Ajay G
-% August 24, 2018
+% Sep 19, 2018
 
 # Design of BLDC #
 
-Simon has done gr8 job. what he does is is acyaully amazong. [@kalouche_design_2016]
+$$ v(s) = \mathbb E [R_{t+1} + \gamma(R_{t+2} + \gamma R_{t+3}) | S_t = s] $$
+$$ v(s) = \mathbb E [R_{t+1} + \gamma G_{t+1}| S_t = s] $$
 
-## This is proper documenation ##
+$$ \mathbb E(a + b) = \mathbb E(a) + \mathbb E(b) $$
+$$ \mathbb E(A) =  \mathbb E(\mathbb E(A|B) ) =  \sum_{b_i} p(B = b_{i})\mathbb E(A|b_{i}) $$
 
-His work was based on coltion.[@colton_design_2010]
+$$ v(s) = \mathbb E [R_{t+1} | S_t = s] + \mathbb E [\gamma G_{t+1}| S_t = s] $$
+$$ v(s) = \mathbb E [R_{t+1} | S_t = s] + \gamma \mathbb E[G_{t+1}| S_t = s] $$
 
-$$\frac{\partial \vec{u}}{\partial t} + (\vec{u} \cdot \nabla) \vec{u} = - \frac{1}{\rho} \nabla p + \nabla \sigma + \vec{f}$$
+$$ v(s) = \mathbb E[G_t  |  S_t = s] $$
 
-$$\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \vec{u}) = 0$$ 
+$$ v(s) = \mathbb E [R_{t+1} | S_t = s] + \mathbb E [\gamma v(S_{t+1}) | S_t = s] $$
 
-Testing whther it works..!
-
-# Refernces #

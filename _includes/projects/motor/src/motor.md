@@ -1,4 +1,4 @@
-% Design, Dynamics, Drive of BLDC Motor 
+																																																																																																																																																																																																% Design, Dynamics, Drive of BLDC 																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					 
 
 ## Why BLDC ? ##
 
