@@ -11,14 +11,13 @@ A robot is essential a bunch of coupled Motors with varying load. I personally b
 
 **2. [Mathematics for Robotics](../projects/math_for_robotics.html)**
 
-Working with Robots for the last one year, I gained considerable knowledge in Software Development, Basic Electronics and gained high-level intuition of various research topics but when I try to read research paper (of on-hold Project), I often get stuck due to lack of knowledge on some advanced Mathematical concepts and I didn't find any resource which focuses on Advanced Math for Robotic, so I decided to create resource for an intuitive understanding on various Mathematical Concepts needed for Robotics such that it is easier for an Engineer to delve into Robotics Research. 
+Working with Robots for the last one year, I gained considerable knowledge in Software Development, Basic Electronics and gained high-level intuition of various research topics but when I try to comprehend a research paper (of on-hold Project), often I couldn't, due to lack of knowledge on Math and I couldn't find any resource which focuses on Advanced Math for Robotic, so I decided to create a resource for an intuitive understanding on various Mathematical concepts needed for Robotics such that it is easier for an Engineer to delve into Robotics Research. 
 
 ---
 
 **3. [Smart Intravenous Dripper](../projects/sid.html)**
 
-
-The goal is to prevent the back flow of blood and air embolism (air-blockage) caused due to drainage of Intravenous Drippers bags by using a liquid-level sensor to monitor the liquid level and if the Intravenous bag runs out of the glucose then, immediately the cam actuated by servo stops the flow thus preventing any accident to the patient and will notify the nurse for further replacement of the IV bag. 
+IV-Drippers are used to inject saline fluids, directly into the veins of the patient. They have  to be replaced, before it completely drains out, or else blood will flow in reverse direction and sometimes air embolism (air-blockage) may even cause a fatal accident. The goal is to prevent such accident by automating this process by using a liquid-level sensor to monitor the liquid level and if the Intravenous Dripper runs out of the saline fluid, then the cam actuated by the servo, will stop the flow immediately, thus preventing any such accident to occur and will notify the nurse for further replacement of the IV bag. 
 
 ---
 
