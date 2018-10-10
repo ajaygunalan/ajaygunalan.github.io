@@ -16,12 +16,14 @@ Exploration of various techniques such as DAML, GAIL, Model based RL, etc..for M
 ---
 
 **3. [Experince based Motion Planning](../projects/ebmp.html)**
+
 Using experince (memory) to reduce computational time is basic principle. The elegnat lies in making sure that the time to retrive, and repair,  a stored trajectory is less than the time to compute form stsracth.[Read more](../projects/ebmp.html)
 
 ---
 
 
 **4. [Non-Linear Control of Under-Actuated Robots](../projects/non_linear_control.html)**
+
 Exploration of Non-Linear Control techniques like,  Funnel Libraries, Control Lyapunov Function, Control Barrier Function, Human-Inspired Control, etc.... [Read more](../projects/non_linear_control.html)
 
 ---

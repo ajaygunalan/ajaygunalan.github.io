@@ -1,6 +1,9 @@
 % Machine Learning Control
 % Ajay G
 
+
+Will explain about PPO, DAML, GAIL
+
 # Hmailtonian Jacobi Bellman Equation #
 
 From [@landau_mechanics_2007, p. 147] we have, 

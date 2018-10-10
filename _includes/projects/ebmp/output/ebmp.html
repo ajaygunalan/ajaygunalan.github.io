@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Ajay G" />
+  <title>Experience-based Motion Planning (EBMP)</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title">Experience-based Motion Planning (EBMP)</h1>
+<p class="author">Ajay G</p>
+</header>
+<h2 id="what-is-motion-planning">What is Motion Planning ?</h2>
+<p>Given robot at a particular configuration, <strong>How to reach the desired configuration without colliding with environment and itself, and possibly minimisisng torque &amp; time ?</strong></p>
+<p>It gives a path(trajectrory) which on executing, will reach the desired configuration.</p>
+<h4 id="basic-terminilogy">Basic Terminilogy</h4>
+<dl>
+<dt><strong>Configuration</strong></dt>
+<dd>A particular position, and oreintation, of the robotic arm is known as configuration.
+</dd>
+<dt><strong>Configuration Space</strong></dt>
+<dd>It is the space where each axis, corresponds to a particular joint angle of the robot. i.e., a N DOF robotic manipulator arm will have N dimensional Configuration Space. A particular configuration, will correspond to a point in C-space.
+</dd>
+<dt><strong>DOF</strong></dt>
+<dd>“N” Degrees of Freedom means the arm has N independent motions which can execute simultaneously.
+</dd>
+<dt><strong>Trajectory</strong></dt>
+<dd><p>A path with time component such as velocity and accleration.</p>
+</dd>
+</dl>
+<h4 id="major-approaches">Major Approaches</h4>
+<ol>
+<li><dl>
+<dt><strong>Search Based</strong></dt>
+<dd>Discretize the C-space and solve as if finding a path in graph using algorithm such as <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A*</a>
+</dd>
+</dl></li>
+<li><dl>
+<dt><strong>Sampling Based</strong></dt>
+<dd>Sample(Pick a point) the C-space randomly and check whether a path exist, if it does, it solved.
+<ol type="i">
+<li><dl>
+<dt>Single-query (Rapidly Random Exploring Tree)</dt>
+<dd>Explain what is single query here
+</dd>
+</dl></li>
+<li><dl>
+<dt>Multi-query (Probablistic Road Map)</dt>
+<dd>Explain what is multi query here.
+</dd>
+</dl></li>
+</ol>
+</dd>
+</dl></li>
+</ol>
+<h2 id="what-is-experience-based-motion-planning">What is Experience Based Motion Planning ?</h2>
+<p>Using the data form the trajectory of the past, to compute the new trajectory quicky rather than Planning From Stratch. (PFS)</p>
+<h1 id="references">References</h1>
+<style>
+h2
+{
+      text-align: left;
+}
+</style>
+<style>
+h4
+{
+      text-align: left;
+}
+</style>
+</body>
+</html>
