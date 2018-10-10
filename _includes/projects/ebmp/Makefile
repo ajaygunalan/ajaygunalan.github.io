@@ -2,7 +2,7 @@ BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/src
 OUTPUTDIR=$(BASEDIR)/output
 REFDIR=$(BASEDIR)/ref
-PRJ_NAME=fusion_learning_control
+PRJ_NAME=ebmp
 CSL=ieee-with-url
 
 all: $(PRJ_NAME).html $(PRJ_NAME).pdf $(PRJ_NAME).docx

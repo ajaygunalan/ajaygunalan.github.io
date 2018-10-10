@@ -1,0 +1,10 @@
+{
+	"shell_cmd": "make all",
+	"variants": 
+  	[ 
+	    {
+	      "name": "Output cleanup",
+	      "shell_cmd": "make clean"  
+	    }
+	]
+}
