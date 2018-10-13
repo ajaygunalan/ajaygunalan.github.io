@@ -1,13 +1,12 @@
-% BLDC
-% Ajay G																																																																																																																																																																													
+% BLDC %
+% Ajay G %												
 
-
-#### Why BLDC ? ####
+### Why BLDC ? ###
 
 Reduced noise, wear, and friction caused by brushes and Torque-Speed characteristics is linear.[Direct-drive robots: theory and practice]
 
 
-#### Basic Terminology ####
+### Basic Terminology ###
 
    1. **Stator & Rotor**
 
@@ -150,27 +149,27 @@ Direct Drive has no damping. $Mechanical\;Time\;Constant\; \tau_{mech}  = \frac{
    
    1. **Resistance**
 
-     Responsible for heating loss, can be easily modeled as simple lumped resistor.
+      Responsible for heating loss, can be easily modeled as simple lumped resistor.
 
 
    2. **Inductance**
 
 
-   Motor windings have inductance. Physically, this means that current flowing in the windings will induce magnetic flux through them, even in the absence of permanent magnet flux. It also means that the windings will resist rapid changes in current by generating voltage acrossthis inductor. However, this is not the back EMF. The value of inductance is less straightforward to calculate because the phases are not magnetically independent. That is, current in one phase can induce flux in another. Under sinusoidal drive currents, it is possible to use a lumped inductance, called the synchronous inductance, to accommodate for this. The value of the synchronous inductance is [Design and prototyping methods for brushless motors and motor control]:
+      Motor windings have inductance. Physically, this means that current flowing in the windings will induce magnetic flux through them, even in the absence of permanent magnet flux. It also means that the windings will resist rapid changes in current by generating voltage acrossthis inductor. However, this is not the back EMF. The value of inductance is less straightforward to calculate because the phases are not magnetically independent. That is, current in one phase can induce flux in another. Under sinusoidal drive currents, it is possible to use a lumped inductance, called the synchronous inductance, to accommodate for this. The value of the synchronous inductance is [Design and prototyping methods for brushless motors and motor control]:
 
 
 
-   $$ L_s = \frac{3}{2} L_a $$
+      $$ L_s = \frac{3}{2} L_a $$
 
-   where  $L_a$ is the lumped inductance measured independently on one phase, if it could be isolated. 
-
-
-   The winding inductance has many theoretical and practical effects on the motor. It stores energy in the form of a magnetic field any time there is current in the winding. When a winding is switched off, this energy must go somewhere. For this reason, controller drivers contain "flyback diodes" that allow this current to circulate even when all the switches are open. Under highfrequency pulse-width modulated (PWM) control, the winding inductance also filters out current ripple. However, as a low-pass filter on current it also creates phase lag which is the motivation for the use of field-oriented control
-
-   The winding inductance is a function of motor geometry and the number of turns in the winding.
+      where  $L_a$ is the lumped inductance measured independently on one phase, if it could be isolated. 
 
 
-   **Saliency**
+      The winding inductance has many theoretical and practical effects on the motor. It stores energy in the form of a magnetic field any time there is current in the winding. When a winding is switched off, this energy must go somewhere. For this reason, controller drivers contain "flyback diodes" that allow this current to circulate even when all the switches are open. Under highfrequency pulse-width modulated (PWM) control, the winding inductance also filters out current ripple. However, as a low-pass filter on current it also creates phase lag which is the motivation for the use of field-oriented control
+
+      The winding inductance is a function of motor geometry and the number of turns in the winding.
+
+
+      **Saliency**
 
       Saliency means the inductance varies with rotor position due to non-uniform air gap which inturn creates non-uniform flux distribution. If the magents are removed, the rotor will align with ampere-conductor distribution of stator and the torque produced for alignment is called **alignment/reluctant** torque.
 
@@ -191,34 +190,35 @@ Direct Drive has no damping. $Mechanical\;Time\;Constant\; \tau_{mech}  = \frac{
 
       The **gap radius** is the distance from the rotating axis to the center of the gap between permanent magnets and the stator.
 
-   The area inside of the gap increase proportionally. 
-$$ M = V \rho \propto [r^{2}_{gap} - (r_{gap} - t_{rotor})^2 + (r_{gap} + t_{stator})^2 - r^{2}_{gap} ]  \propto r_{gap} $$ 
+      The area inside of the gap increase proportionally. 
+
+      $$ M = V \rho \propto [r^{2}_{gap} - (r_{gap} - t_{rotor})^2 + (r_{gap} + t_{stator})^2 - r^{2}_{gap} ]  \propto r_{gap} $$ 
 
 
-$$ M \propto [ (r_{gap} + t_{stator})^2 - (r_{gap} - t_{rotor})^2 ] $$
-
-
-
-
+      $$ M \propto [ (r_{gap} + t_{stator})^2 - (r_{gap} - t_{rotor})^2 ] $$
 
 
 
-$$ \tau \propto r^{2}_{gap} $$ 
-$$ J    \propto r^{3}_{gap} $$
-$$ \frac{\tau}{M} \propto r_{gap} $$
-$$ \frac{\tau}{J} \propto \frac{1}{r_{gap}} $$
 
 
-Motor Constant $K_{m}$ is the ability to produce Toqrue for a given heating power loss. It is winding invariant (as long as same conductimg wires used) but why? (Leanr about turns and wires thickness) (a)[https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Motor_constants.html]
-
-$$ K_m = \frac{\tau}{\sqrt{P_{loss}}} = \frac{I K_{T}}{\sqrt{I^2 R}} =  \frac{K_{T}}{\sqrt{R}} $$
-$$ K^{2}_{m} \propto r^{3}_{gap} $$ [Actuator design for high force proprioceptive control in fast legged locomotion]
 
 
-**winding Invarainat?**
-[Leg Design for Energy Management in an Electromechanical Robot]
+      $$ \tau \propto r^{2}_{gap} $$ 
+      $$ J    \propto r^{3}_{gap} $$
+      $$ \frac{\tau}{M} \propto r_{gap} $$
+      $$ \frac{\tau}{J} \propto \frac{1}{r_{gap}} $$
 
-Winding volume, $V = \pi \rho^{2}L$. 
+
+      Motor Constant $K_{m}$ is the ability to produce Toqrue for a given heating power loss. It is winding invariant (as long as same conductimg wires used) but why? (Leanr about turns and wires thickness) (a)[https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/M      otor_constants.html]
+
+      $$ K_m = \frac{\tau}{\sqrt{P_{loss}}} = \frac{I K_{T}}{\sqrt{I^2 R}} =  \frac{K_{T}}{\sqrt{R}} $$
+      $$ K^{2}_{m} \propto r^{3}_{gap} $$ [Actuator design for high force proprioceptive control in fast legged locomotion]
+
+
+      **winding Invarainat?**
+      [Leg Design for Energy Management in an Electromechanical Robot]
+
+         Winding volume, $V = \pi \rho^{2}L$. 
 
 The resistance of the winding, $$ R \propto \frac{L}{A} \propto \frac{1}{\rho^4} $$
 
@@ -312,6 +312,13 @@ h2
 
 <style>
 h4
+{
+      text-align: left;
+}
+</style>
+
+<style>
+li
 {
       text-align: left;
 }

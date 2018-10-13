@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Ajay G" />
-  <title>BLDC</title>
+  <meta name="author" content="Ajay G %" />
+  <title>BLDC %</title>
   <style type="text/css">
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
@@ -19,12 +19,12 @@
 </head>
 <body>
 <header>
-<h1 class="title">BLDC</h1>
-<p class="author">Ajay G</p>
+<h1 class="title">BLDC %</h1>
+<p class="author">Ajay G %</p>
 </header>
-<h4 id="why-bldc">Why BLDC ?</h4>
+<h3 id="why-bldc">Why BLDC ?</h3>
 <p>Reduced noise, wear, and friction caused by brushes and Torque-Speed characteristics is linear.[Direct-drive robots: theory and practice]</p>
-<h4 id="basic-terminology">Basic Terminology</h4>
+<h3 id="basic-terminology">Basic Terminology</h3>
 <ol type="1">
 <li><strong>Stator &amp; Rotor</strong></li>
 </ol>
@@ -118,37 +118,33 @@
 <p>As intuitive and as basic the better the cooling the better will be the perfomance of our motor.</p>
 <h5 id="characteristics">Characteristics</h5>
 <ol type="1">
-<li><strong>Resistance</strong></li>
-</ol>
-<pre><code> Responsible for heating loss, can be easily modeled as simple lumped resistor.</code></pre>
-<ol start="2" type="1">
-<li><strong>Inductance</strong></li>
-</ol>
+<li><p><strong>Resistance</strong></p>
+<p>Responsible for heating loss, can be easily modeled as simple lumped resistor.</p></li>
+<li><p><strong>Inductance</strong></p>
 <p>Motor windings have inductance. Physically, this means that current flowing in the windings will induce magnetic flux through them, even in the absence of permanent magnet flux. It also means that the windings will resist rapid changes in current by generating voltage acrossthis inductor. However, this is not the back EMF. The value of inductance is less straightforward to calculate because the phases are not magnetically independent. That is, current in one phase can induce flux in another. Under sinusoidal drive currents, it is possible to use a lumped inductance, called the synchronous inductance, to accommodate for this. The value of the synchronous inductance is [Design and prototyping methods for brushless motors and motor control]:</p>
 <p><span class="math display">\[ L_s = \frac{3}{2} L_a \]</span></p>
 <p>where <span class="math inline">\(L_a\)</span> is the lumped inductance measured independently on one phase, if it could be isolated.</p>
 <p>The winding inductance has many theoretical and practical effects on the motor. It stores energy in the form of a magnetic field any time there is current in the winding. When a winding is switched off, this energy must go somewhere. For this reason, controller drivers contain “flyback diodes” that allow this current to circulate even when all the switches are open. Under highfrequency pulse-width modulated (PWM) control, the winding inductance also filters out current ripple. However, as a low-pass filter on current it also creates phase lag which is the motivation for the use of field-oriented control</p>
 <p>The winding inductance is a function of motor geometry and the number of turns in the winding.</p>
 <p><strong>Saliency</strong></p>
-<pre><code>  Saliency means the inductance varies with rotor position due to non-uniform air gap which inturn creates non-uniform flux distribution. If the magents are removed, the rotor will align with ampere-conductor distribution of stator and the torque produced for alignment is called **alignment/reluctant** torque.
-
-  T [Design of Brushless Permanent-Magnet Machines, p. 68] In Non-Salient,the rotor is rotationally symmetric. No tendency to align with stator if magnets in rotor are removed. i.e., No **Reluctance Torque**, and winding inductance does not vary with rotor position. Non-salient poles exhibit both attractive &amp; repulsive gap forces. []</code></pre>
-<ol start="3" type="1">
+<p>Saliency means the inductance varies with rotor position due to non-uniform air gap which inturn creates non-uniform flux distribution. If the magents are removed, the rotor will align with ampere-conductor distribution of stator and the torque produced for alignment is called <strong>alignment/reluctant</strong> torque.</p>
+<p>T [Design of Brushless Permanent-Magnet Machines, p. 68] In Non-Salient,the rotor is rotationally symmetric. No tendency to align with stator if magnets in rotor are removed. i.e., No <strong>Reluctance Torque</strong>, and winding inductance does not vary with rotor position. Non-salient poles exhibit both attractive &amp; repulsive gap forces. []</p></li>
 <li><p><strong>Winding Configuration</strong></p>
 <p>They have three phase windings and can be connected to each other in wye or delta configuration. Wye has higher torque (theoretically torque constant is greater by a factor <span class="math inline">\(\sqrt{3}\)</span> <span class="citation" data-cites="kalouche_design_2016">[<a href="#ref-kalouche_design_2016">2</a>, p. 25]</span>) because in the wye configuration, at any time one of phase is open and other two-phase are in series thus equal current flows through them whereas in delta it gets divided into two phases. Thus more current in each phase causes more torque, one will push and another phase will pull in the wye configuration.</p></li>
 <li><p><strong>Outrunners vs Inrunners</strong>:</p>
 <p>[Design Principles for a Family of Direct-Drive Legged Robots]</p>
 <p>outrunners (rotor on the outside) will be preferrable to inrunners (rotor on the inside), and this measure is tied favorably to a motor’s radius to depth ratio <strong>[Direct-drive robots: theory and practice]</strong> as well as a large gap radius <strong>[Actuator design for high force proprioceptive control in fast legged locomotion].</strong> The measure is fundamentally winding invariant <strong>[Leg Design for Energy Management in an Electromechanical Robot]</strong>, but in practice other details of the motor’s construction (especially relating to the stator core and volume of copper) are critical.</p>
 <p>[Actuator design for high force proprioceptive control in fast legged locomotion]</p>
-<p>The <strong>gap radius</strong> is the distance from the rotating axis to the center of the gap between permanent magnets and the stator.</p></li>
-</ol>
-<p>The area inside of the gap increase proportionally. <span class="math display">\[ M = V \rho \propto [r^{2}_{gap} - (r_{gap} - t_{rotor})^2 + (r_{gap} + t_{stator})^2 - r^{2}_{gap} ]  \propto r_{gap} \]</span></p>
+<p>The <strong>gap radius</strong> is the distance from the rotating axis to the center of the gap between permanent magnets and the stator.</p>
+<p>The area inside of the gap increase proportionally.</p>
+<p><span class="math display">\[ M = V \rho \propto [r^{2}_{gap} - (r_{gap} - t_{rotor})^2 + (r_{gap} + t_{stator})^2 - r^{2}_{gap} ]  \propto r_{gap} \]</span></p>
 <p><span class="math display">\[ M \propto [ (r_{gap} + t_{stator})^2 - (r_{gap} - t_{rotor})^2 ] \]</span></p>
 <p><span class="math display">\[ \tau \propto r^{2}_{gap} \]</span> <span class="math display">\[ J    \propto r^{3}_{gap} \]</span> <span class="math display">\[ \frac{\tau}{M} \propto r_{gap} \]</span> <span class="math display">\[ \frac{\tau}{J} \propto \frac{1}{r_{gap}} \]</span></p>
-<p>Motor Constant <span class="math inline">\(K_{m}\)</span> is the ability to produce Toqrue for a given heating power loss. It is winding invariant (as long as same conductimg wires used) but why? (Leanr about turns and wires thickness) (a)[https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Motor_constants.html]</p>
+<p>Motor Constant <span class="math inline">\(K_{m}\)</span> is the ability to produce Toqrue for a given heating power loss. It is winding invariant (as long as same conductimg wires used) but why? (Leanr about turns and wires thickness) (a)[https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/M otor_constants.html]</p>
 <p><span class="math display">\[ K_m = \frac{\tau}{\sqrt{P_{loss}}} = \frac{I K_{T}}{\sqrt{I^2 R}} =  \frac{K_{T}}{\sqrt{R}} \]</span> <span class="math display">\[ K^{2}_{m} \propto r^{3}_{gap} \]</span> [Actuator design for high force proprioceptive control in fast legged locomotion]</p>
 <p><strong>winding Invarainat?</strong> [Leg Design for Energy Management in an Electromechanical Robot]</p>
-<p>Winding volume, <span class="math inline">\(V = \pi \rho^{2}L\)</span>.</p>
+<p>Winding volume, <span class="math inline">\(V = \pi \rho^{2}L\)</span>.</p></li>
+</ol>
 <p>The resistance of the winding, <span class="math display">\[ R \propto \frac{L}{A} \propto \frac{1}{\rho^4} \]</span></p>
 <p><span class="math display">\[ K_t \propto L \propto \frac{1}{\rho^2} \]</span></p>
 <p><span class="math display">\[ \tau = K_ti \implies \tau \propto \frac{i}{\rho^2} \]</span></p>
@@ -185,6 +181,12 @@ h2
 </style>
 <style>
 h4
+{
+      text-align: left;
+}
+</style>
+<style>
+li
 {
       text-align: left;
 }
