@@ -1,4 +1,5 @@
-																																																																																																																																																																														
+% BLDC
+% Ajay G																																																																																																																																																																													
 
 
 #### Why BLDC ? ####
@@ -135,7 +136,7 @@ Direct Drive has no damping. $Mechanical\;Time\;Constant\; \tau_{mech}  = \frac{
 
    **$(\overline{A})$ vs $(\overline{B})$**
 
-   In case we widen our slots to accomodate more copper $(\overline{A}) will increase but $(\overline{B}) may reduce because narrower teeth means less area for flux, and therefore has danger of stauration of iron.
+   In case we widen our slots to accomodate more copper $(\overline{A})$ will increase but $(\overline{B})$ may reduce because narrower teeth means less area for flux, and therefore has danger of stauration of iron.
 
    [Design of Brushless Permanent-Magnet Machines, p. 68]
    
