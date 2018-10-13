@@ -1,12 +1,206 @@
-                   
+---
+layout: default
+---                    
                                                  
-<main class="content" role="main">  
-  
-{% include lib/mathjax.html %} 
-{% capture my-include %}{% include projects/motor/output/motor.html %}{% endcapture %}
-{{ my-include | markdownify }}
 
-</main>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Ajay G" />
+  <title>BLDC</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title">BLDC</h1>
+<p class="author">Ajay G</p>
+</header>
+<h4 id="why-bldc">Why BLDC ?</h4>
+<p>Reduced noise, wear, and friction caused by brushes and Torque-Speed characteristics is linear.[Direct-drive robots: theory and practice]</p>
+<h4 id="basic-terminology">Basic Terminology</h4>
+<ol type="1">
+<li><strong>Stator &amp; Rotor</strong></li>
+</ol>
+<p>Stator, the stationary part, which carries the winding.Rotor, the rotating part, which carries the magnet.</p>
+<figure>
+<img src="https://ajaygunalan.github.io/projects/asset/motor/motor_1.png" alt="Stator &amp; Rotor, Source:[1]" style="width:30.0%;height:25.0%" /><figcaption>Stator &amp; Rotor, Source:<span class="citation" data-cites="colton_design_2010">[<a href="#ref-colton_design_2010">1</a>]</span></figcaption>
+</figure>
+<ol start="2" type="1">
+<li><strong>Air Gap</strong></li>
+</ol>
+<p>Air gap is the distance between stator and rotor.</p>
+<ol start="3" type="1">
+<li><strong>Tooth &amp; Slot</strong></li>
+</ol>
+<p>Winding are wounded around the laminated steel structure called tooth which channels more magnetic flux through them. Slot is the section between two tooth. Three phase motor have slots (and teeth) that is evenly divisible by three.</p>
+<figure>
+<img src="https://ajaygunalan.github.io/projects/asset/motor/motor_2.png" alt="Tooth &amp; Slot, Source:[1]" style="width:30.0%;height:25.0%" /><figcaption>Tooth &amp; Slot, Source:<span class="citation" data-cites="colton_design_2010">[<a href="#ref-colton_design_2010">1</a>]</span></figcaption>
+</figure>
+<ol start="4" type="1">
+<li><strong>Phase</strong></li>
+</ol>
+<p>A phase is an individual group of windings with a single terminal accessible from outside the motor. Most brushless motors are three-phase.</p>
+<ol start="5" type="1">
+<li><p><strong>Turns</strong></p></li>
+<li><p><strong>Pole <span class="math inline">\((N_m)\)</span></strong></p></li>
+</ol>
+<p>A pole is a single permanent magnet pole, north or south. The minimum number of poles is two, but motors can have any even number of poles.The number of poles is not directly related to the number of slots, although there are common combinations of slot and pole counts that work well [6].</p>
+<ol start="7" type="1">
+<li><p><strong>Field windings &amp; Armature winding ?</strong></p></li>
+<li><p><strong>Electrical Angle <span class="math inline">\((\theta_e)\)</span> vs Mechanical Angle <span class="math inline">\((\theta_m)\)</span></strong></p></li>
+</ol>
+<p>Mechanical degrees in a motor refers to the rotation of the shaft. 1 revolution of the shaft equals 360 mechanical degrees.</p>
+<p>When an electrical machine is operating as a motor, the idea is to create a traveling, rotating magnetic field, via the stator so that this moving flux attracts the rotor. Electrical degree is the angle through which magnetic field has rotated, i.e., 360 electrical degree equals transistion form “North” to “South” to “North”</p>
+<p>A 2 pole motor has 1 “North” pole and 1 “South” pole on the rotor. So in order for it to turn 360 electrical degrees (“North” to “South” to “North”), it needs to rotate 360 (360) mechanical degrees. A 4 pole motor has 2 “North” poles and 2 “South” poles. That means that 360 electrical degrees will occur when the shaft has rotated only 180 (360/2) mechanical degrees. Thus for <span class="math inline">\(N_m\)</span> Poles we have,</p>
+<p><span class="math display">\[ \theta_e = \frac{N_m}{2} \theta_m \]</span></p>
+<h4 id="motor-parameters">Motor Parameters</h4>
+<ol type="1">
+<li><strong>Torque/Back EMF constant <span class="math inline">\((K_{t})\)</span></strong></li>
+</ol>
+<p>electrical input power = rate of production of heat in conductor + mechanical output power</p>
+<p>Under <strong>steady-state condition</strong> (accelration is zero), we have :</p>
+<p><span class="math display">\[ V_2I = I^2R + (BIl)\upsilon \]</span></p>
+<p>When <span class="math inline">\(\upsilon = 0\)</span> There is no mechnical output power thus all the electrical energy will converted as heat loss</p>
+<p><span class="math display">\[ V_1 I =  I^2R \]</span> (assuming same load with <span class="math inline">\(\upsilon = 0\)</span> but we need same I to support that load, <span class="math inline">\(s.t., F_{conductor}= m_{load}g = BIl\)</span> )</p>
+<p><span class="math display">\[ (V_2 -V_1)I = (BIl)\upsilon \]</span></p>
+<p><span class="math display">\[ V_2 -V_1 = Bl\upsilon = E \]</span></p>
+<p>where <span class="math inline">\(E\)</span> is the extra voltage needed to move the load, which proportional velocity of the conductor relative to the flux, for give field(B) and load(I) is known as <strong>Back EMF/Motional EMF</strong></p>
+<p>thus, we get</p>
+<p><span class="math display">\[ EI = T_{electromagnetic}\:\omega_m \]</span></p>
+<p>where <span class="math inline">\(T_{electromagnetic} = T_{shaft} + frictional_{loss}\)</span></p>
+<p><span class="math display">\[ \implies E = K_e \omega_m \]</span></p>
+<p><span class="math display">\[ \implies T = K_t \omega_m \]</span></p>
+<p>where <span class="math inline">\(K_t = K_e\)</span></p>
+<p>In reality, <span class="math inline">\(K_e\)</span> can only be measure in open-circuit and <span class="math inline">\(K_t\)</span> can only measured when current is flowing, thus causisng a variance in magentic and electrical condition which casuses <strong>different value</strong> to each of them. They are determined by magnetic field and geometrical parameters of air gap. For an ideal motor it will remain constant, but in reality, it varies with rotor position because magetic field (B) consist of discrete poles and commutation occurs discretely which causes ripple in magnetic field.</p>
+<p>To avoid the torque ripple, we can:</p>
+<ol type="1">
+<li>Increase switching rate of current.</li>
+<li>Make the current to be smooth.</li>
+<li>Increase the number of poles.</li>
+</ol>
+<p><span class="math display">\[K_{t} =  f(\theta_{e})\]</span></p>
+<ol start="2" type="1">
+<li><strong>Motor Constant</strong> <span class="math inline">\(K_{m}\)</span> is the ability to produce Toqrue for a given input power. It is winding invariant (as long as same conductimg wires used) but why? (Leanr about turns and wires thickness) (a)[https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Motor_constants.html]</li>
+</ol>
+<p><span class="math display">\[  P_{input} = VI = I^2R = \left( \frac{T}{K_t} \right)^2R = T^2 \frac{R}{ \left( K_t \right)^2} \]</span></p>
+<p><span class="math display">\[ \implies \frac{\left( K_t \right)^2}{R} = \frac{T^2}{P_{input}} \]</span></p>
+<p><span class="math display">\[ \implies K_m = \frac{K_{T} }{\sqrt{R}} = \frac{T}{\sqrt{P_{input}}}  \]</span></p>
+<p><span class="math display">\[ K^{2}_{m} \propto r^{3}_{gap}  ?? \]</span> [Actuator design for high force proprioceptive control in fast legged locomotion]</p>
+<ol start="3" type="1">
+<li><p><strong>Electric Time Constant</strong> [Direct-drive robots: theory and practice]</p></li>
+<li><p><strong>[Direct-drive robots: theory and practice]</strong> Direct Drive has no damping. <span class="math inline">\(Mechanical\;Time\;Constant\; \tau_{mech} = \frac{inertia\;load}{mechanical\;damping\;coefficient}\)</span> is large comapred to geared drive.</p></li>
+<li><p><strong>Thermal Specific Torque Density <span class="math inline">\(K_{ts}\)</span></strong></p></li>
+</ol>
+<p>Form, [Design Principles for a Family of Direct-Drive Legged Robots], we have</p>
+<p><span class="math display">\[ K_{ts} := \frac{K_t}{m} \sqrt{\frac{1}{R_{th}R}} \]</span></p>
+<ol start="6" type="1">
+<li><strong>Specific Electrical Loading <span class="math inline">\((\overline{A})\)</span></strong></li>
+</ol>
+<p>Avergae <strong>Axial</strong> current per meter of circumference on the rotor.</p>
+<p>[Design of Brushless Permanent-Magnet Machines, p. 68]</p>
+<ol start="7" type="1">
+<li><strong>Specific Magnetic Loading <span class="math inline">\((\overline{B})\)</span></strong></li>
+</ol>
+<p>Average magnitude of <strong>radial flux</strong> density over the entire cylindrical surface of the rotor.</p>
+<p><strong><span class="math inline">\((\overline{A})\)</span> vs <span class="math inline">\((\overline{B})\)</span></strong></p>
+<p>In case we widen our slots to accomodate more copper <span class="math inline">\((\overline{A})\)</span> will increase but <span class="math inline">\((\overline{B})\)</span> may reduce because narrower teeth means less area for flux, and therefore has danger of stauration of iron.</p>
+<p>[Design of Brushless Permanent-Magnet Machines, p. 68]</p>
+<ol start="8" type="1">
+<li><strong>Cooling (C)</strong></li>
+</ol>
+<p>As intuitive and as basic the better the cooling the better will be the perfomance of our motor.</p>
+<h5 id="characteristics">Characteristics</h5>
+<ol type="1">
+<li><strong>Resistance</strong></li>
+</ol>
+<pre><code> Responsible for heating loss, can be easily modeled as simple lumped resistor.</code></pre>
+<ol start="2" type="1">
+<li><strong>Inductance</strong></li>
+</ol>
+<p>Motor windings have inductance. Physically, this means that current flowing in the windings will induce magnetic flux through them, even in the absence of permanent magnet flux. It also means that the windings will resist rapid changes in current by generating voltage acrossthis inductor. However, this is not the back EMF. The value of inductance is less straightforward to calculate because the phases are not magnetically independent. That is, current in one phase can induce flux in another. Under sinusoidal drive currents, it is possible to use a lumped inductance, called the synchronous inductance, to accommodate for this. The value of the synchronous inductance is [Design and prototyping methods for brushless motors and motor control]:</p>
+<p><span class="math display">\[ L_s = \frac{3}{2} L_a \]</span></p>
+<p>where <span class="math inline">\(L_a\)</span> is the lumped inductance measured independently on one phase, if it could be isolated.</p>
+<p>The winding inductance has many theoretical and practical effects on the motor. It stores energy in the form of a magnetic field any time there is current in the winding. When a winding is switched off, this energy must go somewhere. For this reason, controller drivers contain “flyback diodes” that allow this current to circulate even when all the switches are open. Under highfrequency pulse-width modulated (PWM) control, the winding inductance also filters out current ripple. However, as a low-pass filter on current it also creates phase lag which is the motivation for the use of field-oriented control</p>
+<p>The winding inductance is a function of motor geometry and the number of turns in the winding.</p>
+<p><strong>Saliency</strong></p>
+<pre><code>  Saliency means the inductance varies with rotor position due to non-uniform air gap which inturn creates non-uniform flux distribution. If the magents are removed, the rotor will align with ampere-conductor distribution of stator and the torque produced for alignment is called **alignment/reluctant** torque.
 
-{% include photoswipe.html %}
-{% include post_scripts.html %}
+  T [Design of Brushless Permanent-Magnet Machines, p. 68] In Non-Salient,the rotor is rotationally symmetric. No tendency to align with stator if magnets in rotor are removed. i.e., No **Reluctance Torque**, and winding inductance does not vary with rotor position. Non-salient poles exhibit both attractive &amp; repulsive gap forces. []</code></pre>
+<ol start="3" type="1">
+<li><p><strong>Winding Configuration</strong></p>
+<p>They have three phase windings and can be connected to each other in wye or delta configuration. Wye has higher torque (theoretically torque constant is greater by a factor <span class="math inline">\(\sqrt{3}\)</span> <span class="citation" data-cites="kalouche_design_2016">[<a href="#ref-kalouche_design_2016">2</a>, p. 25]</span>) because in the wye configuration, at any time one of phase is open and other two-phase are in series thus equal current flows through them whereas in delta it gets divided into two phases. Thus more current in each phase causes more torque, one will push and another phase will pull in the wye configuration.</p></li>
+<li><p><strong>Outrunners vs Inrunners</strong>:</p>
+<p>[Design Principles for a Family of Direct-Drive Legged Robots]</p>
+<p>outrunners (rotor on the outside) will be preferrable to inrunners (rotor on the inside), and this measure is tied favorably to a motor’s radius to depth ratio <strong>[Direct-drive robots: theory and practice]</strong> as well as a large gap radius <strong>[Actuator design for high force proprioceptive control in fast legged locomotion].</strong> The measure is fundamentally winding invariant <strong>[Leg Design for Energy Management in an Electromechanical Robot]</strong>, but in practice other details of the motor’s construction (especially relating to the stator core and volume of copper) are critical.</p>
+<p>[Actuator design for high force proprioceptive control in fast legged locomotion]</p>
+<p>The <strong>gap radius</strong> is the distance from the rotating axis to the center of the gap between permanent magnets and the stator.</p></li>
+</ol>
+<p>The area inside of the gap increase proportionally. <span class="math display">\[ M = V \rho \propto [r^{2}_{gap} - (r_{gap} - t_{rotor})^2 + (r_{gap} + t_{stator})^2 - r^{2}_{gap} ]  \propto r_{gap} \]</span></p>
+<p><span class="math display">\[ M \propto [ (r_{gap} + t_{stator})^2 - (r_{gap} - t_{rotor})^2 ] \]</span></p>
+<p><span class="math display">\[ \tau \propto r^{2}_{gap} \]</span> <span class="math display">\[ J    \propto r^{3}_{gap} \]</span> <span class="math display">\[ \frac{\tau}{M} \propto r_{gap} \]</span> <span class="math display">\[ \frac{\tau}{J} \propto \frac{1}{r_{gap}} \]</span></p>
+<p>Motor Constant <span class="math inline">\(K_{m}\)</span> is the ability to produce Toqrue for a given heating power loss. It is winding invariant (as long as same conductimg wires used) but why? (Leanr about turns and wires thickness) (a)[https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Motor_constants.html]</p>
+<p><span class="math display">\[ K_m = \frac{\tau}{\sqrt{P_{loss}}} = \frac{I K_{T}}{\sqrt{I^2 R}} =  \frac{K_{T}}{\sqrt{R}} \]</span> <span class="math display">\[ K^{2}_{m} \propto r^{3}_{gap} \]</span> [Actuator design for high force proprioceptive control in fast legged locomotion]</p>
+<p><strong>winding Invarainat?</strong> [Leg Design for Energy Management in an Electromechanical Robot]</p>
+<p>Winding volume, <span class="math inline">\(V = \pi \rho^{2}L\)</span>.</p>
+<p>The resistance of the winding, <span class="math display">\[ R \propto \frac{L}{A} \propto \frac{1}{\rho^4} \]</span></p>
+<p><span class="math display">\[ K_t \propto L \propto \frac{1}{\rho^2} \]</span></p>
+<p><span class="math display">\[ \tau = K_ti \implies \tau \propto \frac{i}{\rho^2} \]</span></p>
+<p><span class="math display">\[ P_{loss} = i^2R \propto \frac{i^2}{\rho^4} \]</span></p>
+<p>thus <span class="math display">\[ K_m = \frac{T}{\sqrt{P_{loss}}} \propto \rho^{0} \]</span></p>
+<p><strong>[Compliance and Force Control for Computer Controlled Manipulators]</strong> Force Control and Position Control are two ends of extreme. Force control sensible in case of contact. Position control sensisble in case of contact-less</p>
+<p>Thus for a real world we need a hybrid approach</p>
+<h4 id="losses">Losses</h4>
+<p>Inefficiencies can be grouped into two general categories:</p>
+<ol type="1">
+<li>Torque/Copper/<span class="math inline">\(I^2\)</span> Losses</li>
+<li>Speed/Iron/<span class="math inline">\(E^2\)</span> Losses</li>
+</ol>
+<p><strong>Torque/Copper/<span class="math inline">\(I^2\)</span> Losses: Winding Resistance, Power Ratings</strong></p>
+<p>They are due to resistance heating of the windings, and are proportional to the square of the output torque.</p>
+<p><strong>Speed/Iron/<span class="math inline">\(E^2\)</span> Losses: Delta Windings, Eddy Current, and Mechanical Losses</strong></p>
+<p>Iron Core Losses = Eddy Curremt Losses + Hystersis Losses</p>
+<p>Hysteresis in the magnetic domains in the core appears as a constant friction torque, while the eddy current torque is proportional to speed.</p>
+<p>#### To Do #### 1. [Design of brushless permanent-magnet machines] finish 1.3.3 and 1.4.2</p>
+<h2 id="selection-criteria">Selection Criteria</h2>
+<p>[Actuator design for a high performance legged biped robot]</p>
+<p>A smaller motor will have lower iron losses at a given speed (less iron to create drag), and a larger motor will have lower copper losses for a given torque.</p>
+<p>One interesting approach to motor sizing for a robot is to choose a small motor sized for walking, and then to overload it heavily during more strenuous activities.</p>
+<p>This might result in huge copper losses due to squaring the high winding current, but for brief periods the effect on overall efficiency is minimal.</p>
+<p>The thermal mass of the motor windings is high enough that it might not burn up for several seconds, and if it is cooled well enough the power level may be sustainable for longer activities.</p>
+<p>This is particularly true for permanent magnet brushless motors, in which the stator coils are stationary and in contact with the case, well-positioned for heat sinks or water cooling jackets. (For brushed motors the magnets are on the outside and the windings are in the rotor, leaving few options for cooling.</p>
+<h2 id="drive">Drive</h2>
+<h2 id="references">References</h2>
+<style>
+h2
+{
+      text-align: left;
+}
+</style>
+<style>
+h4
+{
+      text-align: left;
+}
+</style>
+<div id="refs" class="references">
+<div id="ref-colton_design_2010">
+<p>[1] S. W. Colton, “Design and prototyping methods for brushless motors and motor control,” Masters Thesis, Massachusetts Institute of Technology, 2010 [Online]. Available: <a href="http://dspace.mit.edu/handle/1721.1/61599" class="uri">http://dspace.mit.edu/handle/1721.1/61599</a></p>
+</div>
+<div id="ref-kalouche_design_2016">
+<p>[2] S. Kalouche, “Design for 3d agility and virtual compliance using proprioceptive force control in dynamic legged robots,” Masters Thesis, Carnegie Mellon University, 2016. </p>
+</div>
+</div>
+</body>
+</html>
+
