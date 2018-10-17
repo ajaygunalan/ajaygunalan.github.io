@@ -1,9 +1,21 @@
-% BLDC 
-% Ajay G %												
+% Study of PMSM/BLDC Motor: Design, Dynamics, Drive 
+% Ajay G 
 
-### Why BLDC ? ###
 
-Reduced noise, wear, and friction caused by brushes and Torque-Speed characteristics is linear.[Direct-drive robots: theory and practice]
+### Introduction ###
+
+   What is a robot?
+
+   A robot is a bunch of actuator connected by a link(a structure). Actuators, being one of the fundamental element of a robot, will determine the core capabilities and limitation of a robot. Thus a thorough understanding of the actuator will help us to optimise it based upon our requirment.
+
+   In this article we restrict ourself to Electromagnetic Actuator (Motors), since it is the most widely used one and has a higher energy efficiency compared to other like hydraulic, pneumatic, etc.. 
+
+   Out of all the various type of motor like Induction, Reluctance, PMSM/BLDC, DC, Stepper, etc... I'll be focusing on only BLDC/PMSM Motors due to its superior perfomance compared to others. However most of the concepts you learn here, will be helpful for understanding other motors too.
+ 
+   Our goal is to understand various factors of EM actuator which influences the perfomance and hopefully to justify why **pancake shaped, Quasi Direct-Drive PMSM/BLDC motor, with 4Q control drivers & SEA** will be the norm of the robotics in future.
+
+
+
 
 
 ### Basic Terminology ###
@@ -51,7 +63,7 @@ Reduced noise, wear, and friction caused by brushes and Torque-Speed characteris
 
       $$ \theta_e = \frac{N_m}{2} \theta_m $$
 
-#### Motor Parameters ####
+### Motor Parameters ###
 
 
    1. **Torque/Back EMF constant $(K_{t})$** 
@@ -178,7 +190,7 @@ Reduced noise, wear, and friction caused by brushes and Torque-Speed characteris
 
 
 
-##### Characteristics ##### 
+### Characteristics ###
    
    1. **Resistance**
 
@@ -251,6 +263,13 @@ Reduced noise, wear, and friction caused by brushes and Torque-Speed characteris
 
 
 
+   5. **Core vs Coreless**:
+      d
+
+
+
+   6. **Axial Flux vs Radial Flux**
+
 
 
 
@@ -271,43 +290,27 @@ Reduced noise, wear, and friction caused by brushes and Torque-Speed characteris
 
 
 
+### Losses ###
 
-#### Losses ####
+   Inefficiencies can  be  grouped  into  two general categories:
 
-Inefficiencies can  be  grouped  into  two general categories:
-
-1.	Torque/Copper/$I^2$ Losses
-2.	Speed/Iron/$E^2$ Losses
-
-
-**Torque/Copper/$I^2$ Losses: Winding Resistance, Power Ratings**
-
-They are due to resistance heating of the windings, and are proportional to the square of the output torque. 
+   1.	Torque/Copper/$I^2$ Losses
+   2.	Speed/Iron/$E^2$ Losses
 
 
-**Speed/Iron/$E^2$ Losses: Delta Windings, Eddy Current, and Mechanical Losses**
+   **Torque/Copper/$I^2$ Losses: Winding Resistance, Power Ratings**
 
-Iron Core Losses = Eddy Curremt Losses +  Hystersis Losses
+   They are due to resistance heating of the windings, and are proportional to the square of the output torque. 
 
-Hysteresis in  the  magnetic  domains  in the  core  appears  as  a  constant  friction  torque,  while  the eddy  current  torque  is  proportional  to  speed.  
+
+   **Speed/Iron/$E^2$ Losses: Delta Windings, Eddy Current, and Mechanical Losses**
+
+   Iron Core Losses = Eddy Curremt Losses +  Hystersis Losses
+
+   Hysteresis in  the  magnetic  domains  in the  core  appears  as  a  constant  friction  torque,  while  the eddy  current  torque  is  proportional  to  speed.  
  
 
- #### To Do ####
-1. [Design of brushless permanent-magnet machines] finish 1.3.3 and 1.4.2
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Selection Criteria ##
+### Selection Criteria ###
 [Actuator design for a high performance legged biped robot]
 
 A smaller motor will have lower iron losses at a given speed (less iron to create  drag),  and  a  larger  motor  will  have  lower  copper losses for a given torque.
@@ -320,15 +323,15 @@ The  thermal mass of the motor windings is high enough that it might not burn up
 
 This  is  particularly  true  for  permanent  magnet brushless motors, in which the stator coils are stationary and in contact  with the case, well-positioned for heat sinks or water cooling  jackets.  (For  brushed  motors  the  magnets  are  on the outside and the  windings are in the rotor, leaving few options for cooling.
 
+### Perfomance ###
+
+ Reduced noise, wear, and friction caused by brushes and Torque-Speed characteristics is linear.[Direct-drive robots: theory and practice]
+### To Do ###
+
+   1. [Design of brushless permanent-magnet machines] finish 1.3.3 and 1.4.2
  
 
-
-
-## Drive ##
-
-
-
-## References ##
+### References ###
 
 
 <style>
