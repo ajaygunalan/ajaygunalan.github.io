@@ -342,6 +342,12 @@ h2
 </style>
 
 <style>
+h3
+{
+      text-align: left;
+}
+
+<style>
 h4
 {
       text-align: left;
