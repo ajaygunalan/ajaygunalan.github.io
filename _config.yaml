@@ -20,8 +20,9 @@ kramdown:
         css_class: 'highlight'
 include: ['_pages']
 exclude: [vendor]
-gems:
+plugins:
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-redirect-from
+github: [metadata]

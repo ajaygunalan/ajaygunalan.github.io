@@ -15,9 +15,6 @@
    Our goal is to understand various factors of EM actuator which influences the perfomance and hopefully to justify why **pancake shaped, Quasi Direct-Drive PMSM/BLDC motor, with 4Q control drivers & SEA** will be the norm of the robotics in future.
 
 
-
-
-
 ### Basic Terminology ###
 
    1. **Stator & Rotor**
@@ -82,15 +79,14 @@
 
    Thus before delving into the various paramters of  a motor, we need to have model the motor.
 
-   Most motor are modelled as a Resistor, Inductor and volatge source($E$) in series:
+   Most motor are modelled as a Resistor, Inductor and volatge source($E$) in series
+
+   ![huges](https://ajaygunalan.github.io/projects/asset/motor/basic_model.png){width=30% height=25%}
 
 
-![austing_huges](https://ajaygunalan.github.io/projects/asset/motor/basic_model.png){width=30% height=25%}
+   For a 3-phase BLDC/PMSM, the appropriate model is
 
-
-   For a 3-phase BLDC/PMSM, the appropriate model is:
-
-![colton](https://ajaygunalan.github.io/projects/asset/motor/advanced_model.png){width=30% height=25%}
+   ![colton](https://ajaygunalan.github.io/projects/asset/motor/advanced_model.png){width=30% height=25%}
 
 
 
@@ -314,7 +310,7 @@
 
 
 
-     
+
 
 
       **[Compliance and Force Control for Computer Controlled Manipulators]**
@@ -372,22 +368,3 @@ This  is  particularly  true  for  permanent  magnet brushless motors, in which 
 ### References ###
 
 
-<style>
-h2
-{
-      text-align: left;
-}
-</style>
-
-<style>
-h3
-{
-      text-align: left;
-}
-
-<style>
-h4
-{
-      text-align: left;
-}
-</style>
