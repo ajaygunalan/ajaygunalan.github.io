@@ -26,6 +26,7 @@
 
       ![Stator & Rotor, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/motor/motor_1.png){width=30% height=25%}
 
+
    2. **Air Gap & Gap Radius**
 
       Air Gap is the distance between stator and rotor.
@@ -83,11 +84,13 @@
 
    Most motor are modelled as a Resistor, Inductor and volatge source($E$) in series:
 
-   ![austing_huges](https://ajaygunalan.github.io/projects/asset/motor/basic_model.png)
+
+![austing_huges](https://ajaygunalan.github.io/projects/asset/motor/basic_model.png){width=30% height=25%}
+
 
    For a 3-phase BLDC/PMSM, the appropriate model is:
 
-   ![](https://ajaygunalan.github.io/projects/asset/motor/advanced_model.png)
+![colton](https://ajaygunalan.github.io/projects/asset/motor/advanced_model.png){width=30% height=25%}
 
 
 
