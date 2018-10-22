@@ -24,7 +24,7 @@
 
       Generally, stator is the  stationary part and rotor is the rotational part. In case of BLDC, often stator will have windings and rotor will have the permanent magnets.
 
-      ![Stator & Rotor, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/motor/motor_1.png){width=30% height=25%}
+      ![Stator & Rotor, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/motor/stator_rotor.png){width=30% height=25%}
 
 
    2. **Air Gap & Gap Radius**
@@ -40,7 +40,7 @@
 
       Slot is the section between two tooth. Three phase motor have slots (and teeth) that is evenly divisible by three.
  
-      ![Tooth & Slot, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/motor/motor_2.png){width=30% height=25%}
+      ![Tooth & Slot, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/motor/tooth_slot.png){width=30% height=25%}
 
    4. **Phase**
 
