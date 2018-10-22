@@ -8,7 +8,7 @@
 
    A robot is a bunch of actuator connected by a link(a structure). Actuators, being one of the fundamental element of a robot, will determine the core capabilities and limitation of a robot. Thus a thorough understanding of the actuator will help us to optimise it based upon our requirment.
 
-   In this article we restrict ourself to Electromagnetic Actuator (Motors), since it is the most widely used one and has a higher energy efficiency compared to other like hydraulic, pneumatic, etc.. 
+   In this article we restrict ourself to Electromagnetic Actuator (Motors), since it is the most widely used one and has a higher energy efficiency compared to others like hydraulic, pneumatic, etc.. 
 
    Out of all the various type of motor like Induction, Reluctance, PMSM/BLDC, DC, Stepper, etc... I'll be focusing on only BLDC/PMSM Motors due to its superior perfomance compared to others. However most of the concepts you learn here, will be helpful for understanding other motors too.
  
@@ -22,27 +22,33 @@
 
    1. **Stator & Rotor**
 
-      Stator, the  stationary part, which carries the winding.Rotor, the rotating part, which carries the magnet.
+      Generally, stator is the  stationary part and rotor is the rotational part. In case of BLDC, often stator will have windings and rotor will have the permanent magnets.
 
       ![Stator & Rotor, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/motor/motor_1.png){width=30% height=25%}
 
-   2. **Air Gap**
+   2. **Air Gap & Gap Radius**
 
-      Air gap is the distance between stator and rotor.
+      Air Gap is the distance between stator and rotor.
+
+      Gap Radius  $R_{gap}$ is radial distance from the axle to the gap between the stator and rotor. When we mean pancake shaped motor, we mean motors with $R_{gap} > L_{axial}$
+ 
 
    3. **Tooth & Slot**
 
-      Winding are wounded around the laminated steel structure called tooth which channels more magnetic flux through them. Slot is the section between two tooth. Three phase motor have slots (and teeth) that is evenly divisible by three.
+      Winding are wounded around the laminated steel structure called tooth which channels more magnetic flux through them.
+
+      Slot is the section between two tooth. Three phase motor have slots (and teeth) that is evenly divisible by three.
  
       ![Tooth & Slot, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/motor/motor_2.png){width=30% height=25%}
 
    4. **Phase**
 
-      A phase is an individual group of windings with a single terminal accessible from outside the motor. Most brushless motors are three-phase. 
+      A phase is an individual group of windings with a single terminal accessible from outside the motor. Three phase windings have been used traditionally because of simplicity and over time it has become the industry standard. However, using windings with an increased number of phases will reduce torque ripple further and increase motor efficiency [46]. Currently, a custom 8-phase brushless motor is being developed for the MIT Cheetah that will have significantly higher torque density, **reduced torque ripple, and higher efficiency in the low-speed, high-torque operating regime** as compared to COTS motors [51].
+
 
    5. **Turns**
 
-      Each individual loop of wire making up phase winding. 
+      Each individual loop of wire making up phase winding is a Turn. 
 
    
    6. **Pole $(N_m)$**
@@ -51,51 +57,80 @@
 
    7. **Field windings & Armature winding ?**
 
+      The windings which are responsible for the Magentic Field (**B**) is the field winding. The energy we apply here merely act as catalyst alone.
+
+      Armature winding consist of current carrying conductors , which experience the $BIL$ force, thus are electrical power applied here is converted into mechanical output power.
+
 
    8. **Electrical Angle $(\theta_e)$ vs Mechanical Angle $(\theta_m)$**
 
-      Mechanical degrees in a motor refers to the rotation of the shaft. 1 revolution of the shaft equals 360 mechanical degrees. 
+      Mechanical degrees ($\theta_m$) in a motor refers to the rotation of the shaft. 1 revolution of the shaft equals 360 mechanical degrees.
 
-      When an electrical machine is operating as a motor, the idea is to create a traveling, rotating magnetic field, via the stator so that this moving flux attracts the rotor. Electrical degree is the angle through which magnetic field has rotated, i.e., 360 electrical degree equals transistion form "North" to "South" to "North"
+      When an electrical machine is operating as a motor, the idea is to create a traveling, rotating magnetic field, via the stator so that this moving flux attracts the rotor.
+
+      **Electrical degree** ($\theta_e$) is the angle through which magnetic field has rotated, i.e., 360 electrical degree equals transistion form "North" to "South" to "North"
 
 
-      A 2 pole motor has 1 "North" pole and 1 "South" pole on the rotor. So in order for it to turn 360 electrical degrees ("North" to "South" to "North"), it needs to rotate 360 (360) mechanical degrees. A 4 pole motor has 2 "North" poles and 2 "South" poles. That means that 360 electrical degrees will occur when the shaft has rotated only 180 (360/2) mechanical degrees. Thus for $N_m$ Poles we have,
+      A 2 pole motor has 1 "North" pole and 1 "South" pole on the rotor. So in order for it to turn 360 electrical degrees ("North" to "South" to "North"), it needs to rotate 360 mechanical degrees. A 4 pole motor has 2 "North" poles and 2 "South" poles. That means that 360 electrical degrees will occur when the shaft has rotated only 180 (360/2) mechanical degrees. Thus for $N_m$ Poles we have,
 
       $$ \theta_e = \frac{N_m}{2} \theta_m $$
 
 ### Motor Parameters ###
+
+   Parameterisation means, to develop the model of a "system" interms of paramters(variable) and to see how various parameters affect the "system". The developed model should be verified by comparing the theoritical prediction form the model against experimental data and based upon the error, we should improve our model till we are satisfied with model's accuracy.
+
+   Thus before delving into the various paramters of  a motor, we need to have model the motor.
+
+   Most motor are modelled as a Resistor, Inductor and volatge source($E$) in series:
+
+   ![austing_huges](https://ajaygunalan.github.io/projects/asset/motor/basic_model.png)
+
+   For a 3-phase BLDC/PMSM, the appropriate model is:
+
+   ![](https://ajaygunalan.github.io/projects/asset/motor/advanced_model.png)
+
 
 
    1. **Torque/Back EMF constant $(K_{t})$** 
    
       Under **steady-state condition** (accelration is zero), we have :
 
-      electrical input power = rate of production of heat in conductor + mechanical output power
+      electrical input power = rate of production of heat in conductor + power absorbed by the inductor(magnetic energy) + mechanical output power
 
 
-      $$ V_2I = I^2R + (BIl)\upsilon $$
+      $$ V_{supply,\upsilon \ne 0}i = i^2R + i L \frac{di}{dt} +(Bil)\upsilon $$
 
-      When $\upsilon = 0$  There is no mechnical output power thus all the electrical energy will converted as heat loss
+      When $\upsilon = 0$  There is no mechnical output power thus all the electrical energy will converted as heat loss and in steady state condition $\frac{di}{dt} = 0$ , thus:
 
-      $$ V_1 I =  I^2R $$ (assuming same load with $\upsilon = 0$ but we need same I to support that load, $s.t., F_{conductor}= m_{load}g = BIl$ )
+      $$ V_{supply,\upsilon \ne 0}i = i^2R + (Bil)\upsilon $$
 
-      $$ (V_2 -V_1)I = (BIl)\upsilon $$
+      $$ V_{supply,\upsilon = 0} i =  i^2R $$
 
-      $$ V_2 -V_1 = Bl\upsilon = E $$
 
-      where $E$ is the extra voltage needed to move the load, which proportional velocity of the conductor relative to the flux, for give field(B) and load(I) is known as **Back EMF/Motional EMF**
+      However current $i$ will remain unchanged for both $\upsilon \ne 0$ & $\upsilon =0$ because, it is determined by the load alone, thus to support a given load, the current $i$ is: 
 
-      thus, we get 
+      $$F_{conductor}= m_{load}g = Bil_{axial} \implies i = \frac{m_{load}g}{Bl} \implies i \propto m_{load}$$ since $(g, B, l)$ are constant for a given motor.
 
-      $$ EI = T_{electromagnetic}\:\omega_m $$ 
+      To move the load, i.e., to produce mechnical output power, we need higher volatge, i.e., $V_{supply,\upsilon \ne 0} > V_{supply,\upsilon = 0}$
+
+
+      $$ (V_{supply,\upsilon \ne 0} -V_{supply,\upsilon = 0})i = (Bil_{axial})\upsilon $$
+
+      $$ V_{supply,\upsilon \ne 0} -V_{supply,\upsilon = 0} = Bl_{axial}\upsilon = E $$
+
+      where $E$ is the extra voltage needed to move the load, which proportional velocity of the conductor relative to the flux, for give field(B) & load(I) and is known as **Back EMF/Moional EMF**, thus: 
+
+      $$ Ei = T_{electromagnetic}\:\omega_m $$ 
 
       where $T_{electromagnetic} = T_{shaft} + frictional_{loss}$
 
+      $$ \implies T = K_t i $$
+
+
       $$ \implies E = K_e \omega_m $$
 
-      $$ \implies T = K_t \omega_m $$
 
-      where $K_t = K_e$
+      where $K_t$ is the Torque constant and $K_e$ is the Back emf constant.
 
       In reality, $K_e$ can only be measure in open-circuit and
       $K_t$ can only measured when current is flowing, thus causisng a variance in magentic and electrical condition which casuses **different value** to each of them. They are determined by magnetic field and geometrical parameters of air gap. For an ideal motor it will remain constant, but in reality, it varies with  rotor position because magetic field (B) consist of discrete poles and commutation occurs discretely which causes ripple in magnetic field.
@@ -116,7 +151,7 @@
       It is the ability to produce Toqrue for a given input power. It is winding invariant [Leg Design for Energy Management in an Electromechanical Robot] as long as same conductimg wires used:
 
 
-      $$  P_{input} = VI = I^2R = \left( \frac{T}{K_t} \right)^2R = T^2 \frac{R}{ \left( K_t \right)^2} $$
+      $$  P_{input} = Vi = i^2R = \left( \frac{T}{K_t} \right)^2R = T^2 \frac{R}{ \left( K_t \right)^2} $$
 
       $$ \implies \frac{\left( K_t \right)^2}{R} = \frac{T^2}{P_{input}} $$
 
@@ -348,6 +383,7 @@ h3
 }
 
 <style>
+
 h4
 {
       text-align: left;
