@@ -1,5 +1,5 @@
 % Study of PMSM/BLDC Motor: Design, Dynamics, Drive 
-% Ajay G 
+ 
 
 
 ### Introduction ###
@@ -29,6 +29,10 @@
       Air Gap is the distance between stator and rotor.
 
       Gap Radius  $R_{gap}$ is radial distance from the axle to the gap between the stator and rotor. When we mean pancake shaped motor, we mean motors with $R_{gap} > L_{axial}$
+
+
+      ![Gap Radius, Source:[@seok_actuator_2012]](https://ajaygunalan.github.io/projects/asset/motor/r_gap.png){width=30% height=25%}
+
  
 
    3. **Tooth & Slot**
@@ -81,32 +85,38 @@
 
    Most motor are modelled as a Resistor, Inductor and volatge source($E$) in series
 
-   ![huges](https://ajaygunalan.github.io/projects/asset/motor/basic_model.png){width=30% height=25%}
+![Basic Motor Model, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/motor/basic_model.png){width=30% height=25%}
 
 
    For a 3-phase BLDC/PMSM, the appropriate model is
 
-   ![colton](https://ajaygunalan.github.io/projects/asset/motor/advanced_model.png){width=30% height=25%}
+![Model of a 3-phase BLDC/PMSM, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/motor/advanced_model.png){width=30% height=25%}
 
 
 
    1. **Torque/Back EMF constant $(K_{t})$** 
    
-      Under **steady-state condition** (accelration is zero), we have :
-
-      electrical input power = rate of production of heat in conductor + power absorbed by the inductor(magnetic energy) + mechanical output power
+      Electrical input power = rate of production of *heat* in conductor + power absorbed by the inductor(*magnetic* energy) + *mechanical* output power
 
 
       $$ V_{supply,\upsilon \ne 0}i = i^2R + i L \frac{di}{dt} +(Bil)\upsilon $$
 
-      When $\upsilon = 0$  There is no mechnical output power thus all the electrical energy will converted as heat loss and in steady state condition $\frac{di}{dt} = 0$ , thus:
+      Under steady-state condition (accelration is zero), $\frac{di}{dt} = 0$ :
 
       $$ V_{supply,\upsilon \ne 0}i = i^2R + (Bil)\upsilon $$
 
+      ![primitve motor in a steady-state, Source:[@hughes_electric_2013]](https://ajaygunalan.github.io/projects/asset/motor/v_is_not_zero.png){width=30% height=25%}
+
+      
+      When $\upsilon = 0$, there is no mechnical output power, and all the electrical energy will converted as heat loss:
+
       $$ V_{supply,\upsilon = 0} i =  i^2R $$
 
+      ![primitve motor in a stall condition, Source:[@hughes_electric_2013]](https://ajaygunalan.github.io/projects/asset/motor/v_is_zero.png){width=30% height=25%}
 
-      However current $i$ will remain unchanged for both $\upsilon \ne 0$ & $\upsilon =0$ because, it is determined by the load alone, thus to support a given load, the current $i$ is: 
+
+
+      However current $i$ will remain unchanged for both $\upsilon \ne 0$ & $\upsilon =0$, because it is determined by the load alone, thus to support a given load the current $i$ is: 
 
       $$F_{conductor}= m_{load}g = Bil_{axial} \implies i = \frac{m_{load}g}{Bl} \implies i \propto m_{load}$$ since $(g, B, l)$ are constant for a given motor.
 
@@ -147,7 +157,7 @@
 
    2. **Motor Constant** $K_{m}$ 
 
-      It is the ability to produce Toqrue for a given input power. It is winding invariant [Leg Design for Energy Management in an Electromechanical Robot] as long as same conductimg wires used:
+      It is the ability to produce Toqrue for a given input power. It is winding invariant [@kenneally_leg_2015] as long as same conductimg wires used:
 
 
       $$  P_{input} = Vi = i^2R = \left( \frac{T}{K_t} \right)^2R = T^2 \frac{R}{ \left( K_t \right)^2} $$
@@ -157,7 +167,7 @@
       $$ \implies K_m = \frac{K_{T} }{\sqrt{R}} = \frac{T}{\sqrt{P_{input}}}  $$
 
 
-      $$ K^{2}_{m} \propto r^{3}_{gap}  ?? $$ [Actuator design for high force proprioceptive control in fast legged locomotion]
+      $$ K^{2}_{m} \propto r^{3}_{gap}  ?? $$ [@seok_actuator_2012]
 
       For given winding volume, $$ V = \pi r_{wire}^2 L = c \implies L \propto \frac{1}{r_{wire}^{2}} $$. 
 
@@ -196,7 +206,7 @@
    5. **Thermal Specific Torque Density $K_{ts}$**
  
 
-      Form, [Design Principles for a Family of Direct-Drive Legged Robots], we have
+      Form, [@kenneally_design_2016], we have
 
       $$ K_{ts} := \frac{K_t}{m} \sqrt{\frac{1}{R_{th}R}} $$
 
@@ -234,7 +244,7 @@
    2. **Inductance**
 
 
-      Motor windings have inductance. Physically, this means that current flowing in the windings will induce magnetic flux through them, even in the absence of permanent magnet flux. It also means that the windings will resist rapid changes in current by generating voltage acrossthis inductor. However, this is not the back EMF. The value of inductance is less straightforward to calculate because the phases are not magnetically independent. That is, current in one phase can induce flux in another. Under sinusoidal drive currents, it is possible to use a lumped inductance, called the synchronous inductance, to accommodate for this. The value of the synchronous inductance is [Design and prototyping methods for brushless motors and motor control]:
+      Motor windings have inductance. Physically, this means that current flowing in the windings will induce magnetic flux through them, even in the absence of permanent magnet flux. It also means that the windings will resist rapid changes in current by generating voltage acrossthis inductor. However, this is not the back EMF. The value of inductance is less straightforward to calculate because the phases are not magnetically independent. That is, current in one phase can induce flux in another. Under sinusoidal drive currents, it is possible to use a lumped inductance, called the synchronous inductance, to accommodate for this. The value of the synchronous inductance is [@colton_design_2010]:
 
 
 
@@ -252,7 +262,7 @@
 
       Saliency means the inductance varies with rotor position due to non-uniform air gap which inturn creates non-uniform flux distribution. If the magents are removed, the rotor will align with ampere-conductor distribution of stator and the torque produced for alignment is called **alignment/reluctant** torque.
 
-      T [Design of Brushless Permanent-Magnet Machines, p. 68] In Non-Salient,the rotor is rotationally symmetric. No tendency to align with stator if magnets in rotor are removed. i.e., No **Reluctance Torque**, and winding inductance does not vary with rotor position. Non-salient poles exhibit both attractive & repulsive gap forces. []
+      T [@hendershot_design_2010, p. 68] In Non-Salient,the rotor is rotationally symmetric. No tendency to align with stator if magnets in rotor are removed. i.e., No **Reluctance Torque**, and winding inductance does not vary with rotor position. Non-salient poles exhibit both attractive & repulsive gap forces. []
 
    3. **Winding Configuration**
 
@@ -260,12 +270,12 @@
 
    4. **Outrunners vs Inrunners**:
 
-      [Design Principles for a Family of Direct-Drive Legged Robots]
+      [@kenneally_design_2016]
 
 
-      outrunners (rotor on the outside) will be preferrable to inrunners (rotor on the inside), and this measure is tied favorably to a motor’s radius to depth ratio **[Direct-drive robots: theory and practice]** as well as a large gap radius **[Actuator design for high force proprioceptive control in fast legged locomotion].** The measure is fundamentally winding invariant **[Leg Design for Energy Management in an Electromechanical Robot]**, but in practice other details of the motor’s construction (especially relating to the stator core and volume of copper) are critical.
+      outrunners (rotor on the outside) will be preferrable to inrunners (rotor on the inside), and this measure is tied favorably to a motor’s radius to depth ratio [@asada_direct-drive_1987] as well as a large gap radius [@seok_actuator_2012]. The measure is fundamentally winding invariant [kenneally_leg_2015], but in practice other details of the motor’s construction (especially relating to the stator core and volume of copper) are critical.
 
-      [Actuator design for high force proprioceptive control in fast legged locomotion]
+      [@seok_actuator_2012]
 
       The **gap radius** is the distance from the rotating axis to the center of the gap between permanent magnets and the stator.
 
@@ -276,7 +286,7 @@
 
       $$ M = \pi [r_{gap}^2 - (r_{gap} - t_{rotor})^2 + (r_{gap} + t_{stator})^2 - r_{gap}^2 ]l \rho $$
 
-      Approximating to First Order thin walls (Neglecting higher order terms)[Proprioceptive Actuator Design in the MIT Cheetah: Impact Mitigation and High-Bandwidth Physical Interaction for Dynamic Legged Robots]
+      Approximating to First Order thin walls (Neglecting higher order terms)[@wensing_proprioceptive_2017]
 
 
       $$ M \approx 2\pi r_{gap}l(t_s \rho_s + t_r \rho_r) $$
@@ -313,7 +323,7 @@
 
 
 
-      **[Compliance and Force Control for Computer Controlled Manipulators]**
+      **[@mason_compliance_1981]**
       Force Control and Position Control are two ends of extreme. 
       Force control sensible in case of contact.
       Position control sensisble in case of contact-less
@@ -345,7 +355,7 @@
  
 
 ### Selection Criteria ###
-[Actuator design for a high performance legged biped robot]
+[@seok_actuator_2012]
 
 A smaller motor will have lower iron losses at a given speed (less iron to create  drag),  and  a  larger  motor  will  have  lower  copper losses for a given torque.
 
@@ -359,12 +369,30 @@ This  is  particularly  true  for  permanent  magnet brushless motors, in which 
 
 ### Perfomance ###
 
- Reduced noise, wear, and friction caused by brushes and Torque-Speed characteristics is linear.[Direct-drive robots: theory and practice]
+ Reduced noise, wear, and friction caused by brushes and Torque-Speed characteristics is linear.[@asada_direct-drive_1987]
+
 ### To Do ###
 
-   1. [Design of brushless permanent-magnet machines] finish 1.3.3 and 1.4.2
+   1. [@hendershot_design_2010] finish 1.3.3 and 1.4.2
  
 
 ### References ###
 
+<style>
+h3
+{
+      text-align: left;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+}
+
+</style>
 

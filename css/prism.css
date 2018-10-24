@@ -353,6 +353,11 @@ hr {
     margin: 0px 0px 0px 0px;
  }
 
+ /*ajay added the below line */
+  .post-content > ol {
+    margin: 0px 0px 0px 0px;
+ }
+
  .post-content > ul > li {
  	font-size: 18px;
  }
@@ -398,7 +403,7 @@ hr {
 .post code { padding: 1px 5px; }
 
 .post ul,
-.post ol { margin-left: 1.35em; }
+.post ol { margin-left: 1.35em; } 
 
 .post pre code {
   border: 0;
