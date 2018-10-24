@@ -20,6 +20,7 @@
 <header>
 <h1 class="title">Study of PMSM/BLDC Motor: Design, Dynamics, Drive</h1>
 </header>
+<p>&amp; Ajay G</p>
 <h3 id="introduction">Introduction</h3>
 <p>What is a robot?</p>
 <p>A robot is a bunch of actuator connected by a link(a structure). Actuators, being one of the fundamental element of a robot, will determine the core capabilities and limitation of a robot. Thus a thorough understanding of the actuator will help us to optimise it based upon our requirment.</p>
@@ -145,7 +146,7 @@
 <li><p><strong>Resistance</strong></p>
 <p>Responsible for heating loss, can be easily modeled as simple lumped resistor.</p></li>
 <li><p><strong>Inductance</strong></p>
-<p>Motor windings have inductance. Physically, this means that current flowing in the windings will induce magnetic flux through them, even in the absence of permanent magnet flux. It also means that the windings will resist rapid changes in current by generating voltage acrossthis inductor. However, this is not the back EMF. The value of inductance is less straightforward to calculate because the phases are not magnetically independent. That is, current in one phase can induce flux in another. Under sinusoidal drive currents, it is possible to use a lumped inductance, called the synchronous inductance, to accommodate for this. The value of the synchronous inductance is [colton_design_2010]:</p>
+<p>Motor windings have inductance. Physically, this means that current flowing in the windings will induce magnetic flux through them, even in the absence of permanent magnet flux. It also means that the windings will resist rapid changes in current by generating voltage acrossthis inductor. However, this is not the back EMF. The value of inductance is less straightforward to calculate because the phases are not magnetically independent. That is, current in one phase can induce flux in another. Under sinusoidal drive currents, it is possible to use a lumped inductance, called the synchronous inductance, to accommodate for this. The value of the synchronous inductance is <span class="citation" data-cites="colton_design_2010">[<a href="#ref-colton_design_2010">1</a>]</span>:</p>
 <p><span class="math display">\[ L_s = \frac{3}{2} L_a \]</span></p>
 <p>where <span class="math inline">\(L_a\)</span> is the lumped inductance measured independently on one phase, if it could be isolated.</p>
 <p>The winding inductance has many theoretical and practical effects on the motor. It stores energy in the form of a magnetic field any time there is current in the winding. When a winding is switched off, this energy must go somewhere. For this reason, controller drivers contain “flyback diodes” that allow this current to circulate even when all the switches are open. Under highfrequency pulse-width modulated (PWM) control, the winding inductance also filters out current ripple. However, as a low-pass filter on current it also creates phase lag which is the motivation for the use of field-oriented control</p>
@@ -170,7 +171,7 @@
 <p><span class="math display">\[ J_{rotor} \approx 2\pi lt_r \rho_r r^3_{gap} \]</span></p>
 <p><span class="math display">\[ \tau = Fr_{gap} = (\sigma A)r_{gap} = (\sigma 2 \pi r_{gap}l)r_{gap} = 2 \pi r^3_{gap}l \sigma \]</span></p>
 <p><span class="math display">\[ \frac{\tau}{M} \propto r_{gap} \]</span> <span class="math display">\[ \frac{\tau}{J} \propto \frac{1}{r_{gap}} \]</span></p></li>
-<li><p><strong>Core vs Coreless</strong>: d</p></li>
+<li><p><strong>Core vs Coreless</strong>:</p></li>
 <li><p><strong>Axial Flux vs Radial Flux</strong></p>
 <p><strong><span class="citation" data-cites="mason_compliance_1981">[<a href="#ref-mason_compliance_1981">10</a>]</span></strong> Force Control and Position Control are two ends of extreme. Force control sensible in case of contact. Position control sensisble in case of contact-less</p>
 <p>Thus for a real world we need a hybrid approach</p></li>
@@ -201,9 +202,13 @@
 </ol>
 <h3 id="references">References</h3>
 <style>
-h3
-{
+h3 {
       text-align: left;
+}
+
+p {
+   text-align: justify;
+   text-justify: inter-word;
 }
 
 ol {
@@ -215,7 +220,6 @@ ol {
     margin-right: auto;
     padding-left: 40px;
 }
-
 </style>
 <div id="refs" class="references">
 <div id="ref-colton_design_2010">
