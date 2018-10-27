@@ -1,18 +1,19 @@
 % Study of PMSM/BLDC Motor: Design, Dynamics, Drive 
-& Ajay G 
+% Ajay G 
 
 
 ### Introduction ###
 
    What is a robot?
 
-   A robot is a bunch of actuator connected by a link(a structure). Actuators, being one of the fundamental element of a robot, will determine the core capabilities and limitation of a robot. Thus a thorough understanding of the actuator will help us to optimise it based upon our requirment.
 
-   In this article we restrict ourself to Electromagnetic Actuator (Motors), since it is the most widely used one and has a higher energy efficiency compared to others like hydraulic, pneumatic, etc.. 
+   <p style="text-align: justify;">A robot is a bunch of actuator connected by a link(a structure). Actuators, being one of the fundamental element of a robot, will determine the core capabilities and limitation of a robot. 
+   Thus a thorough understanding of the actuator will help us to optimise it based upon our requirment. 
+   In this article we restrict ourself to Electromagnetic Actuator (Motors), since it is the most widely used one and has a higher energy efficiency compared to others like hydraulic, pneumatic, etc. Out of all the various type of motor like Induction, Reluctance, PMSM/BLDC, DC, Stepper, etc.
+   I'll be focusing on only BLDC/PMSM Motors due to its superior perfomance compared to others.
+   However most of the concepts you learn here, will be helpful for understanding other motors too.
+   Our goal is to understand various factors of EM actuator which influences the perfomance and hopefully to justify why **pancake shaped, Quasi Direct-Drive PMSM/BLDC motor, with 4Q control drivers & SEA** will be the norm of the robotics in future.</p>
 
-   Out of all the various type of motor like Induction, Reluctance, PMSM/BLDC, DC, Stepper, etc... I'll be focusing on only BLDC/PMSM Motors due to its superior perfomance compared to others. However most of the concepts you learn here, will be helpful for understanding other motors too.
- 
-   Our goal is to understand various factors of EM actuator which influences the perfomance and hopefully to justify why **pancake shaped, Quasi Direct-Drive PMSM/BLDC motor, with 4Q control drivers & SEA** will be the norm of the robotics in future.
 
 
 ### Basic Terminology ###
@@ -80,17 +81,15 @@
 ### Motor Parameters ###
 
    Parameterisation means, to develop the model of a "system" interms of paramters(variable) and to see how various parameters affect the "system". The developed model should be verified by comparing the theoritical prediction form the model against experimental data and based upon the error, we should improve our model till we are satisfied with model's accuracy.
-
    Thus before delving into the various paramters of  a motor, we need to have model the motor.
+   Most motor are modelled as a Resistor, Inductor and volatge source($E$) in series:
 
-   Most motor are modelled as a Resistor, Inductor and volatge source($E$) in series
-
-![Basic Motor Model, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/motor/basic_model.png){width=30% height=25%}
+![Basic Motor Model, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/motor/basic_model.png){width=20% height=8%}
 
 
-   For a 3-phase BLDC/PMSM, the appropriate model is
+   For a 3-phase BLDC/PMSM, the appropriate model is:
 
-![Model of a 3-phase BLDC/PMSM, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/motor/advanced_model.png){width=30% height=25%}
+![Model of a 3-phase BLDC/PMSM, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/motor/advanced_model.png){width=40% height=35%}
 
 
 
@@ -99,33 +98,32 @@
       Electrical input power = rate of production of *heat* in conductor + power absorbed by the inductor(*magnetic* energy) + *mechanical* output power
 
 
-      $$ V_{supply,\upsilon \ne 0}i = i^2R + i L \frac{di}{dt} +(Bil)\upsilon $$
+      $$ V_{supply}i = i^2R + i L \frac{di}{dt} +(Bil)\upsilon $$
 
       Under steady-state condition (accelration is zero), $\frac{di}{dt} = 0$ :
 
-      $$ V_{supply,\upsilon \ne 0}i = i^2R + (Bil)\upsilon $$
+      $$ V_{supply}i = i^2R + (Bil)\upsilon $$
 
-      ![primitve motor in a steady-state, Source:[@hughes_electric_2013]](https://ajaygunalan.github.io/projects/asset/motor/v_is_not_zero.png){width=30% height=25%}
+      ![primitve motor in a steady-state, Source:[@hughes_electric_2013]](https://ajaygunalan.github.io/projects/asset/motor/v_is_not_zero.png){width=35% height=12%}
 
       
       When $\upsilon = 0$, there is no mechnical output power, and all the electrical energy will converted as heat loss:
 
-      $$ V_{supply,\upsilon = 0} i =  i^2R $$
+      $$ V_{supply, \upsilon = 0} i =  i^2R $$
 
-      ![primitve motor in a stall condition, Source:[@hughes_electric_2013]](https://ajaygunalan.github.io/projects/asset/motor/v_is_zero.png){width=30% height=25%}
-
+      ![primitve motor in a stall condition, Source:[@hughes_electric_2013]](https://ajaygunalan.github.io/projects/asset/motor/v_is_zero.png){width=30% height=15%}
 
 
       However current $i$ will remain unchanged for both $\upsilon \ne 0$ & $\upsilon =0$, because it is determined by the load alone, thus to support a given load the current $i$ is: 
 
       $$F_{conductor}= m_{load}g = Bil_{axial} \implies i = \frac{m_{load}g}{Bl} \implies i \propto m_{load}$$ since $(g, B, l)$ are constant for a given motor.
 
-      To move the load, i.e., to produce mechnical output power, we need higher volatge, i.e., $V_{supply,\upsilon \ne 0} > V_{supply,\upsilon = 0}$
+      To move the load, i.e., to produce mechnical output power, we need higher volatge, i.e., $V_{supply} > V_{supply,\upsilon = 0}$
 
 
-      $$ (V_{supply,\upsilon \ne 0} -V_{supply,\upsilon = 0})i = (Bil_{axial})\upsilon $$
+      $$ (V_{supply} -V_{supply,\upsilon = 0})i = (Bil_{axial})\upsilon $$
 
-      $$ V_{supply,\upsilon \ne 0} -V_{supply,\upsilon = 0} = Bl_{axial}\upsilon = E $$
+      $$ V_{supply} -V_{supply,\upsilon = 0} = Bl_{axial}\upsilon = E $$
 
       where $E$ is the extra voltage needed to move the load, which proportional velocity of the conductor relative to the flux, for give field(B) & load(I) and is known as **Back EMF/Moional EMF**, thus: 
 
@@ -157,22 +155,17 @@
 
    2. **Motor Constant** $K_{m}$ 
 
-      It is the ability to produce Toqrue for a given input power. It is winding invariant [@kenneally_leg_2015] as long as same conductimg wires used:
-
+      It is the ability to produce Toqrue for a given input power. 
 
       $$  P_{input} = Vi = i^2R = \left( \frac{T}{K_t} \right)^2R = T^2 \frac{R}{ \left( K_t \right)^2} $$
 
       $$ \implies \frac{\left( K_t \right)^2}{R} = \frac{T^2}{P_{input}} $$
 
-      $$ \implies K_m = \frac{K_{T} }{\sqrt{R}} = \frac{T}{\sqrt{P_{input}}}  $$
+      **$$ \implies K_m = \frac{K_{T} }{\sqrt{R}} = \frac{T}{\sqrt{P_{input}}}$$**
 
 
-      $$ K^{2}_{m} \propto r^{3}_{gap}  ?? $$ [@seok_actuator_2012]
-
-      For given winding volume, $$ V = \pi r_{wire}^2 L = c \implies L \propto \frac{1}{r_{wire}^{2}} $$. 
-
-      The resistance of the winding, 
-      $$ R \propto \frac{L}{A} \propto \frac{L}{r_{wire}^{2}} \propto \frac{1}{r_{wire}^4} $$
+      It is winding invariant [@kenneally_leg_2015] as long as same conductimg wires are used. For given winding volume, $(V = \pi r_{wire}^2 L = c \implies L \propto \frac{1}{r_{wire}^{2}})$, the resistance of the winding, 
+      $R \propto \frac{L}{A} \propto \frac{L}{r_{wire}^{2}} \propto \frac{1}{r_{wire}^4}$
 
       The Torque constant $K_t$ depends linearly on the number of turns around the core,
 
@@ -184,13 +177,22 @@
 
       $$ P = i^2R \propto \frac{i^2}{r_{wire}^4} $$
 
-      thus $$ K_m = \frac{\tau}{\sqrt{P}} \propto r_{wire}^{0} $$
+      thus **$$ K_m = \frac{\tau}{\sqrt{P}} \propto r_{wire}^{0} $$**
+
+
+      $$ K_{m}^{2} = \frac{\tau^2}{i^2R} = \frac{n(B^2 i^2 l_{axial}^2 r_{gap}^2)}{i^2 \rho \frac{l_{axial}}{A}} = \frac{nl_{axial}B^2r_{gap}^{2}A}{\rho} $$ 
+
+      thus for given a particular wire gauge, the number of wires (n) in the cross section scales linearly with the radius.[@wensing_proprioceptive_2017]
+
+      **$$ K_{m}^{2} \propto r_{gap}^{3} $$**
+
 
       
 
+
    3. **Electric Time Constant**
 
-      The electrical time constant is the amount of time it takes the current in the winding to reach 63 percent of its rated value. The time constant found by dividing inductance by resistance.
+      The electrical time constant is the amount of time it takes the current in the winding to reach 63.2% percent of its rated value. The time constant found by dividing inductance by resistance.[@asada_direct-drive_1987]
 
       $$ \tau_e  = \frac{L}{R} $$
 
@@ -244,8 +246,9 @@
    2. **Inductance**
 
 
-      Motor windings have inductance. Physically, this means that current flowing in the windings will induce magnetic flux through them, even in the absence of permanent magnet flux. It also means that the windings will resist rapid changes in current by generating voltage acrossthis inductor. However, this is not the back EMF. The value of inductance is less straightforward to calculate because the phases are not magnetically independent. That is, current in one phase can induce flux in another. Under sinusoidal drive currents, it is possible to use a lumped inductance, called the synchronous inductance, to accommodate for this. The value of the synchronous inductance is [@colton_design_2010]:
-
+      Motor windings have inductance. Physically, this means that current flowing in the windings will induce magnetic flux through them, even in the absence of permanent magnet flux and will resist rapid changes in current by generating voltage across it. However, this is not the back EMF.
+      The value of inductance is less straightforward to calculate because the phases are not magnetically independent. That is, current in one phase can induce flux in another. 
+      Under sinusoidal drive currents, it is possible to use a lumped inductance, called the **synchronous inductance**, to accommodate for this. The value of the synchronous inductance is [@colton_design_2010]:
 
 
       $$ L_s = \frac{3}{2} L_a $$
@@ -253,7 +256,11 @@
       where  $L_a$ is the lumped inductance measured independently on one phase, if it could be isolated. 
 
 
-      The winding inductance has many theoretical and practical effects on the motor. It stores energy in the form of a magnetic field any time there is current in the winding. When a winding is switched off, this energy must go somewhere. For this reason, controller drivers contain "flyback diodes" that allow this current to circulate even when all the switches are open. Under highfrequency pulse-width modulated (PWM) control, the winding inductance also filters out current ripple. However, as a low-pass filter on current it also creates phase lag which is the motivation for the use of field-oriented control
+      The winding inductance stores energy in the form of a magnetic field any time there is current in the winding. 
+      When a winding is switched off, this energy must go somewhere. 
+      For this reason, controller drivers contain **flyback diodes** that allow this current to circulate even when all the switches are open. 
+
+      Under highfrequency pulse-width modulated (PWM) control, the winding inductance also filters out current ripple. However, as a low-pass filter on current it also creates phase lag which is the motivation for the use of field-oriented control
 
       The winding inductance is a function of motor geometry and the number of turns in the winding.
 
@@ -262,27 +269,21 @@
 
       Saliency means the inductance varies with rotor position due to non-uniform air gap which inturn creates non-uniform flux distribution. If the magents are removed, the rotor will align with ampere-conductor distribution of stator and the torque produced for alignment is called **alignment/reluctant** torque.
 
-      T [@hendershot_design_2010, p. 68] In Non-Salient,the rotor is rotationally symmetric. No tendency to align with stator if magnets in rotor are removed. i.e., No **Reluctance Torque**, and winding inductance does not vary with rotor position. Non-salient poles exhibit both attractive & repulsive gap forces. []
+      In Non-Salient, the rotor is rotationally symmetric and has no tendency to align with stator if, magnets in rotor are removed. i.e., No **Reluctance Torque** thus, winding inductance does not vary with rotor position. Non-salient poles exhibit both attractive & repulsive gap forces. [@hendershot_design_2010, p. 68]
 
    3. **Winding Configuration**
 
       They have three phase windings and can be connected to each other in wye or delta configuration. Wye has higher torque (theoretically torque constant is greater by a factor $\sqrt{3}$ [@kalouche_design_2016, p. 25]) because in the wye configuration, at any time one of phase is open and other two-phase are in series thus equal current flows through them whereas in delta it gets divided into two phases. Thus more current in each phase causes more torque, one will push and another phase will pull in the wye configuration.
 
-   4. **Outrunners vs Inrunners**:
+   4. **Gap Radius**:
 
-      [@kenneally_design_2016]
-
-
-      outrunners (rotor on the outside) will be preferrable to inrunners (rotor on the inside), and this measure is tied favorably to a motor’s radius to depth ratio [@asada_direct-drive_1987] as well as a large gap radius [@seok_actuator_2012]. The measure is fundamentally winding invariant [kenneally_leg_2015], but in practice other details of the motor’s construction (especially relating to the stator core and volume of copper) are critical.
-
-      [@seok_actuator_2012]
-
-      The **gap radius** is the distance from the rotating axis to the center of the gap between permanent magnets and the stator.
+      It is the distance from the rotating axis to the center of the gap between permanent magnets and the stator.
 
       The area inside of the gap increase proportionally. 
 
-      $$ M = V \rho = [V_{rotor} + V_{stator}]\rho $$ 
+      $$ Mass = V \rho = [V_{rotor} + V_{stator}]\rho $$ 
 
+      ![Gap Radius, Source:[@seok_actuator_2012]](https://ajaygunalan.github.io/projects/asset/motor/r_gap.png){width=30% height=25%}
 
       $$ M = \pi [r_{gap}^2 - (r_{gap} - t_{rotor})^2 + (r_{gap} + t_{stator})^2 - r_{gap}^2 ]l \rho $$
 
@@ -291,22 +292,33 @@
 
       $$ M \approx 2\pi r_{gap}l(t_s \rho_s + t_r \rho_r) $$
 
+      **$$ M \propto r_{gap} $$**
+
+      $$ \tau = Fr_{gap} = (\sigma A)r_{gap} = (\sigma 2 \pi r_{gap}l)r_{gap} = 2 \pi r_{gap}^{2}l \sigma $$
+
+      **$$ \tau \propto r_{gap}^{2} $$**
+
       $$ J_{hollowcylinder} = \frac{1}{2}M (R^2_{inner} + R^2_{outer}) $$
 
       $$ J_{rotor} \approx Mr^2_{gap} $$
 
 
-       $$ J_{rotor} \approx 2\pi lt_r \rho_r r^3_{gap} $$
+      $$ J_{rotor} \approx 2\pi lt_r \rho_r r^3_{gap} $$
+
+      **$$ J_{rotor} \propto r_{gap}^{3} $$**
 
 
-       $$ \tau = Fr_{gap} = (\sigma A)r_{gap} = (\sigma 2 \pi r_{gap}l)r_{gap} = 2 \pi r^3_{gap}l \sigma $$
-
-
-       $$ \frac{\tau}{M} \propto r_{gap} $$
-       $$ \frac{\tau}{J} \propto \frac{1}{r_{gap}} $$
+      **$$ \frac{\tau}{M} \propto r_{gap} $$**
+      **$$ \frac{\tau}{J} \propto \frac{1}{r_{gap}} $$**
 
 
 
+
+      [@kenneally_design_2016]outrunners (rotor on the outside) will be preferrable to inrunners (rotor on the inside), and this measure is tied favorably to a motor’s radius to depth ratio [@asada_direct-drive_1987] as well as a large gap radius [@seok_actuator_2012]. The measure is fundamentally winding invariant [kenneally_leg_2015], but in practice other details of the motor’s construction (especially relating to the stator core and volume of copper) are critical.
+
+      [@seok_actuator_2012]
+
+      
    5. **Core vs Coreless**:
    
 
@@ -373,9 +385,12 @@
 
 ### To Do ###
 
-   1. [@hendershot_design_2010] finish 1.3.3 and 1.4.2
+   1. Finish 1.3.3 and 1.4.2 in [@hendershot_design_2010]
+   2. Maxon Document
+   3. Asuting  BLDC chapter
+   4. Focus on charcteristic section
+   5. Finish the core vs corless section
  
-
 ### References ###
 
 <style>
@@ -386,6 +401,13 @@ h3 {
 p {
    text-align: justify;
    text-justify: inter-word;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.author {
+    text-align: center;
+
 }
 
 ol {
@@ -397,5 +419,21 @@ ol {
     margin-right: auto;
     padding-left: 40px;
 }
-</style>
 
+ol li {
+   text-align: left;
+}
+
+ol li img {
+  display: block;
+  margin: auto
+}
+
+ol li figure figcaption {
+   text-align: center;
+}
+
+body {
+   background-color: #faebd7
+}
+</style>
