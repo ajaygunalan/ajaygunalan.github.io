@@ -4,13 +4,21 @@
 
 ### Introduction ###
 
-   What is a robot?
+![Stoch 1.0](https://ajaygunalan.github.io/projects/asset/past/stoch/stoch_1_0.jpg)
+
+   
 
 
 ### Basic Terminology ###
 
  
-### References ###
+### The Team ###
+
+Team Members: [Shounak Bhattachary](https://sites.google.com/view/shounakoffice/home), [Dhaivat Dholakiya](https://sites.google.com/view/dhaivatdh/home), [Abhik Singla](https://sites.google.com/view/abhiksingla/home) and [myself..!](https://ajaygunalan.github.io/)
+
+<br>
+
+Principal Investigators: [Shishir N. Y. Kolathaya](https://shishirny.github.io/),  [Prof. Bharadwaj Amrutur](http://chips.ece.iisc.ernet.in/index.php/Bharadwaj_Amrutur)
 
 <style>
 h3 {

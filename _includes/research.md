@@ -35,7 +35,7 @@ A robot is essential a bunch of coupled Motors with varying load. I personally b
 
 **2. [Stoch](../projects/past/stoch.html)**
 
-"Stoch" is the quadruped developed at RBCCPS, I was a small part of the ver 1.0 and was fully involved in the verison 2.0. The goal of the project is develop versatile, legged robot.
+"Stoch" is the quadruped developed at RBCCPS, I was a small part of the ver 1.0 and was fully involved for the software developemnt of second generation (Stoch 2.0). The goal of the project is develop versatile, legged robot.
 
 ---
 

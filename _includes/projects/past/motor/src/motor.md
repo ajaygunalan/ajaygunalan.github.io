@@ -22,7 +22,7 @@
 
    Generally, stator is the  stationary part and rotor is the rotational part. In case of BLDC, often stator will have windings and rotor will have the permanent magnets.
 
-   ![Stator & Rotor, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/motor/stator_rotor.png){width=30% height=25%}
+   ![Stator & Rotor, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/past/motor/stator_rotor.png){width=30% height=25%}
 
 
 #. **Air Gap & Gap Radius**
@@ -32,7 +32,7 @@
    Gap Radius  $R_{gap}$ is radial distance from the axle to the gap between the stator and rotor. When we mean pancake shaped motor, we mean motors with $R_{gap} > L_{axial}$
 
 
-   ![Gap Radius, Source:[@seok_actuator_2012]](https://ajaygunalan.github.io/projects/asset/motor/r_gap.png){width=30% height=25%}
+   ![Gap Radius, Source:[@seok_actuator_2012]](https://ajaygunalan.github.io/projects/asset/past/motor/r_gap.png){width=30% height=25%}
 
  
 
@@ -42,7 +42,7 @@
 
    Slot is the section between two tooth. Three phase motor have slots (and teeth) that is evenly divisible by three.
  
-   ![Tooth & Slot, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/motor/tooth_slot.png){width=30% height=25%}
+   ![Tooth & Slot, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/past/motor/tooth_slot.png){width=30% height=25%}
 
 #. **Phase**
 
@@ -84,12 +84,12 @@
    Thus before delving into the various paramters of  a motor, we need to have model the motor.
    Most motor are modelled as a Resistor, Inductor and volatge source($E$) in series:
 
-![Basic Motor Model, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/motor/basic_model.png){width=20% height=8%}
+![Basic Motor Model, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/past/motor/basic_model.png){width=20% height=8%}
 
 
    For a 3-phase BLDC/PMSM, the appropriate model is:
 
-![Model of a 3-phase BLDC/PMSM, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/motor/advanced_model.png){width=40% height=35%}
+![Model of a 3-phase BLDC/PMSM, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/past/motor/advanced_model.png){width=40% height=35%}
 
 
 
@@ -110,7 +110,7 @@
 
    $$ V_{supply, \upsilon = 0} i =  i^2R $$
 
-   ![primitve motor in a stall condition, Source:[@hughes_electric_2013]](https://ajaygunalan.github.io/projects/asset/motor/v_is_zero.png){width=30% height=15%}
+   ![primitve motor in a stall condition, Source:[@hughes_electric_2013]](https://ajaygunalan.github.io/projects/asset/past/motor/v_is_zero.png){width=30% height=15%}
 
 
    However current $i$ will remain unchanged for both $\upsilon \ne 0$ & $\upsilon =0$, because it is determined by the load alone, thus to support a given load the current $i$ is: 
@@ -118,6 +118,7 @@
    $$F_{conductor}= m_{load}g = Bil_{axial} \implies i = \frac{m_{load}g}{Bl} \implies i \propto m_{load}$$ since $(g, B, l)$ are constant for a given motor.
 
    To move the load, i.e., to produce mechnical output power, we need higher volatge, i.e., $V_{supply} > V_{supply,\upsilon = 0}$
+
 
 
    $$ (V_{supply} -V_{supply,\upsilon = 0})i = (Bil_{axial})\upsilon $$
@@ -270,7 +271,7 @@
 
    $$ Mass = V \rho = [V_{rotor} + V_{stator}]\rho $$ 
 
-   ![Gap Radius, Source:[@seok_actuator_2012]](https://ajaygunalan.github.io/projects/asset/motor/r_gap.png){width=30% height=25%}
+   ![Gap Radius, Source:[@seok_actuator_2012]](https://ajaygunalan.github.io/projects/asset/past/motor/r_gap.png){width=30% height=25%}
 
    $$ M = \pi [r_{gap}^2 - (r_{gap} - t_{rotor})^2 + (r_{gap} + t_{stator})^2 - r_{gap}^2 ]l \rho $$
 
