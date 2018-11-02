@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Ajay G" />
+  <title>Experience-based Motion Planning (EBMP)</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title">Experience-based Motion Planning (EBMP)</h1>
+<p class="author">Ajay G</p>
+</header>
+<h3 id="what-is-motion-planning">What is Motion Planning ?</h3>
+<p>Given robot at a particular configuration, How to reach the desired configuration without colliding with environment and itself, and possibly minimisisng torque &amp; time ?</p>
+<p>It gives a path, or trajectory, which on executing, will reach the desired configuration.</p>
+<h4 id="basic-terminology">Basic Terminology</h4>
+<dl>
+<dt>Configuration</dt>
+<dd><p>A particular position, and oreintation, of the robotic arm is known as configuration.</p>
+</dd>
+<dt>Configuration Space</dt>
+<dd><p>It is the space where each axis, corresponds to a particular joint angle of the robot. i.e., a N DOF robotic manipulator arm will have N dimensional Configuration Space. A particular configuration, will correspond to a point in C-space.</p>
+</dd>
+<dt>DOF</dt>
+<dd><p>“N” Degrees of Freedom means the arm has N independent motions which can execute simultaneously.</p>
+</dd>
+<dt>Path</dt>
+<dd><p>A set of way points which on executing will reach the desired configuration.</p>
+</dd>
+<dt>Trajectory</dt>
+<dd><p>A path with timed component such as velocity and accleration.</p>
+</dd>
+</dl>
+<h4 id="major-approaches">Major Approaches</h4>
+<ol>
+<li><p><strong>Search Based</strong></p>
+<p>Discretize the C-space and solve as if finding a path in graph using algorithm such as <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A*</a></p></li>
+<li><p><strong>Sampling Based</strong></p>
+<p>Sample(Pick a point) the C-space randomly and check whether a path exist, if it does, it solved.</p>
+<ol type="i">
+<li><p>Single-query (Rapidly Random Exploring Tree)</p></li>
+<li><p>Multi-query (Probablistic Road Map)</p></li>
+</ol></li>
+</ol>
+<h3 id="what-is-experience-based-motion-planning">What is Experience Based Motion Planning ?</h3>
+<p>Using the data form the trajectory of the past, to compute the new trajectory quicky rather than Planning From Stratch. (PFS)</p>
+<h3 id="to-write-on">To Write On</h3>
+<ol>
+<li>How to store the data without redundancy ?</li>
+<li>How to retrive &amp; repair the past tarjectory much faster than time needed for PFS. ?</li>
+</ol>
+<!-- Saving Experiences Independently
+
+
+Experience-Based Planning Approaches:
+
+Categorization of Approaches
+
+#. Methods for Generating Experience
+#. Methods for Saving and Recalling 
+
+Incremental Search for Dynamic Environments
+
+#.  Classical Incremental Grid Search
+#.   Sampling-based Incremental Search
+   Genetic and Evolutionary Incremental Search
+#.
+Saving Experiences Independently
+
+#.   Trajectory Libraries and Lookup Tables
+#.   Recall: Using High-Dimensional Decriptors 
+#.   Filtering: Choosing Which Experiences to Save
+#.   Lightning Framework
+#.   Generation: Learning by Demonstartion
+
+Classic Grid Search Reuse   
+
+Probabilistic Roadmap Reuse 
+
+Other Experience-Based Techniques
+
+#.   Guididng Sampling Using Attractors
+#.   Configuration Space Approximation of Constraints
+#.   Dynamic Motion Primitive
+         -->
+<h3 id="references">References</h3>
+<style>
+h3, h4 {
+      text-align: left;
+}
+
+p {
+   text-align: justify;
+   text-justify: inter-word;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.author {
+    text-align: center;
+
+}
+
+dl dt{
+  text-align: left;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+}
+
+ol li {
+   text-align: left;
+}
+
+ol li img {
+  display: block;
+  margin: auto
+}
+
+ol li figure figcaption {
+   text-align: center;
+}
+
+body {
+   background-color: #faebd7
+}
+</style>
+</body>
+</html>

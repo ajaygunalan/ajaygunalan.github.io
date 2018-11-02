@@ -1,0 +1,14 @@
+---
+layout: default
+---                      
+                                                 
+<main class="content" role="main">  
+
+{% include lib/mathjax.html %} 
+{% capture my-include %}{% include projects/past/stoch/output/stoch.html %}{% endcapture %}
+{{ my-include | markdownify }}
+
+</main>
+
+{% include photoswipe.html %}
+{% include post_scripts.html %}

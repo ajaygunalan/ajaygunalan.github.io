@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Ajay G" />
+  <title>Control &amp; Learning</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title">Control &amp; Learning</h1>
+<p class="author">Ajay G</p>
+</header>
+<h3 id="introduction">Introduction</h3>
+<p>In RBCCPS, we used on-policy, model-free DRL algorithm based on actor-critic learning framework called Proximal Policy Optimisation (PPO) to generate the gaits in the simulation(PyBullet). It took 30 Million samples (5-7 hours) to learn a particular gait in the simulation. To transfer it on the hardware we took the end-effector tarjectory form simulation and did principal component analysis to generate different gaits and we deployed on the hardware.</p>
+<p>Result ?</p>
+<p>The quadruped performed variety of gaits such as walks, bounds, trots, etc… but it lead to two improtant question ?</p>
+<ol type="1">
+<li><p>How to learn different task with least samples ?</p>
+<p>Model based RL, &amp; Imitation Leanring, seems to be promising.</p></li>
+<li><p>How to control &amp; combine different behaviour such as turning, climbing stairs, reacting to external disturbance ?</p>
+<p>Funnel Libraries, &amp; Reactive Control.</p></li>
+</ol>
+<p>Our goal here would be to get a intution of the above topics by explaining few relevalant latest resercah paper on the above topic.</p>
+<h3 id="strategy-to-be-followed">Strategy to be followed</h3>
+<p>Instead of delving right into the research topic, I would like to get the basic fundamental, thus I’m gonna do the following courses,</p>
+<ol>
+<li>Finish Math for Robotics</li>
+<li>ANN course by Brilliant</li>
+<li>RL course by David Silver</li>
+<li>Underactauted Robotics by Russ Tedrake</li>
+</ol>
+<p>After that, I’ll make intution of latest relavant research topics.</p>
+<style>
+h3 {
+      text-align: left;
+}
+
+p {
+   text-align: justify;
+   text-justify: inter-word;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.author {
+    text-align: center;
+
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+}
+
+ol li {
+   text-align: left;
+}
+
+ol li img {
+  display: block;
+  margin: auto
+}
+
+ol li figure figcaption {
+   text-align: center;
+}
+
+body {
+   background-color: #faebd7
+}
+</style>
+<!-- ### Hmailtonian Jacobi Bellman Equation ###
+
+From [@landau_mechanics_2007, p. 147] we have, 
+
+$$ \frac{\partial S}{\partial t}  + H(q, p,t ) = 0 $$
+
+where $S(q, t)$ is the Action and replacing momenta $p$ with $\frac{\partial S}{\partial t}$, you get the Hmailton-Jacobi equation
+
+$$ \frac{\partial S}{\partial t}  + H(q, \frac{\partial S}{\partial t},t ) = 0 $$
+
+So now what is $S$ and what is $H$ ?
+
+$$ S = \int_{t_1}^{t_2} Ldt \implies \frac{dS}{dt} = L$$
+
+$L$ is the non-relativistic Lagrangian for a system of particles and It can be defined by $$L = T -V $$,
+
+where $T$ is the total kinetic energy and $V$ is the total potential energy of the system. 
+
+$$ \frac{dS(q, t)}{dt} =  \frac{\partial S}{\partial t} + \frac{\partial S}{\partial q} \dot{q}$$
+
+$$  L =  \frac{\partial S}{\partial t} + \frac{\partial S}{\partial q} \dot{q}$$
+
+
+http://math.ucr.edu/home/baez/classical/
+
+http://www.damtp.cam.ac.uk/user/tong/dynamics.htm -->
+<h3 id="references">References</h3>
+<style>
+h3 {
+      text-align: left;
+}
+
+p {
+   text-align: justify;
+   text-justify: inter-word;
+   margin-left: auto;
+   margin-right: auto;
+/*}*/
+
+.author {
+    text-align: center;
+
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+}
+
+ol li {
+   text-align: left;
+}
+
+ol li img {
+  display: block;
+  margin: auto
+}
+
+ol li figure figcaption {
+   text-align: center;
+}
+
+body {
+   background-color: #faebd7
+}
+</style>
+</body>
+</html>
