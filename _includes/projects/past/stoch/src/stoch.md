@@ -4,8 +4,8 @@
 
 ### Introduction ###
 
-![Stoch 1.0](https://ajaygunalan.github.io/projects/asset/past/stoch/stoch_one.jpeg)
-
+<!-- ![Stoch 1.0](https://ajaygunalan.github.io/projects/asset/past/stoch/stoch_one.jpeg)
+ -->
    
 
 
