@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Ajay G" />
-  <title>Stoch - The Quadruped Robot</title>
+  <title>Stoch - The Quadruped Robot at RBCCPS</title>
   <style type="text/css">
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
@@ -19,19 +19,139 @@
 </head>
 <body>
 <header>
-<h1 class="title">Stoch - The Quadruped Robot</h1>
+<h1 class="title">Stoch - The Quadruped Robot at <a href="http://www.rbccps.org/">RBCCPS</a></h1>
 <p class="author">Ajay G</p>
 </header>
+<p><br> <br></p>
 <h3 id="introduction">Introduction</h3>
-<!-- ![Stoch 1.0](https://ajaygunalan.github.io/projects/asset/past/stoch/stoch_one.jpeg)
- -->
-<h3 id="basic-terminology">Basic Terminology</h3>
-<h3 id="the-team">The Team</h3>
-<p>Team Members: <a href="https://sites.google.com/view/shounakoffice/home">Shounak Bhattachary</a>, <a href="https://sites.google.com/view/dhaivatdh/home">Dhaivat Dholakiya</a>, <a href="https://sites.google.com/view/abhiksingla/home">Abhik Singla</a> and <a href="https://ajaygunalan.github.io/">myself..!</a></p>
+<figure>
+<img src="https://ajaygunalan.github.io/projects/asset/past/stoch/stator_rotor.png" alt="Stoch-1.0 developed at RBCCPS" /><figcaption>Stoch-1.0 developed at RBCCPS</figcaption>
+</figure>
+<p><strong>Goal ?</strong></p>
+<p>To achieve a robust, all terrain, legged robot.</p>
+<hr />
+<table>
+<caption>Hardware Description of Stoch 1.0.</caption>
+<thead>
+<tr class="header">
+<th>Hardware</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Materials:</td>
+<td>Carbon fiber (CF) tubes &amp; 3D printed (PLA)</td>
+</tr>
+<tr class="even">
+<td>Servo-motors</td>
+<td>Kondo-2350HV &amp; Robokits Ultra Torque: RKI-1203</td>
+</tr>
+<tr class="odd">
+<td>IMU:</td>
+<td>9 axis sparkfun MPU 9150</td>
+</tr>
+<tr class="even">
+<td>Encoders:</td>
+<td>Magnetic Encoders, Bourns EMS22a</td>
+</tr>
+<tr class="odd">
+<td>Power Supply:</td>
+<td>Li-Po batteries</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>11.1V(3s)×2200mAh for hip motors</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>7.4V(2s)×3000mAh for knee motors</td>
+</tr>
+<tr class="even">
+<td>PWM multiplexer:</td>
+<td>Adafruit 16-Channel 12-bit: PCA968</td>
+</tr>
+<tr class="odd">
+<td>Mass:</td>
+<td>3.0 Kg</td>
+</tr>
+<tr class="even">
+<td>Total Leg Length</td>
+<td>230 mm</td>
+</tr>
+</tbody>
+</table>
 <p><br></p>
-<p>Principal Investigators: <a href="https://shishirny.github.io/">Shishir N. Y. Kolathaya</a>, <a href="http://chips.ece.iisc.ernet.in/index.php/Bharadwaj_Amrutur">Prof. Bharadwaj Amrutur</a></p>
+<h4 id="what-was-achieved-by-stoch-1.0">What was achieved by Stoch 1.0 ?</h4>
+<p>The quadruped performed variety of gaits such as walks, bounds, trots, etc…as show in this <a href="https://www.youtube.com/watch?v=swcStUm0Nuk&amp;feature=youtu.be">video</a></p>
+<p><br></p>
+<h4 id="how-we-achieved">How we achieved ?</h4>
+<p>We used on-policy, model-free DRL algorithm based on actor-critic learning framework called Proximal Policy Optimisation (PPO) to generate the gaits in the simulation(PyBullet). It took 30 Million samples (5-7 hours) to learn a particular gait in the simulation. To transfer it on the hardware, we took the end-effector tarjectory form simulation and did principal component analysis to generate different gaits and we deployed on the hardware.</p>
+<p>You can find more info in this <a href="https://arxiv.org/abs/1810.03842">paper</a></p>
+<p><br></p>
+<h4 id="next-what">Next what ?</h4>
+<ol>
+<li><p>How to learn different task with least samples ?</p>
+<p>Model based RL, &amp; Imitation Leanring.</p></li>
+<li><p>How to control &amp; combine different behaviour such as turning, climbing stairs, reacting to external disturbance ?</p>
+<p>Funnel Libraries, &amp; Reactive Control.</p></li>
+</ol>
+<p>Further information on learning, &amp; control, can be found in <a href="https://ajaygunalan.github.io/projects/future/control_and_learning.html">control and learning</a></p>
+<p>I would like to mention here more on the pratical issues(behind the paper stories) and evolution of this project, especially on stoch 2.0</p>
+<p><br> <br></p>
+<h3 id="stoch-1.0">Stoch 1.0</h3>
+<p>The project was initially motivated by Googles’s work on <a href="https://arxiv.org/abs/1804.10332">Sim-to-Real: Learning Agile Locomotion For Quadruped Robots</a>. The essence of the paper is to imrove the transferbility from learned control policy from simualtion to hardware by:</p>
+<p><strong>1. Improving the Robot Model by having:</strong></p>
+<ol type="i">
+<li>Accurate URDF by phsyically measuring many parameters</li>
+<li>Actuator Model</li>
+<li>Latency (Commuication Delay)</li>
+</ol>
+<p><strong>2. Adding Noise to have Robust Controller:</strong></p>
+<ol type="i">
+<li>Randomising Dynamic Parameters such as Mass, Friction, etc…</li>
+<li>Random Perturbation</li>
+<li>Using a compact observation space</li>
+</ol>
+<p><strong>3. Control of the learned policies:</strong></p>
+<p>Instead of learning the entire policy from scratch which will reult in lack of controllability, they decompose the problem into two parts:</p>
+<ol type="1">
+<li><span class="math inline">\(\bar{a}(t)\)</span> An open loop component that allows a user to provide reference trajectories</li>
+<li><span class="math inline">\(\pi(o)\)</span> feedback component that adjusts the leg poses on top of the reference based on the observations.</li>
+</ol>
+<p><span class="math display">\[ a(t, o) =  \bar{a}(t) + \pi(o) \]</span></p>
+<p>We can infer two importent things:</p>
+<ol type="1">
+<li>We need to have a very gool model to produce good determinstic baseline motion which are vital for safety using classical control.</li>
+<li>Fine tuning of the motion is more likeable to be better handle by learning based control.</li>
+</ol>
+<p>As mentioned earlier further work on learning and control will be mentioned <a href="https://ajaygunalan.github.io/projects/future/control_and_learning.html">here</a></p>
+<p><br></p>
+<h4 id="why-we-didnt-do-what-google-did">Why we didn’t do what google did ?</h4>
+<p>Well, getting accurate model is vital, it is not trivial task, for example google disassembled their robot and weighed each component then, modeled their URDF. Our robot rougly costed around 1,200 USD was made out of hobby grade stuff and was very fragile to disassemble. Plus we didn’t have accurate torque sensor to model the actuator. Google had two controller, one high level controller TX2 and another low level motor driver. We had three Ubuntu to RPI3 (via MQTT Ethernet) and from RPI3 to Servo (via PWM multiplexer). For a perspective MIT Cheetah uses ATI force sensor which is roughly the cost of the entire robot. So, we took the end-effector trajectory and used hand-crafted IK solver in Python to run it on our hardware.</p>
+<p><br></p>
+<h4 id="can-it-walk-with-hand-crafted-tarjectory">Can it walk with hand-crafted tarjectory ?</h4>
+<p>It does. If you hand-craft a trajectory, let us say an ellipse, or circle, it will still walk. and adjust the phase difference to get different gaits.</p>
+<p><br></p>
+<h4 id="then-what-is-the-point-of-getting-a-drl">Then What is the point of getting a DRL ?</h4>
+<p>Well, the hand crafted may or may not be optimal, but the generated gaits were certainly closer to optimal, given their similrance to other quadruped.</p>
+<p><br> <br></p>
+<h3 id="stoch-2.0">Stoch 2.0</h3>
+<h4 id="leg-testing">Leg Testing</h4>
+<!-- added the leg testing video here -->
+<p><br> <br></p>
+<h3 id="the-team">The Team</h3>
+<p><strong>Team Members:</strong> <a href="https://sites.google.com/view/shounakoffice/home">Shounak Bhattachary</a>, <a href="https://sites.google.com/view/dhaivatdh/home">Dhaivat Dholakiya</a>, <a href="https://sites.google.com/view/abhiksingla/home">Abhik Singla</a> and <a href="https://ajaygunalan.github.io/">myself..!</a></p>
+<p><strong>Principal Investigators:</strong> <a href="https://shishirny.github.io/">Shishir N. Y. Kolathaya</a>, <a href="http://chips.ece.iisc.ernet.in/index.php/Bharadwaj_Amrutur">Prof. Bharadwaj Amrutur</a></p>
+<p>I would like to specially thank Shishir, &amp; Prof. Bharadwaj, for giving me a wonderful oppourtinity to work in this project.</p>
+<figure>
+<img src="https://ajaygunalan.github.io/projects/asset/past/stoch/team_hangout.jpg" alt="Robotics Group at RBCCPS" /><figcaption>Robotics Group at RBCCPS</figcaption>
+</figure>
+<figure>
+<img src="https://ajaygunalan.github.io/projects/asset/past/stoch/stoch_team.jpg" alt="Stoch Team" /><figcaption>Stoch Team</figcaption>
+</figure>
 <style>
-h3 {
+h3, h4 {
       text-align: left;
 }
 
@@ -46,6 +166,17 @@ p {
     text-align: center;
 
 }
+
+table {
+    margin-left:auto; 
+    margin-right:auto;
+    background: transparent;
+
+  }
+
+table caption {
+    text-align: center;
+  }
 
 ol {
     display: block;
@@ -70,9 +201,7 @@ ol li figure figcaption {
    text-align: center;
 }
 
-body {
-   background-color: #faebd7
-}
+
 </style>
 </body>
 </html>

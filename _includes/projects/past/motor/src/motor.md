@@ -409,7 +409,7 @@ ol li figure figcaption {
    text-align: center;
 }
 
-body {
+/*body {
    background-color: #faebd7
-}
+}*/
 </style>

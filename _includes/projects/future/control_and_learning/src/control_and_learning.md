@@ -13,13 +13,17 @@ The quadruped performed variety of gaits such as walks, bounds, trots, etc... bu
 
    1. How to learn different task with least samples ?
 
-	  Model based RL, & Imitation Leanring, seems to be promising.
+	  Model based RL, & Imitation Leanring.
 
    2. How to control & combine different behaviour such as turning, climbing stairs, reacting to external disturbance ?
 
 	  Funnel Libraries, & Reactive Control.
 
 Our goal here would be to get a intution of the above topics by explaining few relevalant latest resercah paper on the above topic.
+
+
+<br>
+<br>
 
 ### Strategy to be followed ###
 
@@ -32,6 +36,10 @@ Instead of delving right into the research topic, I would like to get the basic 
  
 
  After that, I'll make intution of latest relavant research topics.
+
+ <br>
+ <br>
+ <br>
 
 
  <style>
@@ -74,9 +82,9 @@ ol li figure figcaption {
    text-align: center;
 }
 
-body {
+/*body {
    background-color: #faebd7
-}
+}*/
 </style>
 
 

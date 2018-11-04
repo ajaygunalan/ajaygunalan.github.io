@@ -1,19 +1,108 @@
-% Design, Dynamics, Drive
+% Smart Intravenous Dripper
 % Ajay G
-% August 24, 2018
 
-# Design of BLDC #
+<br>
 
-Simon has done gr8 job. what he does is is acyaully amazong. [@kalouche_design_2016]
+**Poblem Statement ?**
 
-## This is proper documenation ##
+IV-Drippers are used to inject saline fluids, directly into the veins of the patient. They have  to be replaced, before it completely drains out, or else blood will flow in reverse direction and sometimes air embolism (air-blockage) may even cause a fatal accident. 
 
-His work was based on coltion.[@colton_design_2010]
+<br>
 
-$$\frac{\partial \vec{u}}{\partial t} + (\vec{u} \cdot \nabla) \vec{u} = - \frac{1}{\rho} \nabla p + \nabla \sigma + \vec{f}$$
+**Goal ?**
 
-$$\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \vec{u}) = 0$$ 
+The goal is to prevent such accident by automating this process by using a liquid-level sensor to monitor the liquid level and if the Intravenous Dripper runs out of the saline fluid, then the cam actuated by the servo, will stop the flow immediately, thus preventing any such accident to occur and will notify the nurse for further replacement of the IV bag.
 
-Testing whther it works..!
+<br>
 
-# Refernces #
+**What we did ?**
+
+We protoyped our ideation by using majorly TI components
+
+![SID architecture](https://ajaygunalan.github.io/projects/asset/past/sid/sid_archi.png)
+
+
+The video below shows it working and feeback from Medical doctors.
+
+![video_here]
+
+We particpated in the Department of Science & Technology, Govt. of India & Texas Instrument's **India Innovation Challegne** Design Contest (2016) anchored by Indian Institute of Managment, Banaglore and out of 11,000+ applicants, we were top 10 teams to recah finalist.
+
+<br>
+
+**Next What ?**
+
+Being a finalist of IICDC 2016, We received funding for our startup [Rekindle Automation Pvt. Ltd.](https://www.rekindleautomations.com/) and is currenlty incubated at NSRCEL, IIM-Banglore. The prototype developed initially for proof of concepts was not reliable, thus now the focus is to develop industrial grade, reliable product.
+
+
+<br>
+
+**The Team**
+
+**Team Members:** [Rohith J.K](https://www.quora.com/profile/Rohit-Jk), [Radhakrishnan Jothiram](https://www.linkedin.com/in/radhakrishnan-jothiram-128a4512b/), [Wajjahath Habibullah.A](https://www.linkedin.com/in/wajjahath-habibullah-a-11a14b134/) 
+ and [myself..!](https://ajaygunalan.github.io/)
+
+![Finalist](https://ajaygunalan.github.io/projects/asset/past/sid/sid_certificate.png)
+
+
+
+
+
+
+
+
+
+
+<style>
+h3 {
+      text-align: left;
+}
+
+p {
+   text-align: justify;
+   text-justify: inter-word;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.author {
+    text-align: center;
+
+}
+
+table {
+    margin-left:auto; 
+    margin-right:auto;
+    background: transparent;
+
+  }
+
+table caption {
+    text-align: center;
+  }
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+}
+
+ol li {
+   text-align: left;
+}
+
+ol li img {
+  display: block;
+  margin: auto
+}
+
+ol li figure figcaption {
+   text-align: center;
+}
+
+
+</style>

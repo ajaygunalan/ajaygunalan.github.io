@@ -43,6 +43,14 @@ A robot is essential a bunch of coupled Motors with varying load. I personally b
 
 IV-Drippers are used to inject saline fluids, directly into the veins of the patient. They have  to be replaced, before it completely drains out, or else blood will flow in reverse direction and sometimes air embolism (air-blockage) may even cause a fatal accident. The goal is to prevent such accident by automating this process by using a liquid-level sensor to monitor the liquid level and if the Intravenous Dripper runs out of the saline fluid, then the cam actuated by the servo, will stop the flow immediately, thus preventing any such accident to occur and will notify the nurse for further replacement of the IV bag. 
 
+---
+
+**4. [Asimov Robotics](../projects/past/asimov.html)**
+
+A little bit of histroy of how why I ended up in Robotics and Why it is so fascinating, & interesting, field and the various projects I did in Asimov Robotics and the current state of the Robotic Industry in India.
+
+
+
 <br>
 <hr class="style-four" />
 <br>
@@ -61,7 +69,9 @@ The work we did at RBCCPS (Stoch-1.0), lead to many open ended questions such as
 
 Using experience (memory) to reduce computational time is basic principle. The elegant lies in making sure that the time to retrieve, and repair,  a stored trajectory is less than the time to compute form scratch.
 
-
+<br>
+<br>
+<br>
 
 <style>
 h3

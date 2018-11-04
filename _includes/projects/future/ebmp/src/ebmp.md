@@ -7,6 +7,8 @@ Given robot at a particular configuration, How to reach the desired configuratio
 
 It gives a path, or trajectory, which on executing, will reach the desired configuration.
 
+<br>
+
 #### Basic Terminology ####
  
 Configuration
@@ -29,6 +31,8 @@ Trajectory
 
 :  A path with timed component such as velocity and accleration.
 
+<br>
+
 #### Major Approaches ####
 
 #. **Search Based**
@@ -44,16 +48,24 @@ Trajectory
    ii. Multi-query (Probablistic Road Map)
 
 
+<br>
+<br>
+
 ### What is Experience Based Motion Planning ? ###
 
 Using the data form the trajectory of the past, to compute the new trajectory quicky rather than Planning From Stratch. (PFS)
+
+<br>
+<br>
 
 ### To Write On ###
 
 #. How to store the data without redundancy ?
 #. How to retrive & repair the past tarjectory much faster than time needed for PFS. ?
 
-
+<br>
+<br>
+<br>
 
 
 	
@@ -143,7 +155,7 @@ ol li figure figcaption {
    text-align: center;
 }
 
-body {
+/*body {
    background-color: #faebd7
-}
+}*/
 </style>
