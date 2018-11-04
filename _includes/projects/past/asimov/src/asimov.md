@@ -9,6 +9,9 @@ Disclaimer: This about my Internship experience at ASIMOV Robotics Pvt. Ltd, Koc
 
 ## How I went after robotics ? ##
 
+<br>
+
+#### Chicken Factories of India ####
 
 <p style="text-align: justify;">I was one among million students in private engineering colleges where most of the lecturers, neither having research experience nor any industrial exposure, will teach. My time and energy was wasted by having classes for 8 hours a day. We were supposed to do experiments where no mistake are allowed (should not burn even a resistor!). We didn't even have the freedom of choosing an elective. It wasn't a college, but a chicken factory producing graduates with a certificate. An engineering college in India is a completely useless thing backed up by politicians to ruin youngsters' life in the name of education.</p>
 

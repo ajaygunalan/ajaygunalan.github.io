@@ -22,11 +22,13 @@
 <h1 class="title">Study of PMSM/BLDC Motor: Design, Dynamics, Drive</h1>
 <p class="author">Ajay G</p>
 </header>
+<p><br> <br></p>
 <h3 id="introduction">Introduction</h3>
 <p>What is a robot?</p>
 <p style="text-align: justify;">
 A robot is a bunch of actuator connected by a link(a structure). Actuators, being one of the fundamental element of a robot, will determine the core capabilities and limitation of a robot. Thus a thorough understanding of the actuator will help us to optimise it based upon our requirment. In this article we restrict ourself to Electromagnetic Actuator (Motors), since it is the most widely used one and has a higher energy efficiency compared to others like hydraulic, pneumatic, etc. Out of all the various type of motor like Induction, Reluctance, PMSM/BLDC, DC, Stepper, etc. I’ll be focusing on only BLDC/PMSM Motors due to its superior perfomance compared to others. However most of the concepts you learn here, will be helpful for understanding other motors too. Our goal is to understand various factors of EM actuator which influences the perfomance and hopefully to justify why <strong>pancake shaped, Quasi Direct-Drive PMSM/BLDC motor, with 4Q control drivers &amp; SEA</strong> will be the norm of the robotics in future.
 </p>
+<p><br> <br></p>
 <h3 id="basic-terminology">Basic Terminology</h3>
 <ol>
 <li><p><strong>Stator &amp; Rotor</strong></p>
@@ -59,9 +61,9 @@ A robot is a bunch of actuator connected by a link(a structure). Actuators, bein
 <p>Mechanical degrees (<span class="math inline">\(\theta_m\)</span>) in a motor refers to the rotation of the shaft. 1 revolution of the shaft equals 360 mechanical degrees.</p>
 <p>When an electrical machine is operating as a motor, the idea is to create a traveling, rotating magnetic field, via the stator so that this moving flux attracts the rotor.</p>
 <p><strong>Electrical degree</strong> (<span class="math inline">\(\theta_e\)</span>) is the angle through which magnetic field has rotated, i.e., 360 electrical degree equals transistion form “North” to “South” to “North”</p>
-<p>A 2 pole motor has 1 “North” pole and 1 “South” pole on the rotor. So in order for it to turn 360 electrical degrees (“North” to “South” to “North”), it needs to rotate 360 mechanical degrees. A 4 pole motor has 2 “North” poles and 2 “South” poles. That means that 360 electrical degrees will occur when the shaft has rotated only 180 (360/2) mechanical degrees. Thus for <span class="math inline">\(N_m\)</span> Poles we have,</p>
-<p><span class="math display">\[ \theta_e = \frac{N_m}{2} \theta_m \]</span></p></li>
+<p>A 2 pole motor has 1 “North” pole and 1 “South” pole on the rotor. So in order for it to turn 360 electrical degrees (“North” to “South” to “North”), it needs to rotate 360 mechanical degrees. A 4 pole motor has 2 “North” poles and 2 “South” poles. That means that 360 electrical degrees will occur when the shaft has rotated only 180 (360/2) mechanical degrees. Thus for <span class="math inline">\(N_m\)</span> Poles we have, <span class="math inline">\(\theta_{e}=\frac{N_m}{2} \theta_{m}\)</span></p></li>
 </ol>
+<p><br> <br></p>
 <h3 id="motor-parameters">Motor Parameters</h3>
 <p>Parameterisation means, to develop the model of a “system” interms of paramters(variable) and to see how various parameters affect the “system”. The developed model should be verified by comparing the theoritical prediction form the model against experimental data and based upon the error, we should improve our model till we are satisfied with model’s accuracy. Thus before delving into the various paramters of a motor, we need to have model the motor. Most motor are modelled as a Resistor, Inductor and volatge source(<span class="math inline">\(E\)</span>) in series:</p>
 <figure>
@@ -78,7 +80,7 @@ A robot is a bunch of actuator connected by a link(a structure). Actuators, bein
 <p>Under steady-state condition (accelration is zero), <span class="math inline">\(\frac{di}{dt} = 0\)</span> :</p>
 <p><span class="math display">\[ V_{supply}i = i^2R + (Bil)\upsilon \]</span></p>
 <figure>
-<img src="https://ajaygunalan.github.io/projects/asset/motor/v_is_not_zero.png" alt="primitve motor in a steady-state, Source:[3]" style="width:35.0%;height:12.0%" /><figcaption>primitve motor in a steady-state, Source:<span class="citation" data-cites="hughes_electric_2013">[<a href="#ref-hughes_electric_2013">3</a>]</span></figcaption>
+<img src="https://ajaygunalan.github.io/projects/asset/past/motor/v_is_not_zero.png" alt="primitve motor in a steady-state, Source:[3]" style="width:35.0%;height:12.0%" /><figcaption>primitve motor in a steady-state, Source:<span class="citation" data-cites="hughes_electric_2013">[<a href="#ref-hughes_electric_2013">3</a>]</span></figcaption>
 </figure>
 <p>When <span class="math inline">\(\upsilon = 0\)</span>, there is no mechnical output power, and all the electrical energy will converted as heat loss:</p>
 <p><span class="math display">\[ V_{supply, \upsilon = 0} i =  i^2R \]</span></p>
@@ -86,7 +88,7 @@ A robot is a bunch of actuator connected by a link(a structure). Actuators, bein
 <img src="https://ajaygunalan.github.io/projects/asset/past/motor/v_is_zero.png" alt="primitve motor in a stall condition, Source:[3]" style="width:30.0%;height:15.0%" /><figcaption>primitve motor in a stall condition, Source:<span class="citation" data-cites="hughes_electric_2013">[<a href="#ref-hughes_electric_2013">3</a>]</span></figcaption>
 </figure>
 <p>However current <span class="math inline">\(i\)</span> will remain unchanged for both <span class="math inline">\(\upsilon \ne 0\)</span> &amp; <span class="math inline">\(\upsilon =0\)</span>, because it is determined by the load alone, thus to support a given load the current <span class="math inline">\(i\)</span> is:</p>
-<p><span class="math display">\[F_{conductor}= m_{load}g = Bil_{axial} \implies i = \frac{m_{load}g}{Bl} \implies i \propto m_{load}\]</span> since <span class="math inline">\((g, B, l)\)</span> are constant for a given motor.</p>
+<p><span class="math display">\[ F_{conductor}= m_{load}g = Bil_{axial} \implies i = \frac{m_{load}g}{Bl} \implies i \propto m_{load} \]</span> since <span class="math inline">\((g, B, l)\)</span> are constant for a given motor.</p>
 <p>To move the load, i.e., to produce mechnical output power, we need higher volatge, i.e., <span class="math inline">\(V_{supply} &gt; V_{supply,\upsilon = 0}\)</span></p>
 <p><span class="math display">\[ (V_{supply} -V_{supply,\upsilon = 0})i = (Bil_{axial})\upsilon \]</span></p>
 <p><span class="math display">\[ V_{supply} -V_{supply,\upsilon = 0} = Bl_{axial}\upsilon = E \]</span></p>
@@ -137,6 +139,7 @@ A robot is a bunch of actuator connected by a link(a structure). Actuators, bein
 <li><p><strong>Cooling (C)</strong></p>
 <p>As intuitive and as basic the better the cooling the better will be the perfomance of our motor.</p></li>
 </ol>
+<p><br> <br></p>
 <h3 id="characteristics">Characteristics</h3>
 <ol>
 <li><p><strong>Resistance</strong></p>
@@ -178,6 +181,7 @@ A robot is a bunch of actuator connected by a link(a structure). Actuators, bein
 <p><strong><span class="citation" data-cites="mason_compliance_1981">[<a href="#ref-mason_compliance_1981">10</a>]</span></strong> Force Control and Position Control are two ends of extreme. Force control sensible in case of contact. Position control sensisble in case of contact-less</p>
 <p>Thus for a real world we need a hybrid approach</p></li>
 </ol>
+<p><br> <br></p>
 <h3 id="losses">Losses</h3>
 <p>Inefficiencies can be grouped into two general categories:</p>
 <ol type="1">
@@ -189,6 +193,7 @@ A robot is a bunch of actuator connected by a link(a structure). Actuators, bein
 <p><strong>Speed/Iron/<span class="math inline">\(E^2\)</span> Losses: Delta Windings, Eddy Current, and Mechanical Losses</strong></p>
 <p>Iron Core Losses = Eddy Curremt Losses + Hystersis Losses</p>
 <p>Hysteresis in the magnetic domains in the core appears as a constant friction torque, while the eddy current torque is proportional to speed.</p>
+<p><br> <br></p>
 <h3 id="selection-criteria">Selection Criteria</h3>
 <p><span class="citation" data-cites="seok_actuator_2012">[<a href="#ref-seok_actuator_2012">2</a>]</span></p>
 <p>A smaller motor will have lower iron losses at a given speed (less iron to create drag), and a larger motor will have lower copper losses for a given torque.</p>
@@ -196,8 +201,10 @@ A robot is a bunch of actuator connected by a link(a structure). Actuators, bein
 <p>This might result in huge copper losses due to squaring the high winding current, but for brief periods the effect on overall efficiency is minimal.</p>
 <p>The thermal mass of the motor windings is high enough that it might not burn up for several seconds, and if it is cooled well enough the power level may be sustainable for longer activities.</p>
 <p>This is particularly true for permanent magnet brushless motors, in which the stator coils are stationary and in contact with the case, well-positioned for heat sinks or water cooling jackets. (For brushed motors the magnets are on the outside and the windings are in the rotor, leaving few options for cooling.</p>
+<p><br> <br></p>
 <h3 id="perfomance">Perfomance</h3>
 <p>Reduced noise, wear, and friction caused by brushes and Torque-Speed characteristics is linear.<span class="citation" data-cites="asada_direct-drive_1987">[<a href="#ref-asada_direct-drive_1987">6</a>]</span></p>
+<p><br> <br></p>
 <h3 id="to-do">To Do</h3>
 <ol type="1">
 <li>Finish 1.3.3 and 1.4.2 in <span class="citation" data-cites="hendershot_design_2010">[<a href="#ref-hendershot_design_2010">8</a>]</span></li>
@@ -206,6 +213,7 @@ A robot is a bunch of actuator connected by a link(a structure). Actuators, bein
 <li>Focus on charcteristic section</li>
 <li>Finish the core vs corless section</li>
 </ol>
+<p><br></p>
 <h3 id="references">References</h3>
 <style>
 h3 {

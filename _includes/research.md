@@ -15,7 +15,7 @@
 
 **1. [Mathematics for Robotics](../projects/current/math_for_robotics.html)**
 
-Working with Robots for the last one year, I gained considerable knowledge in Software Development, Basic Electronics and gained high-level intuition of various research topics but when I try to comprehend a research paper (of on-hold Project), often I couldn't, due to lack of knowledge on Math and I couldn't find any resource which focuses on Advanced Math for Robotic, so I decided to create a resource for an intuitive understanding on various Mathematical concepts needed for Robotics such that it is easier for an Engineer to delve into Robotics Research. 
+Working with Robots for the last one year, I gained considerable knowledge in Software Development, Basic Electronics and gained high-level intuition of various research topics but when I try to comprehend a research paper, often I couldn't, due to lack of knowledge on Math and I couldn't find any resource which focuses on Advanced Math for Robotic, so I decided to create a resource for an intuitive understanding on various Mathematical concepts needed for Robotics such that it is easier for an Engineer to delve into Robotics Research. 
 
 
 <br>
@@ -41,13 +41,13 @@ A robot is essential a bunch of coupled Motors with varying load. I personally b
 
 **3. [Smart Intravenous Dripper](../projects/past/sid.html)**
 
-IV-Drippers are used to inject saline fluids, directly into the veins of the patient. They have  to be replaced, before it completely drains out, or else blood will flow in reverse direction and sometimes air embolism (air-blockage) may even cause a fatal accident. The goal is to prevent such accident by automating this process by using a liquid-level sensor to monitor the liquid level and if the Intravenous Dripper runs out of the saline fluid, then the cam actuated by the servo, will stop the flow immediately, thus preventing any such accident to occur and will notify the nurse for further replacement of the IV bag. 
+Automation of IV-drippers which are used in Hospitals to prevent back flow of blood or air blockage.
 
 ---
 
 **4. [Asimov Robotics](../projects/past/asimov.html)**
 
-A little bit of histroy of how why I ended up in Robotics and Why it is so fascinating, & interesting, field and the various projects I did in Asimov Robotics and the current state of the Robotic Industry in India.
+A little bit of histroy of how why I ended up in Robotics. Why robotics is a fascinating, & interesting, field. The various projects I did at Asimov Robotics. The current state of the robotics industry.
 
 
 

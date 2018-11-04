@@ -1,6 +1,8 @@
 % Study of PMSM/BLDC Motor: Design, Dynamics, Drive 
 % Ajay G 
 
+<br>
+<br>
 
 ### Introduction ###
 
@@ -12,9 +14,10 @@
    In this article we restrict ourself to Electromagnetic Actuator (Motors), since it is the most widely used one and has a higher energy efficiency compared to others like hydraulic, pneumatic, etc. Out of all the various type of motor like Induction, Reluctance, PMSM/BLDC, DC, Stepper, etc.
    I'll be focusing on only BLDC/PMSM Motors due to its superior perfomance compared to others.
    However most of the concepts you learn here, will be helpful for understanding other motors too.
-   Our goal is to understand various factors of EM actuator which influences the perfomance and hopefully to justify why **pancake shaped, Quasi Direct-Drive PMSM/BLDC motor, with 4Q control drivers & SEA** will be the norm of the robotics in future.</p>
+   Our goal is to understand various factors of EM actuator which influences the perfomance and hopefully to justify why **pancake shaped, Quasi Direct-Drive PMSM/BLDC motor, with 4Q control drivers & SEA** will be the norm of the robotics in future.</p> 
 
-
+<br>
+<br>
 
 ### Basic Terminology ###
 
@@ -42,7 +45,7 @@
 
    Slot is the section between two tooth. Three phase motor have slots (and teeth) that is evenly divisible by three.
  
-   ![Tooth & Slot, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/past/motor/tooth_slot.png){width=30% height=25%}
+   ![Tooth & Slot, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/past/motor/tooth_slot.png){width=30% height=25%} 
 
 #. **Phase**
 
@@ -74,22 +77,24 @@
    **Electrical degree** ($\theta_e$) is the angle through which magnetic field has rotated, i.e., 360 electrical degree equals transistion form "North" to "South" to "North"
 
 
-   A 2 pole motor has 1 "North" pole and 1 "South" pole on the rotor. So in order for it to turn 360 electrical degrees ("North" to "South" to "North"), it needs to rotate 360 mechanical degrees. A 4 pole motor has 2 "North" poles and 2 "South" poles. That means that 360 electrical degrees will occur when the shaft has rotated only 180 (360/2) mechanical degrees. Thus for $N_m$ Poles we have,
+   A 2 pole motor has 1 "North" pole and 1 "South" pole on the rotor. So in order for it to turn 360 electrical degrees ("North" to "South" to "North"), it needs to rotate 360 mechanical degrees. A 4 pole motor has 2 "North" poles and 2 "South" poles. That means that 360 electrical degrees will occur when the shaft has rotated only 180 (360/2) mechanical degrees. Thus for $N_m$ Poles we have, $\theta_{e}=\frac{N_m}{2} \theta_{m}$ 
 
-   $$ \theta_e = \frac{N_m}{2} \theta_m $$
+<br>
+<br>
 
+ 
 ### Motor Parameters ###
 
    Parameterisation means, to develop the model of a "system" interms of paramters(variable) and to see how various parameters affect the "system". The developed model should be verified by comparing the theoritical prediction form the model against experimental data and based upon the error, we should improve our model till we are satisfied with model's accuracy.
    Thus before delving into the various paramters of  a motor, we need to have model the motor.
    Most motor are modelled as a Resistor, Inductor and volatge source($E$) in series:
 
-![Basic Motor Model, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/past/motor/basic_model.png){width=20% height=8%}
+   ![Basic Motor Model, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/past/motor/basic_model.png){width=20% height=8%}
 
 
    For a 3-phase BLDC/PMSM, the appropriate model is:
 
-![Model of a 3-phase BLDC/PMSM, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/past/motor/advanced_model.png){width=40% height=35%}
+   ![Model of a 3-phase BLDC/PMSM, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/past/motor/advanced_model.png){width=40% height=35%}
 
 
 
@@ -104,7 +109,7 @@
 
    $$ V_{supply}i = i^2R + (Bil)\upsilon $$
 
-   ![primitve motor in a steady-state, Source:[@hughes_electric_2013]](https://ajaygunalan.github.io/projects/asset/motor/v_is_not_zero.png){width=35% height=12%}
+   ![primitve motor in a steady-state, Source:[@hughes_electric_2013]](https://ajaygunalan.github.io/projects/asset/past/motor/v_is_not_zero.png){width=35% height=12%}
   
    When $\upsilon = 0$, there is no mechnical output power, and all the electrical energy will converted as heat loss:
 
@@ -115,7 +120,7 @@
 
    However current $i$ will remain unchanged for both $\upsilon \ne 0$ & $\upsilon =0$, because it is determined by the load alone, thus to support a given load the current $i$ is: 
 
-   $$F_{conductor}= m_{load}g = Bil_{axial} \implies i = \frac{m_{load}g}{Bl} \implies i \propto m_{load}$$ since $(g, B, l)$ are constant for a given motor.
+   $$ F_{conductor}= m_{load}g = Bil_{axial} \implies i = \frac{m_{load}g}{Bl} \implies i \propto m_{load} $$ since $(g, B, l)$ are constant for a given motor.
 
    To move the load, i.e., to produce mechnical output power, we need higher volatge, i.e., $V_{supply} > V_{supply,\upsilon = 0}$
 
@@ -160,8 +165,7 @@
    **$$ \implies K_m = \frac{K_{T} }{\sqrt{R}} = \frac{T}{\sqrt{P_{input}}}$$**
 
 
-   It is winding invariant [@kenneally_leg_2015] as long as same conductimg wires are used. For given winding volume, $(V = \pi r_{wire}^2 L = c \implies L \propto \frac{1}{r_{wire}^{2}})$, the resistance of the winding, 
-      $R \propto \frac{L}{A} \propto \frac{L}{r_{wire}^{2}} \propto \frac{1}{r_{wire}^4}$
+   It is winding invariant [@kenneally_leg_2015] as long as same conductimg wires are used. For given winding volume, $(V = \pi r_{wire}^2 L = c \implies L \propto \frac{1}{r_{wire}^{2}})$, the resistance of the winding, $R \propto \frac{L}{A} \propto \frac{L}{r_{wire}^{2}} \propto \frac{1}{r_{wire}^4}$
 
    The Torque constant $K_t$ depends linearly on the number of turns around the core,
 
@@ -222,7 +226,8 @@
 
    As intuitive and as basic the better the cooling the better will be the perfomance of our motor.
 
-
+<br>
+<br>
 
 ### Characteristics ###
    
@@ -280,20 +285,19 @@
 
    $$ M \approx 2\pi r_{gap}l(t_s \rho_s + t_r \rho_r) $$
 
-   $$ M \propto r_{gap} $$ {#eq:mass_r_gap}
+   $$ M \propto r_{gap} $$                                                    {#eq:mass_r_gap}
 
    $$ \tau = Fr_{gap} = (\sigma A)r_{gap} = (\sigma 2 \pi r_{gap}l)r_{gap} = 2 \pi r_{gap}^{2}l \sigma $$
 
-   $$ \tau \propto r_{gap}^{2} $$ {#eq:torque_r_gap}
+   $$ \tau \propto r_{gap}^{2} $$                                             {#eq:torque_r_gap}
 
    $$ J_{hollowcylinder} = \frac{1}{2}M (R^2_{inner} + R^2_{outer}) $$
 
    $$ J_{rotor} \approx Mr^2_{gap} $$
 
-
    $$ J_{rotor} \approx 2\pi lt_r \rho_r r^3_{gap} $$
 
-   $$ J_{rotor} \propto r_{gap}^{3} $$ {#eq:j_r_gap} 
+   $$ J_{rotor} \propto r_{gap}^{3} $$                                         {#eq:j_r_gap} 
 
    Frome [@eq:mass_r_gap], [@eq:torque_r_gap], [@eq:j_r_gap]
    $$ \frac{\tau}{M} \propto r_{gap} $$
@@ -318,8 +322,8 @@
 
    Thus for a real world we need a hybrid approach
 
-
-
+<br>
+<br>
 
 
 ### Losses ###
@@ -342,6 +346,9 @@
    Hysteresis in  the  magnetic  domains  in the  core  appears  as  a  constant  friction  torque,  while  the eddy  current  torque  is  proportional  to  speed.  
  
 
+<br>
+<br>
+
 ### Selection Criteria ###
    [@seok_actuator_2012]
 
@@ -355,9 +362,15 @@
 
    This  is  particularly  true  for  permanent  magnet brushless motors, in which the stator coils are stationary and in contact  with the case, well-positioned for heat sinks or water cooling  jackets.  (For  brushed  motors  the  magnets  are  on the outside and the  windings are in the rotor, leaving few options for cooling.
 
+<br>
+<br>
+
 ### Perfomance ###
 
  Reduced noise, wear, and friction caused by brushes and Torque-Speed characteristics is linear.[@asada_direct-drive_1987]
+
+<br>
+<br>
 
 ### To Do ###
 
@@ -367,7 +380,12 @@
    4. Focus on charcteristic section
    5. Finish the core vs corless section
  
+
+<br> 
+
+
 ### References ###
+
 
 <style>
 h3 {

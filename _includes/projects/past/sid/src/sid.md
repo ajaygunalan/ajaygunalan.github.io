@@ -5,7 +5,7 @@
 
 **Poblem Statement ?**
 
-IV-Drippers are used to inject saline fluids, directly into the veins of the patient. They have  to be replaced, before it completely drains out, or else blood will flow in reverse direction and sometimes air embolism (air-blockage) may even cause a fatal accident. 
+IV-Drippers are used to inject saline fluids, directly into the veins of the patient. They have  to be replaced manualayy, before it completely drains out, or else blood will flow in reverse direction and sometimes air embolism (air-blockage) may even cause a fatal accident. 
 
 <br>
 
