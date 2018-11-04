@@ -1,19 +1,17 @@
-% Stoch - The Quadruped Robot at [RBCCPS](http://www.rbccps.org/)
+% Stoch - The Quadruped Robot at [**RBCCPS**](http://www.rbccps.org/)
 % Ajay G 
 
 <br>
 <br>
 
-### Introduction ###
+## Breif Overview ##
 
-![Stoch-1.0 developed at RBCCPS](https://ajaygunalan.github.io/projects/asset/past/stoch/stator_rotor.png)
+![Stoch-1.0 developed at RBCCPS](https://ajaygunalan.github.io/projects/asset/past/stoch/stoch_one.jpg){width=30% height=25%}
 
 **Goal ?**
 
 To achieve a robust, all terrain, legged robot.
 
-
-****
 
 
 Hardware              Description    
@@ -36,7 +34,7 @@ Table:  Hardware Description of Stoch 1.0.
 
 #### What was achieved by Stoch 1.0 ? ####
 
-The quadruped performed variety of gaits such as walks, bounds, trots, etc...as show in this [video](https://www.youtube.com/watch?v=swcStUm0Nuk&feature=youtu.be)
+The quadruped performed variety of gaits such as walks, bounds, trots, etc...as show in this [**video**](https://www.youtube.com/watch?v=swcStUm0Nuk&feature=youtu.be)
 
 <br>
 
@@ -44,7 +42,7 @@ The quadruped performed variety of gaits such as walks, bounds, trots, etc...as 
 
 We used on-policy, model-free DRL algorithm based on actor-critic learning framework called Proximal Policy Optimisation (PPO) to generate the gaits in the simulation(PyBullet). It took 30 Million samples (5-7 hours) to learn a particular gait in the simulation. To transfer it on the hardware, we took the end-effector tarjectory form simulation and did principal component analysis to generate different gaits and we deployed on the hardware.
 
-You can find more info in this [paper](https://arxiv.org/abs/1810.03842)
+You can find more info in this [**paper**](https://arxiv.org/abs/1810.03842)
 
 <br>
 
@@ -58,7 +56,7 @@ You can find more info in this [paper](https://arxiv.org/abs/1810.03842)
 
    Funnel Libraries, & Reactive Control.
 
-Further information on learning, & control, can be found in [control and learning](https://ajaygunalan.github.io/projects/future/control_and_learning.html)
+Further information on learning, & control, can be found in [**control and learning**](https://ajaygunalan.github.io/projects/future/control_and_learning.html)
 
 
 I would like to mention here more on the pratical issues(behind the paper stories) and evolution of this project, especially on stoch 2.0
@@ -66,29 +64,29 @@ I would like to mention here more on the pratical issues(behind the paper storie
 <br>
 <br>
 
-### Stoch 1.0 ###
+## Stoch 1.0 ##
 
-The project was initially motivated by Googles's work on [Sim-to-Real: Learning Agile Locomotion For
-Quadruped Robots](https://arxiv.org/abs/1804.10332). The essence of the paper is to imrove the transferbility from learned control policy from simualtion to hardware by:
+The project was initially motivated by Googles's work on [**Sim-to-Real: Learning Agile Locomotion For
+Quadruped Robots**](https://arxiv.org/abs/1804.10332). The essence of the paper is to imrove the transferbility from learned control policy from simualtion to hardware by:
 
-**1. Improving the Robot Model by having:**
+1. Improving the Robot Model by having:
 
-  i. Accurate URDF by phsyically measuring many parameters
-  ii. Actuator Model 
-  iii. Latency (Commuication Delay)
+    1. Accurate URDF by phsyically measuring many parameters
+    2. Actuator Model 
+    3. Latency (Commuication Delay)
 
-**2. Adding Noise to have Robust Controller:**
+2. Adding Noise to have Robust Controller:
 
-  i. Randomising Dynamic Parameters such as Mass, Friction, etc...
-  ii. Random Perturbation 
-  iii. Using a compact observation space
+    1. Randomising Dynamic Parameters such as Mass, Friction, etc...
+    2. Random Perturbation 
+    3. Using a compact observation space
 
-**3. Control of the learned policies:**
+3. Control of the learned policies
 
    Instead of learning the entire policy from scratch which will reult in lack of  controllability, they decompose the problem into two parts:
 
-  1.  $\bar{a}(t)$ An open loop component that allows a user to provide reference trajectories
-  2.  $\pi(o)$ feedback component that adjusts the leg poses on top of the reference based on the observations.
+    1.  $\bar{a}(t)$ An open loop component that allows a user to provide reference trajectories
+    2.  $\pi(o)$ feedback component that adjusts the leg poses on top of the reference based on the observations.
 
 
 $$ a(t, o) =  \bar{a}(t) + \pi(o) $$
@@ -99,13 +97,13 @@ We can infer two importent things:
   1. We need to have a very gool model to produce good determinstic baseline motion which are vital for safety using classical control.
   2. Fine tuning of the motion is more likeable to be better handle by learning based control.
 
-As mentioned earlier further work on learning and control will be mentioned [here](https://ajaygunalan.github.io/projects/future/control_and_learning.html)
+As mentioned earlier further work on learning and control will be mentioned [**here**](https://ajaygunalan.github.io/projects/future/control_and_learning.html)
 
 <br>
 
 #### Why we didn't do what google did ? ####
 
-Well, getting accurate model is vital, it is not trivial task, for example google disassembled their robot and  weighed each component then, modeled their URDF. Our robot rougly costed around 1,200 USD was made out of hobby grade stuff and was very fragile to disassemble. Plus we didn't have accurate torque sensor to model the actuator. Google had two controller, one high level controller TX2 and another low level motor driver. We had three Ubuntu to RPI3 (via MQTT Ethernet) and from RPI3 to Servo (via PWM multiplexer). For a perspective MIT Cheetah uses ATI force sensor which is roughly the cost of the entire robot. So, we took the end-effector trajectory and used hand-crafted IK solver in Python to run it on our hardware.
+Well, getting accurate model is vital, it is not trivial task, for example google disassembled their robot and  weighed each component then, modeled their URDF. Our robot rougly costed around 1,200 USD was made out of hobby grade stuff and was very fragile to disassemble. Plus we didn't have accurate torque sensor to model the actuator. Google had two controller, one high level controller TX2 and another low level motor driver. We had three Ubuntu to RPI3 (via MQTT Ethernet) and from RPI3 to Servo (via PWM multiplexer). For a perspective MIT Cheetah uses ATI force sensor which is roughly the cost of our entire robot. So, we took the end-effector trajectory and used hand-crafted IK solver in Python to run it on our hardware.
 
 <br>
 
@@ -125,9 +123,16 @@ Well, the hand crafted may or may not be optimal, but the generated gaits were c
 <br>
 <br>
 
-### Stoch 2.0 ###
+## Stoch 2.0 ##
 
-#### Leg Testing ###
+
+As mentioned earlier stoch 1.0 was too fragile. It had lot of issues. So, we wanted to have more roboust hardware. 
+
+<br>
+
+#### Leg Testing ####
+
+Will be updated soon.
 
 <!-- added the leg testing video here -->
 
@@ -136,22 +141,22 @@ Well, the hand crafted may or may not be optimal, but the generated gaits were c
 <br>
 <br>
  
-### The Team ###
+## The Team ##
 
 **Team Members:** [Shounak Bhattachary](https://sites.google.com/view/shounakoffice/home), [Dhaivat Dholakiya](https://sites.google.com/view/dhaivatdh/home), [Abhik Singla](https://sites.google.com/view/abhiksingla/home) and [myself..!](https://ajaygunalan.github.io/)
 
 **Principal Investigators:** [Shishir N. Y. Kolathaya](https://shishirny.github.io/),  [Prof. Bharadwaj Amrutur](http://chips.ece.iisc.ernet.in/index.php/Bharadwaj_Amrutur)
 
-I would like to specially thank Shishir, & Prof. Bharadwaj, for giving me a wonderful oppourtinity to work in this project.
+I would like to specially thank **Shishir**, & **Prof. Bharadwaj**, for giving me a wonderful oppourtinity to work in this project.
 
 
-![Robotics Group at RBCCPS](https://ajaygunalan.github.io/projects/asset/past/stoch/team_hangout.jpg)
+![Robotics Group at RBCCPS](https://ajaygunalan.github.io/projects/asset/past/stoch/team_hangout.jpg){width=30% height=25%}
 
-![Stoch Team](https://ajaygunalan.github.io/projects/asset/past/stoch/stoch_team.jpg)
+![Stoch Team](https://ajaygunalan.github.io/projects/asset/past/stoch/stoch_team.jpg){width=30% height=25%}
 
 
 <style>
-h3, h4 {
+h2, h4 {
       text-align: left;
 }
 

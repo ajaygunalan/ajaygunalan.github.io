@@ -19,12 +19,11 @@ The goal is to prevent such accident by automating this process by using a liqui
 
 We protoyped our ideation by using majorly TI components
 
-![SID architecture](https://ajaygunalan.github.io/projects/asset/past/sid/sid_archi.png)
+![SID architecture](https://ajaygunalan.github.io/projects/asset/past/sid/sid_archi.png){width=30% height=25%}
 
 
-The video below shows it working and feeback from Medical doctors.
+This [**video**](link_will_be_iploaded) shows the  working and feeback from **Medical doctors**.
 
-![video_here]
 
 We particpated in the Department of Science & Technology, Govt. of India & Texas Instrument's **India Innovation Challegne** Design Contest (2016) anchored by Indian Institute of Managment, Banaglore and out of 11,000+ applicants, we were top 10 teams to recah finalist.
 
@@ -39,10 +38,14 @@ Being a finalist of IICDC 2016, We received funding for our startup [Rekindle Au
 
 **The Team**
 
-**Team Members:** [Rohith J.K](https://www.quora.com/profile/Rohit-Jk), [Radhakrishnan Jothiram](https://www.linkedin.com/in/radhakrishnan-jothiram-128a4512b/), [Wajjahath Habibullah.A](https://www.linkedin.com/in/wajjahath-habibullah-a-11a14b134/) 
+[Rohith J.K](https://www.quora.com/profile/Rohit-Jk), [Radhakrishnan Jothiram](https://www.linkedin.com/in/radhakrishnan-jothiram-128a4512b/), [Wajjahath Habibullah.A](https://www.linkedin.com/in/wajjahath-habibullah-a-11a14b134/) 
  and [myself..!](https://ajaygunalan.github.io/)
 
-![Finalist](https://ajaygunalan.github.io/projects/asset/past/sid/sid_certificate.png)
+![](https://ajaygunalan.github.io/projects/asset/past/sid/sid_certificate.png){width=30% height=25%}
+
+<br>
+<br>
+<br>
 
 
 
@@ -80,6 +83,11 @@ table {
 table caption {
     text-align: center;
   }
+
+img {
+  display: block;
+  margin: auto
+}
 
 ol {
     display: block;
