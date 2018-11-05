@@ -1,78 +1,39 @@
 
-# Page Under Construction
 
 <br>
 1.[Software](#software)<br>
-2.[Control & Mechanics](#control-mechanics)<br>
+2.[Control & Mechanics](#control--mechanics)<br>
 <br>
 
+<hr class="style-four" />
 
 ### **Software** 
 
 1. [Application Binary Interface vs Instruction Set Architecture](../blog/software/abi_isa.html)
 
-2. [Shared Memory (Inter-Process Communication)](../blog/software/ipc/output/ipc.html)
+2. [Shared Memory (Inter-Process Communication)](../blog/software/ipc.html)
 
-3. [Controller Area Network](../blog/software/can/output/can.html)
+3. [Controller Area Network](../blog/software/can.html)
 
-4. [Robotic arm simulation in Gazebo using ROS and MoveIt](../blog/software/arm_sim/output/arm_sim.html)
+4. [Robotic arm simulation in Gazebo using ROS and MoveIt](../blog/software/arm_sim.html)
+
+5. [Why Pandoc + Markdown + Zotero + SSG is a perfect combo?](../blog/software/perfect_combo.html)
+
+<br>
+<hr class="style-four" />
 
 ### **Control & Mechanics**
 
-1. [Force, vs Position, Control](../blog/control_mech/force_position/output/force_position.html)
+1. [Force, vs Position, Control](../blog/control_mech/force_position.html)
  
-2. [Quadratic Programming  vs Extended Kalman Filter](../blog/control_mech/qp_ekf/output/qp_ekf.html)
+2. [Quadratic Programming  vs Extended Kalman Filter](../blog/control_mech/qp_ekf.html)
 
-3. [Lagrangian and Hmailtonian](../blog/control_mech/lag_ham/output/lag_ham.html)
+3. [Lagrangian and Hamiltonian](../blog/control_mech//lag_ham.html)
 
-4. [Screw, Twist, Wrench of the Robots](../blog/control_mech/screw_twist/output/screw_twist.html)
-
-<style>
-
- h3 {
-    text-align: left;
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+4. [Screw, Twist, Wrench of the Robots](../blog/control_mech/screw_twist.html)
 
 <style>
+
 h3 {
       text-align: left;
 }
@@ -84,19 +45,14 @@ ol li {
 ol {
     margin-left: 0;
 }
-
-
-
-
-
  /* unvisited link */
 a:link {
-    color: #2c2c66;
+    color: #428bca;
 }
 
 /* visited link */
 a:visited {
-    color: #2c2c66;
+    color: #428bca;
 }
 
 

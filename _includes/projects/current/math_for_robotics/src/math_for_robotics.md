@@ -38,6 +38,31 @@ p {
 
 }
 
+
+ /* unvisited link */
+a:link {
+    color: #428bca;
+}
+
+/* visited link */
+a:visited {
+    color: #428bca;
+}
+
+
+a:link.main-link {
+    color: #636566;
+}
+
+a:visited.main-link {
+    color: #636566;
+}
+/*/* mouse over link */
+
+a:hover.main-link {
+    color: #000000;
+}
+
 table {
     margin-left:auto; 
     margin-right:auto;

@@ -114,12 +114,12 @@ ol li figure figcaption {
 
  /* unvisited link */
 a:link {
-    color: #2c2c66;
+    color: #428bca;
 }
 
 /* visited link */
 a:visited {
-    color: #2c2c66;
+    color: #428bca;
 }
 
 

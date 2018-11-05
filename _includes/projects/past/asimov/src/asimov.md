@@ -32,7 +32,7 @@ Disclaimer: This about my Internship experience at ASIMOV Robotics Pvt. Ltd, Koc
 
 #### The Best Place to Work ####
 
-<p style="text-align: justify;">It wan't a huge company. But being in a hardware start-up taught me more than I could ever possibly imagine. I was fortunate to get my hands around hardware and was able to see how real products were being built and how they approached a real world problem. Most importantly my coding and debugging skills were tremendously improving, thanks to my mentors [**Gokul Narayanan**](https://www.linkedin.com/in/gokul-narayanan/) & [**Rajashekaran T**](https://www.linkedin.com/in/rajashekaran-t-071ab49b/) and also would like to thank [**Jayakrishnan T**](https://www.linkedin.com/in/jayakrishnan-t-61647125/)(CEO) & [**Anto John**](https://www.linkedin.com/in/antojohn/)(CMO) for giving me a wonderful opportunity in ASIMOV Robotics Pvt. Ltd, Kochi. </p>
+<p style="text-align: justify;">It wan't a huge company. But being in a hardware start-up taught me more than I could ever possibly imagine. I was fortunate to get my hands around hardware and was able to see how real products were being built and how they approached a real world problem. Most importantly my coding and debugging skills were tremendously improving, thanks to my mentors [Gokul Narayanan](https://www.linkedin.com/in/gokul-narayanan/) & [Rajashekaran T](https://www.linkedin.com/in/rajashekaran-t-071ab49b/) and also would like to thank [Jayakrishnan T](https://www.linkedin.com/in/jayakrishnan-t-61647125/)(CEO) & [Anto John](https://www.linkedin.com/in/antojohn/)(CMO) for giving me a wonderful opportunity in ASIMOV Robotics Pvt. Ltd, Kochi. </p>
 
 <br>
 
@@ -86,12 +86,12 @@ table caption {
   
  /* unvisited link */
 a:link {
-    color: #2c2c66;
+    color: #428bca;
 }
 
 /* visited link */
 a:visited {
-    color: #2c2c66;
+    color: #428bca;
 }
 
 

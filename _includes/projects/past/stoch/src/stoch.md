@@ -34,7 +34,7 @@ Table:  Hardware Description of Stoch 1.0.
 
 #### What was achieved by Stoch 1.0 ? ####
 
-The quadruped performed variety of gaits such as walks, bounds, trots, etc...as show in this [**video**](https://www.youtube.com/watch?v=swcStUm0Nuk&feature=youtu.be)
+The quadruped performed variety of gaits such as walks, bounds, trots, etc...as show in this [video](https://www.youtube.com/watch?v=swcStUm0Nuk&feature=youtu.be)
 
 <br>
 
@@ -42,7 +42,7 @@ The quadruped performed variety of gaits such as walks, bounds, trots, etc...as 
 
 We used on-policy, model-free DRL algorithm based on actor-critic learning framework called Proximal Policy Optimisation (PPO) to generate the gaits in the simulation(PyBullet). It took 30 Million samples (5-7 hours) to learn a particular gait in the simulation. To transfer it on the hardware, we took the end-effector tarjectory form simulation and did principal component analysis to generate different gaits and we deployed on the hardware.
 
-You can find more info in this [**paper**](https://arxiv.org/abs/1810.03842)
+You can find more info in this [paper](https://arxiv.org/abs/1810.03842)
 
 <br>
 
@@ -56,7 +56,7 @@ You can find more info in this [**paper**](https://arxiv.org/abs/1810.03842)
 
    Funnel Libraries, & Reactive Control.
 
-Further information on learning, & control, can be found in [**control and learning**](https://ajaygunalan.github.io/projects/future/control_and_learning.html)
+Further information on learning, & control, can be found in [control and learning](https://ajaygunalan.github.io/projects/future/control_and_learning.html)
 
 
 I would like to mention here more on the pratical issues(behind the paper stories) and evolution of this project, especially on stoch 2.0
@@ -66,8 +66,8 @@ I would like to mention here more on the pratical issues(behind the paper storie
 
 ## Stoch 1.0 ##
 
-The project was initially motivated by Googles's work on [**Sim-to-Real: Learning Agile Locomotion For
-Quadruped Robots**](https://arxiv.org/abs/1804.10332). The essence of the paper is to imrove the transferbility from learned control policy from simualtion to hardware by:
+The project was initially motivated by Googles's work on [Sim-to-Real: Learning Agile Locomotion For
+Quadruped Robots](https://arxiv.org/abs/1804.10332). The essence of the paper is to imrove the transferbility from learned control policy from simualtion to hardware by:
 
 1. Improving the Robot Model by having:
 
@@ -97,7 +97,7 @@ We can infer two importent things:
   1. We need to have a very gool model to produce good determinstic baseline motion which are vital for safety using classical control.
   2. Fine tuning of the motion is more likeable to be better handle by learning based control.
 
-As mentioned earlier further work on learning and control will be mentioned [**here**](https://ajaygunalan.github.io/projects/future/control_and_learning.html)
+As mentioned earlier further work on learning and control will be mentioned [here](https://ajaygunalan.github.io/projects/future/control_and_learning.html)
 
 <br>
 
@@ -143,9 +143,9 @@ Will be updated soon.
  
 ## The Team ##
 
-**Team Members:** [Shounak Bhattachary](https://sites.google.com/view/shounakoffice/home), [Dhaivat Dholakiya](https://sites.google.com/view/dhaivatdh/home), [Abhik Singla](https://sites.google.com/view/abhiksingla/home) and [myself..!](https://ajaygunalan.github.io/)
+Team Members: [Shounak Bhattachary](https://sites.google.com/view/shounakoffice/home), [Dhaivat Dholakiya](https://sites.google.com/view/dhaivatdh/home), [Abhik Singla](https://sites.google.com/view/abhiksingla/home) and [myself..!](https://ajaygunalan.github.io/)
 
-**Principal Investigators:** [Shishir N. Y. Kolathaya](https://shishirny.github.io/),  [Prof. Bharadwaj Amrutur](http://chips.ece.iisc.ernet.in/index.php/Bharadwaj_Amrutur)
+Principal Investigators: [Shishir N. Y. Kolathaya](https://shishirny.github.io/),  [Prof. Bharadwaj Amrutur](http://chips.ece.iisc.ernet.in/index.php/Bharadwaj_Amrutur)
 
 I would like to specially thank **Shishir**, & **Prof. Bharadwaj**, for giving me a wonderful oppourtinity to work in this project.
 
@@ -195,12 +195,12 @@ ol {
 
  /* unvisited link */
 a:link {
-    color: #2c2c66;
+    color: #428bca;
 }
 
 /* visited link */
 a:visited {
-    color: #2c2c66;
+    color: #428bca;
 }
 
 

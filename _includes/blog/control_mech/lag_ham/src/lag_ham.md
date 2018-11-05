@@ -1,4 +1,4 @@
-% Lagrangian and Hmailtonian
+% Lagrangian and Hamiltonian
 % Ajay G
 
 <br>
