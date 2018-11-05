@@ -1,0 +1,144 @@
+
+# Page Under Construction
+
+<br>
+1.[Software](#software)<br>
+2.[Control & Mechanics](#control-mechanics)<br>
+<br>
+
+
+### **Software** 
+
+1. [Application Binary Interface vs Instruction Set Architecture](../blog/software/abi_isa.html)
+
+2. [Shared Memory (Inter-Process Communication)](../blog/software/ipc/output/ipc.html)
+
+3. [Controller Area Network](../blog/software/can/output/can.html)
+
+4. [Robotic arm simulation in Gazebo using ROS and MoveIt](../blog/software/arm_sim/output/arm_sim.html)
+
+### **Control & Mechanics**
+
+1. [Force, vs Position, Control](../blog/control_mech/force_position/output/force_position.html)
+ 
+2. [Quadratic Programming  vs Extended Kalman Filter](../blog/control_mech/qp_ekf/output/qp_ekf.html)
+
+3. [Lagrangian and Hmailtonian](../blog/control_mech/lag_ham/output/lag_ham.html)
+
+4. [Screw, Twist, Wrench of the Robots](../blog/control_mech/screw_twist/output/screw_twist.html)
+
+<style>
+
+ h3 {
+    text-align: left;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+h3 {
+      text-align: left;
+}
+
+ol li {
+	text-align: left; 
+}
+
+ol {
+    margin-left: 0;
+}
+
+
+
+
+
+ /* unvisited link */
+a:link {
+    color: #2c2c66;
+}
+
+/* visited link */
+a:visited {
+    color: #2c2c66;
+}
+
+
+a:link.main-link {
+    color: #636566;
+}
+
+a:visited.main-link {
+    color: #636566;
+}
+/*/* mouse over link */
+
+a:hover.main-link {
+    color: #000000;
+}
+
+/* selected link */
+/*a:active {
+    color: blue;
+} */
+
+
+hr.style-four {
+padding: 0;
+border: none;
+border-top: medium double #333;
+color: #333;
+text-align: center;
+}
+/*hr.style-four:after {
+display: inline-block;
+position: relative;
+top: -0.7em;
+font-size: 1.5em;
+padding: 0 0.25em;
+background: white;
+}*/
+
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+</style>

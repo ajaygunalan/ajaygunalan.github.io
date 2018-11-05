@@ -1,4 +1,4 @@
-% Stoch - The Quadruped Robot at [**RBCCPS**](http://www.rbccps.org/)
+% Stoch - The Quadruped Robot at RBCCPS
 % Ajay G 
 
 <br>
@@ -191,6 +191,30 @@ ol {
     margin-left: auto;
     margin-right: auto;
     padding-left: 40px;
+}
+
+ /* unvisited link */
+a:link {
+    color: #2c2c66;
+}
+
+/* visited link */
+a:visited {
+    color: #2c2c66;
+}
+
+
+a:link.main-link {
+    color: #636566;
+}
+
+a:visited.main-link {
+    color: #636566;
+}
+/*/* mouse over link */
+
+a:hover.main-link {
+    color: #000000;
 }
 
 ol li {

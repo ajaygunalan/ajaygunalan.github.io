@@ -379,6 +379,7 @@
    3. Asuting  BLDC chapter
    4. Focus on charcteristic section
    5. Finish the core vs corless section
+   6. BLDC and chaos
  
 
 <br> 
