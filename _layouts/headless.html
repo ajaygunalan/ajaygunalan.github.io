@@ -15,8 +15,12 @@
     </figure>
     {% endif %}
 
+   
+
     <div class="author-info">
+        <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
         <h1 class="author-title" itemprop="name">{{author.name}}</h1>
+        {% if author.quote %} <h6 class="author-quote" itemprop="quote">{{author.quote}}</h6> {% endif %}
         {% if author.bio %} <h2 class="author-bio" itemprop="description">{{author.bio}}</h2> {% endif %}
 
         <div class="author-meta">
@@ -35,14 +39,31 @@
 
             <a href="{{ site.github.url }}/blog.html" class="main-link">
             Blog</a>
+
+
+            <a href="{{ site.github.url }}/contact.html" class="main-link">
+            Contact</a>
     
-        </div>                                   
-    </div>                                       
+        </div>
+
+        <style>
+            h6.author-quote {
+                font: 400 30px/1.3 'Great Vibes', Helvetica, sans-serif;
+                color: #7c0420;
+                text-shadow: 4px 4px 3px rgba(0,0,0,0.1);   
+            }
+        </style>
+
+    </div>
+
+
+
 </section>   
 
 <body class="home-template">
     <div class="site-wrapper">
         {{ content }}
+    
     </div>
 </body>
 
@@ -59,3 +80,4 @@
   ga('send', 'pageview');
 
 </script>
+

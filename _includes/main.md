@@ -1,3 +1,4 @@
+
 I completed my Bachelors's degree in Mechanical engineering(2013-2017). Right after my Bachelors, I joined [ASIMOV Robotics Pvt. Ltd, Kochi](https://www.asimovrobotics.com/) and was a part of the Software team, developing a [service robot](https://www.youtube.com/watch?v=5vjY1c8N1rk/) for HDFC bank and then I joined RBCCPS at [IISc Banglore](https://www.iisc.ac.in/) in February 2018 to work on legged robots and manipulators.
 
 <br>
@@ -12,7 +13,13 @@ My interest is real-time software development for planning and control of roboti
 
 
 <style>
- /* unvisited link */
+
+p.site-wrapper {
+	text-align: justify;
+	color: green;
+}
+
+
 a:link {
     color: #428bca
 }

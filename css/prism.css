@@ -105,11 +105,11 @@ pre[class*="language-"] {
 }
 
 .content>p{
-    text-align: left;
+    text-align: justify;
 }
 
 p{
-    text-align: left;
+    text-align: justify;
 }
 
 .small-img {

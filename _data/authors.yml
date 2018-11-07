@@ -2,7 +2,8 @@ default:
   initial:      ajaygunalan
   name:         "Ajay G"                                
   cover:        /assets/machu_lacta_reduced.jpg        
-  picture:      /assets/ajay.jpg                         
+  picture:      /assets/ajay.jpg 
+  quote:        "Learning whatever the robot demands to..."                      
   bio:          Project Assistant at <a href="http://www.rbccps.org/" class="md-link"> Robert Bosch Center for Cyber-Physical System  </a> 
   location:     Banglore
   website:      "https://ajaygunalan.github.io/about"
