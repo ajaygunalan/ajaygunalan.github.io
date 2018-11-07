@@ -3,7 +3,7 @@ I completed my Bachelor's degree in Mechanical engineering(2013-2017). Right aft
 
 <br>
 
-My interest is real-time software development for planning and control of robotics - more specifically on under-actuated systems. I strongly believe that, to build a dexterous and agile robot and to debug the exact reason for the failure, we should have a broad inter-disciplinary approach covering all the vital areas such as control, computation, learning, and hardware. 
+My interest is software development for planning and control of robots in real-time - more specifically on under-actuated systems. I strongly believe that, to build a dexterous and agile robot and to debug the exact reason for the failure, we should have a broad inter-disciplinary approach covering all the vital areas such as control, computation, learning, and hardware. 
 
 
 <br>
