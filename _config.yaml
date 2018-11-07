@@ -7,7 +7,7 @@ baseurl:          ""
 url:              "http://ajaygunalan.github.io/"
 permalink:        /blog/:categories/:title
 cover:            /assets/machu_lacta.jpg
-disqus_shortname: "ajaygunalan"
+disqus_shortname: "https-ajaygunalan-github-io"
 
 # Build settings
 markdown: kramdown

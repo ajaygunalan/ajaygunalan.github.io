@@ -1,5 +1,6 @@
 ---
 layout: default
+
 ---                      
 
 <main class="content" role="main">  
@@ -7,6 +8,7 @@ layout: default
 {% include lib/mathjax.html %} 
 {% capture my-include %}{% include projects/past/sid/output/sid.html %}{% endcapture %}
 {{ my-include | markdownify }}
+<!-- {% if page.comments %}{% include lib/disqus.html %}{% endif %} -->
 
 </main>
 
