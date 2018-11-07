@@ -31,7 +31,7 @@
 
  2. [Stoch](../projects/past/stoch.html)
 
-	Stoch is a quadruped developed at RBCCPS. I was a small part of the ver 1.0 and was fully involved for the software development of second generation (Stock 2.0). The goal of the project is to develope a versatile, all-terrian, legged robot.
+	Stoch is a quadruped developed at RBCCPS. I was a small part of the ver 1.0 and was fully involved for the software development of second generation (Stock 2.0). The goal of the project is to develope a versatile, all-terrain, legged robot.
     
     ---
 
