@@ -14,7 +14,7 @@
 
 1. [Mathematics for Robotics](../projects/current/math_for_robotics.html)
 
-    Working with Robots for the last one year, I gained much knowledge in Software Development, Basic Electronics and gained high-level intuition of various research topics but when I try to comprehend a research paper, often I couldn’t, due to lack of knowledge on Math and I couldn’t find any resource which focuses on Advanced Math for Robotic, so I decided to create a resource for an intuitive understanding of various Mathematical concepts needed for Robotics such that it is easier for an Engineer to delve into Robotics Research. 
+    Working with robots for the last one year, I gained much knowledge in Software Development, Basic Electronics and a high-level intuition on various research topics. But when I try to comprehend a research paper, often I couldn’t due to the lack of knowledge on Math. I couldn’t find any resource which focuses on Advanced Math for Robotic and so, I decided to create a resource for an intuitive understanding of various Mathematical concepts needed for Robotics such that it is easier for an Engineer to delve into Robotics Research. 
 
 
 <br>
@@ -25,25 +25,25 @@
 
  1. [Study of Motor: Design, Dynamics, Drive](../projects/past/motor.html)
 
-	A robot is essential a bunch of coupled Motors with varying load. I believe that without understanding the basic building block of robots which is the motor, it would be very hard to develop an algorithm which can outperform us. Thus here, we will try to understand the fundamental limitations of motor dynamic 
+	A robot is essentialy a bunch of motors coupled with varying load. I believe that without understanding the basic building block of robots which is the motor, it would be very hard to develop an algorithm which could outperform us. Thus, we will try to understand the fundamental limitations of a motor design, dynamics and drive.
 
     ---
 
  2. [Stoch](../projects/past/stoch.html)
 
-	Stoch is the quadruped developed at RBCCPS. I was a small part of the ver 1.0 and was fully involved for the software development of second generation (Stock 2.0). The goal of the project is to develop a versatile, legged robot.
+	Stoch is a quadruped developed at RBCCPS. I was a small part of the ver 1.0 and was fully involved for the software development of second generation (Stock 2.0). The goal of the project is to develope a versatile, all-terrian, legged robot.
     
     ---
 
  3. [Smart Intravenous Dripper](../projects/past/sid.html)
 
-    Medical automation of IV-drippers to prevent backflow of blood and air blockage.
+    Automation of IV-drippers to prevent backflow of blood and air blockage.
 
     ---
 
  4. [Asimov Robotics](../projects/past/asimov.html)
 
-	A bit of history of how why I ended up in Robotics. Why robotics is a fascinating, & interesting, field. The various projects I did at Asimov Robotics. The current state of the robotics industry.
+	A bit of history about how and why I ended up in Robotics, why robotics is a fascinating and interesting field, and the various projects I did at Asimov Robotics.
 
 
 <br>
@@ -53,13 +53,13 @@
 
 1. [Control & Learning](../projects/future/control_and_learning.html)
 
-    The work we did at RBCCPS (Stoch-1.0), lead to many open-ended questions such as how to learn a different task in a few samples? and How to control & combine different behavior such as turning, climbing stairs, reacting to external disturbance? Thus here the goal is to explore and understand various methods such as Reactive Control, Funnel Library, DAML, GAIL and Model-based RL which seems to address the above question.
+    The work we did at RBCCPS (Stoch-1.0), lead to many open-ended questions such as how to learn a different task in a few samples and how to control and combine different behaviors such as turning, climbing stairs, reacting to external disturbance, etc. Thus the goal is to explore and understand various methods such as Reactive Control, Funnel Library, DAML, GAIL and Model-based RL.
 
     ---
 
 2. [Experience based Motion Planning](../projects/future/ebmp.html)
 
-   Using experience (memory) to reduce the computation time is the basic principle. The elegant lies in making sure that the time to retrieve, and repair,  a stored trajectory is less than the time to compute from scratch
+   Using experience (memory) to reduce the computation time is the basic principle. The elegance lies in making sure that the time to retrieve and repair a stored trajectory is less than the time to compute from scratch.
 
 <br>
 <br>
