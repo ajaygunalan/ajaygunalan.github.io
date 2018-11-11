@@ -1,0 +1,173 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Ajay G" />
+  <title>Math for Robotics</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title">Math for Robotics</h1>
+<p class="author">Ajay G</p>
+</header>
+<p>Disclaimer: The goal is to cover all the relevant concepts in a short, and coherent, way so that the user can explore further. Not on mathematical rigorousness.</p>
+<p><br></p>
+<h4 id="space">Space</h4>
+<p>As under-graduate engineer, the space we use the most are cartesian space, cylindrical and maybe even sphereical. So, we think those spaces are space. It make perfect sense to us(enegineers), but not to Mathematician. In-fact what we have been using are special subset of space. They think space in a more abstract way and they generalise to the extant that in certain a space we can’t measure the distance! e.x.,topological space. A space is set with some structure(constraint) imposed.</p>
+<p><br></p>
+<p><!-- #### Homeomorphic and Diffeomorphic #### --></p>
+<p>The following terms will be used while defining the constraints on various space:</p>
+<p><!--![Mapping, Source[howie_choset]](https://ajaygunalan.github.io/projects/asset/current/math_for_robotics/diffeo_homeo.png)  --></p>
+<ol>
+<li><p>Surjective (onto)</p>
+<p>If each element of the codomain(T) is mapped to by at least one element of the domain(S).</p></li>
+<li><p>Injective (one-one)</p>
+<p>If each element of the codomain(T) is mapped to by at most one element of the domain(S).</p></li>
+<li><p>Bijective</p>
+<p>Map that are both injective and bijective.</p></li>
+<li><p>Smoothness</p>
+<p>A function with continuous derivatives up to a certain order, say k. Then it is <span class="math inline">\(C^{k}\)</span> smooth. If it exist for all positive integers, then is <span class="math inline">\(C^{\infty}\)</span> or smooth.</p></li>
+<li><p>Homeomorrphic</p>
+<p>A continuous bijective map with contiuous inverse</p></li>
+<li><p>Diffeomorphic</p>
+<p>A continuous bijective map with smooth inverse</p></li>
+<li><p>Neighbourhood of a point</p>
+<p>A set of points containing that point where one can move some amount in any direction away from that point without leaving the set.</p>
+<!--![Mapping, Source[wiki]](https://ajaygunalan.github.io/projects/asset/current/math_for_robotics/neighbhourhood.png)  --></li>
+<li><p>Connectedness</p>
+<p>A space is connected, if every two point can be connected by a path.</p>
+<p>A space is simply-connected, if any two paths connecting the same endpoints can be continuously deformed into other. In other words every loop can be contracted to a point.</p></li>
+<li><p>Compactness</p>
+<p>A space is compact, if we find a finite number of open intervals(open subcover) so that, every element of the space is in at least one of them. Inutuitively it has to be closed and bounded.</p>
+<!-- [The interval $A = (- \infty, −2]$ is not compact because it is not bounded. The interval $C = (2, 4)$ is not compact because it is not closed. The interval $B = [0, 1]$ is compact because it is both closed and bounded. Source[refer_wiki]](https://ajaygunalan.github.io/projects/asset/current/math_for_robotics/compact.png) --></li>
+</ol>
+<p><br></p>
+<h4 id="topological-space">Topological Space</h4>
+<p>Let <span class="math inline">\(S\)</span> be a set. A set <span class="math inline">\(O\)</span> of subset <span class="math inline">\(S\)</span> is called topology(and the elements of <span class="math inline">\(O\)</span> are called open set), if:</p>
+<ol>
+<li>Any union of any collection of a open set is a open set.</li>
+<li>if <span class="math inline">\(U_1, U_2 \in O,\)</span> then <span class="math inline">\(U_1 \cap U_2 \in O\)</span></li>
+<li><span class="math inline">\(\emptyset \in S\)</span> and <span class="math inline">\(S \in O\)</span></li>
+</ol>
+<p>The pair <span class="math inline">\((S, O)\)</span> is called a topological space. When there is no ambiguity about the topology, <span class="math inline">\(S\)</span> alone is called the topological space. Every set <span class="math inline">\(S \setminus U\)</span>, where <span class="math inline">\(U\in O\)</span>, is called a closed set.</p>
+<p><!-- ![Example: The blue circle represents the set of points (x, y) satisfying x2 + y2 = r2. The red disk represents the set of points (x, y) satisfying x2 + y2 < r2. The red set is an open set, the blue set is its boundary set, and the union of the red and blue sets is a closed set., Source[wiki]](https://ajaygunalan.github.io/projects/asset/current/math_for_robotics/set.png) --></p>
+<p>It Formalize the relation of “being near” a point. Qualitative: does not quanity how near.It is a set with the least structure necessary to define the concepts of nearness and continuity. A donut is topologically the same as cup of coffe.</p>
+<p><!-- ![Topological equivalence, Source[GMS_news_online]](https://ajaygunalan.github.io/projects/asset/current/math_for_robotics/coffe_mug.jpeg) --></p>
+<p><br></p>
+<h4 id="metric-space">Metric space</h4>
+<p>A metric space is a set X together with a function d (called a metric or “distance function”) which assigns a real number d(x, y) to every pair x, y belongs X satisfying the properties (or axioms):</p>
+<ol>
+<li><span class="math inline">\(d(x, y) \geq 0\)</span> &amp; <span class="math inline">\(d(x, y) = 0 \iff x = y\)</span>,</li>
+<li><span class="math inline">\(d(x, y) = d(y, x)\)</span>,</li>
+<li><span class="math inline">\(d(x, y) + d(y, z) \geq d(x, z)\)</span></li>
+</ol>
+<p><br></p>
+<h4 id="manifold">Manifold</h4>
+<p>A topological space <span class="math inline">\(M\)</span> is a manifold (resp. a smooth maifold) if every point <span class="math inline">\(x \in M\)</span> has an open neighborhood homeomorphic (resp. diffeomorphic) to an open ball of <span class="math inline">\(R^m\)</span>, for some <span class="math inline">\(m\)</span> independent of <span class="math inline">\(x\)</span>. <span class="math inline">\(m\)</span> is the dimesnion of the manifold. [refer_jean_claude]</p>
+<p><br></p>
+<h4 id="lie-bracket">Lie Bracket</h4>
+<p><br></p>
+<h4 id="gradient-descent">Gradient Descent</h4>
+<p><br></p>
+<p><br></p>
+<h4 id="to-do">To Do</h4>
+<p>Not all configuration spaces are manifold.</p>
+<p><br></p>
+<h4 id="references">References</h4>
+<p><br> <br> <br></p>
+<style>
+h2 {
+      text-align: center;
+}
+
+h3, h4  {
+  text-align: left;
+}
+
+p {
+   text-align: justify;
+   text-justify: inter-word;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.author {
+    text-align: center;
+
+}
+
+
+ /* unvisited link */
+a:link {
+    color: #428bca;
+}
+
+/* visited link */
+a:visited {
+    color: #428bca;
+}
+
+
+a:link.main-link {
+    color: #636566;
+}
+
+a:visited.main-link {
+    color: #636566;
+}
+/*/* mouse over link */
+
+a:hover.main-link {
+    color: #000000;
+}
+
+table {
+    margin-left:auto; 
+    margin-right:auto;
+    background: transparent;
+
+  }
+
+table caption {
+    text-align: center;
+  }
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+}
+
+ol li {
+   text-align: left;
+}
+
+ol li img {
+  display: block;
+  margin: auto
+}
+
+ol li figure figcaption {
+   text-align: center;
+}
+
+
+</style>
+</body>
+</html>

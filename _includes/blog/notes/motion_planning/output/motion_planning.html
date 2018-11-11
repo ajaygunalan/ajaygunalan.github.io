@@ -1,0 +1,213 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Ajay G" />
+  <title>Motion Planning</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title">Motion Planning</h1>
+<p class="author">Ajay G</p>
+</header>
+<p><br> <br></p>
+<h4 id="introduction">Introduction</h4>
+<p>Motion Planning address the question on how to reach the desired configuration without colliding the environment and itself, form given start configuration. It gives a trajectory, which on executing, will reach the desired configuration. Major approaches to motion planning are:</p>
+<ol>
+<li>Search Based (Discretization)</li>
+<li>Sampling Based</li>
+<li>Potential Function</li>
+</ol>
+<p>Basic Terminology</p>
+<ol>
+<li><p>Configuration</p>
+<p>A particular position, and oreintation, of the robotic arm is known as configuration.</p></li>
+<li><p>Configuration Space</p>
+<p>It is the space where each axis, corresponds to a particular joint angle of the robot. i.e., a N DOF robotic manipulator arm will have N dimensional Configuration Space. A particular configuration, will correspond to a point in C-space. Mostly it will be topological space.</p></li>
+<li><p>DOF</p>
+<p>“N” Degrees of Freedom means the arm has N independent motions which can execute simultaneously.</p></li>
+<li><p>Path</p>
+<p>A set of way points which on executing will reach the desired configuration.</p></li>
+<li><p>Trajectory</p>
+<p>A path with timed component such as velocity and accleration.</p></li>
+<li><p>Map</p>
+<p>A data containing the information about the environment and robot. It can be represented by three ways: topological, geometric, and grids.</p>
+<!-- image --></li>
+</ol>
+<p><br> <br></p>
+<h4 id="search-based">Search Based</h4>
+<p>Discretize the C-space and solve as if finding a path in a graph. They are very sensitive to dimensionality of state space. Formulation of the problem:</p>
+<ol type="1">
+<li><p>State Space</p>
+<p>They are usually grids. The choice of grid is crucial to performance and accuracy. In real world it is continous, here we have approximated.</p></li>
+<li><p>Action</p>
+<p>Moving to a neighboring cell. Actions are also discretized.</p></li>
+<li><p>Successor Function</p>
+<p>A cell’s neighbor. These are largely determined by the action set. Successors may not be known a priori. i.e., you have to try each action in your action set to see which cell you end in</p></li>
+<li><p>Action Cost</p>
+<p>We try to optimize the cost. Minimum path, smooothnes, etc. Sometimes we use a linear combination of various cost.</p></li>
+</ol>
+<p>There are several class of algorithms such as Breadth-First, Depth, Dijkstra’s, Best-First, A* and its variant. Their major advantage is:</p>
+<ol>
+<li>generality</li>
+<li>cost minimization.</li>
+<li>rigorous guarantees on completeness and quality of solutions.</li>
+</ol>
+<p>However their main disadvantage is:</p>
+<ol>
+<li>Not suitable for high-dimensional motion planning problem.</li>
+<li>Not suitable when control set can’t be easily discretized.</li>
+<li>No uncertainty is taken into account.</li>
+<li>Discrete search run-time and memory requirements are very sensitive to branching factor.</li>
+<li>Number of successors depend on dimension</li>
+</ol>
+<p>Note: Recent research work are wokring to cover and solve many of these issues and they might have been improved.</p>
+<p><br> <br></p>
+<h4 id="sampling-based">Sampling Based</h4>
+<p>Sampling based method overcomes many of the problems faced by search based method by weakeneing the requirements on the optimality and completness.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Ideal</th>
+<th>Practical in High Dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Complete</td>
+<td>Probabilistically Complete</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Optimal</td>
+<td>Feasible (recent methods show asymptotic optimality)</td>
+</tr>
+</tbody>
+</table>
+<p>Probabilistic completeness: A path planner is probabilistically complete if, given a solvable problem, the probability that the planner solves the problem goes to 1 as time goes to infinity. Feasibility: Path obeys all constraints (usually obstacles). A feasible path can be optimized locally after it is found.</p>
+<p>The main idea is to pick a point in the C-space randomly and check whether a path exist, if it does, it is solved. Major sampling based methods are:</p>
+<ol>
+<li><p>Rapidly Random Exploring Tree</p></li>
+<li><p>Probablistic Road Map</p></li>
+<li><p>Randomized Path Planner</p></li>
+</ol>
+<p><br></p>
+<h6 id="rapidly-random-exploring-tree">Rapidly Random Exploring Tree</h6>
+<p>Searches for a path from the initial configuration to the goal configuration by expanding a search tree. For each step, it determines a target configuration and expands the tree towards it. The target can either be a random configuration or the goal configuration itself, depending upon the probability value defined by the user. During expanding, the algorithm only needs to verify whether each step is collision free but does not need to avoid obstacles.</p>
+<p><br></p>
+<h6 id="probablistic-road-map">Probablistic Road Map</h6>
+<p>Roadmap <span class="math inline">\(R = (N,E)\)</span> is class of topological map. It is an undirected graph of one dimensional curves in free C-spcae. The nodes <span class="math inline">\(N\)</span> are a set of configuration of the robot. The edges <span class="math inline">\(E\)</span> corresponds to (simple) path and edge (a, b) corresposnds to a feasible path connecting the configurations of a and b. Some of the major types of roadmap are: visibility maps, deformation retracts, retract-like structure, piecewise retracts and silhouettes. It is called Probabilistic Roadmap (PRM) beacause it is constructed by repeadtedly generating random(probabilistically) C-space free configuration of the robot and connecting these configuration using simple, fast, local planner. Then <span class="math inline">\(R\)</span> postprocessed(expansion phase) to improve the connectivity. This entire process is known as the <strong>learning phase</strong>.</p>
+<p>The final phase is the <strong>query</strong>. In which we ask for a path between two free configuration of the robot. First, It attempts to find a path from the start and goal configurations to the nodes of the roadmap. Next, a graph search is done to find the sequence of edges connecting these nodes on the roadmap. The learning and the query phase does not have to executed sequentially. Instead they can be interwoven. It is known as <em>multi-query</em> because if the robot configuration and enivronment didn’t change much, we can query multiple number of times to find a new path from a single roadmap.</p>
+<p>Pros of sampling based method:</p>
+<ol>
+<li>Find feasible collision-free paths very fast.</li>
+<li>Computationally efficient than Search based Algorithm</li>
+<li>Scalable to high dimension</li>
+</ol>
+<p>Cons of sampling based method:</p>
+<ol>
+<li>Typically produce jerky / redundant motion.</li>
+<li>Paths require post-processing, smoothing, optimization.</li>
+<li>Completeness and optimality are compromised.</li>
+<li>Probability of sampling an area depends on the area’s size. i.e., hard to sample narrow passages.</li>
+</ol>
+<p><br></p>
+<h6 id="randomized-path-planner">Randomized Path Planner</h6>
+<p>Developed by Barraquand and Latombe in 1991 at Stanford. Main idea: Follow a potential function, occasionally introduce random motion. Potential field biases search toward goal. Random motion avoids getting stuck in local minima.</p>
+<p>Advantage: Doesn’t get stuck in local minima.</p>
+<p>Disadvantage: define potemtial field, decide when to apply random motion, how much random motion to apply.</p>
+<p><br> <br></p>
+<h4 id="potential-function">Potential Function</h4>
+<h4 id="references">References</h4>
+<style>
+
+
+h2, h3, h4, h5, h6  {
+  text-align: left;
+}
+
+p {
+   text-align: justify;
+   text-justify: inter-word;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.author {
+    text-align: center;
+
+}
+
+
+ /* unvisited link */
+a:link {
+    color: #428bca;
+}
+
+/* visited link */
+a:visited {
+    color: #428bca;
+}
+
+
+a:link.main-link {
+    color: #636566;
+}
+
+a:visited.main-link {
+    color: #636566;
+}
+/*/* mouse over link */
+
+a:hover.main-link {
+    color: #000000;
+}
+
+table {
+    margin-left:auto; 
+    margin-right:auto;
+    background: transparent;
+
+  }
+
+table caption {
+    text-align: center;
+  }
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+}
+
+ol li {
+   text-align: left;
+}
+
+ol li img {
+  display: block;
+  margin: auto
+}
+
+ol li figure figcaption {
+   text-align: center;
+}
+
+
+</style>
+</body>
+</html>

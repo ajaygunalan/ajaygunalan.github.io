@@ -2,7 +2,7 @@
 <br>
 1.[Current Projects](#current-projects)<br>
 2.[Past Projects](#past-projects)<br>
-3.[Future Projects](#future-projects)<br>
+<!-- 3.[Future Projects](#future-projects)<br> -->
 <br>
 
 
@@ -11,10 +11,17 @@
 
 ### **Current Projects**
 
+ 1. [Experience based Motion Planning](../projects/current/ebmp.html)
 
-1. [Mathematics for Robotics](../projects/current/math_for_robotics.html)
+     Using experience (memory) to reduce the computation time is the basic principle. The elegance lies in making sure that the time to retrieve and repair a stored trajectory is less than the time to compute from scratch.
 
-    Working with robots for the last one year, I gained much knowledge in Software Development, Basic Electronics and a high-level intuition on various research topics. But when I try to comprehend a research paper, often I couldn’t due to the lack of knowledge on Math. I couldn’t find any resource which focuses on Advanced Math for Robotic and so, I decided to create a resource for an intuitive understanding of various Mathematical concepts needed for Robotics such that it is easier for an Engineer to delve into Robotics Research. 
+    ---
+
+
+ 2. [Funnel Library](../projects/current/funnel.html)
+
+     Not matter how accurately we model the system and plan. Always, there will be uncertainity and noise. Funnel Library is way of taking uncertainity into account while planning and gives us the guarantee that the motion will be successful given that the uncertainity are within bound. If there is no bound on the uncertainity, then we can give probability on the successfulness of the motion.
+   
 
 
 <br>
@@ -25,41 +32,41 @@
 
  1. [Study of Motor: Design, Dynamics, Drive](../projects/past/motor.html)
 
-	A robot is essentialy a bunch of motors coupled with varying load. I believe that without understanding the basic building block of robots which is the motor, it would be very hard to develop an algorithm which could outperform us. Thus, we will try to understand the fundamental limitations of a motor design, dynamics and drive.
+	 A robot is essentialy a bunch of motors coupled with varying load. I believe that without understanding the basic building block of robots which is the motor, it would be very hard to develop an algorithm which could outperform us. Thus, we will try to understand the fundamental limitations of a motor design, dynamics and drive.
 
     ---
 
  2. [Stoch](../projects/past/stoch.html)
 
-	Stoch is a quadruped developed at RBCCPS. I was a small part of the ver 1.0 and was fully involved for the software development of second generation (Stoch 2.0). The goal of the project is to develope a versatile, all-terrain, legged robot.
+	 Stoch is a quadruped developed at RBCCPS. I was a small part of the ver 1.0 and was fully involved for the software development of second generation (Stoch 2.0). The goal of the project is to develope a versatile, all-terrain, legged robot.
     
     ---
 
  3. [Smart Intravenous Dripper](../projects/past/sid.html)
 
-    Automation of IV-drippers to prevent backflow of blood and air blockage.
+     Automation of IV-drippers to prevent backflow of blood and air blockage.
 
     ---
 
  4. [Asimov Robotics](../projects/past/asimov.html)
 
-	A bit of history about how and why I ended up in Robotics, why it is a fascinating and interesting field, and the various projects I did at Asimov Robotics.
+	 A bit of history about how and why I ended up in Robotics, why it is a fascinating and interesting field, and the various projects I did at Asimov Robotics.
 
 
 <br>
 <hr class="style-four" />
 
-### **Future Projects**
-
+<!-- ### **Future Projects**
+ --><!-- 
 1. [Control & Learning](../projects/future/control_and_learning.html)
 
-    The work we did at RBCCPS (Stoch-1.0), lead to many open-ended questions such as how to learn a different task in a few samples and how to control and combine different behaviors such as turning, climbing stairs, reacting to external disturbance, etc. Thus the goal is to explore and understand various methods such as Reactive Control, Funnel Library, DAML, GAIL and Model-based RL.
+    The work we did at RBCCPS (Stoch-1.0), lead to many open-ended questions such as how to learn a different task in a few samples and how to control and combine different behaviors such as turning, climbing stairs, reacting to external disturbance, etc. Thus the goal is to explore and understand various methods such as Reactive Control-->
 
-    ---
 
-2. [Experience based Motion Planning](../projects/future/ebmp.html)
 
-   Using experience (memory) to reduce the computation time is the basic principle. The elegance lies in making sure that the time to retrieve and repair a stored trajectory is less than the time to compute from scratch.
+
+
+<!-- 2. [Funnel Library] -->
 
 <br>
 <br>

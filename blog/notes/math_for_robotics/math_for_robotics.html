@@ -1,0 +1,14 @@
+---
+layout: default
+---                      
+     
+<main class="content" role="main">  
+  
+{% include lib/mathjax.html %} 
+{% capture my-include %}{% include blog/notes/math_for_robotics/output/math_for_robotics.html %}{% endcapture %}
+{{ my-include | markdownify }}
+
+</main>
+
+{% include photoswipe.html %}
+{% include post_scripts.html %}

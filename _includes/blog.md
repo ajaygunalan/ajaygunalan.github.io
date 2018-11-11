@@ -1,13 +1,34 @@
 
 
 <br>
-1.[Software](#software)<br>
-2.[Control & Mechanics](#control--mechanics)<br>
+1.[Notes](#notes) <br>
+<!-- 1.[Software](#software)<br> -->
+<!-- 2.[Control & Mechanics](#control--mechanics)<br> -->
+<br>
+
+
+
+
+<hr class="style-four" />
+
+### **Notes** 
+
+
+1. Motion Planning ([.pdf](../blog/notes/motion_planning/motion_planning.pdf), [.html](../blog/notes/motion_planning/motion_planning.html))
+
+2. Math for Robotics ([.pdf](../blog/notes/math_for_robotics/math_for_robotics.pdf), [.html](../blog/notes/math_for_robotics/math_for_robotics.html))
+
+3. Motors ([.pdf](../blog/notes/motor/motor.pdf), [.html](../blog/notes/motor/motor.html))
+
+<!-- 4. Underactuated ([.pdf](../../blog/notes/underactuated/underactuated.pdf), [.html](../../blog/notes/underactuated/underactuated.html)) -->
+
 <br>
 
 <hr class="style-four" />
 
-### **Software** 
+
+
+<!-- ### **Software** 
 
 1. [Application Binary Interface vs Instruction Set Architecture](../blog/software/abi_isa.html)
 
@@ -32,6 +53,8 @@
 
 4. [Screw, Twist, Wrench of the Robots](../blog/control_mech/screw_twist.html)
 
+5. Hamiltonian-Jacobi-Bellam Equation
+ -->
 <br>
 <br>
 <br>
