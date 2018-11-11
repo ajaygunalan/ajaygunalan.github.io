@@ -1,11 +1,11 @@
-
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Ajay G" />
-  <title>Study of PMSM/BLDC Motor: Design, Dynamics, Drive</title>
+  <title>Basics of a Motor</title>
   <style type="text/css">
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
@@ -19,16 +19,18 @@
 </head>
 <body>
 <header>
-<h1 class="title">Study of PMSM/BLDC Motor: Design, Dynamics, Drive</h1>
+<h1 class="title">Basics of a Motor</h1>
 <p class="author">Ajay G</p>
 </header>
 <p><br> <br></p>
-<h3 id="introduction">Introduction</h3>
-<p>What is a robot?</p>
-<p style="text-align: justify;">
-A robot is a bunch of actuator connected by a link(a structure). Actuators, being one of the fundamental element of a robot, will determine the core capabilities and limitation of a robot. Thus a thorough understanding of the actuator will help us to optimise it based upon our requirment. In this article we restrict ourself to Electromagnetic Actuator (Motors), since it is the most widely used one and has a higher energy efficiency compared to others like hydraulic, pneumatic, etc. Out of all the various type of motor like Induction, Reluctance, PMSM/BLDC, DC, Stepper, etc. I’ll be focusing on only BLDC/PMSM Motors due to its superior perfomance compared to others. However most of the concepts you learn here, will be helpful for understanding other motors too. Our goal is to understand various factors of EM actuator which influences the perfomance and hopefully to justify why <strong>pancake shaped, Quasi Direct-Drive PMSM/BLDC motor, with 4Q control drivers &amp; SEA</strong> will be the norm of the robotics in future.
-</p>
-<p><br> <br></p>
+<h3 id="content">Content</h3>
+<ul>
+<li><a href="#basic-terminology">Basic Terminology</a></li>
+<li><a href="#motor-parameters">Motor Parameters</a></li>
+<li><a href="#characteristics">Characteristics</a></li>
+<li><a href="#losses">Losses</a></li>
+</ul>
+<p><br></p>
 <h3 id="basic-terminology">Basic Terminology</h3>
 <ol>
 <li><p><strong>Stator &amp; Rotor</strong></p>
@@ -194,22 +196,9 @@ A robot is a bunch of actuator connected by a link(a structure). Actuators, bein
 <p>Iron Core Losses = Eddy Curremt Losses + Hystersis Losses</p>
 <p>Hysteresis in the magnetic domains in the core appears as a constant friction torque, while the eddy current torque is proportional to speed.</p>
 <p><br> <br></p>
-<h3 id="selection-criteria">Selection Criteria</h3>
-<p><span class="citation" data-cites="seok_actuator_2012">[<a href="#ref-seok_actuator_2012">2</a>]</span></p>
-<p>A smaller motor will have lower iron losses at a given speed (less iron to create drag), and a larger motor will have lower copper losses for a given torque.</p>
-<p>One interesting approach to motor sizing for a robot is to choose a small motor sized for walking, and then to overload it heavily during more strenuous activities.</p>
-<p>This might result in huge copper losses due to squaring the high winding current, but for brief periods the effect on overall efficiency is minimal.</p>
-<p>The thermal mass of the motor windings is high enough that it might not burn up for several seconds, and if it is cooled well enough the power level may be sustainable for longer activities.</p>
-<p>This is particularly true for permanent magnet brushless motors, in which the stator coils are stationary and in contact with the case, well-positioned for heat sinks or water cooling jackets. (For brushed motors the magnets are on the outside and the windings are in the rotor, leaving few options for cooling.</p>
-<p><br> <br></p>
-<h3 id="perfomance">Perfomance</h3>
-<p>Reduced noise, wear, and friction caused by brushes and Torque-Speed characteristics is linear.<span class="citation" data-cites="asada_direct-drive_1987">[<a href="#ref-asada_direct-drive_1987">6</a>]</span></p>
 <p><br> <br></p>
 <h3 id="to-do">To Do</h3>
 <ol type="1">
-<li>Finish 1.3.3 and 1.4.2 in <span class="citation" data-cites="hendershot_design_2010">[<a href="#ref-hendershot_design_2010">8</a>]</span></li>
-<li>Maxon Document</li>
-<li>Asuting BLDC chapter</li>
 <li>Focus on charcteristic section</li>
 <li>Finish the core vs corless section</li>
 <li>BLDC and chaos</li>
@@ -255,6 +244,10 @@ a:visited.main-link {
 
 a:hover.main-link {
     color: #000000;
+}
+
+ul li {
+   text-align: left;
 }
 
 ol {

@@ -27,7 +27,6 @@ $(PRJ_NAME).html:
 $(PRJ_NAME).pdf:
 	pandoc  -s "$(INPUTDIR)/$(PRJ_NAME).md"  \
 	--filter $(PANDOC_CROSS_REF_DIR) \
-	$(PANDOC_EQNOS_DIR) \
 	--mathjax \
 	--bibliography "$(REFDIR)/$(PRJ_NAME).bib" \
 	--csl "$(REFDIR)/$(CSL).csl"  \

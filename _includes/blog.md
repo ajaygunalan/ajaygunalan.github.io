@@ -18,7 +18,7 @@
 
 2. Math for Robotics ([.pdf](../blog/notes/math_for_robotics/math_for_robotics.pdf), [.html](../blog/notes/math_for_robotics/math_for_robotics.html))
 
-3. Motors ([.pdf](../blog/notes/motor/motor.pdf), [.html](../blog/notes/motor/motor.html))
+3. Basics of a Motor ([.pdf](../blog/notes/motor/motor.pdf), [.html](../blog/notes/motor/motor.html))
 
 <!-- 4. Underactuated ([.pdf](../../blog/notes/underactuated/underactuated.pdf), [.html](../../blog/notes/underactuated/underactuated.html)) -->
 

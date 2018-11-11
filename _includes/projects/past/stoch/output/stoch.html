@@ -23,11 +23,18 @@
 <p class="author">Ajay G</p>
 </header>
 <p><br> <br></p>
+<h2 id="content">Content</h2>
+<ul>
+<li><a href="#breif-overview">Breif Overview</a></li>
+<li><a href="#stoch-1.0">Stoch 1.0</a></li>
+<li><a href="#stoch-2.0">Stoch 2.0</a></li>
+<li><a href="#the-team">The Team</a></li>
+</ul>
 <h2 id="breif-overview">Breif Overview</h2>
 <figure>
 <img src="https://ajaygunalan.github.io/projects/asset/past/stoch/stoch_one.jpg" alt="Stoch-1.0 developed at RBCCPS" style="width:30.0%;height:25.0%" /><figcaption>Stoch-1.0 developed at RBCCPS</figcaption>
 </figure>
-<p><strong>Goal ?</strong></p>
+<h4 id="goal">Goal</h4>
 <p>To achieve a robust, all terrain, legged robot.</p>
 <table>
 <caption>Hardware Description of Stoch 1.0.</caption>
@@ -43,7 +50,7 @@
 <td>Carbon fiber (CF) tubes &amp; 3D printed (PLA)</td>
 </tr>
 <tr class="even">
-<td>Servo-motors</td>
+<td>Servo-motors:</td>
 <td>Kondo-2350HV &amp; Robokits Ultra Torque: RKI-1203</td>
 </tr>
 <tr class="odd">
@@ -95,7 +102,6 @@
 <li><p>How to control &amp; combine different behaviour such as turning, climbing stairs, reacting to external disturbance ?</p>
 <p>Funnel Libraries, &amp; Reactive Control.</p></li>
 </ol>
-<p>Further information on learning, &amp; control, can be found in <a href="https://ajaygunalan.github.io/projects/future/control_and_learning.html">control and learning</a></p>
 <p>I would like to mention here more on the pratical issues(behind the paper stories) and evolution of this project, especially on stoch 2.0</p>
 <p><br> <br></p>
 <h2 id="stoch-1.0">Stoch 1.0</h2>
@@ -126,15 +132,14 @@
 <li>We need to have a very gool model to produce good determinstic baseline motion which are vital for safety using classical control.</li>
 <li>Fine tuning of the motion is more likeable to be better handle by learning based control.</li>
 </ol>
-<p>As mentioned earlier further work on learning and control will be mentioned <a href="https://ajaygunalan.github.io/projects/future/control_and_learning.html">here</a></p>
 <p><br></p>
 <h4 id="why-we-didnt-do-what-google-did">Why we didn’t do what google did ?</h4>
-<p>Well, getting accurate model is vital, it is not trivial task, for example google disassembled their robot and weighed each component then, modeled their URDF. Our robot rougly costed around 1,200 USD was made out of hobby grade stuff and was very fragile to disassemble. Plus we didn’t have accurate torque sensor to model the actuator. Google had two controller, one high level controller TX2 and another low level motor driver. We had three Ubuntu to RPI3 (via MQTT Ethernet) and from RPI3 to Servo (via PWM multiplexer). For a perspective MIT Cheetah uses ATI force sensor which is roughly the cost of our entire robot. So, we took the end-effector trajectory and used hand-crafted IK solver in Python to run it on our hardware.</p>
+<p>Well, getting accurate model is vital, it is not trivial task, for example google disassembled their robot and weighed each component then, modeled their URDF. Our robot rougly costed around 1,200 USD was made out of hobby grade stuff and was very fragile to disassemble. Plus we didn’t have accurate torque sensor to model the actuator. For a perspective MIT Cheetah uses ATI force sensor which is roughly the cost of our entire robot. Google had two controller, one high level controller TX2 and another low level motor driver. We had three Ubuntu to RPI3 (via MQTT Ethernet) and from RPI3 to Servo (via PWM multiplexer) which increased our latency and unpredictableness. All this factors made us to look for alternate approach. So we took the end-effector trajectory and used hand-crafted IK solver in Python to run it on our hardware.</p>
 <p><br></p>
 <h4 id="can-it-walk-with-hand-crafted-tarjectory">Can it walk with hand-crafted tarjectory ?</h4>
 <p>It does. If you hand-craft a trajectory, let us say an ellipse, or circle, it will still walk. and adjust the phase difference to get different gaits.</p>
 <p><br></p>
-<h4 id="then-what-is-the-point-of-getting-a-drl">Then What is the point of getting a DRL ?</h4>
+<h4 id="then-what-is-the-point-of-using-drl">Then what is the point of using DRL ?</h4>
 <p>Well, the hand crafted may or may not be optimal, but the generated gaits were certainly closer to optimal, given their similrance to other quadruped.</p>
 <p><br> <br></p>
 <h2 id="stoch-2.0">Stoch 2.0</h2>
@@ -181,6 +186,10 @@ table {
 table caption {
     text-align: center;
   }
+
+ul li {
+  text-align: left;
+}
 
 ol {
     display: block;

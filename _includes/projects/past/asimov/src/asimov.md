@@ -1,7 +1,7 @@
 % ASIMOV Robotics Pvt. Ltd, Kochi
 % Ajay G
 
-<br>-
+<br>
 
 Disclaimer: This about my Internship experience at ASIMOV Robotics Pvt. Ltd, Kochi, India and not about Hondas' Asimo robot.
 

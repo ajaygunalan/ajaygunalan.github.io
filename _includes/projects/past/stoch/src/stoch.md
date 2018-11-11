@@ -4,11 +4,21 @@
 <br>
 <br>
 
+
+## Content ##
+
+
+* [Breif Overview](#breif-overview)
+* [Stoch 1.0](#stoch-1.0)
+* [Stoch 2.0](#stoch-2.0)
+* [The Team](#the-team) 
+
+
 ## Breif Overview ##
 
 ![Stoch-1.0 developed at RBCCPS](https://ajaygunalan.github.io/projects/asset/past/stoch/stoch_one.jpg){width=30% height=25%}
 
-**Goal ?**
+#### Goal ####
 
 To achieve a robust, all terrain, legged robot.
 
@@ -17,7 +27,7 @@ To achieve a robust, all terrain, legged robot.
 Hardware              Description    
 -------               ------ 
 Materials:            Carbon fiber (CF) tubes & 3D printed (PLA)   
-Servo-motors          Kondo-2350HV & Robokits Ultra Torque: RKI-1203      
+Servo-motors:         Kondo-2350HV & Robokits Ultra Torque: RKI-1203      
 IMU:                  9 axis sparkfun MPU 9150
 Encoders:             Magnetic Encoders, Bourns EMS22a
 Power Supply:         Li-Po batteries 
@@ -32,13 +42,13 @@ Table:  Hardware Description of Stoch 1.0.
 
 <br>
 
-#### What was achieved by Stoch 1.0 ? ####
+#### What was achieved by Stoch 1.0 ?  ####
 
 The quadruped performed variety of gaits such as walks, bounds, trots, etc...as show in this [video](https://www.youtube.com/watch?v=swcStUm0Nuk&feature=youtu.be)
 
 <br>
 
-####  How we achieved ? ####
+####  How we achieved ?  ####
 
 We used on-policy, model-free DRL algorithm based on actor-critic learning framework called Proximal Policy Optimisation (PPO) to generate the gaits in the simulation(PyBullet). It took 30 Million samples (5-7 hours) to learn a particular gait in the simulation. To transfer it on the hardware, we took the end-effector tarjectory form simulation and did principal component analysis to generate different gaits and we deployed on the hardware.
 
@@ -46,7 +56,7 @@ You can find more info in this [paper](https://arxiv.org/abs/1810.03842)
 
 <br>
 
-#### Next what ? ####
+#### Next what ?  ####
 
 #. How to learn different task with least samples ?
 
@@ -55,8 +65,6 @@ You can find more info in this [paper](https://arxiv.org/abs/1810.03842)
 #. How to control & combine different behaviour such as turning, climbing stairs, reacting to external disturbance ?
 
    Funnel Libraries, & Reactive Control.
-
-Further information on learning, & control, can be found in [control and learning](https://ajaygunalan.github.io/projects/future/control_and_learning.html)
 
 
 I would like to mention here more on the pratical issues(behind the paper stories) and evolution of this project, especially on stoch 2.0
@@ -97,13 +105,13 @@ We can infer two importent things:
   1. We need to have a very gool model to produce good determinstic baseline motion which are vital for safety using classical control.
   2. Fine tuning of the motion is more likeable to be better handle by learning based control.
 
-As mentioned earlier further work on learning and control will be mentioned [here](https://ajaygunalan.github.io/projects/future/control_and_learning.html)
+
 
 <br>
 
 #### Why we didn't do what google did ? ####
 
-Well, getting accurate model is vital, it is not trivial task, for example google disassembled their robot and  weighed each component then, modeled their URDF. Our robot rougly costed around 1,200 USD was made out of hobby grade stuff and was very fragile to disassemble. Plus we didn't have accurate torque sensor to model the actuator. Google had two controller, one high level controller TX2 and another low level motor driver. We had three Ubuntu to RPI3 (via MQTT Ethernet) and from RPI3 to Servo (via PWM multiplexer). For a perspective MIT Cheetah uses ATI force sensor which is roughly the cost of our entire robot. So, we took the end-effector trajectory and used hand-crafted IK solver in Python to run it on our hardware.
+Well, getting accurate model is vital, it is not trivial task, for example google disassembled their robot and  weighed each component then, modeled their URDF. Our robot rougly costed around 1,200 USD was made out of hobby grade stuff and was very fragile to disassemble. Plus we didn't have accurate torque sensor to model the actuator. For a perspective MIT Cheetah uses ATI force sensor which is roughly the cost of our entire robot. Google had two controller, one high level controller TX2 and another low level motor driver. We had three Ubuntu to RPI3 (via MQTT Ethernet) and from RPI3 to Servo (via PWM multiplexer) which increased our latency and unpredictableness. All this factors made us to look for alternate approach. So we took the end-effector trajectory and used hand-crafted IK solver in Python to run it on our hardware.
 
 <br>
 
@@ -113,7 +121,7 @@ It does. If you hand-craft a trajectory, let us say an ellipse, or circle, it wi
 
 <br>
 
-#### Then What is the point of getting a DRL ? ####
+#### Then what is the point of using DRL ? ####
 
 Well, the hand crafted may or may not be optimal, but the generated gaits were certainly closer to optimal, given their similrance to other quadruped. 
 
@@ -182,6 +190,10 @@ table {
 table caption {
     text-align: center;
   }
+
+ul li {
+  text-align: left;
+}
 
 ol {
     display: block;
