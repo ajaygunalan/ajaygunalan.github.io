@@ -3,19 +3,19 @@
 
 <br>
 
-**Problem Statement**
+#### Problem Statement ####
 
 IV-Drippers are used to inject saline fluids, directly into the veins of the patient. They have  to be replaced manualayy, before it completely drains out, or else blood will flow in reverse direction and sometimes air embolism (air-blockage) may even cause a fatal accident. 
 
 <br>
 
-**Goal**
+#### Goal ####
 
 The goal is to prevent such accident by automating this process by using a liquid-level sensor to monitor the liquid level and if the Intravenous Dripper runs out of the saline fluid, then the cam actuated by the servo, will stop the flow immediately, thus preventing any such accident to occur and will notify the nurse for further replacement of the IV bag.
 
 <br>
 
-**What we did**
+#### What we did ####
 
 We protoyped our ideation by using majorly TI components
 
@@ -29,14 +29,14 @@ We particpated in the Department of Science & Technology, Govt. of India & Texas
 
 <br>
 
-**Next What**
+#### Next What ####
 
 Being a finalist of IICDC 2016, We received funding for our startup [Rekindle Automation Pvt. Ltd.](https://www.rekindleautomations.com/) and is currenlty incubated at NSRCEL, IIM-Banglore. The prototype developed initially for proof of concepts was not reliable, thus now the focus is to develop industrial grade, reliable product.
 
 
 <br>
 
-**The Team**
+#### The Team ####
 
 [Rohith J.K](https://www.quora.com/profile/Rohit-Jk), [Radhakrishnan Jothiram](https://www.linkedin.com/in/radhakrishnan-jothiram-128a4512b/), [Wajjahath Habibullah.A](https://www.linkedin.com/in/wajjahath-habibullah-a-11a14b134/) 
  and [myself..!](https://ajaygunalan.github.io/)
@@ -57,7 +57,7 @@ Being a finalist of IICDC 2016, We received funding for our startup [Rekindle Au
 
 
 <style>
-h3 {
+h3, h4 {
       text-align: left;
 }
 

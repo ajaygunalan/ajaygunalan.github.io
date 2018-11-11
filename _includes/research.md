@@ -20,7 +20,7 @@
 
  2. [Funnel Library](../projects/current/funnel.html)
 
-     Not matter how accurately we model the system and plan. Always, there will be uncertainity and noise. Funnel Library is way of taking uncertainity into account while planning and gives us the guarantee that the motion will be successful given that the uncertainity are within bound. If there is no bound on the uncertainity, then we can give probability on the successfulness of the motion.
+     Not matter how accurately we model the system and plan, there will be uncertainity and noise always. Funnel Library is way of taking uncertainity into account while planning and gives us the guarantee that the motion will be successful given that the uncertainity is within bound. If there is no bound on the uncertainity, then we can give probability on the successfulness of the motion.
    
 
 
