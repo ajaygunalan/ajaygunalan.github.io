@@ -9,7 +9,11 @@
 
 * [Basic Terminology](#basic-terminology)
 * [Motor Parameters](#motor-parameters)
-* [Characteristics](#characteristics)
+  + [Electrical](#electrical)
+  + [Mechanical](#mechanical)
+* [Characterisation](#characterisation)
+  + [Constant](#constant)
+  + [Loading](#loading)
 * [Losses](#losses) 
 
 
@@ -28,14 +32,9 @@
    ![Stator & Rotor, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/past/motor/stator_rotor.png){width=30% height=25%}
 
 
-#. **Air Gap & Gap Radius**
+#. **Air Gap**
 
    Air Gap is the distance between stator and rotor.
-
-   Gap Radius  $R_{gap}$ is radial distance from the axle to the gap between the stator and rotor. When we mean pancake shaped motor, we mean motors with $R_{gap} > L_{axial}$
-
-
-   ![Gap Radius, Source:[@seok_actuator_2012]](https://ajaygunalan.github.io/projects/asset/past/motor/r_gap.png){width=30% height=25%}
 
  
 
@@ -96,10 +95,132 @@
 
    ![Model of a 3-phase BLDC/PMSM, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/past/motor/advanced_model.png){width=40% height=35%}
 
-
-
-#. **Torque/Back EMF constant $(K_{t})$** 
+##### Electrical #####
    
+#. **Resistance**
+
+   Responsible for heating loss, can be easily modeled as simple lumped resistor.
+
+   <br>
+
+#. **Inductance**
+
+
+   Motor windings have inductance. Physically, this means that current flowing in the windings will induce magnetic flux through them, even in the absence of permanent magnet flux and will resist rapid changes in current by generating voltage across it. However, this is not the back EMF.The value of inductance is less straightforward to calculate because the phases are not magnetically independent. That is, current in one phase can induce flux in another. Under sinusoidal drive currents, it is possible to use a lumped inductance, called the **synchronous inductance**, to accommodate for this. The value of the synchronous inductance is: [@colton_design_2010] $L_s = \frac{3}{2} L_a$ where  $L_a$ is the lumped inductance measured independently on one phase, if it could be isolated. The winding inductance stores energy in the form of a magnetic field any time there is current in the winding. When a winding is switched off, this energy must go somewhere. For this reason, controller drivers contain **flyback diodes** that allow this current to circulate even when all the switches are open. Under highfrequency pulse-width modulated (PWM) control, the winding inductance also filters out current ripple. However, as a low-pass filter on current it also creates phase lag which is the motivation for the use of field-oriented control. The winding inductance is a function of motor geometry and the number of turns in the winding.
+
+   <br>
+
+   *Saliency*
+
+   Saliency means the inductance varies with rotor position due to non-uniform air gap which inturn creates non-uniform flux distribution. If the magents are removed, the rotor will align with ampere-conductor distribution of stator and the torque produced for alignment is called **alignment/reluctant** torque. In Non-Salient, the rotor is rotationally symmetric and has no tendency to align with stator if, magnets in rotor are removed. i.e., No **Reluctance Torque** thus, winding inductance does not vary with rotor position. Non-salient poles exhibit both attractive & repulsive gap forces. [@hendershot_design_2010, p. 68]
+
+<br>
+
+##### Mechanical #####
+
+#. **Winding Configuration**
+
+   They have three phase windings and can be connected to each other in wye or delta configuration. Wye has higher torque (theoretically torque constant is greater by a factor $\sqrt{3}$ [@kalouche_design_2016, p. 25]) because in the wye configuration, at any time one of phase is open and other two-phase are in series thus equal current flows through them whereas in delta it gets divided into two phases. Thus more current in each phase causes more torque, one will push and another phase will pull in the wye configuration.
+
+   <br>
+
+#. **Gap Radius**:
+
+   Gap Radius  $R_{gap}$ is radial distance from the axle to the gap between the stator and rotor. 
+
+
+   ![Gap Radius, Source:[@seok_actuator_2012]](https://ajaygunalan.github.io/projects/asset/past/motor/r_gap.png){width=30% height=25%}
+
+   When we mean pancake shaped motor, we mean motors with large $R_{gap}$ beacause it will increase torque per unit mass but it doesn't mean we can increase the $R_{gap}$ indefinitely beacause that will decrease the torque per unit inertia. Thus a compromise has to be made and mostly $R_{gap} > L_{axial}$. In general outrunners will be preferrable to innrunners due to large gap radius.
+   
+   <br>
+
+   *Derivation:*
+
+   $$ Mass = V \rho = [V_{rotor} + V_{stator}]\rho $$ 
+
+
+   $$ M = \pi [r_{gap}^2 - (r_{gap} - t_{rotor})^2 + (r_{gap} + t_{stator})^2 - r_{gap}^2 ]l \rho $$
+
+   Approximating to First Order thin walls (Neglecting higher order terms)[@wensing_proprioceptive_2017]
+
+
+   $$ M \approx 2\pi r_{gap}l(t_s \rho_s + t_r \rho_r) $$
+
+   $$ M \propto r_{gap} $$                                                    {#eq:mass_r_gap}
+
+   <br>
+
+   $$ \tau = Fr_{gap} = (\sigma A)r_{gap} = (\sigma 2 \pi r_{gap}l)r_{gap} = 2 \pi r_{gap}^{2}l \sigma $$
+
+   $$ \tau \propto r_{gap}^{2} $$                                             {#eq:torque_r_gap}
+
+   <br>
+
+   $$ J_{hollowcylinder} = \frac{1}{2}M (R^2_{inner} + R^2_{outer}) $$
+
+   $$ J_{rotor} \approx Mr^2_{gap} $$
+
+   $$ J_{rotor} \approx 2\pi lt_r \rho_r r^3_{gap} $$
+
+   $$ J_{rotor} \propto r_{gap}^{3} $$                                         {#eq:j_r_gap} 
+
+   <br>
+
+   Frome [@eq:mass_r_gap], [@eq:torque_r_gap], [@eq:j_r_gap]
+   $$ \frac{\tau}{M} \propto r_{gap} $$
+   $$ \frac{\tau}{J} \propto \frac{1}{r_{gap}} $$
+
+   <br>
+
+
+   <!--    [@kenneally_design_2016]outrunners (rotor on the outside) will be preferrable to inrunners (rotor on the inside), and this measure is tied favorably to a motor’s radius to depth ratio [@asada_direct-drive_1987] as well as a large gap radius [@seok_actuator_2012]. The measure is fundamentally winding invariant [kenneally_leg_2015], but in practice other details of the motor’s construction (especially relating to the stator core and volume of copper) are critical.
+
+   [@seok_actuator_2012] -->
+
+
+#. **Core vs Coreless**:
+
+#. **Axial Flux vs Radial Flux**
+
+   **[@mason_compliance_1981]**
+   Force Control and Position Control are two ends of extreme. 
+   Force control sensible in case of contact.
+   Position control sensisble in case of contact-less
+
+   Thus for a real world we need a hybrid approach
+
+<br>
+<br>
+
+
+
+### Characteristics ###
+
+<br>
+
+##### Constant #####
+
+#. **Torque/Back EMF constant $(K_{t})$**
+
+   It measure of how much torque (resp. back-emf) can be produced given my current (resp. speed) and vice-versa.
+   
+   <!--   Give my current how much is the torque.
+   Given my speed how much is the back emf voltage -->
+   $$  T = K_t i $$
+
+   $$  E = K_e \omega_m $$
+
+
+   where $K_t =$ Torque constant; $K_e =$ Back emf constant; $T =$Torque; $E =$Back EMF;  $i =$current; $\omega_m =$angular speed;
+
+   Theoretically $K_{t} = K_{e}$ but in reality, $K_e$ can only be measure in open-circuit and $K_t$ can only measured when current is flowing, thus causisng a variance in magentic and electrical condition which casuses **different value** to each of them. They are determined by magnetic field and geometrical parameters of air gap. For an ideal motor it will remain constant, but in reality, it varies with  rotor position, i.e, $K_{t} =  f(\theta_{e})$ because magetic field (B) consist of discrete poles and commutation occurs discretely which causes ripple in magnetic field. To reduce the torque ripple we can increase switching rate of current, make the current to be smooth and increase the number of poles.
+
+   
+   <br>
+
+   *Derivation:*
+
    Electrical input power = rate of production of *heat* in conductor + power absorbed by the inductor(*magnetic* energy) + *mechanical* output power
 
 
@@ -130,7 +251,7 @@
 
    $$ V_{supply} -V_{supply,\upsilon = 0} = Bl_{axial}\upsilon = E $$
 
-   where $E$ is the extra voltage needed to move the load, which proportional velocity of the conductor relative to the flux, for give field(B) & load(I) and is known as **Back EMF/Moional EMF**, thus: 
+   where $E$ is the extra voltage needed to move the load, which proportional velocity of the conductor relative to the flux, for give field(B) & load(I) and is known as **Back EMF/Motional EMF**, thus: 
 
    $$ Ei = T_{electromagnetic}\:\omega_m $$ 
 
@@ -142,21 +263,21 @@
    $$ \implies E = K_e \omega_m $$
 
 
-   where $K_t$ is the Torque constant and $K_e$ is the Back emf constant.
-
-   In reality, $K_e$ can only be measure in open-circuit and $K_t$ can only measured when current is flowing, thus causisng a variance in magentic and electrical condition which casuses **different value** to each of them. They are determined by magnetic field and geometrical parameters of air gap. For an ideal motor it will remain constant, but in reality, it varies with  rotor position, i.e, $K_{t} =  f(\theta_{e})$ because magetic field (B) consist of discrete poles and commutation occurs discretely which causes ripple in magnetic field.
 
    To avoid the torque ripple, we  can:
 
-   i. Increase switching rate of current.
-   ii. Make the current to be smooth.
-   iii. Increase the number of poles.
 
+   <br>
 
 
 #. **Motor Constant** $K_{m}$ 
 
-   It is the ability to produce Toqrue for a given input power. 
+   It is the ability to produce Toqrue for a given input power. It is winding invariant. (i.e., $K_m \propto r_{wire}^{0}$) and the square of motor constant is directly proportional to cube of $r_{gap}$
+
+   **$$ K_m = \frac{K_{T} }{\sqrt{R}} = \frac{T}{\sqrt{P_{input}}}$$**
+
+
+   *Derivation:*
 
    $$  P_{input} = Vi = i^2R = \left( \frac{T}{K_t} \right)^2R = T^2 \frac{R}{ \left( K_t \right)^2} $$
 
@@ -185,6 +306,8 @@
    thus for given a particular wire gauge, the number of wires (n) in the cross section scales linearly with the radius.[@wensing_proprioceptive_2017]
 
    **$$ K_{m}^{2} \propto r_{gap}^{3} $$**
+
+   <br>
   
 
 #. **Electric Time Constant**
@@ -206,6 +329,8 @@
 
    $$ K_{ts} := \frac{K_t}{m} \sqrt{\frac{1}{R_{th}R}} $$
 
+##### Loading #####
+
 #. **Specific Electrical Loading $(\overline{A})$** 
 
    Avergae **Axial** current per meter of circumference on the rotor. 
@@ -222,108 +347,13 @@
 
    [Design of Brushless Permanent-Magnet Machines, p. 68]
    
-#. **Cooling (C)**
+#. **Thermal Load (C)**
 
    As intuitive and as basic the better the cooling the better will be the perfomance of our motor.
 
 <br>
 <br>
 
-### Characteristics ###
-   
-#. **Resistance**
-
-   Responsible for heating loss, can be easily modeled as simple lumped resistor.
-
-
-#. **Inductance**
-
-
-   Motor windings have inductance. Physically, this means that current flowing in the windings will induce magnetic flux through them, even in the absence of permanent magnet flux and will resist rapid changes in current by generating voltage across it. However, this is not the back EMF.
-   The value of inductance is less straightforward to calculate because the phases are not magnetically independent. That is, current in one phase can induce flux in another. 
-   Under sinusoidal drive currents, it is possible to use a lumped inductance, called the **synchronous inductance**, to accommodate for this. The value of the synchronous inductance is [@colton_design_2010]:
-
-
-   $$ L_s = \frac{3}{2} L_a $$
-
-   where  $L_a$ is the lumped inductance measured independently on one phase, if it could be isolated. 
-
-
-   The winding inductance stores energy in the form of a magnetic field any time there is current in the winding. 
-   When a winding is switched off, this energy must go somewhere. 
-   For this reason, controller drivers contain **flyback diodes** that allow this current to circulate even when all the switches are open. 
-
-   Under highfrequency pulse-width modulated (PWM) control, the winding inductance also filters out current ripple. However, as a low-pass filter on current it also creates phase lag which is the motivation for the use of field-oriented control
-
-   The winding inductance is a function of motor geometry and the number of turns in the winding.
-
-
-   **Saliency**
-
-   Saliency means the inductance varies with rotor position due to non-uniform air gap which inturn creates non-uniform flux distribution. If the magents are removed, the rotor will align with ampere-conductor distribution of stator and the torque produced for alignment is called **alignment/reluctant** torque.
-
-   In Non-Salient, the rotor is rotationally symmetric and has no tendency to align with stator if, magnets in rotor are removed. i.e., No **Reluctance Torque** thus, winding inductance does not vary with rotor position. Non-salient poles exhibit both attractive & repulsive gap forces. [@hendershot_design_2010, p. 68]
-
-#. **Winding Configuration**
-
-   They have three phase windings and can be connected to each other in wye or delta configuration. Wye has higher torque (theoretically torque constant is greater by a factor $\sqrt{3}$ [@kalouche_design_2016, p. 25]) because in the wye configuration, at any time one of phase is open and other two-phase are in series thus equal current flows through them whereas in delta it gets divided into two phases. Thus more current in each phase causes more torque, one will push and another phase will pull in the wye configuration.
-
-#. **Gap Radius**:
-
-   It is the distance from the rotating axis to the center of the gap between permanent magnets and the stator.
-
-   The area inside of the gap increase proportionally. 
-
-   $$ Mass = V \rho = [V_{rotor} + V_{stator}]\rho $$ 
-
-   ![Gap Radius, Source:[@seok_actuator_2012]](https://ajaygunalan.github.io/projects/asset/past/motor/r_gap.png){width=30% height=25%}
-
-   $$ M = \pi [r_{gap}^2 - (r_{gap} - t_{rotor})^2 + (r_{gap} + t_{stator})^2 - r_{gap}^2 ]l \rho $$
-
-   Approximating to First Order thin walls (Neglecting higher order terms)[@wensing_proprioceptive_2017]
-
-
-   $$ M \approx 2\pi r_{gap}l(t_s \rho_s + t_r \rho_r) $$
-
-   $$ M \propto r_{gap} $$                                                    {#eq:mass_r_gap}
-
-   $$ \tau = Fr_{gap} = (\sigma A)r_{gap} = (\sigma 2 \pi r_{gap}l)r_{gap} = 2 \pi r_{gap}^{2}l \sigma $$
-
-   $$ \tau \propto r_{gap}^{2} $$                                             {#eq:torque_r_gap}
-
-   $$ J_{hollowcylinder} = \frac{1}{2}M (R^2_{inner} + R^2_{outer}) $$
-
-   $$ J_{rotor} \approx Mr^2_{gap} $$
-
-   $$ J_{rotor} \approx 2\pi lt_r \rho_r r^3_{gap} $$
-
-   $$ J_{rotor} \propto r_{gap}^{3} $$                                         {#eq:j_r_gap} 
-
-   Frome [@eq:mass_r_gap], [@eq:torque_r_gap], [@eq:j_r_gap]
-   $$ \frac{\tau}{M} \propto r_{gap} $$
-   $$ \frac{\tau}{J} \propto \frac{1}{r_{gap}} $$
-
-
-
-
-   [@kenneally_design_2016]outrunners (rotor on the outside) will be preferrable to inrunners (rotor on the inside), and this measure is tied favorably to a motor’s radius to depth ratio [@asada_direct-drive_1987] as well as a large gap radius [@seok_actuator_2012]. The measure is fundamentally winding invariant [kenneally_leg_2015], but in practice other details of the motor’s construction (especially relating to the stator core and volume of copper) are critical.
-
-   [@seok_actuator_2012]
-
-
-#. **Core vs Coreless**:
-
-#. **Axial Flux vs Radial Flux**
-
-   **[@mason_compliance_1981]**
-   Force Control and Position Control are two ends of extreme. 
-   Force control sensible in case of contact.
-   Position control sensisble in case of contact-less
-
-   Thus for a real world we need a hybrid approach
-
-<br>
-<br>
 
 
 ### Losses ###
@@ -367,7 +397,7 @@
 
 
 <style>
-h3 {
+h3, h5 {
       text-align: left;
 }
 

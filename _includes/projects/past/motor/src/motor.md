@@ -41,9 +41,7 @@ Note: Kindly refer here ([https://ajaygunalan.github.io/blog/notes/motor/motor.p
    
 
 
-   For a 3-phase BLDC/PMSM, the appropriate model is:
 
-   ![Model of a 3-phase BLDC/PMSM, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/past/motor/advanced_model.png){width=40% height=35%}
 
 <br>
 <br>
