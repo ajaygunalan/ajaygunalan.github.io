@@ -25,20 +25,20 @@
 ### Basic Terminology ###
 
 
-#. **Stator & Rotor**
+#. Stator & Rotor
 
    Generally, stator is the  stationary part and rotor is the rotational part. In case of BLDC, often stator will have windings and rotor will have the permanent magnets.
 
    ![Stator & Rotor, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/past/motor/stator_rotor.png){width=30% height=25%}
 
 
-#. **Air Gap**
+#. Air Gap
 
    Air Gap is the distance between stator and rotor.
 
  
 
-#. **Tooth & Slot**
+#. Tooth & Slot
 
    Winding are wounded around the laminated steel structure called tooth which channels more magnetic flux through them.
 
@@ -46,34 +46,29 @@
  
    ![Tooth & Slot, Source:[@colton_design_2010]](https://ajaygunalan.github.io/projects/asset/past/motor/tooth_slot.png){width=30% height=25%} 
 
-#. **Phase**
+#. Phase
 
    A phase is an individual group of windings with a single terminal accessible from outside the motor. Three phase windings have been used traditionally because of simplicity and over time it has become the industry standard. However, using windings with an increased number of phases will reduce torque ripple further and increase motor efficiency [46]. Currently, a custom 8-phase brushless motor is being developed for the MIT Cheetah that will have significantly higher torque density, **reduced torque ripple, and higher efficiency in the low-speed, high-torque operating regime** as compared to COTS motors [51].
 
 
-#. **Turns**
+#. Turns
 
    Each individual loop of wire making up phase winding is a Turn. 
 
    
-#. **Pole $(N_m)$**
+#. Pole $(N_m)$
 
    A pole is a single permanent magnet pole, north or south. The minimum number of poles is two, but motors can have any even number of poles.The number of poles is not directly related to the number of slots, although there are common combinations of slot and pole counts that work well [6].
 
-#. **Field windings & Armature winding ?**
+#. Field windings and Armature winding
 
    The windings which are responsible for the Magentic Field (**B**) is the field winding. The energy we apply here merely act as catalyst alone.
 
    Armature winding consist of current carrying conductors , which experience the $BIL$ force, thus are electrical power applied here is converted into mechanical output power.
 
+#. Electrical Angle $(\theta_e)$ and Mechanical Angle $(\theta_m)$
 
-#. **Electrical Angle $(\theta_e)$ vs Mechanical Angle $(\theta_m)$**
-
-   Mechanical degrees ($\theta_m$) in a motor refers to the rotation of the shaft. 1 revolution of the shaft equals 360 mechanical degrees.
-
-   When an electrical machine is operating as a motor, the idea is to create a traveling, rotating magnetic field, via the stator so that this moving flux attracts the rotor.
-
-   **Electrical degree** ($\theta_e$) is the angle through which magnetic field has rotated, i.e., 360 electrical degree equals transistion form "North" to "South" to "North"
+   Mechanical degrees ($\theta_m$) in a motor refers to the rotation of the shaft. 1 revolution of the shaft equals 360 mechanical degrees. When an electrical machine is operating as a motor, the idea is to create a traveling, rotating magnetic field, via the stator so that this moving flux attracts the rotor. Electrical degree ($\theta_e$) is the angle through which magnetic field has rotated, i.e., 360 electrical degree equals transistion form "North" to "South" to "North"
 
 
    A 2 pole motor has 1 "North" pole and 1 "South" pole on the rotor. So in order for it to turn 360 electrical degrees ("North" to "South" to "North"), it needs to rotate 360 mechanical degrees. A 4 pole motor has 2 "North" poles and 2 "South" poles. That means that 360 electrical degrees will occur when the shaft has rotated only 180 (360/2) mechanical degrees. Thus for $N_m$ Poles we have, $\theta_{e}=\frac{N_m}{2} \theta_{m}$ 
@@ -97,13 +92,13 @@
 
 ##### Electrical #####
    
-#. **Resistance**
+#. Resistance
 
    Responsible for heating loss, can be easily modeled as simple lumped resistor.
 
    <br>
 
-#. **Inductance**
+#. Inductance
 
 
    Motor windings have inductance. Physically, this means that current flowing in the windings will induce magnetic flux through them, even in the absence of permanent magnet flux and will resist rapid changes in current by generating voltage across it. However, this is not the back EMF.The value of inductance is less straightforward to calculate because the phases are not magnetically independent. That is, current in one phase can induce flux in another. Under sinusoidal drive currents, it is possible to use a lumped inductance, called the **synchronous inductance**, to accommodate for this. The value of the synchronous inductance is: [@colton_design_2010] $L_s = \frac{3}{2} L_a$ where  $L_a$ is the lumped inductance measured independently on one phase, if it could be isolated. The winding inductance stores energy in the form of a magnetic field any time there is current in the winding. When a winding is switched off, this energy must go somewhere. For this reason, controller drivers contain **flyback diodes** that allow this current to circulate even when all the switches are open. Under highfrequency pulse-width modulated (PWM) control, the winding inductance also filters out current ripple. However, as a low-pass filter on current it also creates phase lag which is the motivation for the use of field-oriented control. The winding inductance is a function of motor geometry and the number of turns in the winding.
@@ -118,13 +113,13 @@
 
 ##### Mechanical #####
 
-#. **Winding Configuration**
+#. Winding Configuration
 
    They have three phase windings and can be connected to each other in wye or delta configuration. Wye has higher torque (theoretically torque constant is greater by a factor $\sqrt{3}$ [@kalouche_design_2016, p. 25]) because in the wye configuration, at any time one of phase is open and other two-phase are in series thus equal current flows through them whereas in delta it gets divided into two phases. Thus more current in each phase causes more torque, one will push and another phase will pull in the wye configuration.
 
    <br>
 
-#. **Gap Radius**:
+#. Gap Radius:
 
    Gap Radius  $R_{gap}$ is radial distance from the axle to the gap between the stator and rotor. 
 
@@ -179,9 +174,9 @@
    [@seok_actuator_2012] -->
 
 
-#. **Core vs Coreless**:
+#. Core vs Coreless
 
-#. **Axial Flux vs Radial Flux**
+#. Axial Flux vs Radial Flux
 
    **[@mason_compliance_1981]**
    Force Control and Position Control are two ends of extreme. 
@@ -195,13 +190,13 @@
 
 
 
-### Characteristics ###
+### Characterisation ###
 
 <br>
 
 ##### Constant #####
 
-#. **Torque/Back EMF constant $(K_{t})$**
+#. Torque/Back EMF constant $(K_{t})$
 
    It measure of how much torque (resp. back-emf) can be produced given my current (resp. speed) and vice-versa.
    
@@ -270,9 +265,9 @@
    <br>
 
 
-#. **Motor Constant** $K_{m}$ 
+#. Motor Constant $K_{m}$ 
 
-   It is the ability to produce Toqrue for a given input power. It is winding invariant. (i.e., $K_m \propto r_{wire}^{0}$) and the square of motor constant is directly proportional to cube of $r_{gap}$
+   It is the ability to produce Toqrue for a given input power. It is winding invariant [@kenneally_leg_2015] as long as same conductimg wires are used. (i.e., $K_m \propto r_{wire}^{0}$) and the square of motor constant is directly proportional to cube of $r_{gap}$
 
    **$$ K_m = \frac{K_{T} }{\sqrt{R}} = \frac{T}{\sqrt{P_{input}}}$$**
 
@@ -285,69 +280,78 @@
 
    **$$ \implies K_m = \frac{K_{T} }{\sqrt{R}} = \frac{T}{\sqrt{P_{input}}}$$**
 
+   <br>
 
-   It is winding invariant [@kenneally_leg_2015] as long as same conductimg wires are used. For given winding volume, $(V = \pi r_{wire}^2 L = c \implies L \propto \frac{1}{r_{wire}^{2}})$, the resistance of the winding, $R \propto \frac{L}{A} \propto \frac{L}{r_{wire}^{2}} \propto \frac{1}{r_{wire}^4}$
-
-   The Torque constant $K_t$ depends linearly on the number of turns around the core,
+   For given winding volume, $(V = \pi r_{wire}^2 L = c \implies L \propto \frac{1}{r_{wire}^{2}})$, the resistance of the winding, $R \propto \frac{L}{A} \propto \frac{L}{r_{wire}^{2}} \propto \frac{1}{r_{wire}^4}$. The Torque constant $K_t$ depends linearly on the number of turns around the core, thus:
 
    $$ K_t \propto L \propto \frac{1}{r_{wire}^2} $$
 
 
-   $$ \tau = K_ti \implies \tau \propto \frac{i}{r_{wire}^2} $$
+   $$ \tau = K_ti \implies \tau \propto \frac{i}{r_{wire}^2} $$  {#eq:a}
 
 
-   $$ P = i^2R \propto \frac{i^2}{r_{wire}^4} $$
 
-   thus **$$ K_m = \frac{\tau}{\sqrt{P}} \propto r_{wire}^{0} $$**
+   $$ P = i^2R \propto \frac{i^2}{r_{wire}^4} $$ {#eq:b}
 
+
+   From [@eq:a] and [@eq:b] **$$ \implies K_m = \frac{\tau}{\sqrt{P}} \propto r_{wire}^{0} $$**
+
+   <br>
 
    $$ K_{m}^{2} = \frac{\tau^2}{i^2R} = \frac{n(B^2 i^2 l_{axial}^2 r_{gap}^2)}{i^2 \rho \frac{l_{axial}}{A}} = \frac{nl_{axial}B^2r_{gap}^{2}A}{\rho} $$ 
 
    thus for given a particular wire gauge, the number of wires (n) in the cross section scales linearly with the radius.[@wensing_proprioceptive_2017]
 
-   **$$ K_{m}^{2} \propto r_{gap}^{3} $$**
+   **$$ \implies K_{m}^{2} \propto r_{gap}^{3} $$**
 
    <br>
   
 
-#. **Electric Time Constant**
+#. Electric Time Constant
 
    The electrical time constant is the amount of time it takes the current in the winding to reach 63.2% percent of its rated value. The time constant found by dividing inductance by resistance.[@asada_direct-drive_1987]
 
    $$ \tau_e  = \frac{L}{R} $$
 
-#. **Mechanical Time Constant**
+#. Mechanical Time Constant
 
    It is the time required for a given motor to reach 63.2% of its maximum rated speed in a no-load condition. The mechanical time constant is basically a measure of a motor's responsiveness. Direct Drive has no damping, thus is $\tau_{mech}$ large comapred to geared drive.      
    $$ \tau_{mech}  = \frac{inertia\;load}{mechanical\;damping\;coefficient} = \frac{\sum R_a J_t}{K_e K_t} $$ 
 
 
-#. **Thermal Specific Torque Density $K_{ts}$**
- 
+#. Thermal Specific Torque Density $K_{ts}$
 
-   Form, [@kenneally_design_2016], we have
+   This measure describes a motor’s ability to produce torque at stall while the windings dissipate energy through Joule heating corresponding to
+   $100 \deg C$ rise [@kenneally_design_2016].
 
    $$ K_{ts} := \frac{K_t}{m} \sqrt{\frac{1}{R_{th}R}} $$
 
+
+   where $K_t$ is the torque constant ($\frac{Nm}{A}$), $m$ is the motor mass ($kg$), $R_{th}$ is the motor thermal resistance ($\frac{\deg C}{W}$) and $R$ is the winding electrical resistance in ohm. 
+
+
 ##### Loading #####
 
-#. **Specific Electrical Loading $(\overline{A})$** 
+#. Specific Electrical Loading $(\overline{A})$ 
 
-   Avergae **Axial** current per meter of circumference on the rotor. 
+   Avergae axial current per meter of circumference on the rotor. The current is concentarted in the conductors between the slot. 
 
-   [Design of Brushless Permanent-Magnet Machines, p. 68]
    
-#. **Specific Magnetic Loading $(\overline{B})$** 
+#. Specific Magnetic Loading $(\overline{B})$ 
 
-   Average magnitude of **radial flux** density over the entire cylindrical surface of the rotor. 
+   Average radial flux density over the entire cylindrical surface of the rotor. density over the entire cylindrical surface of the rotor. Because of the slotting, the average flux density is always less than the flux density in the teeth. 
+
+   <br>
 
    **$(\overline{A})$ vs $(\overline{B})$**
 
-   In case we widen our slots to accomodate more copper $(\overline{A})$ will increase but $(\overline{B})$ may reduce because narrower teeth means less area for flux, and therefore has danger of stauration of iron.
+   In case we widen our slots to accomodate more copper/conductor $(\overline{A})$ will increase but $(\overline{B})$ may reduce because narrower teeth means less area for flux, and therefore has danger of stauration of iron. Thus a compromise has to be made for a given a volume.
 
-   [Design of Brushless Permanent-Magnet Machines, p. 68]
+   <br>
+
+   <!-- [@Design of Brushless Permanent-Magnet Machines, p. 68] -->
    
-#. **Thermal Load (C)**
+#. Thermal Load (C)
 
    As intuitive and as basic the better the cooling the better will be the perfomance of our motor.
 
