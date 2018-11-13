@@ -53,7 +53,12 @@
 
 #. Turns
 
-   Each individual loop of wire making up phase winding is a Turn. 
+   Each individual loop of wire making up phase winding is a Turn.
+
+
+#. Reflected Inertia
+
+
 
    
 #. Pole $(N_m)$

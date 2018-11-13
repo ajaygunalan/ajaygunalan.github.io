@@ -19,7 +19,7 @@ Note: Kindly refer here ([https://ajaygunalan.github.io/blog/notes/motor/motor.h
 ##### What is a robot ? #####
 
 
-   <p style="text-align: justify;">A robot is a bunch of actuator connected by a link(a structure). Actuators, being one of the fundamental element of a robot, will determine the core capabilities and limitation of a robot. Thus a thorough understanding of the actuator will help us to optimise it based upon our requirment. In this article we restrict ourself to Electromagnetic Actuator (Motors), since it is the most widely used one and has a higher energy efficiency compared to others like hydraulic, pneumatic, etc. Out of all the various type of motor like Induction, Reluctance, PMSM/BLDC, DC, Stepper, etc. Our goal is to understand various factors of EM actuator which influences the perfomance and hopefully to justify why pancake shaped, Quasi Direct-Drive, Permanent Magnet Synchronous Motors(PMSM), with 4Q control drivers and elastic  element will be the norm of the robotics in future. Note: (PMSM) is physically same as the BLDC Motor. We call it PMSM/BLAC when we apply a sinuosoidal emf and BLDC when we apply trapezoidal emf.</p> 
+   <p style="text-align: justify;">A robot is a bunch of actuator connected by a link(a structure). Actuators, being one of the fundamental element of a robot, will determine the core capabilities and limitation of a robot. Thus a thorough understanding of the actuator will help us to optimise it based upon our requirment. In this article we restrict ourself to Electromagnetic Actuator (Motors), since it is the most widely used one and has a higher energy efficiency compared to others like hydraulic, pneumatic, etc. Out of all the various type of motor like Induction, Reluctance, PMSM/BLDC, DC, Stepper, etc. Our goal is to understand various factors of EM actuator which influences the perfomance and hopefully to justify why pancake shaped, Quasi Direct-Drive, Permanent Magnet Synchronous Motors(PMSM), with high bandwidth 4Q control drivers and compliance will be the norm of the robotics in future. Note: (PMSM) is physically same as the BLDC Motor. We call it PMSM/BLAC when we apply a sinuosoidal emf and BLDC when we apply trapezoidal emf.</p> 
 
    
 
@@ -37,14 +37,13 @@ Note: Kindly refer here ([https://ajaygunalan.github.io/blog/notes/motor/motor.h
 
 ![Result of applying automation principles in a robot](https://ajaygunalan.github.io/projects/asset/past/motor/motor_fail.gif)
 
-   Infact you can see more failures in this [video](https://www.youtube.com/watch?v=g0TaYhjpOfo) of DARRPA robotics challenge where the robot  failed to do task which seems trival to us. The possible reason for failure are huge gearbox, pure postion control, lack of compliance(some were rigid like bricks) and bad control algorithm(wont cover about it here). Let us delve into each of the reason breifly.
+   Infact you can see more failures in this [video](https://www.youtube.com/watch?v=g0TaYhjpOfo) of DARRPA robotics challenge where the robot  failed to do task which seems trival to us. The possible reason for failure are huge gearbox, pure postion control, lack of compliance(some were rigid like bricks) and bad control algorithm(wont cover about it here). Let us delve into each of the reasons breifly.
 
 <br>
 
 ##### Gearbox - The Culprit #####
 
-   Gearbox is an power transmitter, used to increase the torque by decreasing the speed. Addition of gearbox induces various factors such as reflected inertia, blacklash, internal stresses, coulomb and viscous friction, and stiction in the gear train — all of which hinder current-based torque sensing. These non-linear effects hide forces acting at the output from being sensed by the motor causing motor current to be a poor indicator of output torque.
-
+   Gearbox is an power transmitter, used to increase the torque by decreasing the speed. Addition of gearbox induces various factors such as reflected inertia, blacklash, internal stresses, coulomb, viscous friction, and stiction in the gear train. These non-linear effects hide forces acting at the output from being sensed by the motor causing motor current to be a poor indicator of output torque. Direct-Drive means directly coupling the load with actuator completely removing the gearbox. This overcomes all the drawbacks of the gearbox but increases the weight and volume of the motor due to higher torque requirment. Thus there is a trade-off between force-transperancy and reflected inrtia, torque requirment. Thus by having single-stage, backdriveable gears with low reduction ration(5-10) we achieve a decent compromise between torque requirment and force transperancy, impedance. We call this as Quasi Direct Drive.[@kalouche_design_2016]
 
 <!--    While augmenting an actuator with a gearbox can increase the actuator’s torque density by orders of
 magnitude it does so at the cost of added control complexities, increased reflected inertia, efficiency
@@ -54,11 +53,26 @@ modeling the non-linearities associated with backlash, . Only in specific circum
 
 <br>
 
-##### Motor control loops ##### 
+##### Motor control loops #####
+
+  If you have ever done a simple line following a robot, you would probably know that there is something called motor driver which in essence applies the required voltage based upon the user command. Based upon the driver we can give different commands such as postion, velocity, current(torque). No matter which command you give ultimatley it boils down to applying a volatge to the motor. The value of voltage will be determined by the error between desired value and actual value. This means that for a each loop (say velocity), there must be partciular sensor measuring it. 
+
+  <!-- ![Current-Velocity-Position-Loops](https://ajaygunalan.github.io/projects/asset/past/motor/Current-Velocity-Position-Loops.gif){width=30% height=25%}   -->
+
+  There is reason behind why current is the inner-most loop is they are closer to the voltage(intuitively) and thus inner- loop operate (5-10) times faster than the outer loop. A motor drive can include any combination of three types of control loops—a position loop, a velocity loop, and a current. The bandwidth, or response time, of the system is a measure of how fast it responds to the changing input command. As you might have guess the inner loops have higher bandwidth. While higher bandwidth generally provides stiffer motor performance, decreases error, and improves transient response time, there are also drawbacks to high bandwidth in systems. Specifically, the higher the bandwidth, the higher the frequency at which the motor responds to disturbances, which typically requires higher accelerations and forces. Power dissipation has a squared relationship to force, so any increase in bandwidth significantly increases power dissipation (i.e. heat), and therefore, the temperature rise of the motor. Motor drivers are also classified as 1Q  or 4Q drivers. 1Q allows quadrant 1, and 3, to be controlled thus only allowing the motor torque and speed to controlled in same direction. Whereas 4Q allows all the four quadrant to be controlled and thus making active electromagnetic braking, regenerating current form the motor to the battery, possible.
+
+   <!-- ![Torque vs Speed](https://ajaygunalan.github.io/projects/asset/past/motor/four_quadrant.png){width=30% height=25%}   --> 
+  
+
 
 <br>
 
+
+
+
 ##### Passive compliance #####
+
+   Coming soon...!
 
 <br>
 
@@ -71,7 +85,7 @@ modeling the non-linearities associated with backlash, . Only in specific circum
 
 
 
-Coming soon...!
+
 <!-- 
 
 ##### Pan-Cake Shape ? #####
