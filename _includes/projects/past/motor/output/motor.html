@@ -35,25 +35,26 @@
 <p><br></p>
 <h5 id="what-is-a-robot">What is a robot ?</h5>
 <p style="text-align: justify;">
-A robot is a bunch of actuator connected by a link(a structure). Actuators, being one of the fundamental element of a robot, will determine the core capabilities and limitation of a robot. Thus a thorough understanding of the actuator will help us to optimise it based upon our requirment. In this article we restrict ourself to Electromagnetic Actuator (Motors), since it is the most widely used one and has a higher energy efficiency compared to others like hydraulic, pneumatic, etc. Out of all the various type of motor like Induction, Reluctance, PMSM/BLDC, DC, Stepper, etc. Our goal is to understand various factors of EM actuator which influences the perfomance and hopefully to justify why <strong>pancake shaped, Quasi Direct-Drive, Permanent Magnet Synchronous Motors(PMSM), with 4Q control drivers and elastic element</strong> will be the norm of the robotics in future.
+A robot is a bunch of actuator connected by a link(a structure). Actuators, being one of the fundamental element of a robot, will determine the core capabilities and limitation of a robot. Thus a thorough understanding of the actuator will help us to optimise it based upon our requirment. In this article we restrict ourself to Electromagnetic Actuator (Motors), since it is the most widely used one and has a higher energy efficiency compared to others like hydraulic, pneumatic, etc. Out of all the various type of motor like Induction, Reluctance, PMSM/BLDC, DC, Stepper, etc. Our goal is to understand various factors of EM actuator which influences the perfomance and hopefully to justify why pancake shaped, Quasi Direct-Drive, Permanent Magnet Synchronous Motors(PMSM), with 4Q control drivers and elastic element will be the norm of the robotics in future. Note: (PMSM) is physically same as the BLDC Motor. We call it PMSM/BLAC when we apply a sinuosoidal emf and BLDC when we apply trapezoidal emf.
 </p>
-<p>*Note: (PMSM) is physically same as the BLDC Motor. We call it PMSM/BLAC when we apply a sinuosoidal emf and BLDC when we apply trapezoidal emf.</p>
 <p><br></p>
 <h5 id="is-actuator-a-deal">Is Actuator a deal ?</h5>
-<p>It should just spin with some toqrue, righT? what else would be expected. Well, traditionaly automation and industrical robotic arms are fixed inside a cage where all the things are archietectured as per the requirment. This mean there was less uncertainity and they didn’t come in contact with an unkown object. Everything was like orchestra and the problem was reduced to find the correct set of motor commands to do a particular task satisfying some constarint (like time, cost, power, etc.). For these type of problem, yes it should spin to a postion with enough torque. Usually this was achieved by numerous trial and error and finally hard coding the values in real-time. The actuator was designed to maximise the torque by having huge gearbox like shown below.</p>
-<!-- ![Acutator Design in Automation, Source[@kalouche_design_2016]](https://ajaygunalan.github.io/projects/asset/past/motor/automation_design.png) -->
-<p>Good for automation, but when comes to general purpose robotics, we except it to touch and manipulate objecsts like us and to be with us side-by-side safely. This can’t be achieved with pure postion control and huge gearbox. If we did applied the same principles’ which worked for automation, the result will like below:</p>
-<!-- ![Acutator Design in Automation, Source[@kalouche_design_2016]](https://ajaygunalan.github.io/projects/asset/past/motor/motor_fail.gif) -->
-<p>Infact you can see more failures in this <a href="https://www.youtube.com/watch?v=g0TaYhjpOfo">video</a> of DARRPA robotics challenge where the robot failed to do task which seems trival to us. The reason for failure are</p>
-<ol>
-<li>Huge gearbox</li>
-<li>Pure postion control</li>
-<li>Lack of elastic element. (some were rigid like bricks)</li>
-<li>Bad control algorithm. (wont touch about it here)</li>
-</ol>
-<p>Let us delve into the above reason one by one.</p>
+<p>It should just spin with some toqrue, right? what else would be expected. Well, traditionaly automation and industrical robotic arms are fixed inside a cage where all the things are archietectured as per the requirment. This mean there was less uncertainity and they didn’t come in contact with an unkown object. Everything was like orchestra and the problem was reduced to finding the correct set of motor commands to do a particular task satisfying some constarint (like time, cost, power, etc.). For these type of problem, yes it should spin to a postion with enough torque. Usually this was achieved by numerous trial and error and finally hard coding the values in real-time. The actuator was designed to maximise the torque by having huge gearbox like shown below.</p>
+<figure>
+<img src="https://ajaygunalan.github.io/projects/asset/past/motor/automation_design.png" alt="Acutator Design in Automation, Source[1]" style="width:30.0%;height:25.0%" /><figcaption>Acutator Design in Automation, Source<span class="citation" data-cites="kalouche_design_2016">[<a href="#ref-kalouche_design_2016">1</a>]</span></figcaption>
+</figure>
+<p>Good for automation, but when comes to general purpose robotics, we except it to touch and manipulate objecsts like us and to be with us side-by-side safely, which demands acutuators to be compliant, backdriveable, energy-efficiency and force transperancy (ability to sense output torque form motor current). This can’t be achieved with pure postion control and huge gearbox. If we did applied the same principles’ which worked for automation, the result will like below:</p>
+<figure>
+<img src="https://ajaygunalan.github.io/projects/asset/past/motor/motor_fail.gif" alt="Result of applying automation principles in a robot" /><figcaption>Result of applying automation principles in a robot</figcaption>
+</figure>
+<p>Infact you can see more failures in this <a href="https://www.youtube.com/watch?v=g0TaYhjpOfo">video</a> of DARRPA robotics challenge where the robot failed to do task which seems trival to us. The possible reason for failure are huge gearbox, pure postion control, lack of compliance(some were rigid like bricks) and bad control algorithm(wont cover about it here). Let us delve into each of the reason breifly.</p>
 <p><br></p>
 <h5 id="gearbox---the-culprit">Gearbox - The Culprit</h5>
+<p>Gearbox is an power transmitter, used to increase the torque by decreasing the speed. Addition of gearbox induces various factors such as reflected inertia, blacklash, internal stresses, coulomb and viscous friction, and stiction in the gear train — all of which hinder current-based torque sensing. These non-linear effects hide forces acting at the output from being sensed by the motor causing motor current to be a poor indicator of output torque.</p>
+<!--    While augmenting an actuator with a gearbox can increase the actuator’s torque density by orders of
+magnitude it does so at the cost of added control complexities, increased reflected inertia, efficiency
+losses and reduced mechanical robustness [26]. Control complexities are derived from the difficulty in
+modeling the non-linearities associated with backlash, . Only in specific circumstances — when the load and the rate -->
 <p><br></p>
 <h5 id="motor-control-loops">Motor control loops</h5>
 <p><br></p>
@@ -175,5 +176,10 @@ ol li figure figcaption {
    background-color: #faebd7
 }*/
 </style>
+<div id="refs" class="references">
+<div id="ref-kalouche_design_2016">
+<p>[1] S. Kalouche, “Design for 3d Agility and Virtual Compliance Using Proprioceptive Force Control in Dynamic Legged Robots,” PhD thesis, Carnegie Mellon University, 2016. </p>
+</div>
+</div>
 </body>
 </html>
