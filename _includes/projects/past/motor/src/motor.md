@@ -12,7 +12,10 @@ Note: Kindly refer here ([https://ajaygunalan.github.io/blog/notes/motor/motor.h
 * [Is Actuator a deal ?](#is-actuator-a-deal) 
 * [Gearbox- The Culprit](#gearbox---the-culprit)
 * [Motor control loops](#motor-control-loops)
-* [Passive compliance](#passive-compliance) 
+* [Passive compliance](#passive-compliance)
+* [Pan-Cake Shape](#pan---cake-shape)
+* [Conclusion](#conclusion)
+* [References](#references) 
 
 <br>
 
@@ -57,25 +60,36 @@ modeling the non-linearities associated with backlash, . Only in specific circum
 
   If you have ever done a simple line following a robot, you would probably know that there is something called motor driver which in essence applies the required voltage based upon the user command. Based upon the driver we can give different commands such as postion, velocity, current(torque). No matter which command you give ultimatley it boils down to applying a volatge to the motor. The value of voltage will be determined by the error between desired value and actual value. This means that for a each loop (say velocity), there must be partciular sensor measuring it. 
 
-  <!-- ![Current-Velocity-Position-Loops](https://ajaygunalan.github.io/projects/asset/past/motor/Current-Velocity-Position-Loops.gif){width=30% height=25%}   -->
+  ![Current-Velocity-Position-Loops](https://ajaygunalan.github.io/projects/asset/past/motor/Current-Velocity-Position-Loops.gif){width=30% height=25%}  
 
-  There is reason behind why current is the inner-most loop is they are closer to the voltage(intuitively) and thus inner- loop operate (5-10) times faster than the outer loop. A motor drive can include any combination of three types of control loops—a position loop, a velocity loop, and a current. The bandwidth, or response time, of the system is a measure of how fast it responds to the changing input command. As you might have guess the inner loops have higher bandwidth. While higher bandwidth generally provides stiffer motor performance, decreases error, and improves transient response time, there are also drawbacks to high bandwidth in systems. Specifically, the higher the bandwidth, the higher the frequency at which the motor responds to disturbances, which typically requires higher accelerations and forces. Power dissipation has a squared relationship to force, so any increase in bandwidth significantly increases power dissipation (i.e. heat), and therefore, the temperature rise of the motor. Motor drivers are also classified as 1Q  or 4Q drivers. 1Q allows quadrant 1, and 3, to be controlled thus only allowing the motor torque and speed to controlled in same direction. Whereas 4Q allows all the four quadrant to be controlled and thus making active electromagnetic braking, regenerating current form the motor to the battery, possible.
+  There is reason behind why current is the inner-most loop is they are closer to the voltage(intuitively) and thus inner- loop operate (5-10) times faster than the outer loop. A motor drive can include any combination of three types of control loops—a position loop, a velocity loop, and a current. The bandwidth, or response time, of the system is a measure of how fast it responds to the changing input command. As you might have guess the inner loops have higher bandwidth. While higher bandwidth generally provides stiffer motor performance, decreases error, and improves transient response time, there are also drawbacks to high bandwidth in systems. Specifically, the higher the bandwidth, the higher the frequency at which the motor responds to disturbances, which typically requires higher accelerations and forces. Power dissipation has a squared relationship to force, so any increase in bandwidth significantly increases power dissipation (i.e. heat), and therefore, the temperature rise of the motor. Motor drivers are also classified as 1Q  or 4Q drivers. 1Q allows quadrant 1, and 3, to be controlled thus only allowing the motor torque and speed to controlled in same direction. Whereas 4Q allows all the four quadrant to be controlled and thus making active electromagnetic braking, regenerating current form the motor to the battery, possible. Thus a sufficiently high bandwidth 4Q motor driver is a must.
 
-   <!-- ![Torque vs Speed](https://ajaygunalan.github.io/projects/asset/past/motor/four_quadrant.png){width=30% height=25%}   --> 
+   ![Torque vs Speed](https://ajaygunalan.github.io/projects/asset/past/motor/four_quadrant.png){width=30% height=25%}   
   
 
 
 <br>
 
-
-
-
 ##### Passive compliance #####
 
-   Coming soon...!
+   Compliance can be added mehcanically(using springs, damper) or virtually by control algorithm which can vary the stiffness and damping on the go. So it seems that virtual spring is better because you get a variable stiffness. Not neccessarliy, meachnical spring make control a bit complicated, but they are of enoromous use when it comes energy efficiency. They store the sudden high impact force and can be reused in next cycle. So in esscence we should select tha passive compliance for a baseline value and use software on top it for fine tuning. 
 
 <br>
 
+##### Pan-Cake Shape #####
+
+   When we say pan-cake shaped motor, it means motors whose $r_{gap} > L_{axial}$, where $r_{gap}$ is the radial gap between center and rotor and $L_{axial}$ is the axial lenght of the motor. The reason is Torque density increases with $r_{gap}$. But it doesn't mean we can increase the $r_{gap}$ indefinitely as Torque/inertia is inversely proportional to $r_{gap}$
+
+   ![Gap Radius, Source[@seok_actuator_2012]](https://ajaygunalan.github.io/projects/asset/past/motor/r_gap.png){width=30% height=25%}   
+
+
+##### Conclusion #####
+
+   Hopefully, I have justified why we need a high bandwidth, 4Q control driver with pan-cake shaped motor, quasi-direct-drive and compliance for the robots of the future.
+
+
+   ![Actuators for robotics](https://ajaygunalan.github.io/projects/asset/past/motor/final.png){width=30% height=25%}   
+ 
 
 <!-- ##### What we need from a actuator ? #####
 
