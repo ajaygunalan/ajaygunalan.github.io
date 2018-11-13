@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Ajay G" />
-  <title>Optimization of Motor</title>
+  <title>Actuators for Robot</title>
   <style type="text/css">
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
@@ -19,20 +19,50 @@
 </head>
 <body>
 <header>
-<h1 class="title">Optimization of Motor</h1>
+<h1 class="title">Actuators for Robot</h1>
 <p class="author">Ajay G</p>
 </header>
-<p>Note: Kindly refer here (<a href="https://ajaygunalan.github.io/blog/notes/motor/motor.html" class="uri">https://ajaygunalan.github.io/blog/notes/motor/motor.html</a>) for the various definition and derivation. Here the focus is only to understand which factors need to be maximised and minimised.</p>
-<p><br> <br></p>
+<p>Note: Kindly refer here (<a href="https://ajaygunalan.github.io/blog/notes/motor/motor.html" class="uri">https://ajaygunalan.github.io/blog/notes/motor/motor.html</a>) for the various definition and derivation. Here the focus is only to understand which factors need to be maximised and minimised for robots of the future.</p>
+<p><br></p>
+<h5 id="content">Content</h5>
+<ul>
+<li><a href="#what-is-a-robot">What is a robot ?</a></li>
+<li><a href="#is-actuator-a-deal">Is Actuator a deal ?</a></li>
+<li><a href="#gearbox---the-culprit">Gearbox- The Culprit</a></li>
+<li><a href="#motor-control-loops">Motor control loops</a></li>
+<li><a href="#passive-compliance">Passive compliance</a></li>
+</ul>
+<p><br></p>
 <h5 id="what-is-a-robot">What is a robot ?</h5>
 <p style="text-align: justify;">
 A robot is a bunch of actuator connected by a link(a structure). Actuators, being one of the fundamental element of a robot, will determine the core capabilities and limitation of a robot. Thus a thorough understanding of the actuator will help us to optimise it based upon our requirment. In this article we restrict ourself to Electromagnetic Actuator (Motors), since it is the most widely used one and has a higher energy efficiency compared to others like hydraulic, pneumatic, etc. Out of all the various type of motor like Induction, Reluctance, PMSM/BLDC, DC, Stepper, etc. Our goal is to understand various factors of EM actuator which influences the perfomance and hopefully to justify why <strong>pancake shaped, Quasi Direct-Drive, Permanent Magnet Synchronous Motors(PMSM), with 4Q control drivers and elastic element</strong> will be the norm of the robotics in future.
 </p>
 <p>*Note: (PMSM) is physically same as the BLDC Motor. We call it PMSM/BLAC when we apply a sinuosoidal emf and BLDC when we apply trapezoidal emf.</p>
-<p><br> <br></p>
-<h5 id="what-we-need-from-a-actuator">What we need from a actuator ?</h5>
-<p>It should spin, right ? Well…</p>
 <p><br></p>
+<h5 id="is-actuator-a-deal">Is Actuator a deal ?</h5>
+<p>It should just spin with some toqrue, righT? what else would be expected. Well, traditionaly automation and industrical robotic arms are fixed inside a cage where all the things are archietectured as per the requirment. This mean there was less uncertainity and they didn’t come in contact with an unkown object. Everything was like orchestra and the problem was reduced to find the correct set of motor commands to do a particular task satisfying some constarint (like time, cost, power, etc.). For these type of problem, yes it should spin to a postion with enough torque. Usually this was achieved by numerous trial and error and finally hard coding the values in real-time. The actuator was designed to maximise the torque by having huge gearbox like shown below.</p>
+<!-- ![Acutator Design in Automation, Source[@kalouche_design_2016]](https://ajaygunalan.github.io/projects/asset/past/motor/automation_design.png) -->
+<p>Good for automation, but when comes to general purpose robotics, we except it to touch and manipulate objecsts like us and to be with us side-by-side safely. This can’t be achieved with pure postion control and huge gearbox. If we did applied the same principles’ which worked for automation, the result will like below:</p>
+<!-- ![Acutator Design in Automation, Source[@kalouche_design_2016]](https://ajaygunalan.github.io/projects/asset/past/motor/motor_fail.gif) -->
+<p>Infact you can see more failures in this <a href="https://www.youtube.com/watch?v=g0TaYhjpOfo">video</a> of DARRPA robotics challenge where the robot failed to do task which seems trival to us. The reason for failure are</p>
+<ol>
+<li>Huge gearbox</li>
+<li>Pure postion control</li>
+<li>Lack of elastic element. (some were rigid like bricks)</li>
+<li>Bad control algorithm. (wont touch about it here)</li>
+</ol>
+<p>Let us delve into the above reason one by one.</p>
+<p><br></p>
+<h5 id="gearbox---the-culprit">Gearbox - The Culprit</h5>
+<p><br></p>
+<h5 id="motor-control-loops">Motor control loops</h5>
+<p><br></p>
+<h5 id="passive-compliance">Passive compliance</h5>
+<p><br></p>
+<!-- ##### What we need from a actuator ? #####
+
+   It should spin, right ? Well, yeah.
+ -->
 <p>Coming soon…! <!-- 
 
 ##### Pan-Cake Shape ? #####
@@ -72,11 +102,14 @@ Well, brushless means reduced noise, wear, and friction caused by brushes and to
    2. Maxon Document
    3. Asuting  BLDC chapter
    4. BLDC and chaos --></p>
-<p><br></p>
 <h5 id="references">References</h5>
 <style>
 h3, h4, h5 {
       text-align: left;
+}
+
+ul li {
+  text-align: left;
 }
 
 p {

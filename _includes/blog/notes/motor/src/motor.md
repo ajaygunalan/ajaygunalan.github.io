@@ -132,6 +132,8 @@
 
    *Derivation:*
 
+   <br>
+
    $$ Mass = V \rho = [V_{rotor} + V_{stator}]\rho $$ 
 
 
@@ -216,6 +218,8 @@
 
    *Derivation:*
 
+   <br>
+
    Electrical input power = rate of production of *heat* in conductor + power absorbed by the inductor(*magnetic* energy) + *mechanical* output power
 
 
@@ -271,8 +275,11 @@
 
    **$$ K_m = \frac{K_{T} }{\sqrt{R}} = \frac{T}{\sqrt{P_{input}}}$$**
 
+   <br>
 
    *Derivation:*
+
+   <br>
 
    $$  P_{input} = Vi = i^2R = \left( \frac{T}{K_t} \right)^2R = T^2 \frac{R}{ \left( K_t \right)^2} $$
 
@@ -362,42 +369,41 @@
 
 ### Losses ###
 
-   Inefficiencies can  be  grouped  into  two general categories:
+   Losses can  be  majorly grouped  into  two general categories:
 
    1. Torque/Copper/$I^2$ Losses
+
+      They are due to resistance heating of the windings, and are proportional to the square of the output torque. 
+
    2. Speed/Iron/$E^2$ Losses
 
+      Iron Core Losses = Eddy Curremt Losses +  Hystersis Losses
 
-   **Torque/Copper/$I^2$ Losses: Winding Resistance, Power Ratings**
-
-   They are due to resistance heating of the windings, and are proportional to the square of the output torque. 
+      Hysteresis in  the  magnetic  domains  in the  core  appears  as  a  constant  friction  torque,  while  the eddy  current  torque  is  proportional  to  speed.
 
 
-   **Speed/Iron/$E^2$ Losses: Delta Windings, Eddy Current, and Mechanical Losses**
 
-   Iron Core Losses = Eddy Curremt Losses +  Hystersis Losses
-
-   Hysteresis in  the  magnetic  domains  in the  core  appears  as  a  constant  friction  torque,  while  the eddy  current  torque  is  proportional  to  speed.  
+  
  
 
 <br>
 <br>
 
 
-<br>
-<br>
 
-### To Do ###
+<!-- ### To Do ###
 
    1. Focus on charcteristic section
    2. Finish the core vs corless section
-   3. BLDC and chaos
+   3. BLDC and chaos -->
  
 
-<br> 
+
 
 
 ### References ###
+
+<br>
 
 
 <style>

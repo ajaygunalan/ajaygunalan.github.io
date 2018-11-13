@@ -102,6 +102,7 @@
 <p>When we mean pancake shaped motor, we mean motors with large <span class="math inline">\(R_{gap}\)</span> beacause it will increase torque per unit mass but it doesn’t mean we can increase the <span class="math inline">\(R_{gap}\)</span> indefinitely beacause that will decrease the torque per unit inertia. Thus a compromise has to be made and mostly <span class="math inline">\(R_{gap} &gt; L_{axial}\)</span>. In general outrunners will be preferrable to innrunners due to large gap radius.</p>
 <p><br></p>
 <p><em>Derivation:</em></p>
+<p><br></p>
 <p><span class="math display">\[ Mass = V \rho = [V_{rotor} + V_{stator}]\rho \]</span></p>
 <p><span class="math display">\[ M = \pi [r_{gap}^2 - (r_{gap} - t_{rotor})^2 + (r_{gap} + t_{stator})^2 - r_{gap}^2 ]l \rho \]</span></p>
 <p>Approximating to First Order thin walls (Neglecting higher order terms)<span class="citation" data-cites="wensing_proprioceptive_2017">[<a href="#ref-wensing_proprioceptive_2017">5</a>]</span></p>
@@ -141,6 +142,7 @@ Given my speed how much is the back emf voltage -->
 <p>Theoretically <span class="math inline">\(K_{t} = K_{e}\)</span> but in reality, <span class="math inline">\(K_e\)</span> can only be measure in open-circuit and <span class="math inline">\(K_t\)</span> can only measured when current is flowing, thus causisng a variance in magentic and electrical condition which casuses <strong>different value</strong> to each of them. They are determined by magnetic field and geometrical parameters of air gap. For an ideal motor it will remain constant, but in reality, it varies with rotor position, i.e, <span class="math inline">\(K_{t} = f(\theta_{e})\)</span> because magetic field (B) consist of discrete poles and commutation occurs discretely which causes ripple in magnetic field. To reduce the torque ripple we can increase switching rate of current, make the current to be smooth and increase the number of poles.</p>
 <p><br></p>
 <p><em>Derivation:</em></p>
+<p><br></p>
 <p>Electrical input power = rate of production of <em>heat</em> in conductor + power absorbed by the inductor(<em>magnetic</em> energy) + <em>mechanical</em> output power</p>
 <p><span class="math display">\[ V_{supply}i = i^2R + i L \frac{di}{dt} +(Bil)\upsilon \]</span></p>
 <p>Under steady-state condition (accelration is zero), <span class="math inline">\(\frac{di}{dt} = 0\)</span> :</p>
@@ -168,7 +170,9 @@ Given my speed how much is the back emf voltage -->
 <li><p>Motor Constant <span class="math inline">\(K_{m}\)</span></p>
 <p>It is the ability to produce Toqrue for a given input power. It is winding invariant <span class="citation" data-cites="kenneally_leg_2015">[<a href="#ref-kenneally_leg_2015">8</a>]</span> as long as same conductimg wires are used. (i.e., <span class="math inline">\(K_m \propto r_{wire}^{0}\)</span>) and the square of motor constant is directly proportional to cube of <span class="math inline">\(r_{gap}\)</span></p>
 <p><strong><span class="math display">\[ K_m = \frac{K_{T} }{\sqrt{R}} = \frac{T}{\sqrt{P_{input}}}\]</span></strong></p>
+<p><br></p>
 <p><em>Derivation:</em></p>
+<p><br></p>
 <p><span class="math display">\[  P_{input} = Vi = i^2R = \left( \frac{T}{K_t} \right)^2R = T^2 \frac{R}{ \left( K_t \right)^2} \]</span></p>
 <p><span class="math display">\[ \implies \frac{\left( K_t \right)^2}{R} = \frac{T^2}{P_{input}} \]</span></p>
 <p><strong><span class="math display">\[ \implies K_m = \frac{K_{T} }{\sqrt{R}} = \frac{T}{\sqrt{P_{input}}}\]</span></strong></p>
@@ -210,26 +214,22 @@ Given my speed how much is the back emf voltage -->
 </ol>
 <p><br> <br></p>
 <h3 id="losses">Losses</h3>
-<p>Inefficiencies can be grouped into two general categories:</p>
+<p>Losses can be majorly grouped into two general categories:</p>
 <ol type="1">
-<li>Torque/Copper/<span class="math inline">\(I^2\)</span> Losses</li>
-<li>Speed/Iron/<span class="math inline">\(E^2\)</span> Losses</li>
-</ol>
-<p><strong>Torque/Copper/<span class="math inline">\(I^2\)</span> Losses: Winding Resistance, Power Ratings</strong></p>
-<p>They are due to resistance heating of the windings, and are proportional to the square of the output torque.</p>
-<p><strong>Speed/Iron/<span class="math inline">\(E^2\)</span> Losses: Delta Windings, Eddy Current, and Mechanical Losses</strong></p>
+<li><p>Torque/Copper/<span class="math inline">\(I^2\)</span> Losses</p>
+<p>They are due to resistance heating of the windings, and are proportional to the square of the output torque.</p></li>
+<li><p>Speed/Iron/<span class="math inline">\(E^2\)</span> Losses</p>
 <p>Iron Core Losses = Eddy Curremt Losses + Hystersis Losses</p>
-<p>Hysteresis in the magnetic domains in the core appears as a constant friction torque, while the eddy current torque is proportional to speed.</p>
-<p><br> <br></p>
-<p><br> <br></p>
-<h3 id="to-do">To Do</h3>
-<ol type="1">
-<li>Focus on charcteristic section</li>
-<li>Finish the core vs corless section</li>
-<li>BLDC and chaos</li>
+<p>Hysteresis in the magnetic domains in the core appears as a constant friction torque, while the eddy current torque is proportional to speed.</p></li>
 </ol>
-<p><br></p>
+<p><br> <br></p>
+<!-- ### To Do ###
+
+   1. Focus on charcteristic section
+   2. Finish the core vs corless section
+   3. BLDC and chaos -->
 <h3 id="references">References</h3>
+<p><br></p>
 <style>
 h3, h5 {
       text-align: left;
