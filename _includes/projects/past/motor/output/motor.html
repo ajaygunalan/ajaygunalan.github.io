@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
@@ -31,7 +31,7 @@
 <li><a href="#gearbox---the-culprit">Gearbox- The Culprit</a></li>
 <li><a href="#motor-control-loops">Motor control loops</a></li>
 <li><a href="#passive-compliance">Passive compliance</a></li>
-<li><a href="#pan---cake-shape">Pan-Cake Shape</a></li>
+<li><a href="#pan-cake-shape">Pan-Cake Shape</a></li>
 <li><a href="#conclusion">Conclusion</a></li>
 <li><a href="#references">References</a></li>
 </ul>
@@ -73,12 +73,12 @@ modeling the non-linearities associated with backlash, . Only in specific circum
 <p>Compliance can be added mehcanically(using springs, damper) or virtually by control algorithm which can vary the stiffness and damping on the go. So it seems that virtual spring is better because you get a variable stiffness. Not neccessarliy, meachnical spring make control a bit complicated, but they are of enoromous use when it comes energy efficiency. They store the sudden high impact force and can be reused in next cycle. So in esscence we should select tha passive compliance for a baseline value and use software on top it for fine tuning.</p>
 <p><br></p>
 <h5 id="pan-cake-shape">Pan-Cake Shape</h5>
-<p>When we say pan-cake shaped motor, it means motors whose <span class="math inline">\(r_{gap} &gt; L_{axial}\)</span>, where <span class="math inline">\(r_{gap}\)</span> is the radial gap between center and rotor and <span class="math inline">\(L_{axial}\)</span> is the axial lenght of the motor. The reason is Torque density increases with <span class="math inline">\(r_{gap}\)</span>. But it doesn’t mean we can increase the <span class="math inline">\(r_{gap}\)</span> indefinitely as Torque/inertia is inversely proportional to <span class="math inline">\(r_{gap}\)</span></p>
+<p>When we say pan-cake shaped motor, it means motors whose <span class="math inline">\(r_{gap} &gt; L_{axial}\)</span>, where <span class="math inline">\(r_{gap}\)</span> is the radial gap between center and rotor and <span class="math inline">\(L_{axial}\)</span> is the axial lenght of the motor. The reason is torque density increases with <span class="math inline">\(r_{gap}\)</span>. But it doesn’t mean we can increase the <span class="math inline">\(r_{gap}\)</span> indefinitely as torque per inertia is inversely proportional to <span class="math inline">\(r_{gap}\)</span>. So a compromise has to be made. In general <span class="math inline">\(r_{gap} &gt; L_{axial}\)</span> and should like a pan-cake shape for having a higher torque density.</p>
 <figure>
 <img src="https://ajaygunalan.github.io/projects/asset/past/motor/r_gap.png" alt="Gap Radius, Source[2]" style="width:30.0%;height:25.0%" /><figcaption>Gap Radius, Source<span class="citation" data-cites="seok_actuator_2012">[<a href="#ref-seok_actuator_2012">2</a>]</span></figcaption>
 </figure>
 <h5 id="conclusion">Conclusion</h5>
-<p>Hopefully, I have justified why we need a high bandwidth, 4Q control driver with pan-cake shaped motor, quasi-direct-drive and compliance for the robots of the future.</p>
+<p>Hopefully, I have justified why we need a high bandwidth, 4Q control driver with pan-cake shaped motor, quasi-direct-drive and compliance for the robots.</p>
 <figure>
 <img src="https://ajaygunalan.github.io/projects/asset/past/motor/final.png" alt="Actuators for robotics" style="width:30.0%;height:25.0%" /><figcaption>Actuators for robotics</figcaption>
 </figure>

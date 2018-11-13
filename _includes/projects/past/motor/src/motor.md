@@ -13,7 +13,7 @@ Note: Kindly refer here ([https://ajaygunalan.github.io/blog/notes/motor/motor.h
 * [Gearbox- The Culprit](#gearbox---the-culprit)
 * [Motor control loops](#motor-control-loops)
 * [Passive compliance](#passive-compliance)
-* [Pan-Cake Shape](#pan---cake-shape)
+* [Pan-Cake Shape](#pan-cake-shape)
 * [Conclusion](#conclusion)
 * [References](#references) 
 
@@ -78,14 +78,14 @@ modeling the non-linearities associated with backlash, . Only in specific circum
 
 ##### Pan-Cake Shape #####
 
-   When we say pan-cake shaped motor, it means motors whose $r_{gap} > L_{axial}$, where $r_{gap}$ is the radial gap between center and rotor and $L_{axial}$ is the axial lenght of the motor. The reason is Torque density increases with $r_{gap}$. But it doesn't mean we can increase the $r_{gap}$ indefinitely as Torque/inertia is inversely proportional to $r_{gap}$
+   When we say pan-cake shaped motor, it means motors whose $r_{gap} > L_{axial}$, where $r_{gap}$ is the radial gap between center and rotor and $L_{axial}$ is the axial lenght of the motor. The reason is torque density increases with $r_{gap}$. But it doesn't mean we can increase the $r_{gap}$ indefinitely as torque per inertia is inversely proportional to $r_{gap}$. So a compromise has to be made. In general $r_{gap} > L_{axial}$ and should like a pan-cake shape for having a higher torque density.
 
    ![Gap Radius, Source[@seok_actuator_2012]](https://ajaygunalan.github.io/projects/asset/past/motor/r_gap.png){width=30% height=25%}   
 
 
 ##### Conclusion #####
 
-   Hopefully, I have justified why we need a high bandwidth, 4Q control driver with pan-cake shaped motor, quasi-direct-drive and compliance for the robots of the future.
+   Hopefully, I have justified why we need a high bandwidth, 4Q control driver with pan-cake shaped motor, quasi-direct-drive and compliance for the robots.
 
 
    ![Actuators for robotics](https://ajaygunalan.github.io/projects/asset/past/motor/final.png){width=30% height=25%}   
