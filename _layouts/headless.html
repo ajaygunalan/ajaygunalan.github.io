@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{% if page.language %}{{ page.language | downcase }}{% else %}{{ site.language | downcase }}{% endif %}">
-{% include head.html %}
+{% include main.html %}
 
 <section class="author-profile" itemprop="author" itemscope itemtype="http://schema.org/Person">
     {%  if author.cover %}
