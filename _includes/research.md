@@ -1,5 +1,5 @@
 <br>
-<marquee behavior="scroll" direction="left"><strong>Update on Nov 16, 2018</strong>: For the next 4-5 month, I'll be focusing on only Stoch 2.0 and GRE preparation. So, there won't be any new update.</marquee>
+<marquee behavior="scroll" direction="left">Update on Nov 16, 2018: For the next 4-5 month, I'll be focusing on Stoch 2.0 and GRE preparation, So there won't be any new updates.</marquee>
 
 
 <!-- From where I got scrooling -->
