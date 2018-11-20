@@ -4,7 +4,7 @@ I completed my Bachelor's degree in Mechanical engineering(2013-2017). Right aft
 <br>
 
 
-I call myself a **Full-Stack Roboticist** because I like to build robots from scratch involving embedded systems, controls, planning, and machine learning. My research interest is to build dexterous and agile, under-actuated robots. To achieve it, I think we should have a broad inter-disciplinary approach, for accurately debugging the failures. After all, I feel that, "Robotics is the research of engineering."
+I call myself a **Full-Stack Roboticist** because I like to build robots from scratch involving embedded systems, controls, planning, and machine learning. My research interest is to build dexterous and agile, under-actuated robots. To achieve it, I think we should have a broad inter-disciplinary approach in order to accurately debug the failures. After all, I feel that, "Robotics is the research of engineering."
 
 
 
