@@ -10,14 +10,14 @@ Using the data form the trajectory of the past, to compute the new trajectory qu
 <br>
 
 
-#### To Write On ###
+#### To Write On (Will be updated) ### 
 
 #. How to store the data without redundancy ?
 #. How to retrive & repair the past tarjectory much faster than time needed for PFS. ?
 
 <br>
 
-#### References ####
+<!-- #### References #### -->
 
 <br>
 <br>

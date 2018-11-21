@@ -1,5 +1,5 @@
-<br>
-<marquee behavior="scroll" direction="left">Update on Nov 16, 2018: For the next 4-5 month, I'll be focusing on Stoch 2.0 and GRE preparation, So there won't be any new updates.</marquee>
+<!-- <br>
+<marquee behavior="scroll" direction="left">Update on Nov 16, 2018: For the next 4-5 month, I'll be focusing on Stoch 2.0 and GRE preparation, So there won't be any new updates.</marquee> -->
 
 
 <!-- From where I got scrooling -->
@@ -57,7 +57,7 @@
 
  4. [Asimov Robotics](../projects/past/asimov.html)
 
-	 A bit of history about how and why I ended up in Robotics, why it is a fascinating and interesting field, and the various projects I did at Asimov Robotics.
+	 A bit of history about how and why I settled with robotics and why it is a fascinating and interesting field, and the various projects I did at Asimov Robotics.
 
 
 <br>
