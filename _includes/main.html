@@ -44,7 +44,9 @@
         }*/
     </style>
 
-
+    {% if jekyll.environment == 'production' %}
+    {% include lib/analytics.html %}
+    {% endif %}
 
 
 </head>
