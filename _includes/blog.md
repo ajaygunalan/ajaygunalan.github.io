@@ -1,10 +1,24 @@
 
 
 <br>
-1.[Notes](#notes) <br>
-<!-- 1.[Software](#software)<br> -->
+1. [Software](#software)<br>
+2. [Notes](#notes) <br>
 <!-- 2.[Control & Mechanics](#control--mechanics)<br> -->
 <br>
+
+<hr class="style-four" />
+
+### **Software** 
+
+1. [Basic Robotic arm simulation in Gazebo using ROS and MoveIt](https://github.com/ajaygunalan/robotic_arm)
+
+2. [Inter-Process Communication between Python and C using Shared Memory](https://github.com/ajaygunalan/IPC_SHM)
+
+
+
+<br>
+
+
 
 
 

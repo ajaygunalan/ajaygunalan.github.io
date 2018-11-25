@@ -7,9 +7,26 @@ Disclaimer: This about my Internship experience at ASIMOV Robotics Pvt. Ltd, Koc
 
 <br>
 
-## How I went after robotics ? ##
+<!-- ![Service robot developed at Asimov Robotics](https://ajaygunalan.github.io/projects/asset/past/asimov/saya.PNG) -->
+
+
+### Content ###
+
+
+* [How I went after robotics ?](#how-i-went-after-robotics)
+  + [Chicken Factories of India](#chicken-factories-of-india)
+  + [Failing is not Bad..!](#failing-is-not-bad..)
+  + [Why I applied to the Industry ?](#why-i-applied-to-the-industry)
+  + [The Best Place to Work](#the-best-place-to-work)
+  + [Why Robotics ?](#why-robotics)
+* [Projects at Asimov Robotics](#projects-at-asimov-robotics) 
+
 
 <br>
+
+### How I went after robotics ? ###
+
+
 
 #### Chicken Factories of India ####
 
@@ -44,11 +61,11 @@ Disclaimer: This about my Internship experience at ASIMOV Robotics Pvt. Ltd, Koc
 <br>
 
 
-## Projects at Asimov Robotics ##
+### Projects at Asimov Robotics ###
 
-<br>
+Th task was to develop a service robot. We used [Dynamixel servos](http://www.robotis.us/dynamixel/), [Hokuyo laser](https://www.hokuyo-aut.jp/search/index.php?cate01=1) and [Intel-NUC](https://www.intel.com/content/www/us/en/products/boards-kits/nuc.html) to build it. The software was architectured using ROS [smach](http://wiki.ros.org/smach)
 
-Will be updated
+
 
 <br>
 <br>
@@ -129,6 +146,10 @@ ol li img {
 
 ol li figure figcaption {
    text-align: center;
+}
+
+ul li {
+  text-align: left;
 }
 
 
