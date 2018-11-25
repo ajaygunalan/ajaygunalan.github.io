@@ -7,7 +7,8 @@ Disclaimer: This about my Internship experience at ASIMOV Robotics Pvt. Ltd, Koc
 
 <br>
 
-<!-- ![Service robot developed at Asimov Robotics](https://ajaygunalan.github.io/projects/asset/past/asimov/saya.PNG) -->
+![Service robot developed at Asimov Robotics](https://ajaygunalan.github.io/projects/asset/past/asimov/saya.PNG){width=30% height=60%}
+
 
 
 ### Content ###
@@ -63,7 +64,28 @@ Disclaimer: This about my Internship experience at ASIMOV Robotics Pvt. Ltd, Koc
 
 ### Projects at Asimov Robotics ###
 
-Th task was to develop a service robot. We used [Dynamixel servos](http://www.robotis.us/dynamixel/), [Hokuyo laser](https://www.hokuyo-aut.jp/search/index.php?cate01=1) and [Intel-NUC](https://www.intel.com/content/www/us/en/products/boards-kits/nuc.html) to build it. The software was architectured using ROS [smach](http://wiki.ros.org/smach)
+Th task was to develop a [service robot](https://www.youtube.com/watch?v=5vjY1c8N1rk). The hardware was built by using [Dynamixel servos](http://www.robotis.us/dynamixel/), [Hokuyo laser](https://www.hokuyo-aut.jp/search/index.php?cate01=1) and [Intel-NUC](https://www.intel.com/content/www/us/en/products/boards-kits/nuc.html). The software was architectured using ROS [smach](http://wiki.ros.org/smach). Users can interact with robot by the screen at the front and based upon the user query, the robot would do a particular task. The task consist of doing some gesture and navigation. Gestures were perfomed by simple record and playback, while navigation was done using [acml](http://wiki.ros.org/amcl) package. During my six month stay, the various task I did:
+
+
+<br>
+
+* Gravity compensation of cool-arm for assistive mode. (didn't work well, was **oscillating** a lot..!)
+* Position, and  Velocity, control of DC motor as replacement for dynamixel servos in the base. 
+* TCP/IP commuincation between ROS and non-ROS module.
+* To perform basic motion planning simulation in Gazebo using smach.
+* *Sensor Integartion*
+  + IMU sensor integration with ROS for Navigation
+  + Tactile sensor for Human-Robot Interaction
+  + Ultrasonic sensor integration with ROS for Obstacle avoidance.
+
+
+
+<br>
+<br>
+
+
+
+ 
 
 
 
@@ -123,6 +145,10 @@ a:visited.main-link {
 
 a:hover.main-link {
     color: #000000;
+}
+
+h3 {
+  text-align: left;
 }
 
 ol {

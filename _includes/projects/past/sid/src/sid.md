@@ -22,7 +22,7 @@ We protoyped our ideation by using majorly TI components
 ![SID architecture](https://ajaygunalan.github.io/projects/asset/past/sid/sid_archi.png){width=30% height=25%}
 
 
-This [video](link_will_be_iploaded) shows the  working and feeback from **Medical doctors**.
+This [video](https://www.youtube.com/watch?v=khT5Q_kSM-M) shows the  working and feeback from **Medical doctors**.
 
 
 We particpated in the Department of Science & Technology, Govt. of India & Texas Instrument's **India Innovation Challegne** Design Contest (2016) anchored by Indian Institute of Managment, Banaglore and out of 11,000+ applicants, we were top 10 teams to recah finalist.

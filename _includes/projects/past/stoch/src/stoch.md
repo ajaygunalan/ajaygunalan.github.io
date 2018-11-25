@@ -9,14 +9,21 @@
 
 
 * [Breif Overview](#breif-overview)
+  + [Goal](#goal)
+  + [What was achieved by Stoch 1.0 ?](#what-was-achieved-by-stoch-1.0)
+  + [How we achieved ?](#how-we-achieved)
+  + [Next what ?](#next-what)
 * [Stoch 1.0](#stoch-1.0)
+  + [Why we didn’t do what google did ?](#why-we-didnt-do-what-google-did)
+  + [Can it walk with hand-crafted tarjectory ?](#can-it-walk-with-hand-crafted-tarjectory)
+  + [Then what is the point of using DRL ?](#then-what-is-the-point-of-using-drl)
 * [Stoch 2.0](#stoch-2.0)
 * [The Team](#the-team) 
 
 
 ## Breif Overview ##
 
-![Stoch-1.0 developed at RBCCPS](https://ajaygunalan.github.io/projects/asset/past/stoch/stoch_one.jpg){width=30% height=25%}
+![Stoch-1.0 developed at RBCCPS](https://ajaygunalan.github.io/projects/asset/past/stoch/stoch_one.jpg){width=35% height=30%}
 
 #### Goal ####
 
@@ -134,15 +141,11 @@ Well, the hand crafted may or may not be optimal, but the generated gaits were c
 ## Stoch 2.0 ##
 
 
-As mentioned earlier stoch 1.0 was too fragile. It had lot of issues. So, we wanted to have more roboust hardware. 
+As mentioned earlier stoch 1.0 was too fragile. It had lot of issues, so we wanted to have a roboust hardware, "Stoch 2.0". Soon more details would be updated on Stoch 2.0, for now you can find the videos of leg testing [here](https://www.youtube.com/watch?v=Z7Hd0KgmLog&index=8&list=PL-dIBMwXD0RVGOw8f2vEzI9Z0xxggWJjg).
 
-<br>
 
-#### Leg Testing ####
 
-Will be updated soon.
 
-<!-- added the leg testing video here -->
 
 
 

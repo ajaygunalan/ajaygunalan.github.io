@@ -1,4 +1,3 @@
-
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
@@ -25,6 +24,9 @@
 <p><br></p>
 <p>Disclaimer: This about my Internship experience at ASIMOV Robotics Pvt. Ltd, Kochi, India and not about Hondas’ Asimo robot.</p>
 <p><br></p>
+<figure>
+<img src="https://ajaygunalan.github.io/projects/asset/past/asimov/saya.PNG" alt="Service robot developed at Asimov Robotics" style="width:30.0%;height:60.0%" /><figcaption>Service robot developed at Asimov Robotics</figcaption>
+</figure>
 <h3 id="content">Content</h3>
 <ul>
 <li><a href="#how-i-went-after-robotics">How I went after robotics ?</a>
@@ -38,7 +40,7 @@
 <li><a href="#projects-at-asimov-robotics">Projects at Asimov Robotics</a></li>
 </ul>
 <p><br></p>
-<h2 id="how-i-went-after-robotics">How I went after robotics ?</h2>
+<h3 id="how-i-went-after-robotics">How I went after robotics ?</h3>
 <h4 id="chicken-factories-of-india">Chicken Factories of India</h4>
 <p style="text-align: justify;">
 I was one among million students in private engineering colleges where most of the lecturers, neither having research experience nor any industrial exposure, will teach. My time and energy was wasted by having classes for 8 hours a day. We were supposed to do experiments where no mistake are allowed (should not burn even a resistor!). We didn’t even have the freedom of choosing an elective. It wasn’t a college, but a chicken factory producing graduates with a certificate. An engineering college in India is a completely useless thing backed up by politicians to ruin youngsters’ life in the name of education.
@@ -64,9 +66,22 @@ It wan’t a huge company. But being in a hardware start-up taught me more than 
 I took Mechanical Engineering because I was always interested in how things move and work, from high school. The beauty of a child playing, and day-to-day small activites we do, can only be realised when we try to make a robot like us. Though being hard it is an interesting challenge. I would say Robotics is the pinnacle of classical mechanics. It requires various skills in Math, Computer, Electrical, Mechanical, Controls, etc. Almost all the fields which are based upon on classical mechanics would be a subset of robotics. Such a diverse field with a cool hardware should arouse excitment in you as well. Thus question shouldn’t be, “Why robotics ?” but “Why not robotics ?”
 </p>
 <p><br> <br></p>
-<h2 id="projects-at-asimov-robotics">Projects at Asimov Robotics</h2>
+<h3 id="projects-at-asimov-robotics">Projects at Asimov Robotics</h3>
+<p>Th task was to develop a <a href="https://www.youtube.com/watch?v=5vjY1c8N1rk">service robot</a>. The hardware was built by using <a href="http://www.robotis.us/dynamixel/">Dynamixel servos</a>, <a href="https://www.hokuyo-aut.jp/search/index.php?cate01=1">Hokuyo laser</a> and <a href="https://www.intel.com/content/www/us/en/products/boards-kits/nuc.html">Intel-NUC</a>. The software was architectured using ROS <a href="http://wiki.ros.org/smach">smach</a>. Users can interact with robot by the screen at the front and based upon the user query, the robot would do a particular task. The task consist of doing some gesture and navigation. Gestures were perfomed by simple record and playback, while navigation was done using <a href="http://wiki.ros.org/amcl">acml</a> package. During my six month stay, the various task I did:</p>
 <p><br></p>
-<p>Will be updated</p>
+<ul>
+<li>Gravity compensation of cool-arm for assistive mode. (didn’t work well, was <strong>oscillating</strong> a lot..!)</li>
+<li>Position, and Velocity, control of DC motor as replacement for dynamixel servos in the base.</li>
+<li>TCP/IP commuincation between ROS and non-ROS module.</li>
+<li>To perform basic motion planning simulation in Gazebo using smach.</li>
+<li><em>Sensor Integartion</em>
+<ul>
+<li>IMU sensor integration with ROS for Navigation</li>
+<li>Tactile sensor for Human-Robot Interaction</li>
+<li>Ultrasonic sensor integration with ROS for Obstacle avoidance.</li>
+</ul></li>
+</ul>
+<p><br> <br></p>
 <p><br> <br> <br></p>
 <style>
 h2, h4 {
@@ -118,6 +133,10 @@ a:visited.main-link {
 
 a:hover.main-link {
     color: #000000;
+}
+
+h3 {
+  text-align: left;
 }
 
 ol {
