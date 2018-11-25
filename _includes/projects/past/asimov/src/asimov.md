@@ -10,7 +10,7 @@ Disclaimer: This about my Internship experience at ASIMOV Robotics Pvt. Ltd, Koc
 ![Service robot developed at Asimov Robotics](https://ajaygunalan.github.io/projects/asset/past/asimov/saya.PNG){width=30% height=60%}
 
 
-
+<!-- 
 ### Content ###
 
 
@@ -21,11 +21,12 @@ Disclaimer: This about my Internship experience at ASIMOV Robotics Pvt. Ltd, Koc
   + [The Best Place to Work](#the-best-place-to-work)
   + [Why Robotics ?](#why-robotics)
 * [Projects at Asimov Robotics](#projects-at-asimov-robotics) 
++ [The Best Place to Work](#the-best-place-to-work) -->
 
 
 <br>
 
-### How I went after robotics ? ###
+<!-- ### How I went after robotics ? ###
 
 
 
@@ -46,12 +47,10 @@ Disclaimer: This about my Internship experience at ASIMOV Robotics Pvt. Ltd, Koc
 
 <p style="text-align: justify;">Apart from practising tutorials, I would sometimes think of new ideas to work on. But someone would have already done that and I would end-up not knowing what to do further. So, I decided to get hands on experience on real hardware to know what to do further. I applied for nearly 100+ companies and got reply from four. I successfully completed a task assigned by one of them, which tested my software skills & basic knowledge about robotics. I was then selected for full time Internship in **Software Development (R&D)** at  ASIMOV Robotics Pvt. Ltd, Kochi, India. While most of my friends got a IT, or Sales Job with higher perk, I was happy as hell to get a work which I really wanted to do..!</p>
 
-<br>
+<br> -->
 
-#### The Best Place to Work ####
 
-<p style="text-align: justify;">It wan't a huge company. But being in a hardware start-up taught me more than I could ever possibly imagine. I was fortunate to get my hands around hardware and was able to see how real products were being built and how they approached a real world problem. Most importantly my coding and debugging skills were tremendously improving, thanks to my mentors [Gokul Narayanan](https://www.linkedin.com/in/gokul-narayanan/) & [Rajashekaran T](https://www.linkedin.com/in/rajashekaran-t-071ab49b/) and also would like to thank [Jayakrishnan T](https://www.linkedin.com/in/jayakrishnan-t-61647125/)(CEO) & [Anto John](https://www.linkedin.com/in/antojohn/)(CMO) for giving me a wonderful opportunity in ASIMOV Robotics Pvt. Ltd, Kochi. </p>
-
+<!-- 
 <br>
 
 #### Why Robotics ? ####
@@ -59,10 +58,10 @@ Disclaimer: This about my Internship experience at ASIMOV Robotics Pvt. Ltd, Koc
 <p style="text-align: justify;">I took Mechanical Engineering because I was always interested in how things move and work, from high school. The beauty of a child playing, and day-to-day small activites we do, can only be realised when we try to make a robot like us. Though being hard it is an interesting challenge. I would say Robotics is the pinnacle of classical mechanics. It requires various skills in Math, Computer, Electrical, Mechanical, Controls, etc. Almost all the fields which are based upon on classical mechanics would be a subset of robotics. Such a diverse field with a cool hardware should arouse excitment in you as well. Thus question shouldn't be, "Why robotics ?" but "Why not robotics ?" </p>
 
 <br>
-<br>
+<br> -->
 
 
-### Projects at Asimov Robotics ###
+#### Projects at Asimov Robotics ####
 
 Th task was to develop a [service robot](https://www.youtube.com/watch?v=5vjY1c8N1rk). The hardware was built by using [Dynamixel servos](http://www.robotis.us/dynamixel/), [Hokuyo laser](https://www.hokuyo-aut.jp/search/index.php?cate01=1) and [Intel-NUC](https://www.intel.com/content/www/us/en/products/boards-kits/nuc.html). The software was architectured using ROS [smach](http://wiki.ros.org/smach). Users can interact with robot by the screen at the front and based upon the user query, the robot would do a particular task. The task consist of doing some gesture and navigation. Gestures were perfomed by simple record and playback, while navigation was done using [amcl](http://wiki.ros.org/amcl) package. During my six month stay, the various task I did:
 
@@ -77,6 +76,12 @@ Th task was to develop a [service robot](https://www.youtube.com/watch?v=5vjY1c8
   + IMU sensor integration with ROS for Navigation
   + Tactile sensor for Human-Robot Interaction
   + Ultrasonic sensor integration with ROS for Obstacle avoidance.
+
+<br>
+
+#### The Best Place to Work ####
+
+<p style="text-align: justify;">It wan't a huge company. But being in a hardware start-up taught me more than I could ever possibly imagine. I was fortunate to get my hands around hardware and was able to see how real products were being built and how they approached a real world problem. Most importantly my coding and debugging skills were tremendously improving, thanks to my mentors [Gokul Narayanan](https://www.linkedin.com/in/gokul-narayanan/) & [Rajashekaran T](https://www.linkedin.com/in/rajashekaran-t-071ab49b/) and also would like to thank [Jayakrishnan T](https://www.linkedin.com/in/jayakrishnan-t-61647125/)(CEO) & [Anto John](https://www.linkedin.com/in/antojohn/)(CMO) for giving me a wonderful opportunity in ASIMOV Robotics Pvt. Ltd, Kochi. </p>
 
 
 

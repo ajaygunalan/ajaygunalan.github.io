@@ -57,7 +57,7 @@
 
  4. [Asimov Robotics](../projects/past/asimov.html)
 
-	 A bit of history about how and why I settled with robotics and why it is a fascinating and interesting field, and the various projects I did at Asimov Robotics.
+	 We developed a [custom service robot](https://www.youtube.com/watch?v=5vjY1c8N1rk) for HDFC bank.
 
 
 <br>
