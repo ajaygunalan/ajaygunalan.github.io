@@ -43,7 +43,7 @@
 </ul>
 <h2 id="breif-overview">Breif Overview</h2>
 <figure>
-<img src="https://ajaygunalan.github.io/projects/asset/past/stoch/stoch_one.jpg" alt="Stoch-1.0 developed at RBCCPS" style="width:35.0%;height:30.0%" /><figcaption>Stoch-1.0 developed at RBCCPS</figcaption>
+<img src="https://ajaygunalan.github.io/projects/asset/past/stoch/stoch.gif" alt="Stoch-1.0 developed at RBCCPS" style="width:35.0%;height:30.0%" /><figcaption>Stoch-1.0 developed at RBCCPS</figcaption>
 </figure>
 <h4 id="goal">Goal</h4>
 <p>To achieve a robust, all terrain, legged robot.</p>
@@ -103,8 +103,7 @@
 <p>The quadruped performed variety of gaits such as walks, bounds, trots, etc…as show in this <a href="https://www.youtube.com/watch?v=swcStUm0Nuk&amp;feature=youtu.be">video</a></p>
 <p><br></p>
 <h4 id="how-we-achieved">How we achieved ?</h4>
-<p>We used on-policy, model-free DRL algorithm based on actor-critic learning framework called Proximal Policy Optimisation (PPO) to generate the gaits in the simulation(PyBullet). It took 30 Million samples (5-7 hours) to learn a particular gait in the simulation. To transfer it on the hardware, we took the end-effector tarjectory form simulation and did principal component analysis to generate different gaits and we deployed on the hardware.</p>
-<p>You can find more info in this <a href="https://arxiv.org/abs/1810.03842">paper</a></p>
+<p>We used on-policy, model-free DRL algorithm based on actor-critic learning framework called Proximal Policy Optimisation (PPO) to generate the gaits in the simulation(PyBullet). It took 30 Million samples (5-7 hours) to learn a particular gait in the simulation. To transfer it on the hardware, we took the end-effector tarjectory form simulation and did principal component analysis to generate different gaits and we deployed on the hardware. You can find more info in this <a href="https://arxiv.org/abs/1810.03842">paper</a> (my name is in the acknowledgment).</p>
 <p><br></p>
 <h4 id="next-what">Next what ?</h4>
 <ol>
@@ -116,7 +115,7 @@
 <p>I would like to mention here more on the pratical issues(behind the paper stories) and evolution of this project, especially on stoch 2.0</p>
 <p><br> <br></p>
 <h2 id="stoch-1.0">Stoch 1.0</h2>
-<p>The project was initially motivated by Googles’s work on <a href="https://arxiv.org/abs/1804.10332">Sim-to-Real: Learning Agile Locomotion For Quadruped Robots</a>. The essence of the paper is to imrove the transferbility from learned control policy from simualtion to hardware by:</p>
+<p>The project was initially motivated by Googles’ work on <a href="https://arxiv.org/abs/1804.10332">Sim-to-Real: Learning Agile Locomotion For Quadruped Robots</a>. The essence of the paper is to imrove the transferbility from learned control policy from simualtion to hardware by:</p>
 <ol type="1">
 <li><p>Improving the Robot Model by having:</p>
 <ol type="1">

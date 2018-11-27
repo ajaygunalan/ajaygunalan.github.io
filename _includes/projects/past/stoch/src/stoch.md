@@ -57,9 +57,7 @@ The quadruped performed variety of gaits such as walks, bounds, trots, etc...as 
 
 ####  How we achieved ?  ####
 
-We used on-policy, model-free DRL algorithm based on actor-critic learning framework called Proximal Policy Optimisation (PPO) to generate the gaits in the simulation(PyBullet). It took 30 Million samples (5-7 hours) to learn a particular gait in the simulation. To transfer it on the hardware, we took the end-effector tarjectory form simulation and did principal component analysis to generate different gaits and we deployed on the hardware.
-
-You can find more info in this [paper](https://arxiv.org/abs/1810.03842)
+We used on-policy, model-free DRL algorithm based on actor-critic learning framework called Proximal Policy Optimisation (PPO) to generate the gaits in the simulation(PyBullet). It took 30 Million samples (5-7 hours) to learn a particular gait in the simulation. To transfer it on the hardware, we took the end-effector tarjectory form simulation and did principal component analysis to generate different gaits and we deployed on the hardware. You can find more info in this [paper](https://arxiv.org/abs/1810.03842) (my name is in the acknowledgment).
 
 <br>
 
@@ -81,7 +79,7 @@ I would like to mention here more on the pratical issues(behind the paper storie
 
 ## Stoch 1.0 ##
 
-The project was initially motivated by Googles's work on [Sim-to-Real: Learning Agile Locomotion For
+The project was initially motivated by Googles' work on [Sim-to-Real: Learning Agile Locomotion For
 Quadruped Robots](https://arxiv.org/abs/1804.10332). The essence of the paper is to imrove the transferbility from learned control policy from simualtion to hardware by:
 
 1. Improving the Robot Model by having:
