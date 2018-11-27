@@ -140,10 +140,10 @@ Well, the hand crafted may or may not be optimal, but the generated gaits were c
 
 ## Stoch 2.0 ##
 
-![Leg-Testing](https://ajaygunalan.github.io/projects/asset/past/stoch/ezgif.com-crop.gif)
+![Stoch 2.0 Leg-Testing](https://ajaygunalan.github.io/projects/asset/past/stoch/ezgif.com-crop.gif){width=30% height=25%}
 
 
-As mentioned earlier stoch 1.0 was too fragile. It had lot of issues, so we wanted to have a roboust hardware, "Stoch 2.0". Soon more details would be updated on Stoch 2.0, for now you can find the videos of leg testing [here](https://www.youtube.com/watch?v=Z7Hd0KgmLog&index=8&list=PL-dIBMwXD0RVGOw8f2vEzI9Z0xxggWJjg).
+As mentioned earlier stoch 1.0 was too fragile. It had lot of issues, so we wanted to have a roboust hardware, "Stoch 2.0". Soon more details would be updated on Stoch 2.0.
 
 
 
