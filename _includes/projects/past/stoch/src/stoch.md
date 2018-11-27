@@ -23,7 +23,7 @@
 
 ## Breif Overview ##
 
-![Stoch-1.0 developed at RBCCPS](https://ajaygunalan.github.io/projects/asset/past/stoch/stoch_one.jpg){width=35% height=30%}
+![Stoch-1.0 developed at RBCCPS](https://ajaygunalan.github.io/projects/asset/past/stoch/stoch.gif){width=35% height=30%}
 
 #### Goal ####
 
