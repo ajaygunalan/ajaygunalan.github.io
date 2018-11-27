@@ -5,27 +5,24 @@
 
 #### Problem Statement ####
 
-IV-Drippers are used to inject saline fluids, directly into the veins of the patient. They have  to be replaced manualayy, before it completely drains out, or else blood will flow in reverse direction and sometimes air embolism (air-blockage) may even cause a fatal accident. 
+Intravenous drippers are used to inject saline fluids, directly into the veins of the patient. They have  to be replaced manually, before it completely drains out, or else blood will flow in reverse direction and sometimes air embolism (air-blockage) may even cause a fatal accident. 
 
 <br>
 
-#### Goal ####
+#### Solution ####
 
-The goal is to prevent such accident by automating this process by using a liquid-level sensor to monitor the liquid level and if the Intravenous Dripper runs out of the saline fluid, then the cam actuated by the servo, will stop the flow immediately, thus preventing any such accident to occur and will notify the nurse for further replacement of the IV bag.
+The goal is to prevent such accident by automating this process by using a liquid-level sensor to monitor the liquid level and if the Intravenous dripper runs out of the saline fluid, then the cam actuated by the servo, will stop the flow immediately, thus preventing any such accident to occur and will notify the nurse for further replacement of the intravenous drip.
 
 <br>
 
-#### What we did ####
+#### How we did ####
 
-We protoyped our ideation by using majorly TI components
+We protoyped our ideation by using majorly texas instruments components.
 
 ![SID architecture](https://ajaygunalan.github.io/projects/asset/past/sid/sid_archi.png){width=30% height=25%}
 
 
-This [video](https://www.youtube.com/watch?v=khT5Q_kSM-M) shows the  working and feeback from **Medical doctors**.
-
-
-We particpated in the Department of Science & Technology, Govt. of India & Texas Instrument's **India Innovation Challegne** Design Contest (2016) anchored by Indian Institute of Managment, Banaglore and out of 11,000+ applicants, we were top 10 teams to recah finalist.
+This [video](https://www.youtube.com/watch?v=khT5Q_kSM-M) shows the  working and feeback from **Medical doctors**. We particpated in the Department of Science & Technology, Govt. of India & Texas Instruments' **India Innovation Challegne** Design Contest (2016) anchored by Indian Institute of Managment, Banaglore and out of 11,000+ applicants, we were top 10 teams to reach finals.
 
 <br>
 
