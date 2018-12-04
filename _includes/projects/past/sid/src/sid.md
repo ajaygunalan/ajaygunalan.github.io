@@ -17,12 +17,14 @@ The goal is to prevent such accident by automating this process by using a liqui
 
 #### How we did ####
 
-We prototyped our ideation by using majorly texas instruments components.
+We prototyped our ideation by using majorly texas instruments components. The following video shows the working and feedback from **Medical doctors**. 
 
-![SID architecture](https://ajaygunalan.github.io/projects/asset/past/sid/sid_archi.png){width=30% height=25%}
+<iframe width="640" class="video" align="midd" height="360"  src="https://www.youtube.com/embed/khT5Q_kSM-M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 
 
-This [video](https://www.youtube.com/watch?v=khT5Q_kSM-M) shows the  working and feedback from **Medical doctors**. We participated in the Department of Science & Technology, Govt. of India & Texas Instruments' **India Innovation Challenge** Design Contest (2016) anchored by Indian Institute of Managment, Bangalore and out of 11,000+ applicants, we were top 10 teams to reach finals.
+
+
+We participated in the Department of Science & Technology, Govt. of India & Texas Instruments' **India Innovation Challenge** Design Contest (2016) anchored by Indian Institute of Managment, Bangalore and out of 11,000+ applicants, we were top 10 teams to reach finals.
 
 <br>
 
@@ -38,15 +40,11 @@ Being a finalist of IICDC 2016, We received funding for our startup [Rekindle Au
 [Rohith J.K](https://www.quora.com/profile/Rohit-Jk), [Radhakrishnan Jothiram](https://www.linkedin.com/in/radhakrishnan-jothiram-128a4512b/), [Wajjahath Habibullah.A](https://www.linkedin.com/in/wajjahath-habibullah-a-11a14b134/) 
  and [myself..!](https://ajaygunalan.github.io/)
 
-![](https://ajaygunalan.github.io/projects/asset/past/sid/sid_certificate.png){width=30% height=25%}
+<!-- ![](https://ajaygunalan.github.io/projects/asset/past/sid/sid_certificate.png){width=30% height=25%} -->
 
 <br>
 <br>
 <br>
-
-
-
-
 
 
 
@@ -68,6 +66,12 @@ p {
 .author {
     text-align: center;
 
+}
+
+iframe {
+       margin-left: auto;   /* Automatic margin from left */
+       margin-right: auto; /* Automatic margin from right */
+      }
 }
 
 table {

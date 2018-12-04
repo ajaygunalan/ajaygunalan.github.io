@@ -22,12 +22,12 @@
 <h1 class="title">Actuators for Robot</h1>
 <p class="author">Ajay G</p>
 </header>
-<p>Note: Kindly refer here (<a href="https://ajaygunalan.github.io/blog/notes/motor/motor.html" class="uri">https://ajaygunalan.github.io/blog/notes/motor/motor.html</a>) for the various definition and derivation. Here the focus is only to understand which factors need to be maximized and minimized for robots of the future.</p>
+<!-- Note: Kindly refer here ([https://ajaygunalan.github.io/blog/notes/motor/motor.html](https://ajaygunalan.github.io/blog/notes/motor/motor.html)) for the various definition and derivation. Here the focus is only to understand which factors need to be maximized and minimized for robots of the future. -->
 <p><br></p>
 <h5 id="content">Content</h5>
 <ul>
 <li><a href="#what-is-a-robot">What is a robot?</a></li>
-<li><a href="#is-actuator-a-deal">Is Actuator a deal?</a></li>
+<li><a href="#is-actuator-a-big-deal">Is Actuator a big deal?</a></li>
 <li><a href="#gearbox---the-culprit">Gearbox- The Culprit</a></li>
 <li><a href="#motor-control-loops">Motor control loops</a></li>
 <li><a href="#passive-compliance">Passive compliance</a></li>
@@ -41,7 +41,7 @@
 A robot is a bunch of actuators connected by a link(a structure) which should do some task. Actuators, being one of the fundamental elements of a robot, will determine the core capabilities and limitation of a robot. Thus a thorough understanding of the actuator will help us to optimize it based upon our requirement. In this article, we restrict ourself to Electromagnetic Actuator (Motors), since it is the most widely used one and has a higher energy efficiency compared to others like hydraulic, pneumatic, etc. Our goal is to understand various factors which influence the performance and figure out the optimal choice for robots.
 </p>
 <p><br></p>
-<h5 id="is-actuator-a-deal">Is Actuator a deal?</h5>
+<h5 id="is-actuator-a-big-deal">Is Actuator a big deal?</h5>
 <p>It should just spin with some torque, right? what else would be expected. Well, traditionally automation and industrial robotic arms are fixed inside a cage where all the things are architecture as per the requirement. This mean there was less uncertainty and they didn’t come in contact with an unknown object. Everything was like an orchestra and the problem was reduced to finding the correct set of motor commands to do a particular task satisfying some constraints (like time, cost, power, etc.). For these type of problem, yes it should spin to a position with enough torque. Usually, this was achieved by numerous trial and error and finally hard coding the values in real-time. The actuator was designed to maximize the torque by having huge gearbox like shown below.</p>
 <figure>
 <img src="https://ajaygunalan.github.io/projects/asset/past/motor/automation_design.png" alt="Actuator Design in Automation, Source[1]" style="width:30.0%;height:25.0%" /><figcaption>Actuator Design in Automation, Source<span class="citation" data-cites="kalouche_design_2016">[<a href="#ref-kalouche_design_2016">1</a>]</span></figcaption>
@@ -78,7 +78,7 @@ modeling the non-linearities associated with backlash, . Only in specific circum
 <img src="https://ajaygunalan.github.io/projects/asset/past/motor/r_gap.png" alt="Gap Radius, Source[2]" style="width:30.0%;height:25.0%" /><figcaption>Gap Radius, Source<span class="citation" data-cites="seok_actuator_2012">[<a href="#ref-seok_actuator_2012">2</a>]</span></figcaption>
 </figure>
 <h5 id="conclusion">Conclusion</h5>
-<p>Hopefully, I have justified why we need a sufficiently high(optimal) bandwidth, 4Q control driver with pan-cake shaped motor, quasi-direct-drive and compliance for the robots.</p>
+<p>Thus, we need a sufficiently high(optimal) bandwidth, 4Q control driver with pan-cake shaped motor, quasi-direct-drive and compliant-actuator so that the robot is capable of performing highly-dynamic maneuvers like us.</p>
 <figure>
 <img src="https://ajaygunalan.github.io/projects/asset/past/motor/final.png" alt="Actuators for robotics" style="width:30.0%;height:25.0%" /><figcaption>Actuators for robotics</figcaption>
 </figure>

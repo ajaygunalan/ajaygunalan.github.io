@@ -3,23 +3,24 @@
 
 <br>
 
-Disclaimer: This about my Internship experience at ASIMOV Robotics Pvt. Ltd, Kochi, India and not about Hondas' Asimo robot.
+<!-- Disclaimer: This about my Internship experience at ASIMOV Robotics Pvt. Ltd, Kochi, India and not about Hondas' Asimo robot. -->
 
 <br>
 
-| ![CAD ModeL](https://ajaygunalan.github.io/projects/asset/past/asimov/saya.PNG){width=30% height=60%} | 
+![](https://ajaygunalan.github.io/projects/asset/past/asimov/saya.PNG){width=30% height=60% .saya_pic}
+![](https://ajaygunalan.github.io/projects/asset/past/asimov/saya_robot_at_asimov_robotics.jpg){width=30% height=60% .saya_pic}
+\begin{figure}[!h]
+\caption{The Service robot developed at Asimov Robotics. }
+\end{figure}
 
 
-<!-- ![At a Conference](https://ajaygunalan.github.io/projects/asset/past/asimov/saya_robot_at_asimov_robotics.jpg) |
- -->
-
-
-
+<br>
+<br>
 
 
 #### Projects at Asimov Robotics ####
 
-The task was to develop a [service robot](https://www.youtube.com/watch?v=5vjY1c8N1rk). The hardware was built by using [Dynamixel servos](http://www.robotis.us/dynamixel/), [Hokuyo laser](https://www.hokuyo-aut.jp/search/index.php?cate01=1), and [Intel-NUC](https://www.intel.com/content/www/us/en/products/boards-kits/nuc.html). The software was architectured using ROS [smach](http://wiki.ros.org/smach). Users can interact with the robot through the screen at the front and based upon the user query, the robot would do a particular task. The task consists of some gestures and navigation. Gestures were performed by simple record and playback, while navigation was done using [amcl](http://wiki.ros.org/amcl) package. During my six month stay, the various tasks I did are:
+The task was to develop a [service robot](https://www.youtube.com/watch?v=5vjY1c8N1rk) as shown in the above figure. The hardware was built by using [Dynamixel servos](http://www.robotis.us/dynamixel/), [Hokuyo laser](https://www.hokuyo-aut.jp/search/index.php?cate01=1), and [Intel-NUC](https://www.intel.com/content/www/us/en/products/boards-kits/nuc.html). The software was architectured using ROS [smach](http://wiki.ros.org/smach). Users can interact with the robot through the screen at the front and based upon the user query, the robot would do a particular task. The task consists of some gestures and navigation. Gestures were performed by simple record and playback, while navigation was done using [amcl](http://wiki.ros.org/amcl) package. During my six month stay, the various tasks I did are:
 
 
 <br>
@@ -68,10 +69,21 @@ p {
    margin-right: auto;
 }
 
+p img {
+  align-content: center;
+}
+
 .author {
     text-align: center;
 
 }
+
+/*.saya_pic {
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}*/
 
 table {
     margin-left:auto; 

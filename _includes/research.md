@@ -57,7 +57,7 @@
 
  4. [Asimov Robotics](../projects/past/asimov.html)
 
-	 We developed a [custom service robot](https://www.youtube.com/watch?v=5vjY1c8N1rk) for HDFC bank.
+	 We developed a custom service robot for HDFC bank.
 
 
 <br>

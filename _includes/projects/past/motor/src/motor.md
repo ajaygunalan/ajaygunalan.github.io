@@ -1,7 +1,7 @@
 % Actuators for Robot 
 % Ajay G 
 
-Note: Kindly refer here ([https://ajaygunalan.github.io/blog/notes/motor/motor.html](https://ajaygunalan.github.io/blog/notes/motor/motor.html)) for the various definition and derivation. Here the focus is only to understand which factors need to be maximized and minimized for robots of the future.
+<!-- Note: Kindly refer here ([https://ajaygunalan.github.io/blog/notes/motor/motor.html](https://ajaygunalan.github.io/blog/notes/motor/motor.html)) for the various definition and derivation. Here the focus is only to understand which factors need to be maximized and minimized for robots of the future. -->
 
 
 <br>
@@ -9,7 +9,7 @@ Note: Kindly refer here ([https://ajaygunalan.github.io/blog/notes/motor/motor.h
 ##### Content #####
 
 * [What is a robot?](#what-is-a-robot) 
-* [Is Actuator a deal?](#is-actuator-a-deal) 
+* [Is Actuator a big deal?](#is-actuator-a-big-deal) 
 * [Gearbox- The Culprit](#gearbox---the-culprit)
 * [Motor control loops](#motor-control-loops)
 * [Passive compliance](#passive-compliance)
@@ -27,7 +27,7 @@ Note: Kindly refer here ([https://ajaygunalan.github.io/blog/notes/motor/motor.h
    
 <br>
 
-##### Is Actuator a deal? #####
+##### Is Actuator a big deal? #####
 
 
    It should just spin with some torque, right? what else would be expected. Well, traditionally automation and industrial robotic arms are fixed inside a cage where all the things are architecture as per the requirement. This mean there was less uncertainty and they didn't come in contact with an unknown object. Everything was like an orchestra and the problem was reduced to finding the correct set of motor commands to do a particular task satisfying some constraints (like time, cost, power, etc.). For these type of problem, yes it should spin to a position with enough torque. Usually, this was achieved by numerous trial and error and finally hard coding the values in real-time. The actuator was designed to maximize the torque by having huge gearbox like shown below.
@@ -83,7 +83,7 @@ modeling the non-linearities associated with backlash, . Only in specific circum
 
 ##### Conclusion #####
 
-   Hopefully, I have justified why we need a sufficiently high(optimal) bandwidth, 4Q control driver with pan-cake shaped motor, quasi-direct-drive and compliance for the robots.
+   Thus, we need a sufficiently high(optimal) bandwidth, 4Q control driver with pan-cake shaped motor, quasi-direct-drive and compliant-actuator so that the robot is capable of performing highly-dynamic maneuvers like us. 
 
 
    ![Actuators for robotics](https://ajaygunalan.github.io/projects/asset/past/motor/final.png){width=30% height=25%}   
