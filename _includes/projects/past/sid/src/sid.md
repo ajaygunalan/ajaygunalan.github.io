@@ -19,7 +19,10 @@ The goal is to prevent such accident by automating this process by using a liqui
 
 We prototyped our ideation by using majorly texas instruments components. The following video shows the working and feedback from **Medical doctors**. 
 
-<iframe width="640" class="video" align="midd" height="360"  src="https://www.youtube.com/embed/khT5Q_kSM-M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+<!-- width="640" -->
+
+<iframe width="50%" class="video" align="midd" height="360"  src="https://www.youtube.com/embed/khT5Q_kSM-M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 
 
 
