@@ -154,7 +154,7 @@ As mentioned earlier stoch 1.0 was too fragile. It had a lot of issues, so we wa
  
 ## The Team ##
 
-Team Members: [Shounak Bhattachary](https://sites.google.com/view/shounakoffice/home), [Dhaivat Dholakiya](https://sites.google.com/view/dhaivatdh/home), [Abhik Singla](https://sites.google.com/view/abhiksingla/home) and [myself](https://ajaygunalan.github.io/). Principal Investigators: [Dr. Shishir N. Y. Kolathaya](https://shishirny.github.io/),  [Prof. Bharadwaj Amrutur](http://chips.ece.iisc.ernet.in/index.php/Bharadwaj_Amrutur). I would like to specially thank **Shishir** and **Prof. Bharadwaj**, for giving me a wonderful oppourtinity to work in this project.
+Team Members: [Shounak Bhattachary](https://sites.google.com/view/shounakoffice/home), [Dhaivat Dholakiya](https://sites.google.com/view/dhaivatdh/home), [Abhik Singla](https://sites.google.com/view/abhiksingla/home) and [myself](https://ajaygunalan.github.io/). Principal Investigators: [Dr. Shishir N. Y. Kolathaya](https://shishirny.github.io/),  [Prof. Bharadwaj Amrutur](http://www.cense.iisc.ac.in/bharadwaj-amrutur). I would like to specially thank **Shishir** and **Prof. Bharadwaj**, for giving me a wonderful oppourtinity to work in this project.
 
 
 ![Robotics Group at RBCCPS](https://ajaygunalan.github.io/projects/asset/past/stoch/team_hangout.jpg){width=30% height=25%}

@@ -12,7 +12,7 @@ passion in me to pursue research in robotics.
 
 Thus, to quench my thirst for research, immediately after graduating, I joined [ASIMOV Robotics Pvt. Ltd, Kochi](https://www.asimovrobotics.com/) and
 was a part of the software team(R&D), developing a [service robot](https://ajaygunalan.github.io/projects/past/asimov.html) for HDFC bank. Then I joined Robert Bosch Center for
-Cyber-Physical System by February 2018 to work on [legged robots](https://ajaygunalan.github.io/projects/past/stoch.html) and manipulators under the guidance of [Dr. Shishir N.Y. Kolathya](https://shishirny.github.io/) and  [Prof. Bhardwaj Amrutur](http://chips.ece.iisc.ernet.in/index.php/Bharadwaj_Amrutur). I would call myself a **Full-Stack Roboticist** because I like to build software for
+Cyber-Physical System by February 2018 to work on [legged robots](https://ajaygunalan.github.io/projects/past/stoch.html) and manipulators under the guidance of [Dr. Shishir N.Y. Kolathya](https://shishirny.github.io/) and  [Prof. Bhardwaj Amrutur](http://www.cense.iisc.ac.in/bharadwaj-amrutur). I would call myself a **Full-Stack Roboticist** because I like to build software for
 robots from scratch involving embedded systems, controls, planning, and machine learning. My research interest is to build
 dexterous and agile under-actuated robots. To achieve that, I think we should have a broad inter-disciplinary approach in order
 to accurately debug the failures. After all, I feel that, “Robotics is the research of engineering”.
