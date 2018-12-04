@@ -7,7 +7,12 @@ Disclaimer: This about my Internship experience at ASIMOV Robotics Pvt. Ltd, Koc
 
 <br>
 
-![Service robot developed at Asimov Robotics](https://ajaygunalan.github.io/projects/asset/past/asimov/saya.PNG){width=30% height=60%}
+| ![CAD ModeL](https://ajaygunalan.github.io/projects/asset/past/asimov/saya.PNG){width=30% height=60%} | 
+
+
+<!-- ![At a Conference](https://ajaygunalan.github.io/projects/asset/past/asimov/saya_robot_at_asimov_robotics.jpg) |
+ -->
+
 
 
 
@@ -133,6 +138,17 @@ ol li figure figcaption {
 ul li {
   text-align: left;
 }
+
+/*.saya {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px; 
+}
+
+#saya_me{
+    text-align:center;
+*/
 
 
 </style>
