@@ -36,9 +36,9 @@ The task was to develop a [service robot](https://www.youtube.com/watch?v=5vjY1c
 
 <br>
 
-#### The Best Place to Work ####
+<!-- #### The Best Place to Work #### -->
 
-<p style="text-align: justify;">It wasn't a huge company. But being in a hardware start-up taught me more than I could ever possibly imagine. I was fortunate to get my hands around hardware and was able to see how real products were being built and how they approached a real-world problem. Most importantly my coding and debugging skills were tremendously improving, thanks to my mentors [Gokul Narayanan](https://www.linkedin.com/in/gokul-narayanan/) & [Rajashekaran T](https://www.linkedin.com/in/rajashekaran-t-071ab49b/) and also would like to thank [Jayakrishnan T](https://www.linkedin.com/in/jayakrishnan-t-61647125/)(CEO) & [Anto John](https://www.linkedin.com/in/antojohn/)(CMO) for giving me a wonderful opportunity in ASIMOV Robotics Pvt. Ltd, Kochi. </p>
+<p style="text-align: justify;">It wasn't a huge company. But being in a hardware start-up taught me more than I could ever possibly imagine. I was fortunate to get my hands around hardware and was able to see how real products were being built and how they approached a real-world problem. Most importantly my coding and debugging skills improved a lot, thanks to my mentors [Gokul Narayanan](https://www.linkedin.com/in/gokul-narayanan/) and [Rajashekaran T](https://www.linkedin.com/in/rajashekaran-t-071ab49b/) and also would like to thank [Jayakrishnan T](https://www.linkedin.com/in/jayakrishnan-t-61647125/)(CEO) and [Anto John](https://www.linkedin.com/in/antojohn/)(CMO) for giving me a wonderful opportunity in ASIMOV Robotics Pvt. Ltd, Kochi. </p>
 
 
 
