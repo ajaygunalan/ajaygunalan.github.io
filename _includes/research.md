@@ -18,7 +18,9 @@
 
 ### **Current Projects**
 
- 1. [Experience based Motion Planning](../projects/current/ebmp.html)
+   :pushpin:   Working on them and will be up-dated as soon as I have some tangible outputs.
+
+<!--  1. [Experience based Motion Planning](../projects/current/ebmp.html)
 
      Using experience (memory) to reduce the computation time is the basic principle. The elegance lies in making sure that the time to retrieve and repair a stored trajectory is less than the time to compute from scratch.
 
@@ -27,7 +29,7 @@
 
  2. [Funnel Library](../projects/current/funnel.html)
 
-     Not matter how accurately we model the system and plan, there will be uncertainity and noise always. Funnel Library is way of taking uncertainity into account while planning and gives us the guarantee that the motion will be successful given that the uncertainity is within bound. If there is no bound on the uncertainity, then we can give probability on the successfulness of the motion.
+     Not matter how accurately we model the system and plan, there will be uncertainity and noise always. Funnel Library is way of taking uncertainity into account while planning and gives us the guarantee that the motion will be successful given that the uncertainity is within bound. If there is no bound on the uncertainity, then we can give probability on the successfulness of the motion. -->
    
 
 
@@ -45,7 +47,7 @@
 
  2. [Stoch](../projects/past/stoch.html)
 
-	 Stoch is a quadruped developed at RBCCPS. I was a small part of the version 1.0 and was fully involved for the software development of second generation (Stoch 2.0). The goal of the project is to develope a versatile, all-terrain, legged robot.
+	 Stoch is the quadruped developed at RBCCPS. The goal of the project is to develope a robust, all-terrain, legged robot.
     
     ---
 
