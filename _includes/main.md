@@ -18,8 +18,18 @@ to accurately debug the failures.
 
 <br>
 
+<!-- 
+More specifically, my research interest includes: Combining Machine Learning and Motion Planning, Manipulation of Deformable Objects, Learning to Control, Grasping, Tactile Sensing, Medical Robots, Contact-Dynamics, Hybrid-Systems, Bio-Inspired Robots, Application of Non-Linear Control and Optimization in Real-Time on Robots. -->
 
-More specifically, my research interest includes: Combining Machine Learning and Motion Planning, Manipulation of Deformable Objects, Learning to Control, Grasping, Tactile Sensing, Medical Robots, Contact-Dynamics, Hybrid-Systems, Bio-Inspired Robots, Application of Non-Linear Control and Optimization in Real-Time on Robots.
+More specifically, my research interest includes:
+
++ Combining Machine Learning and Motion Planning
++ Manipulation of Deformable Objects
++ Grasping, Tactile Sensing, Contact-Dynamics
++ Learning to Control (Model-Based RL, Imitation Learning and Meta-Learning).
++ Application of Non-Linear Control and Optimization Techniques in Real-Time on Robots
++ Medical Robots, Hybrid-Systems, Bio-Inspired Robots
+
 
 
 

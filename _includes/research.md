@@ -39,7 +39,7 @@
 ### **Past Projects**
 
 
- 1. [Actuators for Robot](../projects/past/motor.html)
+ 1. [Actuators for dexterous and agile robots](../projects/past/motor.html)
 
 	 A robot is essentialy a bunch of motors coupled with varying load. I believe that without understanding the basic building block of robots which is the actuator (motor), it would be very hard to develop an algorithm which could outperform us. Thus, we will see how to influence various parameters of an actuator for best performance of our robot.
 
@@ -60,6 +60,14 @@
  4. [Asimov Robotics](../projects/past/asimov.html)
 
 	 We developed a custom service robot for HDFC bank.
+
+     ---
+
+ 5. [BLDC drive with CAN commuinication](../projects/past/bldc.html)
+
+    A failed attempt to have a custom BLDC driver which resulted in a great learning for me.
+
+
 
 
 <br>

@@ -1,0 +1,15 @@
+---
+layout: default
+comment: true
+---                      
+                                                 
+<main class="content" role="main">  
+  
+{% include lib/mathjax.html %} 
+{% capture my-include %}{% include projects/past/bldc/output/bldc.html %}{% endcapture %}
+{{ my-include | markdownify }}
+
+</main>
+
+{% include photoswipe.html %}
+{% include post_scripts.html %}

@@ -1,4 +1,4 @@
-% Actuators for Robot 
+% Actuators for dexterous and agile robots 
 % Ajay G 
 
 <!-- Note: Kindly refer here ([https://ajaygunalan.github.io/blog/notes/motor/motor.html](https://ajaygunalan.github.io/blog/notes/motor/motor.html)) for the various definition and derivation. Here the focus is only to understand which factors need to be maximized and minimized for robots of the future. -->
