@@ -52,7 +52,7 @@ More specifically, my research interest includes
 
 * What's my strength?
 
-  There are two. First is the ability to say, "I don't understand." No one knows everything. But, You should always know what you don't know and what you don't understand. If I know something, It means I know, "what I know" and "what I don't know". The second one is how I teach to beginners by breaking down the concepts to its core key elements and relating with what they knew before.
+  There are two. First is the ability to say, "I don't understand." No one knows everything. But, You should always know what you know and what you don't know. If I know something, It means I know, "what I know" and "what I don't know". The second one is how I teach to beginners by breaking down the concepts to its core key elements and relating with what they knew before.
 
 * What's my weakness?
 
