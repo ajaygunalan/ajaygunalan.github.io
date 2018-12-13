@@ -1,6 +1,6 @@
 default:
   initial:      ajaygunalan
-  name:         "Ajay G"                                
+  name:         "Ajay Gunalan"                                
   cover:        /assets/machu_lacta_reduced.jpg        
   picture:      /assets/ajay.jpg 
   quote:        "Learning whatever the robot demands to"                      
@@ -24,7 +24,7 @@ default:
   behance:   
 ajaygunalan:
   initial:      ajaygunalan
-  name:         "Ajay G"            
+  name:         "Ajay Gunalan"            
   cover:        /assets/machu_lacta.jpg  
   picture:      /assets/ajay.jpg  
   bio:          Project Assistant at Robert Bosch Center for Cyber-Physical System

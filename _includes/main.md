@@ -23,23 +23,61 @@ More specifically, my research interest includes: Combining Machine Learning and
 
 More specifically, my research interest includes:
 
-+ Combining Machine Learning and Motion Planning
-+ Manipulation of Deformable Objects
-+ Grasping, Tactile Sensing, Contact-Dynamics
-+ Learning to Control (Model-Based RL, Imitation Learning and Meta-Learning).
-+ Application of Non-Linear Control and Optimization Techniques in Real-Time on Robots
-+ Medical Robots, Hybrid-Systems, Bio-Inspired Robots
 
+<ul style="width:50%; float:left;">
+  <li>Combining Machine Learning and Motion Planning</li>
+  <li>Manipulation of Deformable Objects</li>
+  <li>Grasping, Tactile Sensing, Contact-Dynamics</li>
+</ul>
 
-
-
+<ul style="width:50%; float:left;">
+  <li>Learning to Control (Model-Based RL, Imitation Learning and Meta-Learning)</li>
+  <li>Application of Non-Linear Control and Optimization Techniques in Real-Time on robots</li>
+  <li>Medical Robots, Hybrid-Systems, Bio-Inspired Robotics</li>
+</ul>
 
 
 
 <br>
+<br>
 <br> 
 <br>
 <br> 
+
+#### FAQ about me: ####
+
+* What's my specialization(design, embedded, planning, controls, machine-learning) in robotics?
+
+  Having an In-depth knowledge of a particular discipline is good. But, don't expect to solve real-world problems in robotics because you would be inherently biased and won't even have a clue of why failure occurs. It's my firm belief that people should focus on the problem and learn all the skill set necessary to solve it rather than saying this my specialization. One example is the field of learning to control where two disciplines which were considered disparate in the past are fusing now. Thus, I am trying to solve the problem of making robots agile, dextrous, and energy efficient in motion comparable(or even better!) to biological creatures.
+
+* What's my strength?
+
+  There are two. First is the ability to say, "I don't understand." No one knows everything. But, You should always know what you don't know and what you don't understand. If I know something, It means I know what I don't know. The second one is how I teach to beginners by breaking down the concepts to its core key elements and relating with what they knew before.
+
+* What's my weakness?
+
+  Irresistible curiosity to always learn what I don't know much. It means often, I venture into new unknown territory rather than producing a tangible result with what I knew already. (I do understand that actual results are must and am actively working on it). Plus, I'm a bit reserved in speaking to a person to who am not acquainted (working on it).
+
+* What's my short-term goal?
+ 
+  To finish off this website, GRE, TOFEL(am planning for PhD by fall 2020) and to have tangible result in work.
+
+* What's my vision?
+  
+  To generate jobs. India, the youngest nation, is severely lacking in technological capacity compared to other countries. I studied in a system where root learning is the norm and failures were not appreciated. I want to be a part in bringing a change. I'm nothing if I wouldn't have an opportunity and am deeply grateful to the persons who have given me a chance and I think it's my responsibility to provide more opportunity for the next generation.
+
+* Why should you hire me?
+
+  I do have substantial guilty consciousness of not contributing significantly in work. Often, instead of focusing on the job, I start to learn for a deeper understanding of the abstractions. I have realized that there should be a balance between knowledge and tangible result. So, I have a history of being the worst employee, but I want to change it and contribute significantly. Secondly, if you want a person who is dedicated to the entire system rather than a single discipline.
+
+
+If you have further questions or if you want to hire me, please feel free to [:email:](mailto:ajayg@keemail.me) me. 
+
+
+
+
+
+
 
 
 <style>
@@ -47,6 +85,16 @@ More specifically, my research interest includes:
 p.site-wrapper {
 	text-align: justify;
 	color: green;
+}
+
+h4 {
+  text-align: left;
+}
+
+ol li {
+  text-align: left;
+  max-width: 100%;
+  margin-left: auto;
 }
 
 ul li {

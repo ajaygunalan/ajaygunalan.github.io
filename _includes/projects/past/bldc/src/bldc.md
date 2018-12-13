@@ -1,4 +1,4 @@
-% BLDC-Drive with CAN communication
+% Open-Source BLDC-Drive with CAN communication
 % Ajay G
 
 ## Content ##
@@ -29,24 +29,35 @@
 
 #### Skills required to build a BLDC driver ####
 
- * PCB design
- * EMI/EMC check
- * Power Electronics
- * Real-Time Embedded System Programming
- * Knowledge on how motors work and their limitations 
- * Familiarity with Communication Protocol
 
-  Out of these six skills, I have learned the last four to a certain basic level. In this article, I’m going to explain about a few critical concepts involved in the previous four topics. Each one of them requires considerable time and effort to master them. Mastering all of them is a possibility, but it would demand a significant amount of time, energy and money. 
+ 
+  <ul style="width:50%; float:left;">
+    <li>Real-Time Embedded System Programming</li>
+    <li>Knowledge on how motors work and their limitations</li>
+    <li>Familiarity with Communication Protocol</li>
+  </ul>
+
+  <ul style="width:50%; float:left;">
+    <li>Power Electronics</li>
+    <li>EMI/EMC check</li>
+    <li>PCB design</li>
+  </ul>
+
+  Out of these six skills, I have learned the first three to a certain level. In this article, I’m going to explain about a few critical concepts involved in the some of the topics. Each one of them requires considerable time and effort to master them. Mastering all of them is a possibility, but it would demand a significant amount of time, energy and money. 
 
   <br>
 
-#### Power Electronics ####
+#### :construction: Work in Progress :no_entry_sign: ####
 
 #### Real-Time Embedded System Programming ####
 
 #### Knowledge on how motors work and their limitations ####
 
 #### Familiarity with Communication Protocool ####
+
+#### Power Electronics ####
+
+#### PCB design ####
 
 
 
