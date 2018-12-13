@@ -68,7 +68,7 @@ More specifically, my research interest includes
 
 * Why should you hire me?
 
-  I want to prove my-self by contributing towards work, produce tangible result pushing the boundries of robotics. Secondly, if you want a person who is dedicated to the entire system rather than a single discipline.
+  I want to prove my-self by contributing towards work, producing tangible result pushing the boundries of robotics. Secondly, if you want a person who is dedicated to the entire system rather than a single discipline.
 
 
 If you have further questions or if you want to hire me, please feel free to [:email:](mailto:ajayg@keemail.me) me. 
