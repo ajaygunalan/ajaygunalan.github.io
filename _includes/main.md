@@ -68,7 +68,7 @@ More specifically, my research interest includes
 
 * Why should you hire me?
 
-  I do have substantial guilty consciousness of not contributing significantly in work. Often, instead of focusing on the job, I start to learn for a deeper understanding of the abstractions. I have realized that there should be a balance between knowledge and tangible result. So, I have a history of being the worst employee, but I want to change it and contribute significantly. Secondly, if you want a person who is dedicated to the entire system rather than a single discipline.
+  I do have substantial guilty consciousness of not contributing significantly in work. Often, instead of focusing on the job, I start to learn for a deeper understanding of the abstractions. I have realized that there should be a balance between knowledge and tangible result. So, I have a history of being the **worst employee**, but I want to change it and contribute significantly. Secondly, if you want a person who is dedicated to the entire system rather than a single discipline.
 
 
 If you have further questions or if you want to hire me, please feel free to [:email:](mailto:ajayg@keemail.me) me. 
