@@ -56,7 +56,7 @@ More specifically, my research interest includes
 
 * What's my weakness?
 
-  Irresistible curiosity to always learn what I don't know much. It means often, I venture into new unknown territory rather than producing a tangible result with what I knew already. (I do understand that actual results are must and am actively working on it). Plus, I’m a bit reserved in speaking to a person not well acquainted (working on it). 
+  Irresistible curiosity to always learn what I don't know much. It means, often I venture into new unknown territory rather than producing a tangible result with what I knew already. (I do understand that actual results are must and am actively working on it). Plus, I’m a bit reserved in speaking to a person not well acquainted (working on it). 
 
 * What's my short-term goal?
  
