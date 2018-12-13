@@ -27,7 +27,7 @@ More specifically, my research interest includes
 </ul>
 
 
-If you want to know about me in detail have loot at [this](https://ajaygunalan.github.io/assets/ajayg_faq.pdf)
+If you want to know about me in detail have a look at [this](https://ajaygunalan.github.io/assets/ajayg_faq.pdf)
 
 
 
