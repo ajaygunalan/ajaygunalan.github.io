@@ -60,7 +60,7 @@ More specifically, my research interest includes
 
 * What's my short-term goal?
  
-  To finish off this website, GRE, TOEFL(am planning for PhD by fall 2020) and to have tangible result in work.
+  To finish off this website, GRE, TOFEL(am planning for PhD by fall 2020) and to have tangible result in work.
 
 * What's my vision?
   
