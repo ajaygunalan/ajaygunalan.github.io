@@ -48,15 +48,15 @@ More specifically, my research interest includes
 
 * What's my specialization(design, embedded, planning, controls, machine-learning) in robotics?
 
-  Having an In-depth knowledge of a particular discipline is good. But, don't expect to solve real-world problems in robotics because you would be inherently biased and won't even have a clue of why failure occurs. It's my firm belief that people should focus on the problem and learn all the skill set necessary to solve it rather than saying this my specialization. One example is the field of learning to control where two disciplines which were considered disparate in the past are fusing now. Thus, I am trying to solve the problem of making robots agile, dextrous, and energy efficient in motion comparable(or even better!) to biological creatures.
+  Having an in-depth knowledge of a particular discipline is good. But, don't expect to solve real-world problems in robotics because you would be inherently biased and won't even have a clue of why failure occurs. It's my firm belief that people should focus on the problem and learn all the skill set necessary to solve it rather than saying this my specialization. One example is the field of learning to control where two disciplines which were considered disparate in the past are fusing now. Thus, I am trying to solve the problem of making robots agile, dextrous, and energy efficient in motion comparable(or even better!) to biological creatures.
 
 * What's my strength?
 
-  There are two. First is the ability to say, "I don't understand." No one knows everything. But, You should always know what you don't know and what you don't understand. If I know something, It means I know what I don't know. The second one is how I teach to beginners by breaking down the concepts to its core key elements and relating with what they knew before.
+  There are two. First is the ability to say, "I don't understand." No one knows everything. But, You should always know what you don't know and what you don't understand. If I know something, It means I know, "what I know" and "what I don't know". The second one is how I teach to beginners by breaking down the concepts to its core key elements and relating with what they knew before.
 
 * What's my weakness?
 
-  Irresistible curiosity to always learn what I don't know much. It means often, I venture into new unknown territory rather than producing a tangible result with what I knew already. (I do understand that actual results are must and am actively working on it). Plus, I'm a bit reserved in speaking to a person to who am not acquainted (working on it).
+  Irresistible curiosity to always learn what I don't know much. It means often, I venture into new unknown territory rather than producing a tangible result with what I knew already. (I do understand that actual results are must and am actively working on it). Plus, I’m a bit reserved in speaking to a person not well acquainted (working on it). 
 
 * What's my short-term goal?
  
