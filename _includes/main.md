@@ -21,7 +21,7 @@ to accurately debug the failures.
 <!-- 
 More specifically, my research interest includes: Combining Machine Learning and Motion Planning, Manipulation of Deformable Objects, Learning to Control, Grasping, Tactile Sensing, Medical Robots, Contact-Dynamics, Hybrid-Systems, Bio-Inspired Robots, Application of Non-Linear Control and Optimization in Real-Time on Robots. -->
 
-More specifically, my research interest includes:
+More specifically, my research interest includes
 
 
 <ul style="width:50%; float:left;">
@@ -44,7 +44,7 @@ More specifically, my research interest includes:
 <br>
 <br> 
 
-#### FAQ about me: ####
+#### FAQ about me ####
 
 * What's my specialization(design, embedded, planning, controls, machine-learning) in robotics?
 
