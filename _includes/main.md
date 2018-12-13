@@ -1,15 +1,5 @@
 
-I’m Ajay G from [Robert Bosch Center for Cyber-Physical System](http://www.rbccps.org/) at [Indian Institute of Science, Banglore](https://www.iisc.ac.in/). I studied Mechanical Engineering because of the curiosity in how things move and work and explored a lot. Soon, to discover that the real beauty of dynamics lies in the day-to-day activities we do, which can be realised only when
-we try to make a robot to perform the same tasks. All of a sudden, what was so simple and trivial to us, became too hard. Though being
-hard, it is an interesting challenge. To solve this problem, one will require various skills in Math, Computer, Electrical,
-Mechanical, Controls, etc. Almost, all the fields which are based upon on classical mechanics would be involved in one way or another. In fact, we could
-say that, Robotics is the pinnacle of classical mechanics. Such a diverse field with a cool hardware aroused excitement and
-passion in me to pursue research in robotics.
-
-<br>
-
-
-Thus, to quench my thirst for research, immediately after graduating, I joined [ASIMOV Robotics Pvt. Ltd, Kochi](https://www.asimovrobotics.com/) and
+I’m Ajay G. from [Robert Bosch Center for Cyber-Physical System](http://www.rbccps.org/) at [Indian Institute of Science, Banglore](https://www.iisc.ac.in/). After graduating, I joined [ASIMOV Robotics Pvt. Ltd, Kochi](https://www.asimovrobotics.com/) and
 was a part of the software team(R&D), developing a [service robot](https://ajaygunalan.github.io/projects/past/asimov.html) for HDFC bank. Then I joined Robert Bosch Center for
 Cyber-Physical System by February 2018 to work on [legged robots](https://ajaygunalan.github.io/projects/past/stoch.html) and manipulators under the guidance of [Dr. Shishir N.Y. Kolathya](https://shishirny.github.io/) and  [Prof. Bhardwaj Amrutur](http://www.cense.iisc.ac.in/bharadwaj-amrutur). I would call myself a **Full-Stack Roboticist** because I like to build software for
 robots involving embedded systems, controls, planning, and machine learning. My ultimate goal is to build
@@ -37,6 +27,9 @@ More specifically, my research interest includes
 </ul>
 
 
+If you want to know about me in detail have loot at [this](https://ajaygunalan.github.io/assets/ajayg_faq.pdf)
+
+
 
 <br>
 <br>
@@ -44,7 +37,15 @@ More specifically, my research interest includes
 <br>
 <br> 
 
-#### FAQ about me ####
+<!-- #### FAQ about me ####
+
+* Why robotics?
+  I studied Mechanical Engineering because of the curiosity in how things move and work and explored a lot. Soon, to discover that the real beauty of dynamics lies in the day-to-day activities we do, which can be realised only when
+  we try to make a robot to perform the same tasks. All of a sudden, what was so simple and trivial to us, became too hard. Though being
+  hard, it is an interesting challenge. To solve this problem, one will require various skills in Math, Computer, Electrical,
+  Mechanical, Controls, etc. Almost, all the fields which are based upon on classical mechanics would be involved in one way or another. In fact, we could
+  say that, Robotics is the pinnacle of classical mechanics. Such a diverse field with a cool hardware aroused excitement and
+  passion in me to pursue research in robotics.
 
 * What's my specialization(design, embedded, planning, controls, machine-learning) in robotics?
 
@@ -60,7 +61,7 @@ More specifically, my research interest includes
 
 * What's my short-term goal?
  
-  To finish off this website, GRE, TOFEL(am planning for PhD by fall 2020) and to have tangible result in work.
+  To finish off GRE, TOFEL(am planning for PhD by fall 2020) and to have tangible result in work.
 
 * What's my vision?
   
@@ -72,7 +73,7 @@ More specifically, my research interest includes
 
 
 If you have further questions or if you want to hire me, please feel free to [:email:](mailto:ajayg@keemail.me) me. 
-
+ -->
 
 
 
@@ -81,6 +82,15 @@ If you have further questions or if you want to hire me, please feel free to [:e
 
 
 <style>
+
+.content {
+  max-width: 920px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 
 p.site-wrapper {
 	text-align: justify;
