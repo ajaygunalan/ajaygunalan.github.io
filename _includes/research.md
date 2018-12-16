@@ -65,7 +65,7 @@
 
  5. [BLDC drive with CAN commuinication](../projects/past/bldc.html)
 
-    A failed attempt to have a custom BLDC driver which resulted in a great learning for me.
+    An attempt to have a custom BLDC driver which resulted in a great learning for me.
 
 
 
