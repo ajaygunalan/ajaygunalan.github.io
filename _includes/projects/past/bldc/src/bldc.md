@@ -47,9 +47,81 @@
 
   <br>
 
-#### :construction: Work in Progress :no_entry_sign: ####
+<!-- #### :construction: Work in Progress :no_entry_sign: #### -->
 
 #### Real-Time Embedded System Programming ####
+
+###### Programming ######
+
+ When you learn to programme (in 21st century), the first exercise would be Hello World. You would probably think of computer as a black box and after some practice, would generalize that programming means using the appropriate functions with right arguments and using the returns at the right place. It's true for most of the High-Level Programming Languages, not for Embedded Programming.
+
+ <br>
+
+
+###### Embedded ######
+
+ In Embedded, everything is about writing and reading data from a register. A register is an expensive memory block, closest to CPU, resulting in low access time for the CPU.
+
+ <br>
+
+
+###### Real-Time ######
+
+ Mostly, people from backgrounds other than CS and Electrical, think that real-time means super-fast execution such that everything happens in an instance with no delay. This is far from the truth. Real-Time means guaranteed implementation of the programme within a specified period. To achieve it there should be no variable delay in the execution of the programme which implies avoiding certain paradigms such as scheduler in a general purpose operating system like Windows, Linux (Ubuntu) and Macintosh which causes causing unpredictablness of execution time. A trivial example would be to check the execution time for the classic Hello World problem. Run the following code snippet. (Make sure you have installed matplot package) 
+
+ <br>
+
+```
+#!/usr/bin/python
+import time
+import matplotlib.pyplot as plt
+
+for i in range(10000):
+  begin = time.time()
+  print ("Hello World")
+  delay = time.time() -begin
+  delay =  delay*1000 # sec to milli sec
+  print (delay)
+  plt.scatter (i, delay)
+  plt.pause (0.000000000001)
+  plt.xlabel('Iterations') 
+  plt.ylabel('Delay in Milliseconds')
+  plt.title('Unpredictablness of exact execution time') 
+  plt.ylim(0, 0.1)
+
+plt.show()
+
+```
+ 
+
+The test was on conducted on the following CPU, with 8 GB of system ram.
+```
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                4
+On-line CPU(s) list:   0-3
+Thread(s) per core:    2
+Core(s) per socket:    2
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 61
+Model name:            Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz
+Stepping:              4
+CPU MHz:               1078.814
+CPU max MHz:           3000.0000
+CPU min MHz:           500.0000
+BogoMIPS:              4789.18
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              4096K
+NUMA node0 CPU(s):     0-3
+```
+
 
 #### Knowledge on how motors work and their limitations ####
 
@@ -128,7 +200,7 @@ a:hover.main-link {
     color: #000000;
 }
 
-h3 {
+h3, h6 {
   text-align: left;
 }
 
