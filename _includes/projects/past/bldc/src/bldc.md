@@ -13,7 +13,7 @@
   + [Why have a GPOS causing unpredictableness in execution time?](#why-have-a-gpos-causing-unpredictableness-in-execution-time)
   + [Then, why we need a Real-Time System?](#then-why-we-need-a-real-time-system)
 * [Knowledge on how motors work and their limitations](#knowledge-on-how-motors-work-and-their-limitations)
-* [Familiarity with Communication Protocol](familiarity-with-communication-protocol)
+* [Familiarity with Communication Protocol](#familiarity-with-communication-protocol)
 
 
 
@@ -71,7 +71,7 @@
 
 ###### Real-Time System ######
 
- Mostly, people from backgrounds other than CS and Electrical, think that real-time means super-fast execution such that everything happens in an instance with no delay. This is far from the truth. Real-Time means guaranteed implementation of the programme within a specified period. To achieve it there should be no variable delay in the execution of the programme which implies avoiding certain paradigms such as scheduler in a general purpose operating system like Windows, Linux (Ubuntu) and Macintosh which causes causing unpredictablness of execution time. A trivial example would be to check the execution time for the classic Hello World problem. Run the following code snippet. (Make sure you have installed matplot package) 
+ Some think that real-time means super-fast execution such that everything happens in an instance with no delay. This is far from the truth. Real-Time means guaranteed implementation of the programme within a specified period. To achieve it there should be no variable delay in the execution of the programme which implies avoiding certain paradigms such as scheduler in a general purpose operating system like Windows, Linux (Ubuntu) and Macintosh which causes unpredictablness in execution time. A trivial example would be to check the execution time for the classic Hello World example. Run the following code snippet. (Make sure you that matplot package is installed) 
 
  <br>
 
@@ -146,7 +146,7 @@ The GPOS(General Purpose Operating System) have been designed to maximize the th
 
 ###### Then, why we need a Real-Time System? ######
 
-When it comes to a General Purpose Computers, having an OS to increase the through-output is good since the average user only cares about the over-efficacy. However, In robotics, We have two major requirements for  a real-time system. First, BLDC driver must work in real-time for ensuring appropriate switching of transistors without any variance in timing. Secondly, for reading sensor values and writing actuator values because control, and planning, algorithms require the value within a certain delay. The former case may consist of a Single Board Computer (like RPI3) with RTOS like xenomai. The latter case may consist of a microcontroller using an Embedded RTOS like ChibiOS.
+When it comes to a General Purpose Computers, having an OS to increase the through-output is good since the average user only cares about the over-efficacy. However, In robotics, We have two major requirements for  a real-time system. First, BLDC driver must work in real-time for ensuring appropriate switching of transistors without any variance in timing. Secondly, for reading sensor values and writing actuator values because control, and planning, algorithms require the value within a certain delay. The latter case may consist of a Single Board Computer (like RPI3) with RTOS like xenomai. The former case may consist of a microcontroller using an Embedded RTOS like ChibiOS.
 
 <br>
 

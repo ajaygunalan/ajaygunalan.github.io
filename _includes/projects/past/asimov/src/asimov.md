@@ -28,10 +28,10 @@ The task was to develop a [service robot](https://www.youtube.com/watch?v=5vjY1c
 * Gravity compensation for assistive mode (didn't work well, was **oscillating** a lot..!).
 * Position and  Velocity control of DC motor as a replacement for dynamixel servos in the base. 
 * TCP/IP communication between ROS and non-ROS module.
-* To perform basic motion planning simulation in Gazebo using smach.
+* To perform basic motion planning simulation in Gazebo using ROS and MoveIt.
 * Sensor Integration
   + *IMU sensor with ROS for Navigation.*
-  + *Tactile sensor for Human-Robot Interaction.*
+  + *Tactile sensor(FSR) for Human-Robot Interaction.*
   + *Ultrasonic sensor with ROS for Obstacle avoidance.*
 
 <br>
