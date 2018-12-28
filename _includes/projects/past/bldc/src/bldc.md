@@ -7,6 +7,15 @@
 * [Introduction](#introduction)
 * [What is a motor driver?](#what-is-a-motor-driver)
 * [Skills required to build a  BLDC driver]
+* [Real-Time Embedded System Programming](#real-time-embedded-system-programming)
+  + [Embedded Programming](#embedded-programming)
+  + [Real-Time System](#real-time-system)
+  + [Why have a GPOS causing unpredictableness in execution time?](#why-have-a-gpos-causing-unpredictableness-in-execution-time)
+  + [Then, why we need a Real-Time System?](#then-why-we-need-a-real-time-system)
+* [Knowledge on how motors work and their limitations](#knowledge-on-how-motors-work-and-their-limitations)
+* [Familiarity with Communication Protocol](familiarity-with-communication-protocol)
+
+
 
 
 
@@ -51,25 +60,21 @@
 
 #### Real-Time Embedded System Programming ####
 
-###### Programming ######
+ <br>
 
- When you learn to programme (in 21st century), the first exercise would be Hello World. You would probably think of computer as a black box and after some practice, would generalize that programming means using the appropriate functions with right arguments and using the returns at the right place. It's true for most of the High-Level Programming Languages, not for Embedded Programming.
+###### Embedded Programming ######
+
+ When you learn to programme (in 21st century), the first exercise would be Hello World. You would probably think of computer as a black box and after some practice, would generalize that programming means using the appropriate functions with right arguments and using the returns at the right place. It's true for most of the High-Level Programming Languages, not for Embedded Programming. In Embedded, everything is about writing and reading data from a register. A register is an expensive memory block, closest to CPU, resulting in low access time for the CPU.
 
  <br>
 
 
-###### Embedded ######
-
- In Embedded, everything is about writing and reading data from a register. A register is an expensive memory block, closest to CPU, resulting in low access time for the CPU.
-
- <br>
-
-
-###### Real-Time ######
+###### Real-Time System ######
 
  Mostly, people from backgrounds other than CS and Electrical, think that real-time means super-fast execution such that everything happens in an instance with no delay. This is far from the truth. Real-Time means guaranteed implementation of the programme within a specified period. To achieve it there should be no variable delay in the execution of the programme which implies avoiding certain paradigms such as scheduler in a general purpose operating system like Windows, Linux (Ubuntu) and Macintosh which causes causing unpredictablness of execution time. A trivial example would be to check the execution time for the classic Hello World problem. Run the following code snippet. (Make sure you have installed matplot package) 
 
  <br>
+
 
 ```
 #!/usr/bin/python
@@ -93,8 +98,16 @@ plt.show()
 
 ```
  
+<br>
 
-The test was on conducted on the following CPU, with 8 GB of system ram.
+You would get a output like shown below
+
+![Unpredictableness of exact execution time](https://ajaygunalan.github.io/projects/asset/past/bldc/delay.png)
+
+The test was on conducted my laptop with the following CPU and 8 GB of system ram.
+
+<br>
+
 ```
 Architecture:          x86_64
 CPU op-mode(s):        32-bit, 64-bit
@@ -122,17 +135,41 @@ L3 cache:              4096K
 NUMA node0 CPU(s):     0-3
 ```
 
+<br>
 
+###### Why have a GPOS causing unpredictableness in execution time? ######
+
+The GPOS(General Purpose Operating System) have been designed to maximize the through-output of the process executed on the machine. Whether the task is executed within a fixed time limit is not of prime concern here, and that's why the scheduler of a GPOS  focuses on increasing the number of processes executed by the CPU.
+
+<br>
+
+
+###### Then, why we need a Real-Time System? ######
+
+When it comes to a General Purpose Computers, having an OS to increase the through-output is good since the average user only cares about the over-efficacy. However, In robotics, We have two major requirements for  a real-time system. First, BLDC driver must work in real-time for ensuring appropriate switching of transistors without any variance in timing. Secondly, for reading sensor values and writing actuator values because control, and planning, algorithms require the value within a certain delay. The former case may consist of a Single Board Computer (like RPI3) with RTOS like xenomai. The latter case may consist of a microcontroller using an Embedded RTOS like ChibiOS.
+
+<br>
+
+
+ 
 #### Knowledge on how motors work and their limitations ####
 
-#### Familiarity with Communication Protocool ####
+It's a vast topic covering various aspects of motors and their dynamics; I tried to cover the basics over [here](https://ajaygunalan.github.io/blog/notes/motor/motor.html) 
 
-#### Power Electronics ####
+<br>
 
-#### PCB design ####
+#### Familiarity with Communication Protocol ####
 
+Soon, I'll write about it, For the time being, have a look at CAN signal from the oscilloscope. 
 
+<br>
 
+![](https://ajaygunalan.github.io/projects/asset/past/bldc/20180808_170030.jpg)
+
+<br>
+<br>
+<br>
+<br>
 
 
 

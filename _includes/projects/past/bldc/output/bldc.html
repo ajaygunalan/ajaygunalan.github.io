@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
@@ -27,6 +27,15 @@
 <li><a href="#introduction">Introduction</a></li>
 <li><a href="#what-is-a-motor-driver">What is a motor driver?</a></li>
 <li><a href="#skills-required-to-build-a-bldc-driver">Skills required to build a BLDC driver</a></li>
+<li><a href="#real-time-embedded-system-programming">Real-Time Embedded System Programming</a>
+<ul>
+<li><a href="#embedded-programming">Embedded Programming</a></li>
+<li><a href="#real-time-system">Real-Time System</a></li>
+<li><a href="#why-have-a-gpos-causing-unpredictableness-in-execution-time">Why have a GPOS causing unpredictableness in execution time?</a></li>
+<li><a href="#then-why-we-need-a-real-time-system">Then, why we need a Real-Time System?</a></li>
+</ul></li>
+<li><a href="#knowledge-on-how-motors-work-and-their-limitations">Knowledge on how motors work and their limitations</a></li>
+<li><a href="familiarity-with-communication-protocol">Familiarity with Communication Protocol</a></li>
 </ul>
 <p><br></p>
 <h4 id="introduction">Introduction</h4>
@@ -62,13 +71,11 @@ PCB design
 <p><br></p>
 <!-- #### :construction: Work in Progress :no_entry_sign: #### -->
 <h4 id="real-time-embedded-system-programming">Real-Time Embedded System Programming</h4>
-<h6 id="programming">Programming</h6>
-<p>When you learn to programme (in 21st century), the first exercise would be Hello World. You would probably think of computer as a black box and after some practice, would generalize that programming means using the appropriate functions with right arguments and using the returns at the right place. It’s true for most of the High-Level Programming Languages, not for Embedded Programming.</p>
 <p><br></p>
-<h6 id="embedded">Embedded</h6>
-<p>In Embedded, everything is about writing and reading data from a register. A register is an expensive memory block, closest to CPU, resulting in low access time for the CPU.</p>
+<h6 id="embedded-programming">Embedded Programming</h6>
+<p>When you learn to programme (in 21st century), the first exercise would be Hello World. You would probably think of computer as a black box and after some practice, would generalize that programming means using the appropriate functions with right arguments and using the returns at the right place. It’s true for most of the High-Level Programming Languages, not for Embedded Programming. In Embedded, everything is about writing and reading data from a register. A register is an expensive memory block, closest to CPU, resulting in low access time for the CPU.</p>
 <p><br></p>
-<h6 id="real-time">Real-Time</h6>
+<h6 id="real-time-system">Real-Time System</h6>
 <p>Mostly, people from backgrounds other than CS and Electrical, think that real-time means super-fast execution such that everything happens in an instance with no delay. This is far from the truth. Real-Time means guaranteed implementation of the programme within a specified period. To achieve it there should be no variable delay in the execution of the programme which implies avoiding certain paradigms such as scheduler in a general purpose operating system like Windows, Linux (Ubuntu) and Macintosh which causes causing unpredictablness of execution time. A trivial example would be to check the execution time for the classic Hello World problem. Run the following code snippet. (Make sure you have installed matplot package)</p>
 <p><br></p>
 <pre><code>#!/usr/bin/python
@@ -90,7 +97,13 @@ for i in range(10000):
 
 plt.show()
 </code></pre>
-<p>The test was on conducted on the following CPU, with 8 GB of system ram.</p>
+<p><br></p>
+<p>You would get a output like shown below</p>
+<figure>
+<img src="https://ajaygunalan.github.io/projects/asset/past/bldc/delay.png" alt="Unpredictableness of exact execution time" /><figcaption>Unpredictableness of exact execution time</figcaption>
+</figure>
+<p>The test was on conducted my laptop with the following CPU and 8 GB of system ram.</p>
+<p><br></p>
 <pre><code>Architecture:          x86_64
 CPU op-mode(s):        32-bit, 64-bit
 Byte Order:            Little Endian
@@ -115,10 +128,21 @@ L1i cache:             32K
 L2 cache:              256K
 L3 cache:              4096K
 NUMA node0 CPU(s):     0-3</code></pre>
+<p><br></p>
+<h6 id="why-have-a-gpos-causing-unpredictableness-in-execution-time">Why have a GPOS causing unpredictableness in execution time?</h6>
+<p>The GPOS(General Purpose Operating System) have been designed to maximize the through-output of the process executed on the machine. Whether the task is executed within a fixed time limit is not of prime concern here, and that’s why the scheduler of a GPOS focuses on increasing the number of processes executed by the CPU.</p>
+<p><br></p>
+<h6 id="then-why-we-need-a-real-time-system">Then, why we need a Real-Time System?</h6>
+<p>When it comes to a General Purpose Computers, having an OS to increase the through-output is good since the average user only cares about the over-efficacy. However, In robotics, We have two major requirements for a real-time system. First, BLDC driver must work in real-time for ensuring appropriate switching of transistors without any variance in timing. Secondly, for reading sensor values and writing actuator values because control, and planning, algorithms require the value within a certain delay. The former case may consist of a Single Board Computer (like RPI3) with RTOS like xenomai. The latter case may consist of a microcontroller using an Embedded RTOS like ChibiOS.</p>
+<p><br></p>
 <h4 id="knowledge-on-how-motors-work-and-their-limitations">Knowledge on how motors work and their limitations</h4>
-<h4 id="familiarity-with-communication-protocool">Familiarity with Communication Protocool</h4>
-<h4 id="power-electronics">Power Electronics</h4>
-<h4 id="pcb-design">PCB design</h4>
+<p>It’s a vast topic covering various aspects of motors and their dynamics; I tried to cover the basics over <a href="https://ajaygunalan.github.io/blog/notes/motor/motor.html">here</a></p>
+<p><br></p>
+<h4 id="familiarity-with-communication-protocol">Familiarity with Communication Protocol</h4>
+<p>Soon, I’ll write about it, For the time being, have a look at CAN signal from the oscilloscope.</p>
+<p><br></p>
+<p><img src="https://ajaygunalan.github.io/projects/asset/past/bldc/20180808_170030.jpg" /></p>
+<p><br> <br> <br> <br></p>
 <style>
 h2, h4 {
       text-align: left;
