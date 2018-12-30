@@ -4,10 +4,11 @@ I’m Ajay G. from [Robert Bosch Center for Cyber-Physical System](http://www.rb
 
 <br>
 
-I would call myself a **Full-Stack Roboticist** because I like to build software for
-robots involving embedded systems, controls, planning, and machine learning. My ultimate goal is to build
-dexterous and agile under-actuated robots to solve real-world problems. To achieve that, I think we should have a broad inter-disciplinary approach in order
-to accurately debug the failures. 
+
+I would call myself a **Full-Stack Roboticist** who loves to build software for robots involving embedded systems, controls,
+planning, and machine learning. My ultimate goal is to make a dexterous, agile and robust, robots to solve
+real-world problems. To achieve that, I think we should have a broad interdisciplinary approach to debug the
+failures accurately
 
 <br>
 
