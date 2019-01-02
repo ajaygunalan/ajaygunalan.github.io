@@ -7,8 +7,10 @@ I’m Ajay G. from [Robert Bosch Center for Cyber-Physical System](http://www.rb
 
 I would call myself a **Full-Stack Roboticist** who loves to build software for robots involving embedded systems, controls,
 planning, and machine learning. My ultimate goal is to make a dexterous, agile and robust, robots to solve
-real-world problems. To achieve that, I think we should have a broad interdisciplinary approach to debug the
-failures accurately.
+real-world problems. To achieve that, I think we should have a broad interdisciplinary approach (Math, Computer, Electrical,
+Mechanical, Controls, etc.)  to debug the failures accurately. Almost, all the fields which are based upon on classical mechanics would be involved in one way
+or another. In fact, we could say that, **Robotics is the pinnacle of classical mechanics**. Such a diverse field with a cool
+hardware aroused excitement and passion in me to pursue research in robotics.
 
 <br>
 
