@@ -22,20 +22,20 @@ hardware aroused excitement and passion in me to pursue research in robotics. --
 <!-- 
 More specifically, my research interest includes: Combining Machine Learning and Motion Planning, Manipulation of Deformable Objects, Learning to Control, Grasping, Tactile Sensing, Medical Robots, Contact-Dynamics, Hybrid-Systems, Bio-Inspired Robots, Application of Non-Linear Control and Optimization in Real-Time on Robots. -->
 
-More specifically, my research interest includes
+ More specifically, my research interest includes
 
 
-<ul style="width:50%; float:left;">
-  <li>Combining Machine Learning and Motion Planning</li>
-  <li>Manipulation of Deformable Objects</li>
-  <li>Grasping, Tactile Sensing, Contact-Dynamics</li>
-</ul>
+ <ul style="width:50%; float:left;">
+   <li>Combining Machine Learning and Motion Planning</li>
+   <li>Manipulation of Deformable Objects</li>
+   <li>Grasping, Tactile Sensing, Contact-Dynamics</li>
+ </ul>
 
-<ul style="width:50%; float:left;">
-  <li>Learning to Control (Model-Based RL, Imitation Learning and Meta-Learning)</li>
-  <li>Application of Non-Linear Control and Optimization Techniques in Real-Time on robots</li>
-  <li>Medical Robots, Hybrid-Systems, Bio-Inspired Robotics</li>
-</ul>
+ <ul style="width:50%; float:left;">
+   <li>Learning to Control (Model-Based RL, Imitation Learning and Meta-Learning)</li>
+   <li>Application of Non-Linear Control and Optimization Techniques in Real-Time on robots</li>
+   <li>Medical Robots, Hybrid-Systems, Bio-Inspired Robotics</li>
+ </ul>
 
 
 <!-- If you want to know about me in detail have a look at [this](https://ajaygunalan.github.io/assets/ajayg_faq.pdf) -->
@@ -47,49 +47,6 @@ More specifically, my research interest includes
 <br> 
 <br>
 <br> 
-
-<!-- #### FAQ about me ####
-
-* Why robotics?
-  I studied Mechanical Engineering because of the curiosity in how things move and work and explored a lot. Soon, to discover that the real beauty of dynamics lies in the day-to-day activities we do, which can be realised only when
-  we try to make a robot to perform the same tasks. All of a sudden, what was so simple and trivial to us, became too hard. Though being
-  hard, it is an interesting challenge. To solve this problem, one will require various skills in Math, Computer, Electrical,
-  Mechanical, Controls, etc. Almost, all the fields which are based upon on classical mechanics would be involved in one way or another. In fact, we could
-  say that, Robotics is the pinnacle of classical mechanics. Such a diverse field with a cool hardware aroused excitement and
-  passion in me to pursue research in robotics.
-
-* What's my specialization(design, embedded, planning, controls, machine-learning) in robotics?
-
-  Having an in-depth knowledge of a particular discipline is good. But, don't expect to solve real-world problems in robotics because you would be inherently biased and won't even have a clue of why failure occurs. It's my firm belief that people should focus on the problem and learn all the skill set necessary to solve it rather than saying this my specialization. One example is the field of learning to control where two disciplines which were considered disparate in the past are fusing now. Thus, I am trying to solve the problem of making robots agile, dextrous, and energy efficient in motion comparable(or even better!) to biological creatures.
-
-* What's my strength?
-
-  There are two. First is the ability to say, "I don't understand." No one knows everything. But, You should always know what you know and what you don't know. If I know something, It means I know, "what I know" and "what I don't know". The second one is how I teach to beginners by breaking down the concepts to its core key elements and relating with what they knew before.
-
-* What's my weakness?
-
-  Irresistible curiosity to always learn what I don't know much. It means, often I venture into new unknown territory rather than producing a tangible result with what I knew already. (I do understand that actual results are must and am actively working on it). Plus, I’m a bit reserved in speaking to a person not well acquainted (working on it). 
-
-* What's my short-term goal?
- 
-  To finish off GRE, TOFEL(am planning for PhD by fall 2020) and to have tangible result in work.
-
-* What's my vision?
-  
-  To generate jobs. India, the youngest nation, is severely lacking in technological capacity compared to other countries. I studied in a system where root learning is the norm and failures were not appreciated. I want to be a part in bringing a change. I'm nothing if I wouldn't have an opportunity and am deeply grateful to the persons who have given me a chance and I think it's my responsibility to provide more opportunity for the next generation.
-
-* Why should you hire me?
-
-  I want to prove my-self by contributing towards work, producing tangible result pushing the boundries of robotics. Secondly, if you want a person who is dedicated to the entire system rather than a single discipline.
-
-
-If you have further questions or if you want to hire me, please feel free to [:email:](mailto:ajayg@keemail.me) me. 
- -->
-
-
-
-
-
 
 
 <style>
