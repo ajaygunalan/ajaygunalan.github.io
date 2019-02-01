@@ -3,17 +3,16 @@
 
 ## Content ##
 
-
-* [Why Custom BLDC driver?](#why-custom-bldc-driver?)
 * [What is a motor driver?](#what-is-a-motor-driver)
-* [Skills required to build a  BLDC driver]
+* [Why Custom BLDC driver?](#why-custom-bldc-driver)
+* [Skills required to build a BLDC driver](#skills-required-to-build-a-bldc-driver)
 * [Real-Time Embedded System Programming](#real-time-embedded-system-programming)
   + [Embedded Programming](#embedded-programming)
   + [Real-Time System](#real-time-system)
   + [Why have a GPOS causing unpredictableness in execution time?](#why-have-a-gpos-causing-unpredictableness-in-execution-time)
   + [Then, why we need a Real-Time System?](#then-why-we-need-a-real-time-system)
   + [Led Blink using ChibiOS](#led-blink-using-chibios)
-
+  + [Why ChibiOS](#why-chibios)
 * [Knowledge on how motors work and their limitations](#knowledge-on-how-motors-work-and-their-limitations)
 * [Familiarity with Communication Protocol](#familiarity-with-communication-protocol)
   + [What is CAN?](#what-is-can)
@@ -23,15 +22,10 @@
 
 
 
+
+
 <br>
 <br>
-
-## Why Custom BLDC driver? ##
-
- The article, "Actuators for dexterous and agile robots" would have explained the need for 4Q control motor driver. Here let us look at how to build a custom BLDC motor driver. The reasons to make a BLDC driver compared to others are energy-efficiency, scalable(BLDC driver can run other types of motors too), cheaper compared to commercially available BLDC drivers and in case if you want to make 8-phase BLDC motor for having a minimun torque ripple, its best you start with a 3-phase BLDC motor and it's driver.
-
- <br>
-   <br>
 
 ## What is a motor driver? ##
 
@@ -45,6 +39,16 @@
 
  <br>
  <br>
+
+
+
+## Why Custom BLDC driver? ##
+
+ The article, "Actuators for dexterous and agile robots" would have explained the need for 4Q control motor driver. Here let us look at how to build a custom BLDC motor driver. The reasons to make a BLDC driver compared to others are energy-efficiency, scalable(BLDC driver can run other types of motors too), cheaper compared to commercially available BLDC drivers and in case if you want to make 8-phase BLDC motor for having a minimun torque ripple, its best you start with a 3-phase BLDC motor and it's driver.
+
+
+<br>
+<br>
 
 ## Skills required to build a BLDC driver ##
 
@@ -75,7 +79,7 @@
 
 <br>
 
-###### Embedded Programming ######
+#### Embedded Programming ####
 
  When you learn to programme (in 21st century), the first exercise would be Hello World. You would probably think of computer as a black box and after some practice, would generalize that programming means using the appropriate functions with right arguments and using the returns at the right place. It's true for most of the High-Level Programming Languages, not for Embedded Programming. In Embedded, everything is about writing and reading data from a register. A register is an expensive memory block, closest to CPU, resulting in low access time for the CPU.
 
@@ -84,7 +88,7 @@
  <br>
 
 
-###### Real-Time System ######
+#### Real-Time System ####
 
  Some think that real-time means super-fast execution such that everything happens in an instance with no delay. This is far from the truth. Real-Time means guaranteed implementation of the programme within a specified period. To achieve it there should be no variable delay in the execution of the programme which implies avoiding certain paradigms such as scheduler in a general purpose operating system like Windows, Linux (Ubuntu) and Macintosh which causes unpredictablness in execution time. A trivial example would be to check the execution time for the classic Hello World example. Run the following code snippet. (Make sure you that matplot package is installed) 
 
@@ -152,14 +156,14 @@ NUMA node0 CPU(s):     0-3
 
 <br>
 
-###### Why have a GPOS causing unpredictableness in execution time? ######
+#### Why have a GPOS causing unpredictableness in execution time? ####
 
 The GPOS(General Purpose Operating System) have been designed to maximize the through-output of the process executed on the machine. Whether the task is executed within a fixed time limit is not of prime concern here, and that's why the scheduler of a GPOS  focuses on increasing the number of processes executed by the CPU.
 
 <br>
 
 
-###### Then, why we need a Real-Time System? ######
+#### Then, why we need a Real-Time System? ####
 
 When it comes to a General Purpose Computers, having an OS to increase the through-output is good since the average user only cares about the over-efficacy. However, In robotics, We have two major requirements for  a real-time system. First, BLDC driver must work in real-time for ensuring appropriate switching of transistors without any variance in timing. Secondly, for reading sensor values and writing actuator values because control, and planning, algorithms require the value within a certain delay. The latter case may consist of a Single Board Computer (like RPI3) with RTOS like xenomai. The former case may consist of a microcontroller using an Embedded RTOS like ChibiOS.
 
@@ -167,7 +171,7 @@ When it comes to a General Purpose Computers, having an OS to increase the throu
 
 #### Led Blink using ChibiOS ####
 
-[Playembedded](https://www.playembedded.org/blog/how-to-start/) tutorial are best. I don't want to repeat that. In essence, what you'll do is to write a piece of code for Led BLINK in the Eclipse IDE. Then, build it on your computer to get the binaries and dump it on the embedded board using OpenOCD. OpenOCD is a software abstraction layer so that you can dump and debug the binaries on the board. You would need a flasher or debugger like STLINK V2 which connects your PC to the embedded board.
+[Playembedded](https://www.playembedded.org/blog/how-to-start/) tutorial are best. I did it and I don't want to repeat it again. In essence, what you'll do is to write a piece of code for Led BLINK in the Eclipse IDE. Then, build it on your computer to get the binaries and dump it on the embedded board using OpenOCD. OpenOCD is a software abstraction layer so that you can dump and debug the binaries on the board. You would need a flasher or debugger like STLINK V2 which connects your PC to the embedded board.
 
 <br>
 

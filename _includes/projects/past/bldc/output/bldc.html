@@ -1,4 +1,3 @@
-
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
@@ -24,8 +23,8 @@
 </header>
 <h2 id="content">Content</h2>
 <ul>
-<li><a href="#why-custom-bldc-driver?">Why Custom BLDC driver?</a></li>
 <li><a href="#what-is-a-motor-driver">What is a motor driver?</a></li>
+<li><a href="#why-custom-bldc-driver">Why Custom BLDC driver?</a></li>
 <li><a href="#skills-required-to-build-a-bldc-driver">Skills required to build a BLDC driver</a></li>
 <li><a href="#real-time-embedded-system-programming">Real-Time Embedded System Programming</a>
 <ul>
@@ -34,6 +33,7 @@
 <li><a href="#why-have-a-gpos-causing-unpredictableness-in-execution-time">Why have a GPOS causing unpredictableness in execution time?</a></li>
 <li><a href="#then-why-we-need-a-real-time-system">Then, why we need a Real-Time System?</a></li>
 <li><a href="#led-blink-using-chibios">Led Blink using ChibiOS</a></li>
+<li><a href="#why-chibios">Why ChibiOS</a></li>
 </ul></li>
 <li><a href="#knowledge-on-how-motors-work-and-their-limitations">Knowledge on how motors work and their limitations</a></li>
 <li><a href="#familiarity-with-communication-protocol">Familiarity with Communication Protocol</a>
@@ -43,15 +43,15 @@
 </ul></li>
 </ul>
 <p><br> <br></p>
-<h2 id="why-custom-bldc-driver">Why Custom BLDC driver?</h2>
-<p>The article, “Actuators for dexterous and agile robots” would have explained the need for 4Q control motor driver. Here let us look at how to build a custom BLDC motor driver. The reasons to make a BLDC driver compared to others are energy-efficiency, scalable(BLDC driver can run other types of motors too), cheaper compared to commercially available BLDC drivers and in case if you want to make 8-phase BLDC motor for having a minimun torque ripple, its best you start with a 3-phase BLDC motor and it’s driver.</p>
-<p><br> <br></p>
 <h2 id="what-is-a-motor-driver">What is a motor driver?</h2>
 <p>A motor driver is a circuit while applies the required voltage on the motor based upon the user input. The user input can be a position, velocity, current, or any combinations of them. Mostly, motor driver consists of three main parts: microcontroller, gate-driver, inverter. Let us look into each one of them starting from the inverter. The inverter is nothing but a bunch of transistors (MOSFET) arranged like shown in the following figure.</p>
 <figure>
 <img src="https://ajaygunalan.github.io/projects/asset/past/bldc/bldc_driver.png" alt="BLDC Driver, Image courtesy of Nidec.com" /><figcaption>BLDC Driver, Image courtesy of Nidec.com</figcaption>
 </figure>
 <p>By switching these transistors at an appropriate time, you can convert the supplied DC voltage into Variable AC voltage(thus inverter) required by the BLDC motor. The transistors in the inverters have to be switched ON/OFF by the microcontroller. But, the transistors are on the high-power side, and the microcontroller is on the low-power side. Thus, we need protection between them. That’s why we use a GATE-driver which drives (switches) the transistors at the high-power region based upon the signals from the microcontroller at lower power. This ensures safety. The microcontroller receives the input from the user through some communication buses like UART, CAN, EtherCAT. Then, based upon the algorithms like (FOC, sensorless, etc.), the microcontroller gives appropriate signals to the gate-driver to switch on the corresponding MOSEFTs which in turn powers the BLDC motor.</p>
+<p><br> <br></p>
+<h2 id="why-custom-bldc-driver">Why Custom BLDC driver?</h2>
+<p>The article, “Actuators for dexterous and agile robots” would have explained the need for 4Q control motor driver. Here let us look at how to build a custom BLDC motor driver. The reasons to make a BLDC driver compared to others are energy-efficiency, scalable(BLDC driver can run other types of motors too), cheaper compared to commercially available BLDC drivers and in case if you want to make 8-phase BLDC motor for having a minimun torque ripple, its best you start with a 3-phase BLDC motor and it’s driver.</p>
 <p><br> <br></p>
 <h2 id="skills-required-to-build-a-bldc-driver">Skills required to build a BLDC driver</h2>
 <ul style="width:50%; float:left;">
@@ -81,10 +81,10 @@ PCB design
 <!-- #### :construction: Work in Progress :no_entry_sign: #### -->
 <h2 id="real-time-embedded-system-programming">Real-Time Embedded System Programming</h2>
 <p><br></p>
-<h6 id="embedded-programming">Embedded Programming</h6>
+<h4 id="embedded-programming">Embedded Programming</h4>
 <p>When you learn to programme (in 21st century), the first exercise would be Hello World. You would probably think of computer as a black box and after some practice, would generalize that programming means using the appropriate functions with right arguments and using the returns at the right place. It’s true for most of the High-Level Programming Languages, not for Embedded Programming. In Embedded, everything is about writing and reading data from a register. A register is an expensive memory block, closest to CPU, resulting in low access time for the CPU.</p>
 <p><br></p>
-<h6 id="real-time-system">Real-Time System</h6>
+<h4 id="real-time-system">Real-Time System</h4>
 <p>Some think that real-time means super-fast execution such that everything happens in an instance with no delay. This is far from the truth. Real-Time means guaranteed implementation of the programme within a specified period. To achieve it there should be no variable delay in the execution of the programme which implies avoiding certain paradigms such as scheduler in a general purpose operating system like Windows, Linux (Ubuntu) and Macintosh which causes unpredictablness in execution time. A trivial example would be to check the execution time for the classic Hello World example. Run the following code snippet. (Make sure you that matplot package is installed)</p>
 <p><br></p>
 <pre><code>#!/usr/bin/python
@@ -138,14 +138,14 @@ L2 cache:              256K
 L3 cache:              4096K
 NUMA node0 CPU(s):     0-3</code></pre>
 <p><br></p>
-<h6 id="why-have-a-gpos-causing-unpredictableness-in-execution-time">Why have a GPOS causing unpredictableness in execution time?</h6>
+<h4 id="why-have-a-gpos-causing-unpredictableness-in-execution-time">Why have a GPOS causing unpredictableness in execution time?</h4>
 <p>The GPOS(General Purpose Operating System) have been designed to maximize the through-output of the process executed on the machine. Whether the task is executed within a fixed time limit is not of prime concern here, and that’s why the scheduler of a GPOS focuses on increasing the number of processes executed by the CPU.</p>
 <p><br></p>
-<h6 id="then-why-we-need-a-real-time-system">Then, why we need a Real-Time System?</h6>
+<h4 id="then-why-we-need-a-real-time-system">Then, why we need a Real-Time System?</h4>
 <p>When it comes to a General Purpose Computers, having an OS to increase the through-output is good since the average user only cares about the over-efficacy. However, In robotics, We have two major requirements for a real-time system. First, BLDC driver must work in real-time for ensuring appropriate switching of transistors without any variance in timing. Secondly, for reading sensor values and writing actuator values because control, and planning, algorithms require the value within a certain delay. The latter case may consist of a Single Board Computer (like RPI3) with RTOS like xenomai. The former case may consist of a microcontroller using an Embedded RTOS like ChibiOS.</p>
 <p><br></p>
 <h4 id="led-blink-using-chibios">Led Blink using ChibiOS</h4>
-<p><a href="https://www.playembedded.org/blog/how-to-start/">Playembedded</a> tutorial are best. I don’t want to repeat that. In essence, what you’ll do is to write a piece of code for Led BLINK in the Eclipse IDE. Then, build it on your computer to get the binaries and dump it on the embedded board using OpenOCD. OpenOCD is a software abstraction layer so that you can dump and debug the binaries on the board. You would need a flasher or debugger like STLINK V2 which connects your PC to the embedded board.</p>
+<p><a href="https://www.playembedded.org/blog/how-to-start/">Playembedded</a> tutorial are best. I did it and I don’t want to repeat it again. In essence, what you’ll do is to write a piece of code for Led BLINK in the Eclipse IDE. Then, build it on your computer to get the binaries and dump it on the embedded board using OpenOCD. OpenOCD is a software abstraction layer so that you can dump and debug the binaries on the board. You would need a flasher or debugger like STLINK V2 which connects your PC to the embedded board.</p>
 <p><br></p>
 <h4 id="why-chibios">Why ChibiOS</h4>
 <p>Microcontroller manufacturers provide their own software libraries to use their product. However, ChibiOS has more functionalities which can be used instead of you developing everything from scratch saving time, effort and cost. In competitive with ChibiOS there are others too, but ChibiOS is open-source, portable, real-time and lightweight. The reason I started with ChibiOS is beacuse Benjamin Veddar uses it for his open source BLDC driver, <a href="http://vedder.se/2015/01/vesc-open-source-esc/">VESC</a>.</p>
