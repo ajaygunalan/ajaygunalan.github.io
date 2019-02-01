@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
@@ -29,27 +29,30 @@
 <li><a href="#skills-required-to-build-a-bldc-driver">Skills required to build a BLDC driver</a></li>
 <li><a href="#real-time-embedded-system-programming">Real-Time Embedded System Programming</a>
 <ul>
-<li><a href="#introduction">Introduction</a>
-<ul>
 <li><a href="#embedded-programming">Embedded Programming</a></li>
 <li><a href="#real-time-system">Real-Time System</a></li>
 <li><a href="#why-have-a-gpos-causing-unpredictableness-in-execution-time">Why have a GPOS causing unpredictableness in execution time?</a></li>
 <li><a href="#then-why-we-need-a-real-time-system">Then, why we need a Real-Time System?</a></li>
-</ul></li>
-<li><a href="">Hello World using ChibiOS</a></li>
+<li><a href="#led-blink-using-chibios">Led Blink using ChibiOS</a></li>
 </ul></li>
 <li><a href="#knowledge-on-how-motors-work-and-their-limitations">Knowledge on how motors work and their limitations</a></li>
-<li><a href="#familiarity-with-communication-protocol">Familiarity with Communication Protocol</a></li>
+<li><a href="#familiarity-with-communication-protocol">Familiarity with Communication Protocol</a>
+<ul>
+<li><a href="#what-is-can">What is CAN?</a></li>
+<li><a href="#can-for-roboticist">CAN for roboticist</a></li>
+</ul></li>
 </ul>
-<p><br></p>
+<p><br> <br></p>
 <h2 id="why-custom-bldc-driver">Why Custom BLDC driver?</h2>
 <p>The article, “Actuators for dexterous and agile robots” would have explained the need for 4Q control motor driver. Here let us look at how to build a custom BLDC motor driver. The reasons to make a BLDC driver compared to others are energy-efficiency, scalable(BLDC driver can run other types of motors too), cheaper compared to commercially available BLDC drivers and in case if you want to make 8-phase BLDC motor for having a minimun torque ripple, its best you start with a 3-phase BLDC motor and it’s driver.</p>
-<p><br></p>
+<p><br> <br></p>
 <h2 id="what-is-a-motor-driver">What is a motor driver?</h2>
 <p>A motor driver is a circuit while applies the required voltage on the motor based upon the user input. The user input can be a position, velocity, current, or any combinations of them. Mostly, motor driver consists of three main parts: microcontroller, gate-driver, inverter. Let us look into each one of them starting from the inverter. The inverter is nothing but a bunch of transistors (MOSFET) arranged like shown in the following figure.</p>
-<!-- ![BLDC Driver, Image courtesy of Nidec.com](https://ajaygunalan.github.io/projects/asset/past/bldc/bldc_driver.png) -->
+<figure>
+<img src="https://ajaygunalan.github.io/projects/asset/past/bldc/bldc_driver.png" alt="BLDC Driver, Image courtesy of Nidec.com" /><figcaption>BLDC Driver, Image courtesy of Nidec.com</figcaption>
+</figure>
 <p>By switching these transistors at an appropriate time, you can convert the supplied DC voltage into Variable AC voltage(thus inverter) required by the BLDC motor. The transistors in the inverters have to be switched ON/OFF by the microcontroller. But, the transistors are on the high-power side, and the microcontroller is on the low-power side. Thus, we need protection between them. That’s why we use a GATE-driver which drives (switches) the transistors at the high-power region based upon the signals from the microcontroller at lower power. This ensures safety. The microcontroller receives the input from the user through some communication buses like UART, CAN, EtherCAT. Then, based upon the algorithms like (FOC, sensorless, etc.), the microcontroller gives appropriate signals to the gate-driver to switch on the corresponding MOSEFTs which in turn powers the BLDC motor.</p>
-<p><br></p>
+<p><br> <br></p>
 <h2 id="skills-required-to-build-a-bldc-driver">Skills required to build a BLDC driver</h2>
 <ul style="width:50%; float:left;">
 <li>
@@ -74,11 +77,10 @@ PCB design
 </li>
 </ul>
 <p>Out of these six skills, I have learned the first three to a certain level. In this article, I’m going to explain about a few critical concepts involved in the some of the topics. Each one of them requires considerable time and effort to master them. Mastering all of them is a possibility, but it would demand a significant amount of time, energy and money.</p>
-<p><br></p>
+<p><br> <br></p>
 <!-- #### :construction: Work in Progress :no_entry_sign: #### -->
 <h2 id="real-time-embedded-system-programming">Real-Time Embedded System Programming</h2>
 <p><br></p>
-<h4 id="introduction">Introduction</h4>
 <h6 id="embedded-programming">Embedded Programming</h6>
 <p>When you learn to programme (in 21st century), the first exercise would be Hello World. You would probably think of computer as a black box and after some practice, would generalize that programming means using the appropriate functions with right arguments and using the returns at the right place. It’s true for most of the High-Level Programming Languages, not for Embedded Programming. In Embedded, everything is about writing and reading data from a register. A register is an expensive memory block, closest to CPU, resulting in low access time for the CPU.</p>
 <p><br></p>
@@ -142,28 +144,55 @@ NUMA node0 CPU(s):     0-3</code></pre>
 <h6 id="then-why-we-need-a-real-time-system">Then, why we need a Real-Time System?</h6>
 <p>When it comes to a General Purpose Computers, having an OS to increase the through-output is good since the average user only cares about the over-efficacy. However, In robotics, We have two major requirements for a real-time system. First, BLDC driver must work in real-time for ensuring appropriate switching of transistors without any variance in timing. Secondly, for reading sensor values and writing actuator values because control, and planning, algorithms require the value within a certain delay. The latter case may consist of a Single Board Computer (like RPI3) with RTOS like xenomai. The former case may consist of a microcontroller using an Embedded RTOS like ChibiOS.</p>
 <p><br></p>
-<h4 id="hello-world-using-chibios">Hello World using ChibiOS</h4>
+<h4 id="led-blink-using-chibios">Led Blink using ChibiOS</h4>
+<p><a href="https://www.playembedded.org/blog/how-to-start/">Playembedded</a> tutorial are best. I don’t want to repeat that. In essence, what you’ll do is to write a piece of code for Led BLINK in the Eclipse IDE. Then, build it on your computer to get the binaries and dump it on the embedded board using OpenOCD. OpenOCD is a software abstraction layer so that you can dump and debug the binaries on the board. You would need a flasher or debugger like STLINK V2 which connects your PC to the embedded board.</p>
 <p><br></p>
+<h4 id="why-chibios">Why ChibiOS</h4>
+<p>Microcontroller manufacturers provide their own software libraries to use their product. However, ChibiOS has more functionalities which can be used instead of you developing everything from scratch saving time, effort and cost. In competitive with ChibiOS there are others too, but ChibiOS is open-source, portable, real-time and lightweight. The reason I started with ChibiOS is beacuse Benjamin Veddar uses it for his open source BLDC driver, <a href="http://vedder.se/2015/01/vesc-open-source-esc/">VESC</a>.</p>
+<p><br> <br></p>
 <h2 id="knowledge-on-how-motors-work-and-their-limitations">Knowledge on how motors work and their limitations</h2>
 <p>It’s a vast topic covering various aspects of motors and their dynamics; I tried to cover the basics over <a href="https://ajaygunalan.github.io/blog/notes/motor/motor.html">here</a></p>
-<p><br></p>
+<p><br> <br></p>
 <h2 id="familiarity-with-communication-protocol">Familiarity with Communication Protocol</h2>
 <p>Motor driver must communicate with the main controller board for sending and receiving data. Communication can be either serial or parallel. <a href="https://learn.sparkfun.com/tutorials/serial-communication/serial-intro">Serial</a> can be further classified as synchronous or asynchronous. Synchronous serial includes <a href="https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi/all">SPI</a>, <a href="https://learn.sparkfun.com/tutorials/i2c/all">I2C</a>. Asynchronous includes two physical hardware pins for transmitting and receiving, combined they are known as UART. UART supports a wide variety of protocol such as RS-232, RS-422, RS-485 and <a href="https://kondo-robot.com/w/wp-content/uploads/ICS3_5SoftwareManual_V1English.pdf">ICS</a>.</p>
 <p><br></p>
-<p>What is CAN?</p>
-<p>Controller Area Network is an Asynchronous Serial Bus. It was invented by Robert Bosch to <strong>reduce the wiring</strong> associated in an automobile and to be more <strong>robust to noise</strong>. According to OSI seven layers, CAN was defined only for <em>Physical Layer</em> and <em>Data Link Layer</em> by Bosch. This meant we could build a custom protocol on top of it or use some existing layers such as OpenCAN, DeviceNet.</p>
-<p>In OpenCAN there are things like PDO, SDO, Heart Beat, NMT, Arbitration, etc, which is a vast topic. In case, you are interested have a look at the following book. You can get it form <a href="http://libgen.io/">libgen.io</a></p>
-<pre><code>1.  Embedded Networking with CAN and CANopen
-    by Olaf Pfeiffer, Andrew Ayre and Christian Keydel
+<h4 id="what-is-can">What is CAN?</h4>
+<p>Controller Area Network is an Asynchronous Serial Bus. It was invented by Robert Bosch to <strong>reduce the wiring</strong> associated in an automobile and to be more <strong>robust to noise</strong>. According to OSI seven layers, CAN was defined only for <em>Physical Layer</em> and <em>Data Link Layer</em> by Bosch. This meant we could build a custom protocol on top of it or use some existing layers such as OpenCAN, DeviceNet. In <strong>OpenCAN</strong> there are things like PDO, SDO, Heart Beat, NMT, Arbitration, etc, which is a vast topic. In case, you are interested have a look at the following book. You can get it form <a href="http://libgen.io/">libgen.io</a></p>
+<pre>
+  <code>
 
-2.  Understanding and Using the Controller Area Network Communication Protocol: Theory and Practice
-    by Marco Di Natale, Haibo Zeng, Paolo Giusto, Arkadeb Ghosal</code></pre>
-<p>CAN for roboticist,</p>
+  1.  Embedded Networking with CAN and CANopen
+      by Olaf Pfeiffer, Andrew Ayre and Christian Keydel
+
+  2.  Understanding and Using the Controller Area Network Communication Protocol: Theory and Practice
+      by Marco Di Natale, Haibo Zeng, Paolo Giusto, Arkadeb Ghosal
+
+  </code>
+</pre>
+<p><br></p>
+<h4 id="can-for-roboticist">CAN for roboticist</h4>
 <p>I think, unless you are developeing a piece of code for one of the layers, You could just learn to read and write data from CAN Bus using a fully developed stack such as <a href="https://github.com/linux-can/can-utils">SocketCAN</a>. Of course, It works with linux only, I can’t imagine doing robotics in windows!</p>
 <p><br></p>
 <p><img src="https://ajaygunalan.github.io/projects/asset/past/bldc/20180808_170030.jpg" /></p>
 <p><br> <br> <br> <br></p>
 <style>
+
+pre {
+    overflow-x: auto;
+    padding: 5px;
+    background-color: #eee;
+    max-height: 50em;
+/*
+    white-space: pre;
+    overflow-x: auto;
+    display: inline-block;
+    min-width: 100%;
+
+   /* overflow: auto;
+    word-wrap: normal;
+    white-space: pre;*/*/
+}
+
 h2, h4 {
       text-align: left;
 }

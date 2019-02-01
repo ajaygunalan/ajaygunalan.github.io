@@ -1,14 +1,28 @@
 
 
 <br>
-1. [Software](#software)<br>
-2. [Notes](#notes) <br>
+1. [Courses](#courses)<br>
+2. [Software](#software)<br>
+3. [Notes](#notes) <br>
 <!-- 2.[Control & Mechanics](#control--mechanics)<br> -->
 <br>
 
 <hr class="style-four" />
 
-### **Software** 
+
+### Courses
+
+1. [Control System](https://github.com/ajaygunalan/control_system)
+2. [Optimisation](https://github.com/ajaygunalan/optimisation)
+3. [Non Linear System](https://github.com/ajaygunalan/non_linear_dynamics)
+4. [Advanced CPP](https://github.com/ajaygunalan/advanced_cpp)
+
+
+<br>
+<hr class="style-four" />
+
+
+### Software 
 
 1. [Basic Robotic arm simulation in Gazebo using ROS and MoveIt](https://github.com/ajaygunalan/robotic_arm)
 
@@ -21,15 +35,10 @@
 
 
 <br>
-
-
-
-
-
-
 <hr class="style-four" />
 
-### **Notes** 
+
+### Notes 
 
 
 1. Motion Planning ([.pdf](../blog/notes/motion_planning/motion_planning.pdf), [.html](../blog/notes/motion_planning/motion_planning.html))

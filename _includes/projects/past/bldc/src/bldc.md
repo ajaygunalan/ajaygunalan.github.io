@@ -8,21 +8,22 @@
 * [What is a motor driver?](#what-is-a-motor-driver)
 * [Skills required to build a  BLDC driver]
 * [Real-Time Embedded System Programming](#real-time-embedded-system-programming)
-  + [Introduction](#introduction)
-    - [Embedded Programming](#embedded-programming)
-    - [Real-Time System](#real-time-system)
-    - [Why have a GPOS causing unpredictableness in execution time?](#why-have-a-gpos-causing-unpredictableness-in-execution-time)
-    - [Then, why we need a Real-Time System?](#then-why-we-need-a-real-time-system)
-  + [Hello World using ChibiOS]()
+  + [Embedded Programming](#embedded-programming)
+  + [Real-Time System](#real-time-system)
+  + [Why have a GPOS causing unpredictableness in execution time?](#why-have-a-gpos-causing-unpredictableness-in-execution-time)
+  + [Then, why we need a Real-Time System?](#then-why-we-need-a-real-time-system)
+  + [Led Blink using ChibiOS](#led-blink-using-chibios)
 
 * [Knowledge on how motors work and their limitations](#knowledge-on-how-motors-work-and-their-limitations)
 * [Familiarity with Communication Protocol](#familiarity-with-communication-protocol)
+  + [What is CAN?](#what-is-can)
+  + [CAN for roboticist](#can-for-roboticist)
 
 
 
 
 
-
+<br>
 <br>
 
 ## Why Custom BLDC driver? ##
@@ -30,17 +31,19 @@
  The article, "Actuators for dexterous and agile robots" would have explained the need for 4Q control motor driver. Here let us look at how to build a custom BLDC motor driver. The reasons to make a BLDC driver compared to others are energy-efficiency, scalable(BLDC driver can run other types of motors too), cheaper compared to commercially available BLDC drivers and in case if you want to make 8-phase BLDC motor for having a minimun torque ripple, its best you start with a 3-phase BLDC motor and it's driver.
 
  <br>
+   <br>
 
 ## What is a motor driver? ##
 
  A motor driver is a circuit while applies the required voltage on the motor based upon the user input. The user input can be a position, velocity, current, or any combinations of them. Mostly, motor driver consists of three main parts: microcontroller, gate-driver, inverter. Let us look into each one of them starting from the inverter. The inverter is nothing but a bunch of transistors (MOSFET) arranged like shown in the following figure. 
 
 
-<!-- ![BLDC Driver, Image courtesy of Nidec.com](https://ajaygunalan.github.io/projects/asset/past/bldc/bldc_driver.png) -->
+![BLDC Driver, Image courtesy of Nidec.com](https://ajaygunalan.github.io/projects/asset/past/bldc/bldc_driver.png)
 
 
  By switching these transistors at an appropriate time, you can convert the supplied DC voltage into Variable AC voltage(thus inverter) required by the BLDC motor. The transistors in the inverters have to be switched ON/OFF by the microcontroller. But, the transistors are on the high-power side, and the microcontroller is on the low-power side. Thus, we need protection between them. That’s why we use a GATE-driver which drives (switches) the transistors at the high-power region based upon the signals from the microcontroller at lower power. This ensures safety. The microcontroller receives the input from the user through some communication buses like UART, CAN, EtherCAT. Then, based upon the algorithms like (FOC, sensorless, etc.), the microcontroller gives appropriate signals to the gate-driver to switch on the corresponding MOSEFTs which in turn powers the BLDC motor.  
 
+ <br>
  <br>
 
 ## Skills required to build a BLDC driver ##
@@ -62,17 +65,15 @@
   Out of these six skills, I have learned the first three to a certain level. In this article, I’m going to explain about a few critical concepts involved in the some of the topics. Each one of them requires considerable time and effort to master them. Mastering all of them is a possibility, but it would demand a significant amount of time, energy and money. 
 
   <br>
+  <br>
+
 
 <!-- #### :construction: Work in Progress :no_entry_sign: #### -->
 
 ## Real-Time Embedded System Programming ##
 
+
 <br>
-
-#### Introduction ####
-
-
- 
 
 ###### Embedded Programming ######
 
@@ -164,14 +165,25 @@ When it comes to a General Purpose Computers, having an OS to increase the throu
 
 <br>
 
-#### Hello World using ChibiOS ####
+#### Led Blink using ChibiOS ####
 
+[Playembedded](https://www.playembedded.org/blog/how-to-start/) tutorial are best. I don't want to repeat that. In essence, what you'll do is to write a piece of code for Led BLINK in the Eclipse IDE. Then, build it on your computer to get the binaries and dump it on the embedded board using OpenOCD. OpenOCD is a software abstraction layer so that you can dump and debug the binaries on the board. You would need a flasher or debugger like STLINK V2 which connects your PC to the embedded board.
+
+<br>
+
+#### Why ChibiOS ####
+
+Microcontroller manufacturers provide their own software libraries to use their product. However, ChibiOS has more functionalities which can be used instead of you developing everything from scratch saving time, effort and cost. In competitive with ChibiOS there are others too, but ChibiOS is open-source, portable, real-time and lightweight. The reason I started with ChibiOS is beacuse Benjamin Veddar uses it for his open source BLDC driver, [VESC](http://vedder.se/2015/01/vesc-open-source-esc/).
+
+
+<br>
 <br>
  
 ## Knowledge on how motors work and their limitations ##
 
 It's a vast topic covering various aspects of motors and their dynamics; I tried to cover the basics over [here](https://ajaygunalan.github.io/blog/notes/motor/motor.html) 
 
+<br>
 <br>
 
 ## Familiarity with Communication Protocol ##
@@ -182,20 +194,27 @@ includes two physical hardware pins for transmitting and receiving, combined the
 
 <br>
 
-What is CAN?
+#### What is CAN? ####
 
-Controller Area Network is an Asynchronous Serial Bus. It was invented by Robert Bosch to **reduce the wiring** associated in an automobile and to be more **robust to noise**. According to OSI seven layers, CAN was defined only for *Physical Layer* and *Data Link Layer* by Bosch. This meant we could build a custom protocol on top of it or use some existing layers such as OpenCAN, DeviceNet.
+Controller Area Network is an Asynchronous Serial Bus. It was invented by Robert Bosch to **reduce the wiring** associated in an automobile and to be more **robust to noise**. According to OSI seven layers, CAN was defined only for *Physical Layer* and *Data Link Layer* by Bosch. This meant we could build a custom protocol on top of it or use some existing layers such as OpenCAN, DeviceNet. In **OpenCAN** there are things like  PDO, SDO, Heart Beat, NMT, Arbitration, etc, which is a vast topic.  In case, you are interested have a look at the following book. You can get it form [libgen.io](http://libgen.io/)
 
-In OpenCAN there are things like  PDO, SDO, Heart Beat, NMT, Arbitration, etc, which is a vast topic.  In case, you are interested have a look at the following book. You can get it form [libgen.io](http://libgen.io/)
 
-```
-1.  Embedded Networking with CAN and CANopen
-    by Olaf Pfeiffer, Andrew Ayre and Christian Keydel
+<pre>
+  <code>
 
-2.  Understanding and Using the Controller Area Network Communication Protocol: Theory and Practice
-    by Marco Di Natale, Haibo Zeng, Paolo Giusto, Arkadeb Ghosal
-```
-CAN for roboticist,
+  1.  Embedded Networking with CAN and CANopen
+      by Olaf Pfeiffer, Andrew Ayre and Christian Keydel
+
+  2.  Understanding and Using the Controller Area Network Communication Protocol: Theory and Practice
+      by Marco Di Natale, Haibo Zeng, Paolo Giusto, Arkadeb Ghosal
+
+  </code>
+</pre>
+
+
+<br>
+
+#### CAN for roboticist ####
 
 I think, unless you are developeing a piece of code for one of the layers, You could just learn to read and write data from CAN Bus using a fully developed stack such as [SocketCAN](https://github.com/linux-can/can-utils). Of course, It works with linux only, I can't imagine doing robotics in windows!
 
@@ -213,6 +232,23 @@ I think, unless you are developeing a piece of code for one of the layers, You c
 
 
 <style>
+
+pre {
+    overflow-x: auto;
+    padding: 5px;
+    background-color: #eee;
+    max-height: 50em;
+/*
+    white-space: pre;
+    overflow-x: auto;
+    display: inline-block;
+    min-width: 100%;
+
+   /* overflow: auto;
+    word-wrap: normal;
+    white-space: pre;*/*/
+}
+
 h2, h4 {
       text-align: left;
 }
