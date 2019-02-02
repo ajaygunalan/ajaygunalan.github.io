@@ -10,12 +10,16 @@
 <hr class="style-four" />
 
 
-### Courses
+### Courses 
+
+Note: currently, courses are under contruction.
 
 1. [Control System](https://github.com/ajaygunalan/control_system)
 2. [Optimisation](https://github.com/ajaygunalan/optimisation)
 3. [Non Linear System](https://github.com/ajaygunalan/non_linear_dynamics)
-4. [Advanced CPP](https://github.com/ajaygunalan/advanced_cpp)
+4. [Robot Motion](https://github.com/ajaygunalan/motion_planning_by_choset)
+5. [Advanced CPP](https://github.com/ajaygunalan/advanced_cpp)
+
 
 
 <br>
