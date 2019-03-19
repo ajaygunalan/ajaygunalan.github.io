@@ -14,13 +14,15 @@
 
 Note: currently, courses are under contruction.
 
-1. [Control System](https://github.com/ajaygunalan/control_system)
-2. [Optimisation](https://github.com/ajaygunalan/optimisation)
+1. [Optimisation](https://github.com/ajaygunalan/optimisation)
+2. [Linear Algebra](https://github.com/ajaygunalan/Linear-Algebra)
 3. [Non Linear System](https://github.com/ajaygunalan/non_linear_dynamics)
 4. [Robot Motion](https://github.com/ajaygunalan/motion_planning_by_choset)
-5. [Advanced CPP](https://github.com/ajaygunalan/advanced_cpp)
-
-
+5. [Digital Signal Processing](https://github.com/ajaygunalan/dsp)
+6. [Control System](https://github.com/ajaygunalan/control_system)
+7. [Advanced CPP](https://github.com/ajaygunalan/advanced_cpp)
+8. [Reinforcement Learning](https://github.com/ajaygunalan/RL)
+ 
 
 <br>
 <hr class="style-four" />
