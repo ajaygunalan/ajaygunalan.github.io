@@ -14,15 +14,34 @@
 
 Note: currently, courses are under contruction.
 
+**Active Courses**
+
 1. [Optimisation](https://github.com/ajaygunalan/optimisation)
 2. [Linear Algebra](https://github.com/ajaygunalan/Linear-Algebra)
 3. [Digital Signal Processing](https://github.com/ajaygunalan/dsp)
-4. [Non Linear System](https://github.com/ajaygunalan/non_linear_dynamics)
-5. [Robot Motion](https://github.com/ajaygunalan/motion_planning_by_choset)
+4. [Non Linear Dynamics](https://github.com/ajaygunalan/non_linear_dynamics)
+
+**Planned Courses**
+
+*Set A*
+
+5. [Machine Leanring](https://www.youtube.com/playlist?list=PLD63A284B7615313A)
 6. [Control System](https://github.com/ajaygunalan/control_system)
-7. [Advanced CPP](https://github.com/ajaygunalan/advanced_cpp)
-8. [Reinforcement Learning](https://github.com/ajaygunalan/RL)
- 
+
+*Set B*
+
+7. [Reinforcement Learning](https://github.com/ajaygunalan/RL)
+8. [Non Linear Control](http://web.mit.edu/nsl/www/videos/lectures.html)
+
+*Set C*
+
+09. [Motion Planning](https://github.com/ajaygunalan/motion_planning_by_choset)
+10. [Advanced CPP](https://github.com/ajaygunalan/advanced_cpp)
+
+Note: Set A, B and C are progressively tough in nature
+
+
+
 
 <br>
 <hr class="style-four" />
