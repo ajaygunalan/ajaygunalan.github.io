@@ -4,6 +4,8 @@
 1. [Courses](#courses)<br>
 2. [Software](#software)<br>
 3. [Notes](#notes) <br>
+4. [Other Cool Blogs](#other-cool-blogs)
+
 <!-- 2.[Control & Mechanics](#control--mechanics)<br> -->
 <br>
 
@@ -59,7 +61,6 @@ Note: Set A, B and C are progressively tough in nature
 4. [Installation of few essential softwares in linux](https://gist.github.com/ajaygunalan/c134f6c68ddcc26acf4fb06ec97ac5cb)
 
 
-
 <br>
 <hr class="style-four" />
 
@@ -78,6 +79,19 @@ Note: Set A, B and C are progressively tough in nature
 <br>
 
 <hr class="style-four" />
+
+
+###  Other Cool Blogs
+
+1. [Video tutorials of CMake](https://www.youtube.com/playlist?list=PLK6MXr8gasrGmIiSuVQXpfFuE1uPT615s)
+2. [ Travis DeWolf, University of Waterloo, Canada](https://studywolf.wordpress.com/site-index/)
+
+
+<br>
+
+<hr class="style-four" />
+
+
 
 
 
