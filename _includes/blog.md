@@ -20,6 +20,7 @@ Note: currently, courses are under contruction.
 2. [Linear Algebra](https://github.com/ajaygunalan/Linear-Algebra)
 3. [Digital Signal Processing](https://github.com/ajaygunalan/dsp)
 4. [Non Linear Dynamics](https://github.com/ajaygunalan/non_linear_dynamics)
+5. [Probability](https://courses.edx.org/courses/course-v1:MITx+6.041x_4+1T2017/course/)
 
 **Planned Courses**
 
