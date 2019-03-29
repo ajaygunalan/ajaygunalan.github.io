@@ -56,7 +56,7 @@ Note: Set A, B and C are progressively tough in nature
 
 2. [Inter-Process Communication between Python and C using Shared Memory](https://github.com/ajaygunalan/IPC_SHM)
 
-3. [Non-Blocking I/O in Python](https://gist.github.com/ajaygunalan/29bf34e78dea66fa818694062604d275)
+3. [Non-Blocking I/O in Python and CPP](https://gist.github.com/ajaygunalan/29bf34e78dea66fa818694062604d275)
 
 4. [Installation of few essential softwares in linux](https://gist.github.com/ajaygunalan/c134f6c68ddcc26acf4fb06ec97ac5cb)
 
