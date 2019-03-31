@@ -22,27 +22,17 @@ Note: currently, courses are under contruction.
 2. [Linear Algebra](https://github.com/ajaygunalan/Linear-Algebra)
 3. [Digital Signal Processing](https://github.com/ajaygunalan/dsp)
 4. [Non Linear Dynamics](https://github.com/ajaygunalan/non_linear_dynamics)
-5. [Probability](https://courses.edx.org/courses/course-v1:MITx+6.041x_4+1T2017/course/)
 
 **Planned Courses**
 
-*Set A*
-
-5. [Machine Leanring](https://www.youtube.com/playlist?list=PLD63A284B7615313A)
-6. [Control System](https://github.com/ajaygunalan/control_system)
-
-*Set B*
-
-7. [Reinforcement Learning](https://github.com/ajaygunalan/RL)
-8. [Non Linear Control](http://web.mit.edu/nsl/www/videos/lectures.html)
-
-*Set C*
-
-09. [Motion Planning](https://github.com/ajaygunalan/motion_planning_by_choset)
-10. [Advanced CPP](https://github.com/ajaygunalan/advanced_cpp)
-
-Note: Set A, B and C are progressively tough in nature
-
+1. [Probability](https://courses.edx.org/courses/course-v1:MITx+6.041x_4+1T2017/course/)
+2. [Machine Leanring](https://www.youtube.com/playlist?list=PLD63A284B7615313A)
+3. [Control System](https://github.com/ajaygunalan/control_system)
+4. [Reinforcement Learning](https://github.com/ajaygunalan/RL)
+5. [Non Linear Control](http://web.mit.edu/nsl/www/videos/lectures.html)
+6. [Data-Driven Control](https://www.youtube.com/playlist?list=PLMrJAkhIeNNQkv98vuPjO2X2qJO_UPeWR)
+7. [Motion Planning](https://github.com/ajaygunalan/motion_planning_by_choset)
+8. [Advanced CPP](https://github.com/ajaygunalan/advanced_cpp)
 
 
 
