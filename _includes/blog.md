@@ -18,21 +18,56 @@ Note: currently, courses are under contruction.
 
 **Active Courses**
 
-1. [Optimisation](https://github.com/ajaygunalan/optimisation)
-2. [Linear Algebra](https://github.com/ajaygunalan/Linear-Algebra)
-3. [Digital Signal Processing](https://github.com/ajaygunalan/dsp)
-4. [Non Linear Dynamics](https://github.com/ajaygunalan/non_linear_dynamics)
+
+   To be done by April
+
+ ---
+  1. [Linear Algebra](https://github.com/ajaygunalan/Linear-Algebra)
+  2. [Signals and System](https://github.com/ajaygunalan/dsp)
+
+
+ To be done by May
+
+ ---
+ 2. [Optimisation](https://github.com/ajaygunalan/optimisation)
+ 3. [Digital Signal Processing](https://github.com/ajaygunalan/dsp)
+
+ To be done by June
+
+ ---
+ 1. [Non Linear Dynamics](https://github.com/ajaygunalan/non_linear_dynamics)
+ 2. [Probability](https://courses.edx.org/courses/course-v1:MITx+6.041x_4+1T2017/course/)
+
+
 
 **Planned Courses**
 
-1. [Probability](https://courses.edx.org/courses/course-v1:MITx+6.041x_4+1T2017/course/)
-2. [Machine Leanring](https://www.youtube.com/playlist?list=PLD63A284B7615313A)
-3. [Control System](https://github.com/ajaygunalan/control_system)
-4. [Reinforcement Learning](https://github.com/ajaygunalan/RL)
-5. [Non Linear Control](http://web.mit.edu/nsl/www/videos/lectures.html)
-6. [Data-Driven Control](https://www.youtube.com/playlist?list=PLMrJAkhIeNNQkv98vuPjO2X2qJO_UPeWR)
-7. [Motion Planning](https://github.com/ajaygunalan/motion_planning_by_choset)
-8. [Advanced CPP](https://github.com/ajaygunalan/advanced_cpp)
+ To be done by July
+
+ ---
+ 1. [Machine Leanring](https://www.youtube.com/playlist?list=PLD63A284B7615313A)
+ 2. [Control System](https://github.com/ajaygunalan/control_system)
+
+ To be done by August
+
+ ---
+
+ 3. [Reinforcement Learning](https://github.com/ajaygunalan/RL)
+ 4. [Non Linear Control](http://web.mit.edu/nsl/www/videos/lectures.html)
+
+ To be done by September
+ 
+ ---
+
+ 5. [Data-Driven Control](https://www.youtube.com/playlist?list=PLMrJAkhIeNNQkv98vuPjO2X2qJO_UPeWR)
+ 6. [Motion Planning](https://github.com/ajaygunalan/motion_planning_by_choset)
+
+
+
+<!-- 7. [Advanced CPP](https://github.com/ajaygunalan/advanced_cpp)
+8. [Adavcned Python](https://advancedpythonprogramming.github.io/)
+ -->
+
 
 
 
