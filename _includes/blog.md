@@ -45,7 +45,7 @@ Note: currently, courses are under contruction.
  To be done by July
 
  ---
- 1. [Machine Leanring](https://www.youtube.com/playlist?list=PLD63A284B7615313A)
+ 1. [Machine Leanring](https://github.com/ajaygunalan/machine_learning)
  2. [Control System](https://github.com/ajaygunalan/control_system)
 
  To be done by August
