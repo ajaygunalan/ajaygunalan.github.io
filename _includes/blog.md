@@ -51,6 +51,7 @@ Note: currently, courses are under contruction.
  3. [Non Linear Control](http://web.mit.edu/nsl/www/videos/lectures.html)
  4. [Data-Driven Control](https://www.youtube.com/playlist?list=PLMrJAkhIeNNQkv98vuPjO2X2qJO_UPeWR)
  5. [Motion Planning](https://github.com/ajaygunalan/motion_planning_by_choset)
+ 6. [Probabilistic Graphic Model](https://cs.stanford.edu/~ermon/cs228/index.html)
 
 
 <!-- 7. [Advanced CPP](https://github.com/ajaygunalan/advanced_cpp)
