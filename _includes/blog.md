@@ -1,63 +1,10 @@
 
 
 <br>
-1. [Courses](#courses)<br>
-2. [Software](#software)<br>
-3. [Notes](#notes) <br>
-4. [Other Cool Blogs](#other-cool-blogs)
-
-<!-- 2.[Control & Mechanics](#control--mechanics)<br> -->
-<br>
-
-<hr class="style-four" />
-
-
-### Courses 
-
-Note: currently, courses are under contruction.
-
-**Courses Done** (Notes will be updated soon..!)
-
-
-   <!-- To be done by April -->
-
- ---
-  1. [Linear Algebra](https://github.com/ajaygunalan/Linear-Algebra)
-  2. [Signals and System](https://github.com/ajaygunalan/dsp)
-
-
- **Active Courses**
-
- ---
- 1. [Optimisation](https://github.com/ajaygunalan/optimisation)
- 2. [Digital Signal Processing](https://github.com/ajaygunalan/dsp)
- 3. [Non Linear Dynamics](https://github.com/ajaygunalan/non_linear_dynamics)
- 4. [Machine Leanring](https://github.com/ajaygunalan/machine_learning)
-
- 
-
-
- <!-- 2. [Probability](https://courses.edx.org/courses/course-v1:MITx+6.041x_4+1T2017/course/) -->
-
-
-
-**Planned Courses**
-
-
-
- ---
- 1. [Control System](https://github.com/ajaygunalan/control_system)
- 2. [Reinforcement Learning](https://github.com/ajaygunalan/RL)
- 3. [Non Linear Control](http://web.mit.edu/nsl/www/videos/lectures.html)
- 4. [Data-Driven Control](https://www.youtube.com/playlist?list=PLMrJAkhIeNNQkv98vuPjO2X2qJO_UPeWR)
- 5. [Motion Planning](https://github.com/ajaygunalan/motion_planning_by_choset)
- 6. [Probabilistic Graphic Model](https://cs.stanford.edu/~ermon/cs228/index.html)
-
-
-<!-- 7. [Advanced CPP](https://github.com/ajaygunalan/advanced_cpp)
-8. [Adavcned Python](https://advancedpythonprogramming.github.io/)
- -->
-
+1. [Software](#software)<br>
+2. [Courses](#courses)<br>
+2. [Notes](#notes) <br>
+3. [Other Cool Blogs](#other-cool-blogs)
 
 
 
@@ -76,12 +23,21 @@ Note: currently, courses are under contruction.
 4. [Installation of few essential softwares in linux](https://gist.github.com/ajaygunalan/c134f6c68ddcc26acf4fb06ec97ac5cb)
 
 
+
+
 <br>
 <hr class="style-four" />
 
 
-### Notes 
+### Courses
 
+1. [A list of important courses related to robotics](https://github.com/ajaygunalan/Robotics-Courses) 
+
+<br>
+<hr class="style-four" />
+
+
+### Notes
 
 1. Motion Planning ([.pdf](../blog/notes/motion_planning/motion_planning.pdf), [.html](../blog/notes/motion_planning/motion_planning.html))
 
@@ -99,7 +55,8 @@ Note: currently, courses are under contruction.
 ###  Other Cool Blogs
 
 1. [Video tutorials of CMake](https://www.youtube.com/playlist?list=PLK6MXr8gasrGmIiSuVQXpfFuE1uPT615s)
-2. [ Travis DeWolf, University of Waterloo, Canada](https://studywolf.wordpress.com/site-index/)
+2. [Dynamic Motion Primitives, Null Space Control, etc..](https://studywolf.wordpress.com/site-index/)
+3. [Gaussian Processes](https://distill.pub/2019/visual-exploration-gaussian-processes/)
 
 
 <br>
