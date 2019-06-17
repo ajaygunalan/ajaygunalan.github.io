@@ -57,6 +57,7 @@
 1. [Video tutorials of CMake](https://www.youtube.com/playlist?list=PLK6MXr8gasrGmIiSuVQXpfFuE1uPT615s)
 2. [Dynamic Motion Primitives, Null Space Control, etc..](https://studywolf.wordpress.com/site-index/)
 3. [Gaussian Processes](https://distill.pub/2019/visual-exploration-gaussian-processes/)
+4. [Snake, CPG, RL](https://www.sartoretti.science/research.html)
 
 
 <br>
