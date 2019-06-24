@@ -59,6 +59,7 @@
 3. [Gaussian Processes](https://distill.pub/2019/visual-exploration-gaussian-processes/)
 4. [Snake, CPG, RL](https://www.sartoretti.science/research.html)
 5. [Mecca of Maniupulation](http://arm.eecs.umich.edu/#projects)
+6. [ROS debug](https://dav.ee/blog/notes/archives/898)
 
 
 <br>
