@@ -1,14 +1,32 @@
 
-I’m Ajay G. from [Robert Bosch Center for Cyber-Physical System](http://www.rbccps.org/) at [Indian Institute of Science, Banglore](https://www.iisc.ac.in/) working on [legged robots](https://ajaygunalan.github.io/projects/past/stoch.html) and manipulators under the guidance of [Dr. Shishir N.Y. Kolathya](https://shishirny.github.io/) and  [Prof. Bhardwaj Amrutur](http://www.cense.iisc.ac.in/bharadwaj-amrutur). Previously, I was a part of the software team(R&D) at [ASIMOV Robotics Pvt. Ltd, Kochi](https://www.asimovrobotics.com/) developing a [service robot](https://ajaygunalan.github.io/projects/past/asimov.html) for HDFC bank.
+
+I will join [Flux Auto](https://fluxauto.xyz/) as a Robotics Software Enginner on Septmember 16, 2019.
 
 
 <br>
 
-An Inter-disciplinary field with cool hardware aroused excitement and passion in me to pursue research in Robotics, the "*pinnacle of engineering*". I would call myself a **Full-Stack Roboticist** who loves to build software for robots involving embedded systems, controls,
-planning, and machine learning. My ultimate goal is to make a dexterous, agile, versatile and robust, robots to solve
-real-world problems. To achieve that, I think we should have a broad interdisciplinary approach (Math, Computer, Electrical,
-Mechanical, Controls, etc.)  to debug the failures accurately. 
 
+Till June 2019, I worked at [Robert Bosch Center for Cyber-Physical System](http://www.rbccps.org/) at [Indian Institute of Science, Banglore](https://www.iisc.ac.in/) on [legged robots](https://ajaygunalan.github.io/projects/past/stoch.html) and manipulators under the guidance of [Dr. Shishir N.Y. Kolathya](https://shishirny.github.io/) and  [Prof. Bhardwaj Amrutur](http://www.cense.iisc.ac.in/bharadwaj-amrutur). Previously, I was a part of the software team(R&D) at [ASIMOV Robotics Pvt. Ltd, Kochi](https://www.asimovrobotics.com/) developing a [service robot](https://ajaygunalan.github.io/projects/past/asimov.html) for HDFC bank.
+
+
+<br>
+
+**Why Robotics?**
+
+An Inter-disciplinary field involving optimisation, systems and controls, vision, machine leanring, planning etc... with cool hardware aroused excitement and passion in me to pursue research in Robotics, the "**pinnacle of engineering**". I would call myself a **Full-Stack Roboticist** who loves to build software for robots involving perception, controls and planning. 
+
+<br>
+
+**My Goal?**
+
+My ultimate goal is to make a versatile and robust, robots, to solve
+real-world problems. To achieve that, I think we should have a broad interdisciplinary approach )  to debug the failures accurately.
+
+<br>
+
+**Right now ?**
+
+ I am exploring medical robots and specifically on various medical imaging techniques. Update comimg soon..! :) 
 
 
 <!-- Almost, all the fields which are based upon on classical mechanics would be involved in one way
@@ -22,10 +40,13 @@ hardware aroused excitement and passion in me to pursue research in robotics. --
 <!-- 
 More specifically, my research interest includes: Combining Machine Learning and Motion Planning, Manipulation of Deformable Objects, Learning to Control, Grasping, Tactile Sensing, Medical Robots, Contact-Dynamics, Hybrid-Systems, Bio-Inspired Robots, Application of Non-Linear Control and Optimization in Real-Time on Robots. -->
 
- More specifically, my research interest includes
+<!-- Right now am looking forward to join Masters Program in Robotics Engineering at WPI. -->
+
+<!--  More specifically, my research interest includes
 
 
  <ul style="width:50%; float:left;">
+   <li>Medical Robots, Hybrid-Systems, Bio-Inspired Robotics</li>
    <li>Combining Machine Learning and Motion Planning</li>
    <li>Manipulation of Deformable Objects</li>
    <li>Grasping, Tactile Sensing, Contact-Dynamics</li>
@@ -34,8 +55,7 @@ More specifically, my research interest includes: Combining Machine Learning and
  <ul style="width:50%; float:left;">
    <li>Learning to Control (Model-Based RL, Imitation Learning and Meta-Learning)</li>
    <li>Application of Non-Linear Control and Optimization Techniques in Real-Time on robots</li>
-   <li>Medical Robots, Hybrid-Systems, Bio-Inspired Robotics</li>
- </ul>
+ </ul> -->
 
 
 <!-- If you want to know about me in detail have a look at [this](https://ajaygunalan.github.io/assets/ajayg_faq.pdf) -->
