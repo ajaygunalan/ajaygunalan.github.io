@@ -13,21 +13,28 @@ Till June 2019, I worked at [Robert Bosch Center for Cyber-Physical System](http
 
 **Why Robotics?**
 
-An Inter-disciplinary field involving optimisation, systems and controls, vision, machine leanring, planning etc... with cool hardware aroused excitement and passion in me to pursue research in Robotics, the "**pinnacle of engineering**". I would call myself a **Full-Stack Roboticist** who loves to build software for robots involving perception, controls and planning. 
+An Inter-disciplinary field involving optimisation, systems and controls, vision, machine leanring, planning and a cool hardware aroused excitement and passion in me to pursue research in Robotics, the "**pinnacle of engineering**". I would call myself a **Full-Stack Roboticist** who loves to build software for robots involving perception, controls and planning. 
 
 <br>
 
 **My Goal?**
 
-My ultimate goal is to make a versatile and robust, robots, to solve
-real-world problems. To achieve that, I think we should have a broad interdisciplinary approach )  to debug the failures accurately.
+My ultimate goal is to make a robot to solve real-world problems especially in the field of healthcare enabling better diagnostic and surgical procedure. To achieve that, I think we should have a broad interdisciplinary approach to debug the failures accurately while developing such solutions.
 
 <br>
 
-**Right now ?**
+**Right now?**
 
  I am exploring medical robots and specifically on various medical imaging techniques. Update comimg soon..! :) 
 
+ <br>
+
+<!-- 
+**Why medical robotics?**
+  
+  As an engineer with a tremendous amount of zeal, I explored both manipulation and legged locomotion, soon to realize that those problems in spite of being extremely hard (cuz it is tough to model a high dimensional state space), they did not have any practical significance to a layman.
+
+  will you buy a million dollar robot for doing housekeeping (al  -->
 
 <!-- Almost, all the fields which are based upon on classical mechanics would be involved in one way
 or another. In fact, we could say that, **Robotics is the pinnacle of classical mechanics**. Such a diverse field with a cool
