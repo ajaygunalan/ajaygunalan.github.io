@@ -1,6 +1,6 @@
 
 
-I will join [Flux Auto](https://fluxauto.xyz/) as a Robotics Software Enginner on Septmember 16, 2019.
+*Will be joining [Flux Auto](https://fluxauto.xyz/) as a Robotics Software Engineer on Septmember 16, 2019.*
 
 
 <br>
@@ -19,13 +19,15 @@ An Inter-disciplinary field involving optimisation, systems and controls, vision
 
 **My Goal?**
 
-My ultimate goal is to make a robot to solve real-world problems especially in the field of healthcare enabling better diagnostic and surgical procedure. To achieve that, I think we should have a broad interdisciplinary approach to debug the failures accurately while developing such solutions.
+My ultimate goal is to make a robot to solve real-world problems especially in the field of healthcare enabling better diagnostic and surgical procedure. To achieve that, we need a broad interdisciplinary approach for debugging the failures accurately.
 
 <br>
 
 **Right now?**
 
- I am exploring medical robots and specifically on various medical imaging techniques. Update comimg soon..! :) 
+ I am exploring medical robots, specifically on various medical imaging techniques. 
+
+ *Update comimg soon..!* :) 
 
  <br>
 
