@@ -1,7 +1,7 @@
 
 
-*Will be joining [Flux Auto](https://fluxauto.xyz/) as a Robotics Software Engineer on Septmember 16, 2019.*
 
+I'm a Research Fellow at [Advanced Robotics Lab](https://advr.iit.it/) in [Istituto Italiano di Tecnologia, Genova](https://iit.it/) under the guidance [Dr. Nikhil Deshpande.](https://www.iit.it/people/nikhil-deshpande)
 
 <br>
 
@@ -27,9 +27,11 @@ My ultimate goal is to make a robot to solve real-world problems especially in t
 
  I am exploring medical robots, specifically on various medical imaging techniques. 
 
+ <br>
+
  *Update comimg soon..!* :) 
 
- <br>
+ 
 
 <!-- 
 **Why medical robotics?**
