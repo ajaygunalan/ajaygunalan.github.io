@@ -25,11 +25,11 @@ My ultimate goal is to make a robot to solve real-world problems especially in t
 
 **Right now?**
 
- I am exploring medical robots, specifically on various medical imaging techniques. 
+ I am exploring medical robots...! 
 
  <br>
 
- *Update comimg soon..!* :) 
+ 
 
  
 

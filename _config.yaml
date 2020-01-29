@@ -20,7 +20,7 @@ kramdown:
         css_class: 'highlight'
 include: ['_pages']
 exclude: [vendor]
-plugins:
+plugins_dir:
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap
