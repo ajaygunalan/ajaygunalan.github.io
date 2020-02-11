@@ -63,6 +63,7 @@
 7. [Awesome Robotics Libraries](http://jslee02.github.io/awesome-robotics-libraries/)
 8. [Design Patterns for Humans](https://roadmap.sh/guides/design-patterns-for-humans#creational-design-patterns) 
     * Simple example code [(a)](https://github.com/pezy/DesignPatterns) & [(b)](https://github.com/JakubVojvoda/design-patterns-cpp)
+9. [Writing a Linux Kernel Module](http://derekmolloy.ie/writing-a-linux-kernel-module-part-1-introduction/)
 
 
 <br>
