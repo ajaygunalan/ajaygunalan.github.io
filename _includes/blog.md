@@ -64,6 +64,8 @@
 8. [Design Patterns for Humans](https://roadmap.sh/guides/design-patterns-for-humans#creational-design-patterns) 
     * Simple example code [(a)](https://github.com/pezy/DesignPatterns) & [(b)](https://github.com/JakubVojvoda/design-patterns-cpp)
 9. [Writing a Linux Kernel Module](http://derekmolloy.ie/writing-a-linux-kernel-module-part-1-introduction/)
+10. [What are Control Groups](https://www.kernel.org/doc/Documentation/cgroup-v1/cgroups.txt)
+11. [The Linux Scheduler](https://www.linuxjournal.com/article/3910)
 
 
 <br>
