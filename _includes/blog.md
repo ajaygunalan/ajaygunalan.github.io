@@ -66,6 +66,7 @@
 9. [Writing a Linux Kernel Module](http://derekmolloy.ie/writing-a-linux-kernel-module-part-1-introduction/)
 10. [What are Control Groups](https://www.kernel.org/doc/Documentation/cgroup-v1/cgroups.txt)
 11. [The Linux Scheduler](https://www.linuxjournal.com/article/3910)
+12. [Auto Type Deduction in Range-Based For Loops](https://blog.petrzemek.net/2016/08/17/auto-type-deduction-in-range-based-for-loops/)
 
 
 <br>
