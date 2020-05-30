@@ -1,7 +1,7 @@
 
 
 
-I'm a Research Fellow at [Advanced Robotics Lab](https://advr.iit.it/) in [Istituto Italiano di Tecnologia, Genova](https://iit.it/) under the guidance [Dr. Nikhil Deshpande.](https://www.iit.it/people/nikhil-deshpande)
+I'm a Research Fellow at [Advanced Robotics Lab](https://advr.iit.it/) in [Istituto Italiano di Tecnologia, Genova](https://iit.it/) under the guidance of [Dr. Nikhil Deshpande.](https://www.iit.it/people/nikhil-deshpande)
 
 <br>
 
