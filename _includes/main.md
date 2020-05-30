@@ -13,7 +13,7 @@ Till June 2019, I worked at [Robert Bosch Center for Cyber-Physical System](http
 
 **Why Mechtronics?**
 
-An Inter-disciplinary field involving deisgn, optimisation, systems and controls, MEMS, optics, electronics and a cool hardware aroused excitement and passion in me to pursue research in Mechtronic System. I would call myself a **Mechatronics Researchist** who loves to build sensors and actuators. 
+An Inter-disciplinary field involving deisgn, optimisation, systems and controls, MEMS, optics, electronics and a cool hardware aroused excitement and passion in me to pursue research in mechtronic system. I would call myself a **Mechatronics Researchist** who loves to build sensors and actuators. 
 
 <br>
 
