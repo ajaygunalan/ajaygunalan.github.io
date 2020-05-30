@@ -3,8 +3,8 @@ default:
   name:         "Ajay Gunalan"                                
   cover:        /assets/machu_lacta_reduced.jpg        
   picture:      /assets/ajay.jpg 
-  quote:        "Learning whatever the robot demands to"                      
-  bio:          Full-Stack Roboticist 
+  quote:        "Learning whatever the system demands to"                      
+  bio:          Mechatronics Researchist 
   location:     Banglore
   website:      "https://ajaygunalan.github.io/about"
   phone:        +91 9952053743
