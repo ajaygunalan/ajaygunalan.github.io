@@ -19,7 +19,7 @@ An Inter-disciplinary field involving deisgn, optimisation, systems and controls
 
 **My Goal?**
 
-My ultimate goal is to make a robot to solve real-world problems especially in the field of healthcare enabling better diagnostic and surgical procedure. To achieve that, we need a broad interdisciplinary approach for debugging the failures accurately.
+My ultimate goal is to solve real-world problems especially in the field of healthcare enabling better diagnostic and surgical procedure. To achieve that, we need better sensors and actuators, especially for medical robots.
 
 <br>
 
