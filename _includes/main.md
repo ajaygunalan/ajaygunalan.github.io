@@ -11,9 +11,9 @@ Till June 2019, I worked at [Robert Bosch Center for Cyber-Physical System](http
 
 <br>
 
-**Why Robotics?**
+**Why Mechtronics?**
 
-An Inter-disciplinary field involving optimisation, systems and controls, vision, machine leanring, planning and a cool hardware aroused excitement and passion in me to pursue research in Robotics, the "**pinnacle of engineering**". I would call myself a **Full-Stack Roboticist** who loves to build software for robots involving perception, controls and planning. 
+An Inter-disciplinary field involving deisgn, optimisation, systems and controls, MEMS, optics, electronics and a cool hardware aroused excitement and passion in me to pursue research in Mechtronic System. I would call myself a **Mechatronics Researchist** who loves to build sensors and actuators. 
 
 <br>
 
@@ -25,7 +25,7 @@ My ultimate goal is to make a robot to solve real-world problems especially in t
 
 **Right now?**
 
- I am exploring medical robots...! 
+ I am exploring medical imagaing sensors...! 
 
  <br>
 
