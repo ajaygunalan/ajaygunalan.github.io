@@ -6,7 +6,7 @@ I'm a Research Fellow at [Advanced Robotics Lab](https://advr.iit.it/) in [Istit
 <br>
 
 
-Till June 2019, I worked at [Robert Bosch Center for Cyber-Physical System](http://www.rbccps.org/) at [Indian Institute of Science, Banglore](https://www.iisc.ac.in/) on [legged robots](https://ajaygunalan.github.io/projects/past/stoch.html) and manipulators under the guidance of [Dr. Shishir N.Y. Kolathya](https://shishirny.github.io/) and  [Prof. Bhardwaj Amrutur](http://www.cense.iisc.ac.in/bharadwaj-amrutur). Previously, I was a part of the software team(R&D) at [ASIMOV Robotics Pvt. Ltd, Kochi](https://www.asimovrobotics.com/) developing a [service robot](https://ajaygunalan.github.io/projects/past/asimov.html) for HDFC bank.
+Till June 2019, I worked at [Robert Bosch Center for Cyber-Physical System](http://www.rbccps.org/) at [Indian Institute of Science, Banglore](https://www.iisc.ac.in/) on [legged robots](https://ajaygunalan.github.io/projects/past/stoch.html) under the guidance of [Dr. Shishir N.Y. Kolathya](https://shishirny.github.io/) and  [Prof. Bhardwaj Amrutur](http://www.cense.iisc.ac.in/bharadwaj-amrutur). Previously, I was a part of the software team(R&D) at [ASIMOV Robotics Pvt. Ltd, Kochi](https://www.asimovrobotics.com/) developing a [service robot](https://ajaygunalan.github.io/projects/past/asimov.html) for HDFC bank.
 
 
 <br>
