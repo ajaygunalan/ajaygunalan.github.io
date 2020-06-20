@@ -67,6 +67,13 @@
 10. [What are Control Groups](https://www.kernel.org/doc/Documentation/cgroup-v1/cgroups.txt)
 11. [The Linux Scheduler](https://www.linuxjournal.com/article/3910)
 12. [Auto Type Deduction in Range-Based For Loops](https://blog.petrzemek.net/2016/08/17/auto-type-deduction-in-range-based-for-loops/)
+13. [Nice explanation about ML](https://www.sagargv.com/blog/)
+14. [Unreal](https://www.dariomazzanti.com/)
+15. [Multiprocessing](https://www.shreya-shankar.com/multiprocessing-intro/)
+16. [LOW-LATENCY KERNEL? WTF?!?!](https://sevencapitalsins.wordpress.com/2007/08/10/low-latency-kernel-wtf/)
+17. [Let me detach those threads for you](https://medium.com/@vgasparyan1995/let-me-detach-those-threads-for-you-2de014b26394)
+18. [How to terminate a C++ std::thread?](https://www.bo-yang.net/2017/11/19/cpp-kill-detached-thread)
+
 
 
 <br>
