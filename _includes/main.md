@@ -4,7 +4,7 @@ I'm a [Research Fellow](https://www.iit.it/people/ajay-gunalan) in the UI team w
 
 <br>
 
-Till June 2019, I worked at [Robert Bosch Center for Cyber-Physical System](http://www.rbccps.org/) at [Indian Institute of Science, Banglore](https://www.iisc.ac.in/) on [legged robots](https://ajaygunalan.github.io/projects/past/stoch.html). Previously, I was a part of the software team (R&D) at [ASIMOV Robotics Pvt. Ltd, Kochi](https://www.asimovrobotics.com/) developing a [service robot](https://ajaygunalan.github.io/projects/past/asimov.html).
+Till June 2019, I worked at [Robert Bosch Center for Cyber-Physical System](http://www.rbccps.org/) in [Indian Institute of Science](https://www.iisc.ac.in/), Banglore on [legged robots](https://ajaygunalan.github.io/projects/past/stoch.html). Previously, I was a part of the software team (R&D) at [ASIMOV Robotics Pvt. Ltd](https://www.asimovrobotics.com/), Kochi developing a [service robot](https://ajaygunalan.github.io/projects/past/asimov.html).
 
 
 <br>
