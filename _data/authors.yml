@@ -4,7 +4,7 @@ default:
   cover:        /assets/machu_lacta_reduced.jpg        
   picture:      /assets/ajay.jpg 
   quote:        "Learning whatever the system demands to"                      
-  bio:          Mechatronics Researchist 
+  bio:          Opto-Mechatronics Devotee 
   location:     Banglore
   website:      "https://ajaygunalan.github.io/about"
   phone:        +91 9952053743
@@ -27,7 +27,7 @@ ajaygunalan:
   name:         "Ajay Gunalan"            
   cover:        /assets/machu_lacta.jpg  
   picture:      /assets/ajay.jpg  
-  bio:          Project Assistant at Robert Bosch Center for Cyber-Physical System
+  bio:          
   location:     Banglore
   website:      "https://ajaygunalan.github.io/"
   github:       ajaygunalan
