@@ -9,15 +9,16 @@ Till June 2019, I worked at [Robert Bosch Center for Cyber-Physical System](http
 
 <br>
 
-**Why Mechtronics?**
+**Why Opto-Mechtronics?**
 
-An Inter-disciplinary field involving deisgn, optimisation, systems and controls, MEMS, optics, electronics and a cool hardware aroused excitement and passion in me to pursue research in mechtronic system. I would call myself a **Mechatronics Researchist** who loves to build sensors and actuators. 
+An Inter-disciplinary field involving mechanical, electronics , optics, MEMS, optimisation, systems and controls, and a cool hardware aroused excitement and passion in me to pursue research in  Opto-Mechtronics system. 
 
 <br>
 
-**My Goal?**
+**What do I do?**
 
-My ultimate goal is to solve real-world problems especially in the field of healthcare enabling better diagnostic and surgical procedure. To achieve that, we need better sensors and actuators, especially for medical robots.
+I would call myself a **Opto-Mechatronics Devotee** who is dedicated to the process of creating sensors and actuators for solving
+real-world problems especially in the field of healthcare enabling better diagnostic and surgical procedures.
 
 <br>
 
@@ -28,7 +29,7 @@ My ultimate goal is to solve real-world problems especially in the field of heal
  <br>
  
  
- Last update on: 01st July 2020
+ Last update on: 03rd July 2020
 
  
 
