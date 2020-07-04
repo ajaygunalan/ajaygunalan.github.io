@@ -11,7 +11,7 @@ Till June 2019, I worked at [Robert Bosch Center for Cyber-Physical System](http
 
 **Why Opto-Mechtronics?**
 
-An Inter-disciplinary field involving the integration of  mechanical, electronics, optics, MEMS, optimisation, systems and controls, and software development aroused excitement and passion in me to pursue research in  Opto-Mechtronics system. 
+An Inter-disciplinary field involving the integration of  Mechanical, Electronics, Optics, MEMS, Optimisation, Control System and Software Development aroused excitement and passion in me to pursue research in  Opto-Mechtronics System. 
 
 <br>
 
