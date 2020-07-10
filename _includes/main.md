@@ -17,7 +17,7 @@ An Inter-disciplinary field involving the integration of  Mechanical, Electronic
 
 **What do I do?**
 
-I would call myself a **Opto-Mechatronics Devotee** who is dedicated to the process of creating sensors and actuators for solving
+I would call myself a **Opto-mechatronics enthusiast** who is dedicated to the process of creating sensors and actuators for solving
 real-world problems especially in the field of healthcare enabling better diagnostic and surgical procedures.
 
 <br>
