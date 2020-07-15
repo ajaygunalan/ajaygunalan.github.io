@@ -1,5 +1,5 @@
 
-I'm a [Research Fellow](https://www.iit.it/people/ajay-gunalan) in the UI team of [TELEOPERAZIONE](https://advr.iit.it/projects/inail-scc/teleoperazione) project at [Advanced Robotics Lab](https://advr.iit.it/) in [Istituto Italiano di Tecnologia](https://iit.it/), Genova. My specific role involves developing real-time audio, video, and point-cloud streaming.
+I'm a [Research Fellow](https://www.iit.it/people/ajay-gunalan) in the UI team of [TELEOPERAZIONE](https://advr.iit.it/projects/inail-scc/teleoperazione) project at [Advanced Robotics Department](https://advr.iit.it/) in [Istituto Italiano di Tecnologia](https://iit.it/), Genova. My specific role involves developing real-time audio, video, and point-cloud streaming.
 <br>
 
 <br>
