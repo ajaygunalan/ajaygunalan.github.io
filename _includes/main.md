@@ -27,14 +27,9 @@ real-world problems especially in the field of healthcare enabling better diagno
  I am exploring medical imagaing sensors...! 
 
  <br>
- 
- 
- Last update on: {% last_modified_at %}
 
 
- 
 
- 
 
 <!-- 
 **Why medical robotics?**
