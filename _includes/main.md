@@ -1,4 +1,4 @@
-Update:  I will start as a PhD student from 1st November 2020 in [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at IIT, Genova, Italy. Specifically, My PhD topic is Development of MEMS based endoscopic OCT.
+Update:  I'm starting as a PhD student from 1st November 2020 in [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at IIT, Genova, Italy. Specifically, My PhD topic is Development of MEMS based endoscopic OCT.
 <br>
 
 <br>
