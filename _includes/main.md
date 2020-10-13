@@ -1,4 +1,8 @@
-Update:  I will start as a PhD student from 1st November 2020 in Biomedical Robotics Lab at IIT, Italy. Specifically, My PhD proposal is about Development of MEMS based endoscopic OCT.
+Update:  I will start as a PhD student from 1st November 2020 in Biomedical Robotics Lab at IIT, Genova, Italy. Specifically, My PhD topic is Development of MEMS based endoscopic OCT.
+<br>
+
+<br>
+
 
 I'm a [Research Fellow](https://www.iit.it/people/ajay-gunalan) in the UI team of [TELEOPERAZIONE](https://advr.iit.it/projects/inail-scc/teleoperazione) project at [Advanced Robotics Department](https://advr.iit.it/) in [Istituto Italiano di Tecnologia](https://iit.it/), Genova. My specific role involves developing real-time audio, video, and pointcloud streaming.
 <br>
