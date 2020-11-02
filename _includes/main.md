@@ -3,16 +3,16 @@ For email: no spaces.
 
 <br>
 
-Update:  I'm starting as a PhD student from 1st November 2020 in [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at IIT, Genova, Italy. Specifically, My PhD topic is Development of MEMS based endoscopic OCT.<br>
-
-<br>
 
 **Who am I?**
 
-I'm a [Research Fellow](https://www.iit.it/people/ajay-gunalan) in the UI team of [TELEOPERAZIONE](https://advr.iit.it/projects/inail-scc/teleoperazione) project at [Advanced Robotics Department](https://advr.iit.it/) in [Istituto Italiano di Tecnologia](https://iit.it/), Genova. My specific role involves developing real-time audio, video, and pointcloud streaming.
+I'm a PhD student in [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at [Istituto Italiano di Tecnologia](https://iit.it/), Genova, Italy advised by [Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos). My PhD topic is about Development of MEMS based endoscopic OCT.<br>
 
+<br>
 
-Till June 2019, I worked at [Robert Bosch Center for Cyber-Physical System](http://www.rbccps.org/) in [Indian Institute of Science](https://www.iisc.ac.in/), Banglore on [legged robots](https://ajaygunalan.github.io/projects/past/stoch.html). Previously, I was a part of the software team (R&D) at [ASIMOV Robotics Pvt. Ltd](https://www.asimovrobotics.com/), Kochi developing a [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html).
+Till October 2020, I was a [Research Fellow](https://www.iit.it/people/ajay-gunalan) in the UI team of [TELEOPERAZIONE](https://advr.iit.it/projects/inail-scc/teleoperazione) project at [Advanced Robotics Department](https://advr.iit.it/) in [Istituto Italiano di Tecnologia](https://iit.it/) and developed real-time audio, video, and pointcloud streaming.
+
+Previously, I worked at [Robert Bosch Center for Cyber-Physical System](http://www.rbccps.org/) in [Indian Institute of Science](https://www.iisc.ac.in/), Banglore on [legged robots](https://ajaygunalan.github.io/projects/past/stoch.html).  I was a part of the software team (R&D) at [ASIMOV Robotics Pvt. Ltd](https://www.asimovrobotics.com/), Kochi developing a [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html).
 
 <br>
 
