@@ -6,7 +6,7 @@ For email: no spaces.
 
 **Who am I?**
 
-I'm a PhD student in [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at [Istituto Italiano di Tecnologia](https://iit.it/), Genova, Italy advised by [Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos). My research interests is on developing sensors for medical robots.<br>
+I'm a PhD student in [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at [Istituto Italiano di Tecnologia](https://iit.it/), Genova, Italy advised by [Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos). My research interests is on developing sensors for medical robots.
 
 <br>
 
