@@ -10,7 +10,7 @@ I'm a PhD student in [Biomedical Robotics Lab](https://advr.iit.it/index.php/res
 
 <br>
 
-My previous experinces include developing real-time audio, video, point-cloud streaming, [legged robots](https://ajaygunalan.github.io/projects/past/stoch.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html).
+My previous experinces include developing [humanoid robots](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robots](https://ajaygunalan.github.io/projects/past/stoch.html) and realtime streaming of audio, video, pcl.
 
 <!-- An Inter
 Till October 2020, I was a [Research Fellow](https://www.iit.it/people/ajay-gunalan) in the UI team of [TELEOPERAZIONE](https://advr.iit.it/projects/inail-scc/teleoperazione) project at [Advanced Robotics Department](https://advr.iit.it/) in [Istituto Italiano di Tecnologia](https://iit.it/) and developed real-time audio, video, and pointcloud streaming.
