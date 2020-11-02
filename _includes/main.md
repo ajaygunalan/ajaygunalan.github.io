@@ -8,8 +8,6 @@ For email: no spaces.
 
 I'm a PhD student in [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at [Istituto Italiano di Tecnologia](https://iit.it/), Genova, Italy advised by [Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos). My research interests is on developing sensors for medical robots.
 
-<br>
-
 My previous experinces include developing [humanoid robots](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robots](https://ajaygunalan.github.io/projects/past/stoch.html) and realtime streaming of audio, video, pcl.
 
 <!-- An Inter
