@@ -6,7 +6,7 @@ For email: no spaces.
 
 **Who am I?**
 
-I'm a PhD student in [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at [Istituto Italiano di Tecnologia](https://iit.it/), Genova, Italy advised by [Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos). My research interests is on developing sensors for medical robots. My previous experinces include developing [medical device](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid robots](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robots](https://ajaygunalan.github.io/projects/past/stoch.html) and realtime streaming of audio, video and pcl.
+I'm a PhD student in [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at [Istituto Italiano di Tecnologia](https://iit.it/), Genova, Italy advised by [Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos). My research interests is on developing sensors for medical robots. My previous experinces include developing [medical device](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid robots](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robots](https://ajaygunalan.github.io/projects/past/stoch.html) and realtime streaming of audio, video and pcl for [tele-robos](https://advr.iit.it/projects/inail-scc/teleoperazione).
 
 <!-- An Inter
 Till October 2020, I was a [Research Fellow](https://www.iit.it/people/ajay-gunalan) in the UI team of [TELEOPERAZIONE](https://advr.iit.it/projects/inail-scc/teleoperazione) project at [Advanced Robotics Department](https://advr.iit.it/) in [Istituto Italiano di Tecnologia](https://iit.it/) and developed real-time audio, video, and pointcloud streaming.
