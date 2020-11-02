@@ -8,16 +8,12 @@ For email: no spaces.
 
 I'm a PhD student in [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at [Istituto Italiano di Tecnologia](https://iit.it/), Genova, Italy advised by [Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos). My research interests is on developing sensors for medical robots. My previous experinces include developing [medical device](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robot](https://ajaygunalan.github.io/projects/past/stoch.html) and realtime streaming of audio, video and pcl for [telerobot](https://advr.iit.it/projects/inail-scc/teleoperazione).
 
-<!-- An Inter
-Till October 2020, I was a [Research Fellow](https://www.iit.it/people/ajay-gunalan) in the UI team of [TELEOPERAZIONE](https://advr.iit.it/projects/inail-scc/teleoperazione) project at [Advanced Robotics Department](https://advr.iit.it/) in [Istituto Italiano di Tecnologia](https://iit.it/) and developed real-time audio, video, and pointcloud streaming.
-Previously, I worked at [Robert Bosch Center for Cyber-Physical System](http://www.rbccps.org/) in [Indian Institute of Science](https://www.iisc.ac.in/), Banglore on   I was a part of the software team (R&D) at [ASIMOV Robotics Pvt. Ltd](https://www.asimovrobotics.com/), Kochi developing a 
- -->
 <br>
 
 **What do I do?**
 
 I would call myself a **Opto-mechatronics enthusiast** who is dedicated to the process of creating sensors and actuators for solving
-real-world problems especially in the field of healthcare enabling better diagnostic and surgical procedures.
+real-world problems especially in the field of healthcare to enable better diagnostic and surgical procedures.
 
 <br>
 
