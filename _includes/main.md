@@ -1,20 +1,13 @@
 
 For email: no spaces.
 
-<br>
+Who am I?
 
+I'm a Ph.D. student in [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at the [Italian Institute of Technology](https://iit.it/) and [Department of Informatics, Bioengineering, Robotics, and System Engineering (DIBRIS)]((https://www.dibris.unige.it/en/) at the [University of Genova](https://unige.it/it). My primary advisor is Leonardo De Mattos. My previous experiences include developing [medical devices](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robot](https://ajaygunalan.github.io/projects/past/stoch.html), and realtime streaming of audio, video, and PCL for [telerobot](https://advr.iit.it/projects/inail-scc/teleoperazione).
 
-**Who am I?**
+What do I do?
 
-I'm a PhD student in [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at [Italian Institute of Technology](https://iit.it/) and Department of Informatics, Bioengineering, Robotics and System Engineering ([DIBRIS](https://www.dibris.unige.it/en/)) at [Univeristy of Gneova](https://unige.it/it). My primary advidor is [Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos). My previous experinces include developing [medical device](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robot](https://ajaygunalan.github.io/projects/past/stoch.html) and realtime streaming of audio, video and pcl for [telerobot](https://advr.iit.it/projects/inail-scc/teleoperazione).
-
-<br>
-
-**What do I do?**
-
-My research focuses on developing sensors for Minimally Inavsive Surgery and Diagnostic Procesd 
-
-<br>
+My research focuses on developing MEMS-based sensors for Minimally Invasive Procedures.
 
 
 <style>
