@@ -6,7 +6,7 @@ For email: no spaces.
 
 **Who am I?**
 
-I'm a PhD student in [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at [Italian Institute of Technology](https://iit.it/) and Department of Informatics, Bioengineering, Robotics and System Engineering ([DIBRIS](#https://www.dibris.unige.it/en/)) at [Univeristy of Gneova](https://unige.it/it). My primary advidor is [Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos). My previous experinces include developing [medical device](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robot](https://ajaygunalan.github.io/projects/past/stoch.html) and realtime streaming of audio, video and pcl for [telerobot](https://advr.iit.it/projects/inail-scc/teleoperazione).
+I'm a PhD student in [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at [Italian Institute of Technology](https://iit.it/) and Department of Informatics, Bioengineering, Robotics and System Engineering ([DIBRIS](https://www.dibris.unige.it/en/)) at [Univeristy of Gneova](https://unige.it/it). My primary advidor is [Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos). My previous experinces include developing [medical device](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robot](https://ajaygunalan.github.io/projects/past/stoch.html) and realtime streaming of audio, video and pcl for [telerobot](https://advr.iit.it/projects/inail-scc/teleoperazione).
 
 <br>
 
@@ -14,36 +14,7 @@ I'm a PhD student in [Biomedical Robotics Lab](https://advr.iit.it/index.php/res
 
 My research focuses on developing sensors for Minimally Inavsive Surgery and Diagnostic Procesd 
 
-
 <br>
-
-
-
-
-
-
- <ul style="width:50%; float:left;">
-   <li>Medical Robots, Hybrid-Systems, Bio-Inspired Robotics</li>
-   <li>Combining Machine Learning and Motion Planning</li>
-   <li>Manipulation of Deformable Objects</li>
-   <li>Grasping, Tactile Sensing, Contact-Dynamics</li>
- </ul>
-
- <ul style="width:50%; float:left;">
-   <li>Learning to Control (Model-Based RL, Imitation Learning and Meta-Learning)</li>
-   <li>Application of Non-Linear Control and Optimization Techniques in Real-Time on robots</li>
- </ul> -->
-
-
-<!-- If you want to know about me in detail have a look at [this](https://ajaygunalan.github.io/assets/ajayg_faq.pdf) -->
-
-
-
-<br>
-<br>
-<br> 
-<br>
-<br> 
 
 
 <style>
