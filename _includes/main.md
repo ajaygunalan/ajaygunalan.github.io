@@ -6,53 +6,20 @@ For email: no spaces.
 
 **Who am I?**
 
-I'm a PhD student in [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at [Istituto Italiano di Tecnologia](https://iit.it/), Genova, Italy advised by [Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos). My research interests is on developing sensors for medical robots. My previous experinces include developing [medical device](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robot](https://ajaygunalan.github.io/projects/past/stoch.html) and realtime streaming of audio, video and pcl for [telerobot](https://advr.iit.it/projects/inail-scc/teleoperazione).
+I'm a PhD student in [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at [Italian Institute of Technology](https://iit.it/) and Department of Informatics, Bioengineering, Robotics and System Engineering ([DIBRIS](#https://www.dibris.unige.it/en/)) at [Univeristy of Gneova](https://unige.it/it). My primary advidor is [Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos). My previous experinces include developing [medical device](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robot](https://ajaygunalan.github.io/projects/past/stoch.html) and realtime streaming of audio, video and pcl for [telerobot](https://advr.iit.it/projects/inail-scc/teleoperazione).
 
 <br>
 
 **What do I do?**
 
-I would call myself a **Opto-mechatronics enthusiast** who is dedicated to the process of creating sensors and actuators for solving
-real-world problems especially in the field of healthcare to enable better diagnostic and surgical procedures.
+My research focuses on developing sensors for Minimally Inavsive Surgery and Diagnostic Procesd 
+
 
 <br>
 
-**Why Opto-Mechtronics?**
-
-An Inter-disciplinary field involving the integration of  Optics, Mechanical, Electronics, MEMS, Control System and Software development aroused excitement and passion in me to pursue research in  Opto-Mechtronics System. 
-
-<br>
-
-**Right now?**
-
- I am exploring medical imagaing sensors...! 
-
- <br>
 
 
 
-
-<!-- 
-**Why medical robotics?**
-  
-  As an engineer with a tremendous amount of zeal, I explored both manipulation and legged locomotion, soon to realize that those problems in spite of being extremely hard (cuz it is tough to model a high dimensional state space), they did not have any practical significance to a layman.
-
-  will you buy a million dollar robot for doing housekeeping (al  -->
-
-<!-- Almost, all the fields which are based upon on classical mechanics would be involved in one way
-or another. In fact, we could say that, **Robotics is the pinnacle of classical mechanics**. Such a diverse field with a cool
-hardware aroused excitement and passion in me to pursue research in robotics. -->
-
-<br>
-
-<!-- An Inter -->
-
-<!-- 
-More specifically, my research interest includes: Combining Machine Learning and Motion Planning, Manipulation of Deformable Objects, Learning to Control, Grasping, Tactile Sensing, Medical Robots, Contact-Dynamics, Hybrid-Systems, Bio-Inspired Robots, Application of Non-Linear Control and Optimization in Real-Time on Robots. -->
-
-<!-- Right now am looking forward to join Masters Program in Robotics Engineering at WPI. -->
-
-<!--  More specifically, my research interest includes
 
 
  <ul style="width:50%; float:left;">
