@@ -4,11 +4,11 @@ default:
   cover:        /assets/machu_lacta_reduced.jpg        
   picture:      /assets/ajay.jpg 
   quote:        "Learning whatever the system demands...!"                      
-  bio:          Opto-mechatronics enthusiast 
+  bio:          A MEMS Enthusiast 
   location:     Banglore
   website:      "https://ajaygunalan.github.io/about"
   phone:        +39 320 349 6112
-  email:        ajay dot gunalan at iit dot it
+  email:        ajay.gunalan@iit.it
   twitter:
   resume:       true
   linkedin:
