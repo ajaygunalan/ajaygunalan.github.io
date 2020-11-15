@@ -4,7 +4,7 @@ default:
   cover:        /assets/machu_lacta_reduced.jpg        
   picture:      /assets/ajay.jpg 
   quote:        "Learning whatever the system demands...!"                      
-  bio:          A MEMS Enthusiast 
+  bio:          "MEMS Enthusiast" 
   location:     Banglore
   website:      "https://ajaygunalan.github.io/about"
   phone:        "+393203496112"
