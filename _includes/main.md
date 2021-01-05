@@ -6,11 +6,11 @@
 I'm a Ph.D. student in [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at the [Italian Institute of Technology](https://iit.it/) and [Department of Informatics, Bioengineering, Robotics, and System Engineering (DIBRIS)](https://www.dibris.unige.it/en/) at the [University of Genova](https://unige.it/it). My primary advisor is [Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos). 
 
 <br>
-<br>
+
 
 My current research focuses on developing imaging platforms for minimally invasive procedures by leveraging MEMS & Optics. More specifically, I’m interested in developing endoscopic OCT and endoscopic photoacoustic imaging. My previous experiences include developing [medical devices](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robot](https://ajaygunalan.github.io/projects/past/stoch.html), and realtime streaming of audio, video, and PCL for [telerobot](https://advr.iit.it/projects/inail-scc/teleoperazione).
 
-<br>
+
 <br>
 
 My favorite quote, "anyone can learn anything, as long as it is explained clearly enough" by Raffi Grinberg.
