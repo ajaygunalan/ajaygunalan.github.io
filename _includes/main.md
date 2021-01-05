@@ -14,6 +14,12 @@ My current research focuses on developing imaging platforms for minimally invasi
 <br>
 <br>
 <br>
+
+My favorite quote, "anyone can learn anything, as long as it is explained clearly enough" by Raffi Grinberg.
+
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
