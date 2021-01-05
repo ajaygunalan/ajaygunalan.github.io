@@ -26,6 +26,7 @@
 ### Courses
 
 1. [A list of important courses related to robotics](https://github.com/ajaygunalan/Robotics-Courses) 
+2. [Best advice on math](https://www.youtube.com/watch?v=fo-alw2q-BU)
 
 <br>
 <hr class="style-four" />
