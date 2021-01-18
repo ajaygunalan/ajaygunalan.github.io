@@ -10,9 +10,13 @@ My current research focuses on developing imaging platforms for minimally invasi
 
 My favorite quotes:
 
-- "Anyone can learn anything, as long as it is explained clearly enough" by Raffi Grinberg.
+- "If you find science boring, you are learning it from wrong teacher" by Richard Feynman.
 
 - "Science evolves due to curiosity. Technology evolves due to requirements" by Shankar Kumar Selvaraja.
+
+
+
+ <! -- - "Anyone can learn anything, as long as it is explained clearly enough" by Raffi Grinberg. --> 
 
 <br>
 <br>
