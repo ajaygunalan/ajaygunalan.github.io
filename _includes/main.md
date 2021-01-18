@@ -8,7 +8,11 @@ My current research focuses on developing imaging platforms for minimally invasi
 
 <br>
 
-My favorite quote, "anyone can learn anything, as long as it is explained clearly enough" by Raffi Grinberg.
+My favorite quotes:
+
+"Anyone can learn anything, as long as it is explained clearly enough" by Raffi Grinberg.
+
+"Science evolves due to curiosity. Technology evolves due to requirements" by Shankar Kumar Selvaraja.
 
 <br>
 <br>
