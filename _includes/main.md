@@ -15,9 +15,6 @@ My favorite quotes:
 - "Science evolves due to curiosity. Technology evolves due to requirements" by Shankar Kumar Selvaraja.
 
 
-
- <! -- - "Anyone can learn anything, as long as it is explained clearly enough" by Raffi Grinberg. --> 
-
 <br>
 <br>
 <br>
