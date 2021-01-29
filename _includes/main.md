@@ -14,6 +14,7 @@ My favorite quotes:
 
 - "Science evolves due to curiosity. Technology evolves due to requirements" by Shankar Kumar Selvaraja.
 
+- "there is only one way one can remain successful in the longterm: clarity of what not to do" by S.C Agarwalla.
 
 <br>
 <br>
