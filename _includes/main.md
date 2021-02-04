@@ -16,6 +16,8 @@ My favorite quotes:
 
 - "there is only one way one can remain successful in the longterm: clarity of what not to do" by S.C Agarwalla.
 
+- "Rigorous process discipline in a chaotic world brings success" by Saurabh Mukherjee.
+
 <br>
 <br>
 <br>
