@@ -4,7 +4,7 @@ I'm a Ph.D. student in [Biomedical Robotics Lab](https://advr.iit.it/index.php/r
 
 <br>
 
-My current research focuses on developing imaging platforms for minimally invasive procedures by leveraging MEMS & Optics. More specifically, I’m interested in developing **endoscopic OCT** and endoscopic photoacoustic imaging. My previous experiences include developing [medical devices](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robot](https://ajaygunalan.github.io/projects/past/stoch.html), and realtime streaming of audio, video, and PCL for [telerobot](https://advr.iit.it/projects/inail-scc/teleoperazione).
+My current research focuses on developing imaging platforms for minimally invasive procedures by leveraging MEMS & Optics. More specifically, I’m interested in developing intraoperative endoscopic OCT for assisting laser surgery. My previous experiences include developing [medical devices](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robot](https://ajaygunalan.github.io/projects/past/stoch.html), and realtime streaming of audio, video, and PCL for [telerobot](https://advr.iit.it/projects/inail-scc/teleoperazione).
 
 <br>
 
