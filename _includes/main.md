@@ -8,15 +8,6 @@ My current research focuses on developing imaging platforms for minimally invasi
 
 <br>
 
-My favorite quotes:
-
-- "If you find science boring, you are learning it from wrong teacher" by Richard Feynman.
-
-- "Science evolves due to curiosity. Technology evolves due to requirements" by Shankar Kumar Selvaraja.
-
-- "there is only one way one can remain successful in the longterm: clarity of what not to do" by S.C Agarwalla.
-
-- "Rigorous process discipline in a chaotic world brings success" by Saurabh Mukherjee.
 
 <br>
 <br>
