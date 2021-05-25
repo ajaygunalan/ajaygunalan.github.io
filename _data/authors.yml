@@ -1,7 +1,7 @@
 default:
   initial:      ajaygunalan
   name:         "Ajay Gunalan"                                
-  cover:        /assets/machu_lacta_reduced.jpg        
+  cover:        /assets/pic/cover.jpeg        
   picture:      /assets/ajay.jpeg 
   quote:        "Learning whatever the system demands...!"                      
   bio:          "Biomedical &nbsp; Roboticist" 
@@ -25,7 +25,7 @@ default:
 ajaygunalan:
   initial:      ajaygunalan
   name:         "Ajay Gunalan"            
-  cover:        /assets/machu_lacta.jpg  
+  cover:        /assets/pic/cover.jpeg    
   picture:      /assets/ajay.jpeg  
   bio:          
   location:     Banglore
