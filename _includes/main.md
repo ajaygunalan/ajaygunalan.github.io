@@ -4,13 +4,10 @@ I'm a Ph.D. student advised by [Dr. Leonardo De Mattos](https://www.iit.it/peopl
 
 <br>
 
-I consider myself as a biomedical roboticist who isn't restricted to specifics disciplines. But, dedicated to the products as a whole and do what is necessary by constant learning across disciplines and just devoting to the task at hand. Specifically, I choose to work on medical devices as I find it highly satisfying to see the impact in society by improving health care quality at an affordable cost.
-<br>
-
+I consider myself as a biomedical roboticist who isn't restricted to specific disciplines. Dedicated to the product as a whole, I do what is necessary - devoting to the task at hand by learning across disciplines constantly. I choose to work on medical devices as it is highly satisfying to provide quality health care at an affordable cost.
 
 <br>
-
-
+<br>
 <br>
 <br>
 <br>
