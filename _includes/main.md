@@ -1,10 +1,12 @@
 <br>
 
-I'm a Ph.D. student in [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at the [Italian Institute of Technology](https://iit.it/) and [Department of Informatics, Bioengineering, Robotics, and System Engineering (DIBRIS)](https://www.dibris.unige.it/en/) at the [University of Genova](https://unige.it/it). My primary advisor is [Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos). 
+I'm a Ph.D. student advised by [Dr. Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos) in the [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at the [Italian Institute of Technology](https://iit.it/). But, formally a student of [DIBRIS](https://www.dibris.unige.it/en/), [University of Genova](https://unige.it/it). My current research focuses on developing intraoperative forward looking endoscopic OCT probe by leveraging MEMS & Optics. My previous experiences include developing [medical devices](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robot](https://ajaygunalan.github.io/projects/past/stoch.html), and realtime streaming of audio, video, and PCL for [telerobot](https://www.youtube.com/watch?v=vl5wQ8cF8U4).
 
 <br>
 
-My current research focuses on developing imaging platforms for minimally invasive procedures by leveraging MEMS & Optics. More specifically, I’m interested in developing intraoperative endoscopic OCT probe for laryngectomy. My previous experiences include developing [medical devices](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robot](https://ajaygunalan.github.io/projects/past/stoch.html), and realtime streaming of audio, video, and PCL for [telerobot](https://www.youtube.com/watch?v=vl5wQ8cF8U4).
+I consider myself as a biomedical roboticist who isn't restricted to specifics disciplines such as software, mechanical, electronic, optics, path planning, controls, MEMS, etc. But dedicated to the products as a whole and do what is necessary by constant learning, and devoted to the task at hand. Specifically, I choose to work on medical devices as I find it highly satisfying to see the impact on our society by improving health care quality at an affordable cost.
+<br>
+
 
 <br>
 
