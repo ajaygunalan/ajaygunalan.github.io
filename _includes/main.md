@@ -4,7 +4,7 @@ I'm a Ph.D. student advised by [Dr. Leonardo De Mattos](https://www.iit.it/peopl
 
 <br>
 
-I'm a biomedical roboticist who is dedicated to the product as a whole and devoted to the task at hand, learning across several disciplines constantly. I choose to work on medical devices as it is highly satisfying to provide quality health care at an affordable cost.
+I'm a biomedical roboticist who loves to  learn across several disciplines constantly. I'm dedicated to the product as a whole and devoted to the task at hand. I chose to work on medical devices as it is highly satisfying to provide quality health care at an affordable cost.
 
 <br>
 
