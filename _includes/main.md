@@ -4,13 +4,13 @@ I'm a Ph.D. student advised by [Dr. Leonardo De Mattos](https://www.iit.it/peopl
 
 <br>
 
-I consider myself as a biomedical roboticist who isn't restricted to specific disciplines. But, dedicated to the product as a whole, I do what is necessary - devoted to the task at hand by learning across disciplines constantly. I choose to work on medical devices as it is highly satisfying to provide quality health care at an affordable cost.
+I consider myself as a biomedical roboticist who is dedicated to the product as a whole, I do what is necessary - devoted to the task at hand by learning across several disciplines constantly. I choose to work on medical devices as it is highly satisfying to provide quality health care at an affordable cost.
 
 <br>
 
 Research Interests
 
-Applications: Endoscopic Imaging Devices, Novel sensors, and actuators.
+Applications: Endoscopic Imaging Devices, Novel sensors, and actuators for better diagnostic and surgical procedures.
 
 Areas: Mechtronics, Biomedical Optics, Digital Signal Processing, MEMS.
 
