@@ -10,9 +10,12 @@ I'm a biomedical roboticist who loves to  learn across several disciplines const
 
 Research Interests
 
-          Areas: Mechtronics, Biomedical Optics, Digital Signal Processing, MEMS.
+<p class="tab">Areas: Mechtronics, Biomedical Optics, Digital Signal Processing, MEMS.</p>
 
-   Applications: Endoscopic Imaging Devices, Medical Sensors and Actuators.
+<p class="tab">   Applications: Endoscopic Imaging Devices, Medical Sensors and Actuators.</p>
+
+          
+
 
 
 <br>
