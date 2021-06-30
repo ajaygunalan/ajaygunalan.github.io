@@ -29,6 +29,13 @@ Research Interests
 <br>
 
 <style>
+	
+
+
+.tab {
+  margin-left: 40px; 
+}
+
 
 .content {
   max-width: 920px;
