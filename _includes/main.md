@@ -10,7 +10,7 @@ I consider myself as a biomedical roboticist who is dedicated to the product as 
 
 Research Interests
 
-Applications: Endoscopic Imaging Devices, Novel sensors, and actuators for better diagnostic and surgical procedures.
+Applications: Endoscopic Imaging Devices, Medical Sensors and Actuators.
 
 Areas: Mechtronics, Biomedical Optics, Digital Signal Processing, MEMS.
 
