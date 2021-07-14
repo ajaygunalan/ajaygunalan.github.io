@@ -64,6 +64,7 @@
 17. [Let me detach those threads for you](https://medium.com/@vgasparyan1995/let-me-detach-those-threads-for-you-2de014b26394)
 18. [How to terminate a C++ std::thread?](https://www.bo-yang.net/2017/11/19/cpp-kill-detached-thread)
 19. [git guide](https://sethrobertson.github.io/GitFixUm/fixup.html)
+20. [DSP Guru](https://dspguru.com/)
 
 <br>
 <hr class="style-four" />
