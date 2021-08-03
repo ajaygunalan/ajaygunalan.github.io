@@ -38,7 +38,7 @@ Research Interests
 
 
 .content {
-  max-width: 920px;
+  max-width: 1000px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
