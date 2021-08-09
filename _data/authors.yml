@@ -3,7 +3,7 @@ default:
   name:         "Ajay Gunalan"                                
   cover:        /assets/pic/cover.jpeg        
   picture:      /assets/ajay.jpeg 
-  quote:        "Learning whatever the system demands...!"                      
+  quote:        "Building whatever is required...!"                      
   bio:          "Biomedical &nbsp; Roboticist" 
   location:     Banglore
   website:      "https://ajaygunalan.github.io/about"
