@@ -1,8 +1,8 @@
 default:
   initial:      ajaygunalan
   name:         "Ajay Gunalan"                                
-  cover:        /assets/ajay.jpeg 
-  picture:      /assets/pic/ajay_coat_suit.JPG
+  cover:        /assets/pic/cover (1).jpeg 
+  picture:      /assets/ajay.jpeg
   quote:        "Developing what is necessary...!"                      
   bio:          "Biomedical &nbsp; Roboticist" 
   location:     Banglore
@@ -25,8 +25,8 @@ default:
 ajaygunalan:
   initial:      ajaygunalan
   name:         "Ajay Gunalan"            
-  cover:        /assets/ajay.jpeg 
-  picture:      /assets/pic/ajay_coat_suit.JPG
+  cover:        /assets/pic/cover (1).jpeg 
+  picture:      /assets/ajay.jpeg
   bio:          
   location:     Banglore
   website:      "https://ajaygunalan.github.io/"
