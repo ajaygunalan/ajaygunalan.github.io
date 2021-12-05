@@ -1,10 +1,10 @@
 <br>
 
-I'm a Ph.D. student advised by [Dr. Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos) in the [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at the [Italian Institute of Technology](https://iit.it/). I consider myself a <i>biomedical roboticist</i> who loves to learn across several disciplines constantly. I chose to devote myself to work on medical devices since it is necessary to provide quality health care at an affordable cost to all life.
+I'm a Ph.D. student advised by [Dr. Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos) in the [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at the [Italian Institute of Technology](https://iit.it/). I consider myself a biomedical roboticist who constantly loves to learn across several disciplines. I chose to devote myself to work on medical devices since it is necessary to provide quality health care at an affordable cost to all life.
 
 <br>
 
-My current research focuses on developing endoscopic OCT probe for minimally invasive surgeries.  More specifically, I have to design and characterize an electromagnetic-based optical fiber scanner for endoscopic OCT imaging and develop a novel algorithm for noise reduction in endoscopic OCT images. My previous experiences include developing [medical devices](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robot](https://ajaygunalan.github.io/projects/past/stoch.html), and realtime streaming of audio, video, and PCL for [telerobot](https://www.youtube.com/watch?v=vl5wQ8cF8U4).
+My current research focuses on developing endoscopic OCT probe for minimally invasive surgeries.  More specifically, I have to design and characterize an electromagnetic-based optical fiber scanner for endoscopic OCT imaging and develop a novel algorithm for noise reduction in endoscopic OCT images. My previous experiences include developing [medical devices](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robot](https://ajaygunalan.github.io/projects/past/stoch.html), and real-time streaming of audio, video, and PCL for [telerobot](https://www.youtube.com/watch?v=vl5wQ8cF8U4).
 
 <br>
 
