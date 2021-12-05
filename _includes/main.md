@@ -4,7 +4,7 @@ I'm a Ph.D. student advised by [Dr. Leonardo De Mattos](https://www.iit.it/peopl
 
 <br>
 
-My current research focuses on developing endoscopic OCT probe for minimally invasive surgeries.  More specifically, I have to design and characterize an electromagnetic-based optical fiber scanner for endoscopic OCT imaging and develop a novel algorithm for noise reduction in endoscopic OCT images. 
+My current research focuses on developing endoscopic OCT probe for minimally invasive surgeries. I have to design and characterize an electromagnetic-based optical fiber scanner for endoscopic OCT imaging and develop a novel algorithm for noise reduction in endoscopic OCT images. 
 
 <br>
 
