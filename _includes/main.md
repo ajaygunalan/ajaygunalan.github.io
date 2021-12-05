@@ -1,10 +1,10 @@
 <br>
 
-I'm a Ph.D. student advised by [Dr. Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos) in the [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at the [Italian Institute of Technology](https://iit.it/). My current research focuses on developing endoscopic OCT probe for minimally invasive surgeries.  More specifically, I have to design and characterize an electromagnetic-based optical fiber scanner for endoscopic OCT imaging and develope a novel algorithm for noise reduction in endoscopic OCT images. My previous experiences include developing [medical devices](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robot](https://ajaygunalan.github.io/projects/past/stoch.html), and realtime streaming of audio, video, and PCL for [telerobot](https://www.youtube.com/watch?v=vl5wQ8cF8U4).
+I'm a Ph.D. student advised by [Dr. Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos) in the [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at the [Italian Institute of Technology](https://iit.it/). I consider myself as a <u><i>biomedical roboticist</i></u> who loves to learn across several disciplines constantly. I am committed to the product as a whole and devoted to the task at hand. I chose to work on medical devices since it is necessary to provide quality health care at an affordable cost to all life.
 
 <br>
 
-I'm a biomedical roboticist who loves to learn across several disciplines constantly. I am committed to the product as a whole and devoted to the task at hand. I chose to work on medical devices since it is necessary to provide quality health care at an affordable cost to all life.
+My current research focuses on developing endoscopic OCT probe for minimally invasive surgeries.  More specifically, I have to design and characterize an electromagnetic-based optical fiber scanner for endoscopic OCT imaging and develope a novel algorithm for noise reduction in endoscopic OCT images. My previous experiences include developing [medical devices](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robot](https://ajaygunalan.github.io/projects/past/stoch.html), and realtime streaming of audio, video, and PCL for [telerobot](https://www.youtube.com/watch?v=vl5wQ8cF8U4).
 
 <br>
 
