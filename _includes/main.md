@@ -1,6 +1,6 @@
 <br>
 
-I'm a Ph.D. student advised by [Dr. Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos) in the [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at the [Italian Institute of Technology](https://iit.it/). I consider myself a biomedical roboticist who loves to constantly learn across several disciplines. I devote myself to working on medical devices since it is necessary to provide quality health care affordable to all life.
+I'm a Ph.D. student advised by [Dr. Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos) in the [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at the [Italian Institute of Technology](https://iit.it/). I consider myself a biomedical roboticist who constantly loves to learn across several disciplines. I grow by devoting myself to working on medical devices since providing quality health care affordable to all life is necessary.
 
 <br>
 
