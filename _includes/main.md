@@ -10,7 +10,7 @@ My current research focuses on the development of endoscopic OCT probe for minim
 
 Research Interests
 
-<p class="tab">       Areas: Mechatronics, Biomedical Optics, Digital Signal Processing, MEMS.</p>
+<p class="tab">       Areas: Mechatronics, Biomedical Optics, Signal Processing, MEMS.</p>
 
 <p class="tab">Applications: Endoscopic Imaging Devices, Medical Sensors and Actuators.</p>
 
