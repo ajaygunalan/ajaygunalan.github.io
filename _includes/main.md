@@ -4,7 +4,7 @@ I'm a Ph.D. student advised by [Dr. Leonardo De Mattos](https://www.iit.it/peopl
 
 <br>
 
-My current research focuses on development of endoscopic OCT probe for minimally invasive surgeries. My previous experiences include developing [medical devices](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robot](https://ajaygunalan.github.io/projects/past/stoch.html), and real-time streaming of audio, video, and PCL for [telerobot](https://www.youtube.com/watch?v=vl5wQ8cF8U4).
+My current research focuses on the development of endoscopic OCT probe for minimally invasive surgeries. My previous experiences include developing [medical devices](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robot](https://ajaygunalan.github.io/projects/past/stoch.html), and real-time streaming of audio, video, and PCL for [telerobot](https://www.youtube.com/watch?v=vl5wQ8cF8U4).
 
 <br>
 
