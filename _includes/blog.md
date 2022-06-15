@@ -65,6 +65,8 @@
 18. [How to terminate a C++ std::thread?](https://www.bo-yang.net/2017/11/19/cpp-kill-detached-thread)
 19. [git guide](https://sethrobertson.github.io/GitFixUm/fixup.html)
 20. [DSP Guru](https://dspguru.com/)
+21. [Pulse-oximeter on a breadboard](https://ashishsahani.com/2018/09/26/pulse-oximeter-on-a-breadboard/)
+
 
 <br>
 <hr class="style-four" />
