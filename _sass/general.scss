@@ -19,6 +19,7 @@ body {
     font-feature-settings: 'kern' 1;
     text-rendering: geometricPrecision;
     text-align: center;
+    background-color: $color-white;
 }
 
 ::-moz-selection {
