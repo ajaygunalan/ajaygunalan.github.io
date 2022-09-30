@@ -15,6 +15,9 @@ My current research focuses on the development of endoscopic OCT probe for minim
 
 <br>
 
+Check out my Digital Garden/PKM/Zettelkasten at [notes.ajaygunalan.com](https://notes.ajaygunalan.com/)
+<br>
+
 Research Interests
 
 <p class="tab"> Areas: Signal Processing, Biomedical Optics, Mechatronics, MEMS.</p>
