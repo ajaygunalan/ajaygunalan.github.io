@@ -1,24 +1,15 @@
 <br>
 
-I'm a Ph.D. student advised by [Dr. Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos) in the [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at the [Italian Institute of Technology](https://iit.it/). 
-
-<br>
-
-
 A robotics software engineer with 3 years of experience in sensors and actuators with a solid background in signal/image
 processing, controls, and mechatronics. I love to develop efficient C++/Python solutions and support others in a diverse
-team to develop impactful technologies.
+team to develop impactful technologies. Check out my Digital Garden/Personal Knowledge Management/Zettelkasten at [notes.ajaygunalan.com](https://notes.ajaygunalan.com/).
 
 <br>
 
-My current research focuses on the development of endoscopic OCT probe for minimally invasive surgeries. My previous experiences include developing [medical devices](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robot](https://ajaygunalan.github.io/projects/past/stoch.html), and real-time streaming of audio, video, and PCL for [telerobot](https://www.youtube.com/watch?v=vl5wQ8cF8U4).
+Right now, I'm a Ph.D. student advised by [Dr. Leonardo De Mattos](https://www.iit.it/people/leonardo-demattos) in the [Biomedical Robotics Lab](https://advr.iit.it/index.php/research/biomedical-robotics) at the [Italian Institute of Technology](https://iit.it/). My current research focuses on the development of endoscopic OCT probe for minimally invasive surgeries. My previous experiences include developing [medical devices](https://ajaygunalan.github.io/projects/past/sid.html), [humanoid](https://ajaygunalan.github.io/projects/past/asimov.html), [legged robot](https://ajaygunalan.github.io/projects/past/stoch.html), and real-time streaming of audio, video, and PCL for [telerobot](https://www.youtube.com/watch?v=vl5wQ8cF8U4).
 
 <br>
 
-Check out my Digital Garden/PKM/Zettelkasten at [notes.ajaygunalan.com](https://notes.ajaygunalan.com/)
-
-<br>
-<br>
 
 
 Research Interests
