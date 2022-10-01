@@ -2,7 +2,7 @@
 
 A robotics software engineer with 3 years of experience in sensors and actuators with a solid background in signal/image
 processing, controls, and mechatronics. I love to develop efficient C++/Python solutions and support others in a diverse
-team to develop impactful technologies. Check out my Digital Garden/Personal Knowledge Management/Zettelkasten at [notes.ajaygunalan.com](https://notes.ajaygunalan.com/).
+team to develop impactful technologies. Check out my personal knowledge management at [notes.ajaygunalan.com](https://notes.ajaygunalan.com/).
 
 <br>
 
