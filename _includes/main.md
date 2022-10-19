@@ -1,8 +1,8 @@
 <br>
-<c>
-This is my old site. Check [ajaygunalan.com](https://ajaygunalan.com/)</c>
 
-          
+<c>
+This is my old site. Check the new one at <a href="https://ajaygunalan.com/">ajaygunalan.com</a>  
+</c>
 
 
 
