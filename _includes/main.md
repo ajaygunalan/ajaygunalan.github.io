@@ -1,6 +1,6 @@
 <br>
-
-This is my old site. Check [ajaygunalan.com](https://ajaygunalan.com/)
+<c>
+This is my old site. Check [ajaygunalan.com](https://ajaygunalan.com/)</c>
 
           
 
