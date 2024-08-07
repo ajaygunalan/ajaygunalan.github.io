@@ -33,4 +33,6 @@ Just gather yourself together and don’t try to find excuses – simply start w
 If you love a man, one day you will feel finished; that is the right moment to go on loving, to gather your energies and to explore the man again. If you can break that plateau you will see a new man arising before you… fresher than ever, younger than ever, more beautiful than ever. In fact you had never known such beauty and such depth. You have broken one more screen – the man is more available to you… again one day you will feel stuck! And remember: those who lose heart and escape, are great losers. Be a little more stubborn, stick to it. For three months do all that you can do with effort and then you tell me, mm?"
 
 Source: from Osho Book “This Is It”
-Link: Facebook
+
+
+Link: [Facebook](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A868838580542165%7D&path=%2Fnotes%2Fnote%2F&wtsid=rdr_0X05MnkY5lQaAR152&refsrc=deprecated&_rdr)
