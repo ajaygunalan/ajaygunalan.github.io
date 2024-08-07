@@ -15,13 +15,13 @@ menu:
           url: projects/
           weight: 1 
         - name: Tech Blog
-          url: tech blogs/
+          url: tech_blogs/
           weight: 2
         - name: CV
           url: ajayg_cv.pdf
           weight: 3
         - name: Life Blog
-          url: life blogs/
+          url: life_blogs/
           weight: 4
 
 params:
@@ -72,10 +72,12 @@ params:
           buttons:
             - name: Pojects
               url: projects/
-            - name: Blog
-              url: blogs/
+            - name: Tech Blog
+              url: tech_blogs/
             - name: CV
               url: ajayg_cv.pdf
+            - name: Life Blog
+              url: life_blogs/
     socialIcons:
         - name: Email
           url: mailto:ajay.gunalan@pm.me
