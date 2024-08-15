@@ -20,7 +20,7 @@ You can change ten times in your life and after each seven years the same will h
 
 Now photography is such a creative thing and it is going to be more and more creative in the future because more sophisticated instruments will be available – they are available. You can do a thousand and one things with photography now; just a few years ago they were just impossible to do. One has to be creative, inventive… one has to look for new ways, new visions, new dreams. And sometimes this is natural, this is part of nature: one feels stuck.
 
-**Those who drop out are the rolling stones: they don’t gather any moss. And it has nothing to do with the work itself** – it is just the tendency of the mind. Photography or painting or music, or dancing – anything – will come to the same point, and once you have made a pattern it will be repeated. This is really a sheer wastage of energies.
+**Those who drop out are the rolling stones: they don’t gather any moss. And it has nothing to do with the work itself – it is just the tendency of the mind.** Photography or painting or music, or dancing – anything – will come to the same point, and once you have made a pattern it will be repeated. This is really a sheer wastage of energies.
 
 **Go on working in it. If you are feeling stuck, that simply means that you have to explore new ways, new directions, new dimensions in it**; and they are always there! Life is so mysterious that it is never finished. A man can go on working with a small thing and can devote his whole life to it and still there will be much to be explored after he has died.
 
