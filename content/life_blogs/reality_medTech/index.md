@@ -7,5 +7,8 @@ summary: "Medtech startups face unique challenges, including lengthy FDA/CE appr
 
 
 
-Link 1: [MedTech Entrepreneur](https://medium.com/@fouadalnoor1/the-hard-thing-about-medtech-startups-why-theyre-worth-it-de41d4198084)
-Link 2: [Harvard Business Review](https://hbr.org/2006/05/why-innovation-in-health-care-is-so-hard)
+- [MedTech Entrepreneur](https://medium.com/@fouadalnoor1/the-hard-thing-about-medtech-startups-why-theyre-worth-it-de41d4198084) 
+
+
+
+- [Harvard Business Review](https://hbr.org/2006/05/why-innovation-in-health-care-is-so-hard)
