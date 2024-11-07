@@ -25,8 +25,7 @@ menu:
           weight: 4
 
 params:
-    #description: "I am a Professor of Philology at the Institute of Romance Philology in Regensburg, Germany. My research focuses mostly on Portuguese irregular verbs.
-#consequat."
+    #description: ""
     # author: Ajay Gunalan
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
@@ -55,7 +54,7 @@ params:
           > *What I cannot create, I do not understand — Richard Feynman.*
 
           <br><br> 
-          I'm a postdoctoral fellow in [<u>PULSE Lab</u>](https://pulselab.jhu.edu/) at Johns Hopkins University. I graduated with a Ph.d. in medical robotics at  [<u>Italian Institute of Technology</u>](https://iit.it/), where I focused on the development of novel laser technologies for micro-surgical robots. 
+          I'm a postdoctoral fellow in the [<u>PULSE Lab</u>](https://pulselab.jhu.edu/) at Johns Hopkins University. I graduated with a Ph.d. in medical robotics at  [<u>Italian Institute of Technology</u>](https://iit.it/), where I focused on the development of novel laser technologies for micro-surgical robots. 
           My previous experiences include working on [<u>tele-robotics</u>](https://ajaygunalan.com/projects/telerobo/), [<u>legged robotics</u>](https://ajaygunalan.com/projects/iisc/), [<u>humanoid</u>](https://ajaygunalan.com/projects/asimov/), and [<u>medical device</u>](https://ajaygunalan.com/projects/sid/). 
           
           <br><br> 
