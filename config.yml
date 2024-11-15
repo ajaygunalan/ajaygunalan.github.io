@@ -69,7 +69,7 @@ params:
           imageHeight: 160
           imageTitle: Ajay Gunalan
           buttons:
-            - name: Pojects
+            - name: Projects
               url: projects/
             - name: Tech Blog
               url: tech_blogs/
