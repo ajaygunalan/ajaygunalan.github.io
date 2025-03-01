@@ -17,8 +17,8 @@ menu:
         - name: Tech Blog
           url: tech_blogs/
           weight: 2
-        - name: CV
-          url: ajayg_cv.pdf
+        # - name: CV
+        #   url: ajayg_cv.pdf
           weight: 3
         - name: Life Blog
           url: life_blogs/
@@ -73,8 +73,8 @@ params:
               url: projects/
             - name: Tech Blog
               url: tech_blogs/
-            - name: CV
-              url: ajayg_cv.pdf
+            # - name: CV
+            #   url: ajayg_cv.pdf
             - name: Life Blog
               url: life_blogs/
     socialIcons:
