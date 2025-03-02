@@ -9,9 +9,8 @@ date: 2024-06-01
 
 ##### Download
 
-[Paper](https://doi.org/10.1109/TMRB.2024.3468385)
-+ [Code and data](https://github.com/ajaygunalan/Compressive-Image-Scanning-Microscope/blob/main/compressive_ism/Compressive-ISM.ipynb) -->
-[video](https://www.youtube.com/watch?v=_80ntLEDUYw&feature=youtu.be)
+- [Paper](https://doi.org/10.1109/TMRB.2024.3468385)
+- [video](https://www.youtube.com/watch?v=_80ntLEDUYw&feature=youtu.be)
 
 ---
 
