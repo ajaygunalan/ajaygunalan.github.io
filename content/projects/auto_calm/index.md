@@ -24,15 +24,17 @@ Auto-CALM achieved a Dice Similarity Coefficient of 95.49% under the most challe
 
 ##### Citation
 
-<!-- ```BibTeX
-@misc{https://doi.org/10.48550/arxiv.2307.09841,
-  doi = {10.48550/ARXIV.2307.09841},
-  url = {https://arxiv.org/abs/2307.09841},
-  author = {Gunalan,  Ajay and Castello,  Marco and Piazza,  Simonluca and Li,  Shunlei and Diaspro,  Alberto and Mattos,  Leonardo S. and Bianchini,  Paolo},
-  keywords = {Image and Video Processing (eess.IV),  Computer Vision and Pattern Recognition (cs.CV),  Signal Processing (eess.SP),  Optics (physics.optics),  FOS: Electrical engineering,  electronic engineering,  information engineering,  FOS: Electrical engineering,  electronic engineering,  information engineering,  FOS: Computer and information sciences,  FOS: Computer and information sciences,  FOS: Physical sciences,  FOS: Physical sciences},
-  title = {Compressive Image Scanning Microscope},
-  publisher = {arXiv},
-  year = {2023},
-  copyright = {arXiv.org perpetual,  non-exclusive license}
+```BibTeX
+
+@ARTICLE{10697472,
+  author={Li, Shunlei and Gunalan, Ajay and Azam, Muhammad Adeel and Penza, Veronica and Caldwell, Darwin G. and Mattos, Leonardo S.},
+  journal={IEEE Transactions on Medical Robotics and Bionics}, 
+  title={Auto-CALM: Autonomous Computer-Assisted Laser Microsurgery}, 
+  year={2024},
+  volume={6},
+  number={4},
+  pages={1423-1435},
+  keywords={Laser ablation;Target tracking;Surgery;Lasers;Microsurgery;Calibration;Medical robotics;Surgical robotics;laser microsurgery;autonomous medical procedure;vision-based control},
+  doi={10.1109/TMRB.2024.3468385}
 }
-``` -->
+``` 
