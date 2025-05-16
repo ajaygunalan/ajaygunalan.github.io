@@ -12,7 +12,7 @@ This comes again and again in everybody’s life: whatsoever you are doing you g
 
 These are plateaus that come. Mm? you work with great joy because something is new – there is a great exploration, new territory and you are enchanted… it is like a romance, a honeymoon. But by and by you become acquainted with the territory; you have looked into all the corners of it and there seems to be nothing new. Now you know all about it so the sensation is no more there, the thrill is no more there.
 
-Now, it is at this point that if you can stick at it and make efforts to find something new in it, you will break through one plane, and on another plane the exploration starts again. If you simply listen to this boredom and you drop out, then those seven years will have gone down the drain.
+Now, it is at this point that if you can stick at it and make efforts to find something new in it, you will break through one plane, and on another plane the exploration starts again. **If you simply listen to this boredom and you drop out, then those seven years will have gone down the drain**.
 
 **That’s how many people lose their life energy: they don’t stick at things. It really needs courage to remain with the old**, because when the plateau comes and everything seems to be just a repetition, doing the same thing again and again and again, one feels to change – change the wife, change the husband, change the job, change the friend, change the town, go somewhere else, do something new. But with the new again after seven years the same will happen!
 
