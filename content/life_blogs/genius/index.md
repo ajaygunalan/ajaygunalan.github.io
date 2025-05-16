@@ -113,3 +113,10 @@ Then by and by there will come a point where just one exhalation is enough and y
 
 
 Link: [Facebook](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A868838580542165%7D&path=%2Fnotes%2Fnote%2F&wtsid=rdr_0X05MnkY5lQaAR152&refsrc=deprecated&_rdr)
+
+
+----
+
+
+
+[How to find the secrets of nature?](https://youtube.com/shorts/BFoUMFDaXe8?si=diGPyAE3Joj-in0R)
