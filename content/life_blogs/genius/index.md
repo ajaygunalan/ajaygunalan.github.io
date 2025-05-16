@@ -122,4 +122,4 @@ Link: [Facebook](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A868
 [How to find the secrets of nature?](https://youtube.com/shorts/BFoUMFDaXe8?si=diGPyAE3Joj-in0R)
 
 
-[Creativity means making difference in this world!](https://www.facebook.com/oshodharahyd/videos/osho-on-boredom/1388162168019533/)
+[(Creativity means making difference in this world) Boredom](https://www.facebook.com/oshodharahyd/videos/osho-on-boredom/1388162168019533/)
