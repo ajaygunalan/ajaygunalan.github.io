@@ -35,4 +35,81 @@ If you love a man, one day you will feel finished; that is the right moment to g
 Source: from Osho Book “This Is It”
 
 
+
+### Work : Always try to reach more than you can grasp
+
+
+
+[The center leader adds: ... when I work in the centre, I often feel difficulties both working and meditating... I work much]
+
+ 
+
+ 
+
+No, you work much. Working is never bad, and one can never work too much, never. We never work too much.
+
+... We never work as much as we can, we never work to the maximum potential. In fact, at the most, people work fifteen percent of their potential -- and those are the very hard workers.
+
+ 
+
+As I see it, you are not working more than seven or eight percent. The more you work, the more you are capable of working. The less you work, the less you become capable of working. Life has its own logic.
+
+ 
+
+Jesus says,'If you have, more will be given to you. If you don't have, even that which you have will be taken away from you.' If you work hard you will get more energy. If you don't work hard, if you don't work at all and you avoid it, even the energy that you have will disappear. So whatsoever you want to do, do it, and do it to the optimum. And soon you will see that more and more doors are opening, and more energy becomes available.
+
+ 
+
+Always try to reach more than you can grasp; always try to reach beyond your grasp. That is how one grows. If you always try that which you can do, you will always fall flat on the earth -- you will not he growing. Try the impossible and it becomes possible. And if you don't try the possible, even that will become impossible.
+
+ 
+
+There is a time to work, a certain age limit where you can work hard. If you have worked hard at that age, in your remaining life the glow of work remains with you. If you miss that time, then you miss the glow. Then you simply repent that you missed the time when you could have worked hard. People who have been really working have a different type of energy in their old age -- a glow, something, as if a light is burning inside. They may not be working then, but you know that they have earned a rest and now they can relax. Relaxation has to be earned.
+
+ 
+
+So do whatsoever you can do right now, because right now you have energy, mm?
+
+ 
+
+ 
+
+[The center leader answers: I find it difficult to work and meditate each day. I find it easier to work a lot, then spend some time meditating.]
+
+ 
+
+You don't understand the mechanism. In fact, one should continuously change, because the brain has many centres.
+
+ 
+
+For example, if you do mathematics, then a certain part of the brain functions and the other parts rest. Then you read poetry: then that part that was functioning in mathematics rests and another part starts functioning.
+
+ 
+
+That's why in universities and schools we change periods -- forty minutes, forty-five minutes — because each centre of the brain has a capacity to function for forty minutes. Then it feels tired and needs a rest, and the best rest is to change the work -- so that some other centre starts working and one relaxes. So continuous change is very very good; it enriches you.
+
+ 
+
+I understand the difficulty.... You do a thing and the mind becomes obsessed, you go mad after it. But that's bad; one should not become so possessed. while doing it, become absorbed, but always remain a master; otherwise you will become a slave. and slavery is not good. Even slavery to God, to meditation, is not good. If you can't stop doing a certain thing, or you only stop very reluctantly, that simply shows that you don't know how to change gears in the mind.
+
+ 
+
+So do one thing:: whenever you are doing something... for example, you are meditating and now you want to do something else. then after you stop meditating for five minutes simply exhale deeply, as possible. Then let the body inhale, don't you inhale. Have a feeling that you are throwing out everything that was in the mind and in the body and in the system. Just five minutes, then start doing some other work, and immediately you will feel you have changed.
+
+ 
+
+You need the neutral gear for five minutes, mm? If you change gear in a car, the gear has to first move to neutral -- even if just for a single moment, but it has to move. The more efficient the driver, the faster he can move from neutral. So give five minutes to the neutral gear. You are not working at anything -- just breathing, just being. Then by and by you go on dropping: after one month, four minutes; after two months, three minutes.
+
+ 
+
+Then by and by there will come a point where just one exhalation is enough and you are finished with the work -- closed, a full stop -- and then you start other work. You try this, and next time you come you will be perfectly okay.
+
+ 
+
+-Osho, “Hammer on the Rock, #3”
+
+[Title] : Work : Always try to reach more than you can grasp
+[Source] : https://oshofriends.com/dictionary/72346
+
+
 Link: [Facebook](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A868838580542165%7D&path=%2Fnotes%2Fnote%2F&wtsid=rdr_0X05MnkY5lQaAR152&refsrc=deprecated&_rdr)
